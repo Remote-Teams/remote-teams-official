@@ -1,0 +1,36 @@
+.what_we_do_template_two {
+  align-items: center;
+  padding: vw(50px);
+  padding-bottom: 0;
+  .what_we_do_template_two_left {
+    width: 50%;
+    margin: vw(40px) vw(30px) vw(30px) vw(30px);
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .what_we_do_template_two_right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .what_we_do_template_two_headline {
+    display: flex;
+    width: 100%;
+    word-break: break-all;
+    height: vw(79px);
+    letter-spacing: vw(4.32px);
+    margin-bottom: vw(40px);
+    justify-content: center;
+  }
+  .what_we_do_template_two_para {
+    display: flex;
+    width: 100%;
+    word-break: break-all;
+    height: vw(194px);
+    margin-top: vw(20px);
+    letter-spacing: vw(0.4px);
+  }
+}

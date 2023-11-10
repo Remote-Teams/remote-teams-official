@@ -1,0 +1,105 @@
+/* ===============================================================
+                    
+                    header
+
+================================================================== */
+
+@import "./left-navbar";
+@import "./top-navbar";
+
+.pageTitle-topNavbar-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding-bottom: vw(33px);
+  margin-bottom: vw(20px);
+
+  background: #2d3135;
+  box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.27);
+  border-radius: 0 0 vw(14px) 0;
+  margin-left: -4%;
+  padding-left: 4%;
+  width: 109%;
+  margin-top: vw(-51px);
+  padding-top: vw(51px);
+}
+
+.titile-div {
+  position: relative;
+  // height: vw(85px);
+
+  .title-div__text,
+  .title-div__shadow {
+    position: absolute;
+    //text-transform: uppercase;
+    white-space: nowrap;
+
+    //new css
+    text-transform: capitalize;
+  }
+
+  .title-div__shadow {
+    position: relative;
+    margin-right: vw(70px);
+  }
+
+  .title-div__text {
+    bottom: 0;
+    left: vw(9px);
+    //font-size: vw(32px);
+    //@include fontExtraBold800;
+    //letter-spacing: vw(16px);
+    z-index: 2;
+
+    max-width: vw(500px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    //new css
+    font-size: vw(24px);
+    line-height: vw(34px);
+    letter-spacing: 0.01em;
+    @include fontMontserratExtraBold;
+    color: transparent;
+    width: fit-content;
+    background: rgb(224, 195, 252);
+    background: linear-gradient(
+      90deg,
+      rgba(224, 195, 252, 1) 0%,
+      rgba(142, 197, 252, 1) 100%
+    );
+    background-clip: text;
+    //-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+  }
+
+  .title-div__shadow {
+    user-select: none;
+    //bottom: vw(3px);
+    //font-size: vw(62px);
+    //line-height: vw(82px);
+    //@include fontBold700;
+    //letter-spacing: vw(31px);
+    //color: rgba(255, 255, 255, 0.03);
+    z-index: 1;
+
+    max-width: vw(550px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+
+    //new css
+    //font-size: vw(72px);
+    //line-height: vw(98px);
+    // font-size: vw(48px);
+    // line-height: vw(59px);
+    font-size: vw(24px);
+    line-height: vw(29px);
+    color: rgba(255, 255, 255, 0.06);
+    @include fontMontserratBlack;
+    left: vw(30px);
+    // bottom: vw(5px);
+    bottom: vw(12px);
+  }
+}

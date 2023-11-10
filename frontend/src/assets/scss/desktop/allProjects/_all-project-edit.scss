@@ -1,0 +1,101 @@
+.edit-project-div {
+  padding: vw(79px) vw(38px) vw(56px) vw(94px);
+}
+.container-login-flow-input--edit-project-name {
+  .input-border-div {
+    width: vw(528px);
+    height: vw(60px);
+  }
+}
+.react-select-container--edit-new-project {
+  width: vw(473px) !important;
+  height: vw(60px) !important;
+}
+.container-login-flow-input--edit-project-tag-input {
+  .input-border-div {
+    width: vw(542px);
+    height: vw(60px);
+  }
+}
+.edit-project-basic-overflow-div {
+  height: vw(460px);
+  overflow: auto;
+}
+.add-new-project-date-picker--edit {
+  .datepicker-mr {
+    margin-right: vw(33px);
+  }
+}
+.edit-project-start-date-label {
+  padding-right: vw(250px);
+}
+.container-login-flow-input--edit-cost {
+  .input-border-div {
+    width: vw(330px);
+    height: vw(60px);
+  }
+}
+.edit-project-estimate-cost-div {
+  padding-right: vw(35px);
+}
+.edit-project-save-btn {
+  width: vw(173px);
+  height: vw(61px);
+  margin-right: vw(115px);
+}
+.edit-project-cover-img-div {
+  width: vw(524px);
+  height: vw(131px);
+  border-radius: vw(17px);
+  background: $black-gradient;
+  //border: double 1px transparent;
+  //background-image: $black-gradient,
+  //  linear-gradient(
+  //    87deg,
+  //    rgba(46, 49, 146, 1) 7.59%,
+  //    rgba(87, 203, 161, 1) 94.35%
+  //  );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: transparent;
+  }
+}
+.edit-project-cover-img-add-btn {
+  position: absolute;
+  left: 50%;
+  bottom: vw(-12px);
+  background: linear-gradient(180deg, #57cba1 0%, #84fab0 100%);
+  box-shadow: 0 vw(4px) vw(13px) #5b5e61;
+  border-radius: vw(100px);
+  padding: 0;
+  border: none;
+  width: vw(30px);
+  height: vw(30px);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: vw(16px);
+    color: white;
+  }
+}
+.add-project-new-default-cover-img-options-block--edit {
+  top: vw(160px) !important;
+  //width: vw(600px);
+}
+.add-project-add-cover-image-main-block--edit {
+  margin-right: vw(51px);
+}
+.container-login-flow-input--edit-client-name {
+  .input-border-div {
+    width: vw(468px);
+    height: vw(60px);
+  }
+}

@@ -1,0 +1,21 @@
+.email_body{
+    display: flex;
+    min-height: vw( 600px );
+    width:100%;
+    padding:vw( 20px );
+    border-bottom: 2px solid grey;
+
+    .cke .cke_inner{
+        width: 100% !important;
+    }
+    .cke_bottom{
+        display: none;
+    }
+    .cke_top{
+        background-color: #7C8ECE !important;
+        background-image: none;
+    }
+    .cke_button{
+        background-color: whitesmoke !important;
+    }
+}

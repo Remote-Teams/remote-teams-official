@@ -1,0 +1,130 @@
+.all-project-docs-div {
+  padding-top: vw(60px);
+}
+.all-project-docs-card {
+  width: vw(211px);
+  height: auto;
+  margin-right: vw(71px);
+  word-break: break-all;
+  margin-bottom: vw(34px);
+}
+.all-project-docs-card-para-div {
+  width: 100%;
+  height: vw(272px);
+  padding: vw(47px) vw(34px) vw(37px) vw(33px);
+  border: double 1px transparent;
+  background-image: $black-gradient,
+    linear-gradient(
+      87deg,
+      rgba(46, 49, 146, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: vw(17px);
+  margin-bottom: vw(22px);
+}
+.all-project-docs-card-para {
+  font-size: vw(11px);
+  line-height: vw(15px);
+  color: #a8a8a8;
+  @include fontLight300;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 14;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.all-project-docs-card-note-name {
+  font-size: vw(18px);
+  line-height: vw(33px);
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  @include fontExtraBold800;
+  color: rgba(255, 255, 255, 0.23);
+  margin-bottom: 0;
+}
+.all-project-docs-card-time {
+  margin-bottom: 0;
+  font-size: vw(14px);
+  line-height: vw(19px);
+  @include fontSemiBold600;
+  color: #a8a8a8;
+}
+.all-project-docs-card-delete-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin-top: vw(5px);
+  margin-left: vw(10px);
+  .fa {
+    color: rgba(255, 255, 255, 0.52);
+    font-size: vw(18px);
+  }
+}
+.all-project-docs-card-name-col {
+  width: 70%;
+}
+.all-project-add-docs-btn {
+  width: vw(211px);
+  height: vw(272px);
+  background: #2d3135;
+  @include common-box-shadow-mixin-3;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: vw(30px);
+  margin-right: vw(71px);
+
+  span {
+    width: vw(32px);
+    height: vw(32px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #57cba1;
+    border: vw(2px) solid #57cba1;
+    border-radius: 50%;
+  }
+  .fa {
+    font-size: vw(12px);
+  }
+}
+.create-new-doc-text {
+  font-size: vw(24px);
+  line-height: vw(34px);
+  letter-spacing: 0.01em;
+  background: rgb(224, 195, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+  @include fontMontserratExtraBold;
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: vw(50px);
+}
+.all-project-add-docs-div {
+  // padding-top: vw(95px);
+  padding-top: vw(50px);
+  padding-left: vw(40px);
+}
+.container-login-flow-input--all-project-add-docs {
+  .input-border-div {
+    width: vw(692px);
+    height: vw(60px);
+  }
+}
+.rt-all-project-doc-details-content-block {
+  padding-right: vw(130px);
+  .font-18-semiBold {
+    line-height: vw(28px);
+    margin-bottom: vw(25px);
+  }
+}

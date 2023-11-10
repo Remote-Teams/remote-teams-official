@@ -1,0 +1,289 @@
+.create-new-workflow-div {
+  padding: vw(19px) vw(21px) vw(71px) vw(71px);
+}
+
+.create-new-workflow-div__workflow-name-row {
+  padding-left: vw(185px);
+  padding-bottom: vw(6px);
+}
+
+.create-new-workflow-div__workflow-step-text-row {
+  padding-left: vw(185px);
+  padding-bottom: vw(55px);
+}
+
+.create-new-workflow-div__workflow-step-note {
+  width: vw(148px);
+  margin-right: vw(15px);
+  color: rgba(255, 255, 255, 0.25);
+  font-size: vw(18px);
+  line-height: vw(24px);
+  @include fontLight300;
+  letter-spacing: vw(1.08px);
+  font-style: italic;
+  padding-top: vw(38px);
+  margin-bottom: 0;
+}
+
+// step title date block and step details block
+.create-new-workflow-div__workflow-step-title-date-block,
+.create-new-workflow-div__workflow-step-details-block {
+  border-radius: vw(23px);
+  background-color: rgba(65, 71, 76, 1);
+  box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+}
+
+// step title date block
+.create-new-workflow-div__workflow-step-title-date-block {
+  width: vw(360px);
+  height: vw(210px);
+  padding: vw(30px) vw(27px) vw(30px) vw(30px);
+  margin-right: vw(18px);
+  position: relative;
+
+  .font-18-bold {
+    white-space: nowrap;
+  }
+
+  .create-new-workflow-div__save-step-btn {
+    position: absolute;
+    bottom: vw(-26px);
+    left: vw(142px);
+  }
+
+  label {
+    display: none;
+  }
+
+  .container-login-flow-input--forms .input-border-div {
+    width: 97%;
+    height: vw(45px);
+  }
+
+  .error-message {
+    margin-top: vw(5px);
+    margin-bottom: vw(10px);
+  }
+}
+
+.create-new-workflow-div__workflow-step-title-date-block__due-in-row {
+  align-items: center;
+
+  .font-18-bold,
+  .react-select-container {
+    margin-bottom: vw(39px);
+  }
+
+  .react-select-container {
+    width: vw(120px) !important;
+    height: vw(45px) !important;
+
+    .react-select-elements__single-value {
+      margin-left: vw(10px) !important;
+      font-size: vw(18px) !important;
+    }
+
+    .react-select-elements__option {
+      padding-left: vw(15px) !important;
+    }
+
+    .react-select-elements__indicator svg {
+      width: vw(20px) !important;
+    }
+
+    .react-select-elements__value-container {
+      padding: vw(2px) vw(3px) !important;
+    }
+  }
+
+  .container-login-flow-input--forms .input-border-div {
+    margin-right: vw(9px);
+    margin-left: vw(13px);
+    width: vw(71px);
+
+    input {
+      padding: 0 vw(15px);
+    }
+  }
+}
+
+.create-new-workflow-div__save-step-btn {
+  width: vw(53px);
+  height: vw(53px);
+  text-align: center;
+  font-size: vw(53px);
+  line-height: vw(48px);
+  @include fontRegular400;
+  border-radius: vw(33px);
+  color: #ffffff;
+  background-color: #5ccc40;
+  box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  .fa {
+    font-size: vw(21px);
+  }
+}
+
+.create-new-workflow-div__save-step-btn--edit-btn {
+  background-color: #3a3f43;
+}
+
+.row.workflow-step-saved-name-row-edit-delete {
+  // margin-left: vw(148px);
+  margin-left: 0;
+  margin-right: vw(10px);
+
+  .workflow-card-details-gray-block {
+    padding-left: vw(50px);
+  }
+
+  .workflow-step-saved-name-row-edit-delete__stepName {
+    width: vw(130px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.workflow-add-new-step-button-div {
+  // padding: vw(20px) vw(22px) vw(30px) vw(250px);
+  padding: vw(20px) vw(22px) vw(30px) vw(20px);
+
+  &--disabled {
+    opacity: 0.3;
+  }
+}
+
+// step details block
+.create-new-workflow-div__workflow-step-details-block {
+  width: vw(939px);
+  height: max-content;
+  padding: vw(20px) vw(20px) vw(36px) vw(20px);
+  margin-right: vw(18px);
+
+  .font-18-bold-space-light-uppercase {
+    word-break: break-all;
+  }
+
+  .customCheckbox label {
+    width: max-content;
+  }
+}
+
+.create-new-workflow-div__workflow-step-details-block__row-1 {
+  justify-content: space-between;
+  align-items: center;
+  padding-left: vw(35px);
+  border-bottom: vw(2px) solid rgba(92, 204, 64, 1);
+  padding-bottom: vw(12px);
+  margin-bottom: vw(13px);
+
+  button {
+    width: vw(57px);
+    height: vw(57px);
+    border-radius: vw(33px);
+    border: none;
+    margin-right: vw(1px);
+    // box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+    padding: 0;
+    // color: #ffffff;
+    background-color: transparent;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+    }
+  }
+
+  // .workflow-content-icon-button-active {
+  //   border: vw(3px) solid rgba(92, 204, 64, 1);
+  // }
+}
+
+.create-new-workflow-div__workflow-step-details-block__title {
+  font-size: vw(24px);
+  line-height: vw(32px);
+  @include fontBold700;
+  margin-bottom: 0;
+  letter-spacing: vw(3.6px);
+  text-transform: uppercase;
+  margin-right: vw(10px);
+  word-break: break-all;
+}
+
+// add content block
+.create-new-workflow-div__workflow-step-add-content-block {
+  position: relative;
+  width: vw(329px);
+  height: max-content;
+  border-radius: vw(15px);
+  background-color: rgba(74, 80, 85, 0.67);
+  box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.2);
+
+  .error-message {
+    margin-top: vw(5px);
+    margin-bottom: vw(10px);
+  }
+
+  .closeIconInModal::before,
+  .closeIconInModal::after {
+    width: vw(3px);
+    height: vw(16px);
+    top: vw(15px);
+    right: vw(21px);
+  }
+}
+
+.create-new-workflow-div__workflow-step-details-block-content {
+  padding: 0 vw(20px) 0 vw(35px);
+
+  .error-message {
+    margin-top: vW(5px);
+    margin-bottom: vw(15px);
+  }
+
+  .container-login-flow-textarea {
+    margin-bottom: 0;
+  }
+
+  .container-login-flow-textarea .input-border-div {
+    width: 100%;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .container-login-flow-textarea textarea {
+    padding: vw(20px);
+    background-color: #3a3f43;
+    border-radius: vw(5px);
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.25);
+      font-style: italic;
+    }
+  }
+}
+
+// add new grey button
+.workflow-add-new-grey-button {
+  width: vw(36px);
+  height: vw(36px);
+  color: #ffffff;
+  background-color: #4a5055;
+  border-radius: vw(39px);
+  border: none;
+  padding: 0;
+  font-size: vw(20px);
+  line-height: vw(39px);
+  @include fontSemiBold600;
+  box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+}

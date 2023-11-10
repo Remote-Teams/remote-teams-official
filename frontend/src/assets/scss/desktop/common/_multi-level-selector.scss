@@ -1,0 +1,312 @@
+.products-features-filter {
+  min-width: vw(500px);
+  min-height: vw(55px);
+
+  .multi-level-selector-container .multi-selector-container,
+  .multi-level-selector-container .multi-level-options-container,
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container
+    .options-sub-menu-container,
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector
+    .options-selected-container {
+    background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+    @include common-box-shadow-mixin-2;
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector
+    .options-selected-container
+    .options-group,
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector
+    .options-selected-container
+    .options-value,
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector
+    .options-selected-container
+    .remove-group {
+    font-size: vw(18px);
+    line-height: vw(25px);
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector
+    .options-selected-container
+    .options-value {
+    color: #e2e2e2;
+    @include fontSemiBold600;
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector
+    .options-selected-container
+    .options-group {
+    color: #e2e2e2;
+    @include fontBold700;
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector
+    .options-selected-container
+    .remove-group {
+    color: #ff796d;
+  }
+
+  .multi-level-selector-container .multi-selector-container {
+    border: none;
+    border-radius: vw(34px);
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector
+    .multi-selector-placeholder {
+    font-size: vw(16px);
+    color: #e2e2e2;
+    margin-left: vw(30px);
+    @include fontBold700;
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container {
+    padding: vw(19px) vw(32px);
+  }
+
+  .multi-level-selector-container .multi-level-options-container,
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container
+    .options-sub-menu-container {
+    margin-top: vw(15px);
+    border-radius: vw(17px);
+    z-index: 1;
+    min-width: vw(250px);
+    width: vw(250px);
+    font-size: vw(16px);
+    line-height: vw(22px);
+    color: #ffffff;
+    padding-top: vw(10px);
+    padding-bottom: vw(10px);
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container:hover
+    > .options-sub-menu-container {
+    margin-top: 0;
+    left: 0;
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container
+    .arrow-right,
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container:hover
+    .arrow-right {
+    border-top: vw(7px) solid transparent;
+    border-bottom: vw(7px) solid transparent;
+    border-left: vw(7px) solid #ffffff;
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container
+    .arrow-right:hover {
+    border-left: vw(7px) solid #ffffff;
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector-button
+    .arrow-down {
+    border-left: vw(8px) solid transparent;
+    border-right: vw(8px) solid transparent;
+    border-top: vw(8px) solid #ffffff;
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector-button
+    .arrow-down:hover {
+    border-top: vw(8px) solid #ffffff;
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector-button
+    .arrow-up {
+    border-left: vw(8px) solid transparent;
+    border-right: vw(8px) solid transparent;
+    border-bottom: vw(8px) solid #ffffff;
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector-button:hover
+    .arrow-up {
+    border-bottom: vw(8px) solid #ffffff;
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container:hover,
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu:hover {
+    background-color: rgba(196, 196, 196, 0.17);
+  }
+
+  .multi-level-selector-container
+    .multi-selector-container
+    .multi-selector-button {
+    margin: vw(20px) vw(20px) vw(20px) vw(10px);
+    min-width: vw(20px);
+    height: vw(20px);
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container
+    .options-sub-menu-container
+    .options-sub-menu-header {
+    display: none;
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu {
+    padding: vw(10px) vw(35px) vw(10px) vw(15px);
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu
+    .checkbox,
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu
+    .checkbox
+    .checkmark {
+    height: vw(24px);
+    width: vw(24px);
+    margin-right: vw(21px);
+  }
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu
+    input:checked
+    ~ .checkbox
+    .checkmark {
+    height: vw(24px);
+    width: vw(24px);
+    border-radius: vw(3px);
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu
+    .checkbox {
+    border: double vw(2px) transparent;
+    background-image: $black-gradient,
+      linear-gradient(180deg, #57cba1 7.59%, #2e3192 94.35%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu
+    .checkbox
+    .checkmark,
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu
+    input:checked
+    ~ .checkbox
+    .checkmark,
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu:hover
+    input
+    ~ .checkbox
+    .checkmark,
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu:hover
+    input:checked
+    ~ .checkbox
+    .checkmark {
+    background: transparent;
+    box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.13),
+      vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+      vw(8px) vw(8px) vw(30px) #232527,
+      vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.37);
+    border: vw(2px) solid transparent;
+    border-radius: vw(3px);
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-sub-menu
+    .checkbox
+    .checkmark:after {
+    left: vw(5px);
+    top: vw(1px);
+    width: vw(5px);
+    height: vw(10px);
+    border: solid #57cba1;
+    border-width: 0 vw(2px) vw(2px) 0;
+  }
+
+  .options-label {
+    font-size: vw(16px);
+    line-height: vw(22px);
+    @include fontBold700;
+  }
+
+  .multi-level-selector-container
+    .multi-level-options-container
+    .options-main-menu
+    .options-container
+    .options-label {
+    max-width: vw(180px);
+    padding-right: vw(10px);
+  }
+
+  label {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}

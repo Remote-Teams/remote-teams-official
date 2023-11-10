@@ -1,0 +1,71 @@
+.single_message_main_container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+
+    .col_one_m{
+        display: flex;
+        height: vw( 100px );
+        width: 100%;
+        padding-left: vw( 20px );
+        padding-right: vw( 20px );
+        justify-content: space-between;
+    }
+    .col_two_m{
+        display: flex;
+        height: vw( 100px );
+        width: 100%; 
+    }
+    .col_three_m{
+        display: flex;
+        min-height: vw( 300px );
+        width: 100%; 
+    }
+}
+
+.view_labels{
+    font-family: Poppins-Light;
+}
+
+
+.address_container_m{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    .from_email_details{
+        display: flex;
+        height: vw( 30px );
+        align-items: center;
+        font-family: Poppins-Medium;
+        font-size: vw( 20px );
+    }
+    .to_email_details{
+        display: flex;
+        height: vw( 30px );
+        align-items: center;
+        font-family: Poppins-Medium;
+        font-size: vw( 18px );
+    }
+}
+
+.subject_details{
+    display: flex;
+    font-family: Poppins-Regular;
+    font-size: vw( 22px );
+}
+
+.body_details{
+    display: flex;
+    font-family: Poppins-Light;
+    font-size: vw( 16px );
+    width: 100%;
+    align-items: center;
+    padding:vw( 50px );
+}
+
+.option_container{
+    display: flex;
+    width: vw( 100px );
+}

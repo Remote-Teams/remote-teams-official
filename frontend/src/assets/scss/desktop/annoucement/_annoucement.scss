@@ -1,0 +1,29 @@
+@import "./annoucementAll";
+@import "./annoucementAdd";
+@import "./annoucementCheckDetails";
+
+.profile_tabs_section--annoucement {
+  .react-tabs__tab-panel--selected {
+    padding-bottom: vw(27px);
+  }
+
+  .react-tabs__tab-list {
+    // padding-left: vw(90px) !important;
+    display: flex;
+  }
+
+  .react-tabs__tab {
+    margin: 0;
+    width: vw(250px) !important;
+  }
+
+  .react-tabs__tab-panel--selected {
+    padding-top: vw(30px) !important;
+  }
+}
+
+.annoucement-all-overflow-div {
+  height: vw(450px);
+  overflow: auto;
+  position: relative;
+}

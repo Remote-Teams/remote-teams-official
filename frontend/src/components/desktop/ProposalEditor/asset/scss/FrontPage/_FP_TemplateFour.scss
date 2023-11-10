@@ -1,0 +1,18 @@
+.front_page_template_four{
+    flex-direction: column;
+    .front_page_template_four__top{
+        display:flex;
+        height: 50%;
+        width: 100%;
+        align-items: flex-end;
+        padding-left: vw( 50px );
+        padding-bottom: vw( 50px );
+    }
+    .front_page_template_four__bottom{
+        display:flex;
+        height: 30%;
+        width: 100%;
+        align-items: center;
+        color:white;
+    }
+}

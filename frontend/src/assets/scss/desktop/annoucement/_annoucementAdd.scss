@@ -1,0 +1,42 @@
+.add-annoucement-div {
+  padding: vw(103px) 0 0 vw(121px);
+}
+.add-annoucement-title-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: vw(100px);
+}
+
+.add-annouement-title {
+  text-transform: uppercase;
+  font-size: vw(33px);
+  line-height: vw(45px);
+  letter-spacing: vw(16.5px);
+  @include fontBold700;
+}
+
+.annoucement-content {
+  //padding: vw(130px) 0 0 vw(134px);
+  padding-left: 0;
+  padding-top: vw(100px);
+}
+
+.container-login-flow-textarea--annoucement {
+  padding: vw(37px) 0 0 0;
+
+  .input-border-div {
+    //width: vw(613px);
+    //height: vw(200px);
+
+    //new css
+    width: vw(721px);
+    height: vw(245px);
+  }
+}
+
+.green-button-div {
+  padding: vw(31px) 0 vw(30px) vw(134px);
+  padding-left: 0;
+}

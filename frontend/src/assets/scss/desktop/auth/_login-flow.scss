@@ -1,0 +1,321 @@
+// login flow company selected
+.rt-select-company-main-block {
+  position: relative;
+
+  &__fig-1,
+  &__fig-2 {
+    position: absolute;
+    margin-bottom: 0;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__fig-1 {
+    width: vw(707px);
+    bottom: 0;
+    left: 0;
+  }
+
+  &__fig-2 {
+    width: vw(601px);
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.login-flow-select-company-block {
+  width: vw(506px);
+  margin: 0 auto;
+  // padding-top: vw(62px);
+  // padding-right: vw(466px);
+  // padding-bottom: vw(32px);
+  // padding-left: vw(466px);
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .login-flow-select-company-block__blockMain {
+    width: 100%;
+  }
+
+  .auth-logo-img {
+    width: vw(62px);
+    height: vw(62px);
+    border-radius: 0;
+    margin-bottom: vw(20px);
+    background: $black-gradient;
+    @include common-box-shadow-mixin-2;
+  }
+
+  h1,
+  .login-flow-select-company-block__workspaceName {
+    //font-size: vw(32px);
+    //line-height: vw(43px);
+    //@include fontExtraBold800;
+    //letter-spacing: vw(16px);
+    //text-transform: uppercase;
+
+    //new css
+    // font-size: vw(24px);
+    // line-height: vw(34.06px);
+    // letter-spacing: 1%;
+    font-size: vw(36px);
+    line-height: vw(51px);
+    letter-spacing: 0.01em;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: vw(21px);
+    @include fontMontserratExtraBold;
+    text-transform: capitalize;
+    color: transparent;
+    width: fit-content;
+    background: linear-gradient(
+      90deg,
+      rgba(224, 195, 252, 1) 0%,
+      rgba(142, 197, 252, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .login-flow-select-company-block__workspaceName {
+    font-size: vw(24px);
+    line-height: vw(34px);
+    text-transform: none;
+    background: linear-gradient(
+      90deg,
+      rgba(94, 231, 223, 1) 0%,
+      rgba(180, 144, 202, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h2 {
+    margin-bottom: vw(27px);
+    color: rgba(255, 255, 255, 0.79);
+  }
+
+  h3 {
+    color: rgba(255, 255, 255, 0.79);
+    background: transparent;
+    font-size: vw(24px);
+    line-height: vw(34.06px);
+    margin-bottom: vw(73px);
+  }
+
+  &__img-div {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__img1,
+  &__img2 {
+    cursor: pointer;
+    width: vw(208px);
+    height: vw(208px);
+    background: $black-gradient;
+    @include common-box-shadow-mixin-1;
+    border-radius: vw(38px);
+    margin: 0 auto;
+    margin-bottom: vw(48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: vw(10px);
+  }
+
+  &__img2 {
+    img {
+      width: vw(180px);
+      height: auto;
+      border-radius: inherit;
+    }
+  }
+
+  &__img1 {
+    img {
+      width: vw(152px);
+      margin: 0 auto;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+}
+
+// login flow dashboard
+.login-flow-dashboard {
+  //padding: vw(60px) vw(230px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  //new css
+  padding: vw(60px) vw(100px);
+
+  h1 {
+    width: vw(690px);
+    margin: 0 auto;
+    margin-bottom: vw(42px);
+    text-transform: capitalize;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.79);
+  }
+
+  &__img-div {
+    position: relative;
+    height: vw(504px);
+    margin-bottom: vw(60px);
+
+    img {
+      position: absolute;
+    }
+  }
+
+  &__dot-line {
+    //width: 100%;
+    //top: 52%;
+
+    //new css
+    width: 90%;
+    left: 5%;
+    top: 48%;
+  }
+
+  &__dot-check1,
+  &__dot-check2,
+  &__dot-check3,
+  &__dot-check4,
+  &__dot-check5,
+  &__dot-check6 {
+    width: vw(35px);
+    //top: 52%;
+
+    //new css
+    //width: vw(34px);
+    top: 53.5%;
+  }
+
+  &__dot-check1 {
+    //left: 6.9%;
+
+    //new css
+    left: 6.6%;
+  }
+  &__dot-check2 {
+    //left: 23.6%;
+
+    //new css
+    left: 23.4%;
+  }
+  &__dot-check3 {
+    left: 40.3%;
+  }
+  &__dot-check4 {
+    //left: 57%;
+
+    //new css
+    left: 57%;
+  }
+  &__dot-check5 {
+    //left: 74%;
+
+    //new css
+    left: 73.9%;
+  }
+  &__dot-check6 {
+    left: 90.6%;
+  }
+
+  &__dot-1,
+  &__dot-3,
+  &__dot-5 {
+    //top: 0;
+    cursor: pointer;
+    width: vw(402px);
+    //new css
+    top: 7%;
+  }
+
+  &__dot-2,
+  &__dot-4,
+  &__dot-6 {
+    top: 65%;
+    cursor: pointer;
+  }
+
+  &__dot-1 {
+    // width: vw(320px);
+    left: -2%;
+    //new css
+    width: vw(402px);
+  }
+
+  &__dot-3 {
+    // width: vw(290px);
+    left: 32%;
+
+    //new css
+    width: vw(442px);
+  }
+
+  &__dot-5 {
+    // width: vw(260px);
+    left: 66%;
+
+    //new css
+    width: vw(447px);
+  }
+
+  &__dot-2 {
+    // width: vw(300px);
+    //left: 14%;
+
+    //new css
+    left: 3%;
+    width: vw(442px);
+  }
+
+  &__dot-4 {
+    // width: vw(297px);
+    //left: 48%;
+
+    //new css
+    left: 39%;
+    width: vw(454px);
+  }
+
+  &__dot-6 {
+    // width: vw(170px);
+    //left: 86%;
+
+    //new css
+    left: 76%;
+    width: vw(456px);
+  }
+}
+
+// buttons
+.login-flow-dashboard-buttons-block {
+  padding-top: vw(102px);
+  padding-right: vw(97px);
+  position: absolute;
+  right: 0;
+  z-index: 99;
+
+  display: inline-flex;
+  align-items: flex-start;
+}
+.login-flow-dashboard-buttons-block-btn {
+  width: vw(187px);
+  height: vw(48px);
+}

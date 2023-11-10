@@ -1,0 +1,768 @@
+@import "./calendar-leave-history";
+
+.calender_main_container {
+  display: flex;
+  .month_box {
+    //margin-right: vw(40px);
+    //width: vw(151px);
+    //height: vw(850px);
+    //padding: vw(42px);
+    text-align: center;
+    //color: white;
+    //font-size: vw(29px);
+    //line-height: vw(39px);
+    @include fontBold700;
+    //background-color: #33373b17;
+    //border-radius: vw(15px);
+    //box-shadow: vw(0px) vw(3px) vw(6px) #02020261;
+
+    //new css
+    width: vw(114px);
+    height: vw(966px);
+    background: #2d3135;
+    @include common-inset-box-shadow-mixin-1;
+    border-radius: vw(34px);
+    margin-right: vw(34px);
+    color: rgba(255, 255, 255, 0.2);
+
+    .active_month {
+      //color: #5ccc40;
+
+      //new css
+
+      //background: linear-gradient(360deg, #84fab0 0%, #8fd3f4 100%);
+      background: rgb(132, 250, 176);
+      background: linear-gradient(
+        360deg,
+        rgba(132, 250, 176, 1) 0%,
+        rgba(143, 211, 244, 1) 100%
+      );
+      box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+        vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+        vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9),
+        vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7);
+      border-radius: vw(34px);
+      color: rgba(35, 37, 39, 0.9);
+    }
+
+    .month_div {
+      //margin-bottom: vw(28px);
+
+      //new css
+      width: vw(106px);
+      height: vw(60px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+
+  .count-card-block {
+    margin-top: 0;
+    width: vw(320px);
+  }
+
+  .add_leave_button {
+    margin-top: vw(20px);
+  }
+  .current-date-time {
+    //margin-top: vw(26px);
+    //margin-bottom: vw(26px);
+    font-family: Nunito-Bold;
+
+    //new css
+    margin-top: vw(43px);
+    margin-bottom: vw(35px);
+    font-size: vw(36px);
+  }
+
+  .table-bordered td,
+  .table-bordered th {
+    border: 0px;
+  }
+  .table-bordered {
+    border: 0px;
+  }
+
+  .dates {
+    // background-color: #33373b;
+    //border: vw(3px) solid;
+    text-align: center;
+    //color: white;
+    vertical-align: inherit;
+    //new css
+    font-size: vw(36px);
+    line-height: vw(49px);
+    color: rgba(255, 255, 255, 0.79);
+    @include fontBold700;
+    background-color: $black-gradient;
+    cursor: pointer;
+  }
+  .current-date-border {
+    //background-color: #5ccc40 !important ;
+    // border: vw(3px) solid;
+    text-align: center;
+    //color: white;
+    vertical-align: inherit;
+
+    //background: linear-gradient(90deg, #96deda 0%, #50c9c3 100%) !important;
+    background: rgb(150, 222, 218);
+    background: linear-gradient(
+      96deg,
+      rgba(150, 222, 218, 1) 0%,
+      rgba(80, 201, 195, 1) 100%
+    ) !important;
+    @include common-box-shadow-mixin-1-important;
+    font-size: vw(36px);
+    line-height: vw(49px);
+    color: rgba(255, 255, 255, 0.79);
+  }
+  .days_name {
+    //color: white;
+    //vertical-align: inherit;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    height: auto !important;
+    color: rgba(255, 255, 255, 0.23);
+    letter-spacing: vw(1.84px);
+    font-size: vw(13px) !important;
+    @include fontExtraBold800;
+    vertical-align: bottom;
+    //height: vw(100px) !important;
+  }
+  .table td {
+    //width: vw(114px);
+    //height: vw(85px);
+    //box-shadow: vw(0px) vw(0px) vw(6px) rgba(0, 0, 0, 0.16);
+    //background-color: #33373b;
+
+    //new css
+    width: vw(145px);
+    height: vw(109px);
+    background-color: $black-gradient;
+    @include common-box-shadow-mixin-1;
+  }
+  .table td,
+  .table th {
+    background-color: #33373b;
+    //border: vw(3px) solid black;
+    //font-size: vw(24px);
+    //font-family: Nunito-Bold;
+    //position: relative;
+    z-index: 99;
+    text-transform: uppercase;
+  }
+
+  .leave_colored_cicle {
+    //width: vw(25px);
+    //height: vw(25px);
+    //border: vw(6px) solid #5c6386;
+    border-radius: 50%;
+
+    //new css
+    width: vw(19px);
+    height: vw(19px);
+    //background: linear-gradient(90deg, #a3bded 0%, #6991c7 100%);
+    background: rgb(163, 189, 237);
+    background: linear-gradient(
+      90deg,
+      rgba(163, 189, 237, 1) 0%,
+      rgba(105, 145, 199, 1) 100%
+    );
+  }
+  .company_days_off_colored_cicle {
+    //width: vw(25px);
+    //height: vw(25px);
+    //border: vw(6px) solid #f0aa52;
+    border-radius: 50%;
+    //margin-left: vw(37px);
+
+    //new css
+    width: vw(19px);
+    height: vw(19px);
+    margin-left: vw(54px);
+    //background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+    background: rgb(246, 211, 101);
+    background: linear-gradient(
+      90deg,
+      rgba(246, 211, 101, 1) 0%,
+      rgba(253, 160, 133, 1) 100%
+    );
+  }
+  .color_icon_text {
+    //color: #ffffff;
+    font-size: vw(18px);
+    //line-height: vw(24px);
+    margin-bottom: 0;
+    //margin-left: vw(10px);
+
+    //new css
+    line-height: vw(25px);
+    @include fontExtraBold800;
+    color: rgba(255, 255, 255, 0.65);
+    margin-left: vw(13px);
+  }
+
+  /*=================================
+      Upcoming Leaves card
+  ==================================*/
+
+  .upcoming_leaves_card {
+    //width: vw(450px);
+    //height: vw(317px);
+    //background-color: #69696c17;
+    //margin-left: vw(24px);
+    //padding: vw(21px);
+    //box-shadow: vw(0px) vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+    //border-radius: vw(15px);
+
+    //new css
+    width: vw(377px);
+    height: vw(270px);
+    background: $black-gradient;
+    @include common-box-shadow-mixin-1;
+    margin-left: vw(52px);
+    padding: vw(26px) vw(29px) vw(32px) vw(29px);
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 80%;
+      width: vw(12px);
+      left: vw(-15px);
+      top: 10%;
+      background: rgb(0, 233, 224);
+      background: linear-gradient(
+        87deg,
+        rgba(0, 233, 224, 0.7) 7.59%,
+        rgba(87, 203, 161, 0.7) 94.35%
+      );
+      border-bottom-left-radius: vw(17px);
+      border-top-left-radius: vw(17px);
+    }
+
+    h1 {
+      //font-size: vw(20px);
+      //line-height: vw(27px);
+      //@include fontBold700;
+      //letter-spacing: vw(10px);
+      //border-bottom: vw(3px) solid #70f84e;
+      //padding-bottom: vw(13px);
+
+      //new css
+      font-size: vw(18px);
+      line-height: vw(33px);
+      letter-spacing: vw(1.84px);
+      @include fontExtraBold800;
+      color: rgba(255, 255, 255, 0.23);
+      padding-bottom: vw(20px);
+      margin-bottom: 0;
+      padding-left: vw(5px);
+    }
+
+    ul {
+      //margin-top: vw(21px);
+      //margin-left: vw(47px);
+      list-style-type: none;
+
+      .dot {
+        width: vw(10px);
+        height: vw(10px);
+        background-color: #f0aa52;
+        border-radius: 50%;
+        margin-right: vw(18px);
+        margin-top: vw(4px);
+        display: none;
+      }
+
+      li {
+        display: flex;
+        //margin-bottom: vw(10px);
+        padding-bottom: vw(13px);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+        padding-top: vw(4px);
+
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+
+      h2 {
+        //font-size: vw(20px);
+        //line-height: vw(24px);
+        //color: #ffffff65;
+        //text-transform: uppercase;
+        @include fontBold700;
+        //margin-bottom: vw(6px);
+
+        //new css
+        color: #8ec5fc;
+        font-size: vw(32px);
+        line-height: vw(44px);
+        margin-bottom: 0;
+      }
+      p {
+        //font-size: vw(20px);
+        //line-height: vw(24px);
+        //color: #ffffff;
+        //text-transform: uppercase;
+        @include fontSemiBold600;
+
+        //new css
+        font-size: vw(18px);
+        line-height: vw(23px);
+        color: rgba(255, 255, 255, 0.79);
+        text-transform: capitalize;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  /*======================================
+        Day View css
+  ========================================*/
+  .day_view_card {
+    //width: vw(450px);
+    //height: vw(510px);
+    //background-color: #69696c17;
+    //margin-left: vw(24px);
+    //padding: vw(21px);
+    //box-shadow: vw(0px) vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+    //border-radius: vw(15px);
+    //margin-top: vw(21px);
+
+    //new css
+    width: vw(378px);
+    height: vw(580px);
+    margin-top: vw(35px);
+    margin-left: vw(51px);
+    background: $black-gradient;
+    @include common-box-shadow-mixin-1;
+    padding: vw(39px) vw(26px);
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 80%;
+      width: vw(12px);
+      left: vw(-15px);
+      top: 10%;
+      background: rgb(0, 233, 224);
+      background: linear-gradient(
+        87deg,
+        rgba(0, 233, 224, 0.7) 7.59%,
+        rgba(87, 203, 161, 0.7) 94.35%
+      );
+      border-bottom-left-radius: vw(17px);
+      border-top-left-radius: vw(17px);
+    }
+    .heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      //align-items: center;
+      padding-top: vw(19px);
+      padding-bottom: vw(25px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+
+      h2 {
+        //font-size: vw(20px);
+        //line-height: vw(24px);
+        //color: #ffffff;
+        text-transform: uppercase;
+        //@include fontSemiBold600;
+
+        //new css
+        font-size: vw(36px);
+        line-height: vw(49px);
+        @include fontBold700;
+        color: #57cba1;
+        margin-bottom: vw(3px);
+      }
+      p {
+        font-size: vw(18px);
+        line-height: vw(24px);
+        //color: #ffffff66;
+        margin-bottom: 0px;
+        //text-transform: uppercase;
+        //@include fontBold700;
+
+        //new css
+        @include fontSemiBold600;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.79);
+      }
+    }
+    hr {
+      margin-top: vw(16px);
+      border: 0;
+      border-top: vw(3px) solid #70f84e;
+
+      //new css
+      display: none;
+    }
+    .meet_of_slected_day {
+      display: flex;
+      justify-content: space-between;
+      //align-items: center;
+      //border-bottom: 1px solid #707070;
+      //padding-top: vw(15px);
+
+      //new css
+      padding-bottom: vw(15px);
+      padding-top: vw(19px);
+      padding-bottom: vw(25px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+      flex-direction: column;
+
+      h2 {
+        //font-size: vw(18px);
+        //line-height: vw(24px);
+        //@include fontBold700;
+        //color: #ffffff66;
+        //margin-bottom: 0px;
+
+        //new css
+        font-size: vw(20px);
+        line-height: vw(49px);
+        @include fontBold700;
+        color: #57cba1;
+        margin-bottom: vw(3px);
+      }
+      p {
+        //font-size: vw(20px);
+        //line-height: vw(27px);
+        //@include fontSemiBold600;
+        // text-transform: uppercase;
+        margin-bottom: 0px;
+
+        //new css
+        font-size: vw(18px);
+        line-height: vw(24px);
+        @include fontSemiBold600;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.79);
+      }
+    }
+  }
+}
+
+/*=================================
+      Calender Bottom Setcion
+  ==================================*/
+
+.approval_pending_card {
+  //width: vw(1556px);
+  //height: vw(490px);
+  //background-color: #69696c17;
+  //margin-left: vw(180px);
+  // padding-left: vw(40px);
+  //padding-right: vw(40px);
+  //padding-top: vw(30px);
+  //padding-bottom: vw(30px);
+  //box-shadow: vw(0px) vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(15px);
+  margin-top: vw(21px);
+
+  //new css
+  width: vw(1497px);
+  height: vw(360px);
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  background-color: $black-gradient;
+  padding: vw(22px) vw(38px) vw(73px) vw(32px);
+  position: relative;
+  margin-left: vw(140px);
+  &::before {
+    position: absolute;
+    content: "";
+    height: 80%;
+    width: vw(12px);
+    left: vw(-15px);
+    top: 10%;
+    background: rgb(0, 233, 224);
+    background: $light-blue-gradient-87deg;
+    border-bottom-left-radius: vw(17px);
+    border-top-left-radius: vw(17px);
+  }
+  .heading {
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    //font-size: vw(29px);
+    //line-height: vw(39px);
+    //@include fontBold700;
+    margin-bottom: 0;
+
+    //new css
+    font-size: vw(18px);
+    line-height: vw(33px);
+    letter-spacing: vw(1.84px);
+    color: rgba(255, 255, 255, 0.23);
+    text-transform: uppercase;
+    @include fontExtraBold800;
+  }
+
+  .dot {
+    width: vw(10px);
+    height: vw(10px);
+    background-color: #f0aa52;
+    border-radius: 50%;
+    margin-right: vw(18px);
+    margin-top: vw(4px);
+
+    display: none;
+  }
+  table {
+    margin-top: vw(32px);
+  }
+
+  .table td,
+  .table th {
+    // padding: 0.75rem;
+    //vertical-align: top;
+    border-bottom: 1px solid #707070;
+    //vertical-align: inherit;
+    border-top: 0;
+    //padding-top: vw(19px);
+    //padding-bottom: vw(19px);
+    padding-left: vw(30px);
+
+    //new css
+    padding-top: vw(28px);
+    padding-bottom: vw(28px);
+    vertical-align: middle;
+  }
+
+  .name_td,
+  .day_td {
+    //font-size: vw(24px);
+    //line-height: vw(32px);
+    //@include fontBold700;
+    //color: white;
+
+    //new css
+    font-size: vw(18px);
+    line-height: vw(23px);
+    color: rgba(255, 255, 255, 0.79);
+    @include fontSemiBold600;
+  }
+
+  .leave_type_td,
+  .date_td {
+    //font-size: vw(18px);
+    //line-height: vw(24px);
+    //@include fontBold700;
+    //color: #ffffff66;
+    text-transform: uppercase;
+
+    //new css
+    font-size: vw(13px);
+    letter-spacing: vw(0.48px);
+    line-height: vw(23px);
+    color: rgba(255, 255, 255, 0.23);
+    @include fontExtraBold800;
+  }
+
+  .table-div {
+    height: vw(250px);
+    overflow: auto;
+  }
+}
+
+.dayDisabled {
+  color: #a9a9a961 !important;
+}
+
+.event-name {
+  //width: vw(10px);
+  //height: vw(9px);
+  //background-color: #fc9f35;
+  //border-radius: 50%;
+  //top: 5%;
+  //left: 46%;
+  //position: relative;
+
+  //color: #fc9f35;
+  position: relative;
+  font-size: vw(50px);
+  top: 30%;
+  //right: 10%;
+
+  //new css
+  // z-index: -1;
+  // position: absolute;
+  // width: 100%;
+  // height: 100%;
+  // top: 0;
+  // left: 0;
+  // //background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+  // background: rgb(246, 211, 101);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(246, 211, 101, 1) 0%,
+  //   rgba(253, 160, 133, 1) 100%
+  // );
+  // box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+  //   vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+  //   vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+}
+//new css
+.calender-add-meeting-btn {
+  width: vw(166px);
+  //background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+  background: rgb(246, 211, 101);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 211, 101, 1) 0%,
+    rgba(253, 160, 133, 1) 100%
+  );
+  margin-right: vw(25px);
+}
+.calender-leave-history-btn {
+  width: vw(166px);
+  //background: linear-gradient(92.79deg, #57cba1 5.49%, #17868b 100.05%);
+  background: rgb(87, 203, 161);
+  background: linear-gradient(
+    92deg,
+    rgba(87, 203, 161, 1) 5.4%,
+    rgba(23, 134, 139, 1) 100.05%
+  );
+  margin-right: 0;
+}
+.calender-add-leave-btn {
+  width: vw(166px);
+  //background: linear-gradient(90deg, #a6c0fe 0%, #f68084 100%);
+  background: rgb(166, 192, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 192, 254, 1) 0%,
+    rgba(246, 128, 132, 1) 100%
+  );
+}
+.add-meeting-title-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: vw(34px);
+}
+.add-meeting-title {
+  font-size: vw(24px);
+  line-height: vw(34px);
+  @include fontMontserratExtraBold;
+  letter-spacing: 0.01em;
+  color: transparent;
+  width: fit-content;
+  //background: linear-gradient(90deg, #5ee7df 0%, #b490ca 100%);
+  background: rgb(94, 231, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+.edit-client-modal-content--add-meeting {
+  padding-left: vw(100px);
+  padding-right: vw(100px);
+  padding-bottom: vw(59px);
+}
+.apply-leaves-calculated-text {
+  font-size: vw(36px);
+  line-height: vw(49px);
+  color: #57cba1;
+  @include fontBold700;
+  margin-bottom: 0;
+}
+.edit-client-modal-content--apply-leaves {
+  padding-left: vw(60px);
+  padding-bottom: vw(68px);
+}
+.leave-history-all-member-btn {
+  border: 1px solid #57cba1;
+  width: vw(235px);
+}
+.pending-request-profile-img {
+  width: vw(45px);
+  margin-right: vw(22px);
+}
+
+.calender-date-section .event-name {
+  display: block;
+  background-color: transparent;
+  display: inline;
+  margin-bottom: 0;
+  font-size: vw(38px);
+  line-height: 0;
+  border-radius: 100%;
+  top: 20%;
+  img {
+    width: vw(8px);
+    height: vw(8px);
+  }
+}
+.followup_dot_color {
+  //color: #e0c3fc !important;
+  background: rgb(163, 189, 237);
+  background: linear-gradient(
+    90deg,
+    rgba(163, 189, 237, 1) 0%,
+    rgba(105, 145, 199, 1) 100%
+  );
+}
+.holiday_dot_color {
+  //color: #ffecd2 !important;
+  background: rgb(246, 211, 101);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 211, 101, 1) 0%,
+    rgba(253, 160, 133, 1) 100%
+  );
+}
+.meeting_dot_color {
+  color: #6a11cb !important;
+}
+
+.followup_dot_color,
+.holiday_dot_color {
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hidden_dot {
+  display: none;
+}
+.calender-dot-section {
+  position: absolute;
+  left: 0;
+  bottom: vw(-25px);
+  text-align: center;
+  width: 100%;
+}
+.calender-dot-outer-section {
+  position: relative;
+}
+.meet_of_slected_day-overflow-div {
+  height: vw(380px);
+  overflow: auto;
+  overflow-x: hidden;
+  word-break: break-all;
+  padding-right: vw(10px);
+}
+.company_days_off_colored_cicle-meeting {
+  background: #6a11cb;
+  border-radius: 50%;
+  width: vw(19px);
+  height: vw(19px);
+}

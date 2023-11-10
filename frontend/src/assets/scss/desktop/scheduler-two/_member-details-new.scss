@@ -1,0 +1,220 @@
+.scheduler-view-members-details-btn {
+  width: vw(222px);
+  height: vw(54px);
+  border-radius: vw(30px);
+  background: linear-gradient(90deg, #fccb90 0%, #d57eeb 100%);
+  font-size: vw(18px);
+  line-height: vw(25px);
+  text-transform: capitalize;
+  color: #ffffff;
+  @include fontBold700;
+  border: none;
+}
+.member-details-new-div {
+  padding: vw(61px) vw(39px) vw(72px) vw(60px);
+  .container-login-flow-input--member-new-detail {
+    .input-border-div {
+      border: 1px solid #494949;
+      background: $black-gradient;
+      box-sizing: border-box;
+    }
+  }
+  .react-datepicker__input-container {
+    border: 1px solid #494949;
+    background: $black-gradient;
+    box-sizing: border-box;
+  }
+  // *::-webkit-scrollbar-track,
+  // *::-ms-scrollbar-track-color,
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      90deg,
+      rgba(152, 144, 227, 1) 0%,
+      rgba(177, 244, 207, 1) 100%
+    );
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(152, 144, 227, 1) 0%,
+        rgba(177, 244, 207, 1) 100%
+      );
+    }
+  }
+}
+.members-details-new-member-name {
+  background: rgba(94, 231, 223, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+  font-size: vw(24px);
+  line-height: vw(34px);
+  letter-spacing: 0.01em;
+  margin-bottom: vw(13px);
+  @include fontMontserratBold;
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+.members-details-new-row-1-div {
+  padding-bottom: vw(45px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.31);
+}
+.members-details-new-member-email {
+  color: rgba(255, 255, 255, 0.79);
+  margin-bottom: vw(17px);
+}
+.members-details-new-member-status {
+  color: rgba(255, 255, 255, 0.79);
+  margin-bottom: vw(26px);
+  span {
+    color: #57cba1;
+    padding-right: vw(10px);
+  }
+}
+.members-details-new-profile-img-div {
+  width: vw(132px);
+  height: vw(132px);
+  margin-right: vw(38px);
+  border: double 1px transparent;
+  background-image: $black-gradient,
+    linear-gradient(
+      87deg,
+      rgba(46, 49, 146, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  //background: $black-gradient;
+  box-shadow: vw(8px) vw(8px) vw(66px) rgba(35, 37, 39, 0.9);
+  border-radius: vw(32px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: vw(5px) vw(5px) vw(2px) vw(5px);
+  img {
+    width: 65%;
+    height: auto;
+  }
+}
+.member-details-new-edit-btn {
+  width: vw(188px);
+  height: vw(54px);
+  font-size: vw(12px);
+  line-height: vw(16px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  @include fontExtraBold800;
+  box-shadow: 0 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: vw(19px);
+    height: auto;
+    margin-right: vw(20px);
+    margin-bottom: vw(2px);
+  }
+}
+.member-details-new-assigne {
+  letter-spacing: 0.005em;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.95);
+}
+.member-details-new-project-outer-div {
+  margin-right: vw(53px);
+}
+.member-details-new-project-div {
+  background: $black-gradient;
+  border: 1px solid #494949;
+  box-sizing: border-box;
+  border-radius: vw(18px);
+  width: vw(318px);
+  min-height: vw(90px);
+  padding: vw(28px) vw(50px);
+}
+.member-details-new-project-img {
+  width: vw(18px);
+  height: auto;
+  margin-right: vw(15px);
+}
+.member-details-new-project-name {
+  font-size: vw(18px);
+  line-height: vw(33px);
+  text-align: center;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.23);
+  margin-bottom: 0;
+  @include fontExtraBold800;
+}
+.member-details-new-datepicker {
+  .opacity-0 {
+    display: none;
+  }
+  .datepicker-mr {
+    margin-right: vw(43px);
+  }
+}
+.member-details-new-work-tabpanel-div {
+  height: vw(400px);
+  margin-right: vw(25px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.member-details-new-memberType-div {
+  margin-right: vw(43px);
+}
+.react-select-container--member-details {
+  border: 1px solid #494949;
+  background: $black-gradient;
+  box-sizing: border-box;
+}
+.profile_tabs_section--member-details-new {
+  .react-tabs__tab {
+    padding: vw(16px) 0 vw(16px) 0;
+    margin-right: 0;
+    color: rgba(255, 255, 255, 0.2);
+
+    &:focus::after,
+    &::after {
+      display: none;
+    }
+  }
+  .react-tabs__tab-list {
+    background: #2d3135;
+    @include common-inset-box-shadow-mixin-1;
+    border-radius: vw(34px);
+    height: vw(53px);
+    padding: 0;
+  }
+  .react-tabs__tab--selected {
+    border: double 1px transparent;
+    background-image: $black-gradient,
+      linear-gradient(
+        90deg,
+        rgba(248, 103, 127, 1) 0%,
+        rgba(159, 166, 215, 1) 100%
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    @include common-box-shadow-mixin-2;
+    color: rgba(255, 255, 255, 0.79);
+    border-radius: vw(34px);
+    &:focus::before,
+    &::before {
+      display: none;
+    }
+  }
+}
+.member-details-new-save-from-btn {
+  width: vw(180px);
+  margin-right: vw(80px);
+}

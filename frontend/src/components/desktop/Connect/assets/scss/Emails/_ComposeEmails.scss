@@ -1,0 +1,44 @@
+.compose_email_button{
+    display: flex;
+    width: vw( 246px );
+    height: vw( 63px );
+    background: transparent linear-gradient(90deg, #BE93C5 0%, #5B86E5 100%) 0% 0% no-repeat padding-box;;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 32px;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins-Medium;
+    font-size: vw( 18px );
+    color:white
+}
+
+.email_compose_secondary_container{
+    display: flex;
+    height: vw( 900px );
+    width: 100%;
+    flex-direction: column;
+    padding-top: vw( 20px );
+    font-family: Poppins-Medium;
+    font-size: vw( 20px );
+}
+
+.email_to_area{
+    display: flex;
+    width: 60%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form_wrapper{
+    display: flex;
+    margin-top:vw( 10px );
+    height: vw( 80px );
+    width: 100%;
+    // background-color: blue;
+    input{
+        width: 100%;
+    }
+}

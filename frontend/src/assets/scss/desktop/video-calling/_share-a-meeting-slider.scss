@@ -1,0 +1,163 @@
+// share a meeting slider
+
+.vc-share-meeting-slider {
+  z-index: 11111;
+  position: absolute;
+  right: 0;
+  //bottom: vw(183px);
+  //width: vw(459px);
+  height: auto;
+  //background-color: #2b3134;
+  //box-shadow: vw(-5px) vw(-5px) vw(9px) rgba(97, 97, 97, 0.16);
+
+  //new css
+  //z-index: 1;
+  width: vw(535px);
+  background: #35393e;
+  box-shadow: 0 vw(4px) vw(10px) rgba(0, 0, 0, 0.25);
+  bottom: vw(192px);
+
+  .closeIconInModal::before,
+  .closeIconInModal::after {
+    top: vw(50px);
+  }
+}
+
+.vc-share-meeting-slider-card__title-block {
+  //padding: vw(29px) vw(37px) vw(14px) vw(37px);
+  //color: #d4d4d4;
+  //font-size: vw(30px);
+  //line-height: vw(39px);
+  //@include fontBold700;
+  text-align: center;
+  position: relative;
+
+  //new css
+  font-size: vw(24px);
+  line-height: vw(33px);
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  @include fontExtraBold800;
+  color: rgba(255, 255, 255, 0.79);
+  padding: vw(45px) vw(27px) vw(18px) vw(27px);
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    //width: 100%;
+    //height: vw(3px);
+    //background-color: #2b3134;
+    //box-shadow: vw(1px) vw(1px) vw(2px) rgba(6, 6, 6, 0.4);
+
+    //new css
+    width: vw(394px);
+    height: vw(3px);
+    background: linear-gradient(
+      87.98deg,
+      rgba(0, 233, 224, 0.7) 7.59%,
+      rgba(87, 203, 161, 0.7) 94.35%
+    );
+    left: vw(71px);
+  }
+
+  .fa-chevron-left {
+    //padding-right: vw(70px);
+    text-align: left;
+    color: #ffffff;
+    cursor: pointer;
+
+    //new css
+    padding-bottom: vw(10px);
+    padding-right: vw(50px);
+  }
+}
+
+.vc-share-meeting-slider-card__buttons-block {
+  //padding: vw(55px) vw(31px) vw(9px) vw(31px);
+  text-align: center;
+
+  //new css
+  padding: vw(54px) vw(70px) vw(90px) vw(71px);
+}
+
+.vc-share-meeting-slider-card__button {
+  //border: none;
+  //border-radius: vw(39px);
+  //color: #ffffff;
+  //font-size: vw(22px);
+  //line-height: vw(30px);
+  //@include fontSemiBold600;
+  //width: vw(265px);
+  //height: vw(67px);
+  //background-color: #33393d;
+  //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+  //margin-bottom: vw(38px);
+
+  //new css
+  width: 100%;
+  height: vw(159px);
+  opacity: 0.7;
+  border-radius: vw(17px);
+  border: vw(1px) double transparent;
+  background-image: $black-gradient,
+    linear-gradient(
+      87.98deg,
+      rgba(0, 233, 224, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  margin-bottom: vw(18px);
+}
+
+.vc-share-meeting-slider-card__add-participant-block {
+  //padding: vw(41px);
+  padding: vw(41px) vw(31px) vw(41px) vw(80px);
+}
+
+.vc-share-meeting-slider-card__add-participant-block-btn {
+  width: vw(265px);
+  height: vw(67px);
+  border-radius: vw(45px);
+  font-size: vw(22px);
+  line-height: vw(30px);
+  @include fontSemiBold600;
+  margin-bottom: vw(8px);
+}
+
+.react-select-container--addparticipant-vc-slider {
+  width: vw(377px) !important;
+  height: vw(67px) !important;
+
+  border-radius: vw(45px) !important;
+
+  .react-select-elements__control {
+    border-radius: inherit !important;
+  }
+}
+
+.vc-addparticipant-list-overflow {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: vw(45px);
+}
+.vc-share-meeting-slider-card__button-outer-div {
+  width: vw(161px);
+  margin-right: vw(72px);
+  cursor: pointer;
+
+  span {
+    font-size: vw(18px);
+    line-height: vw(25px);
+    @include fontBold700;
+    color: rgba(255, 255, 255, 0.79);
+  }
+}
+.vc-share-meeting-slider-card__title-block--add-participant {
+  &::after {
+    width: 70%;
+    left: 15%;
+  }
+}

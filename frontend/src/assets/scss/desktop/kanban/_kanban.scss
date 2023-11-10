@@ -1,0 +1,132 @@
+.kanban_main_container {
+  display: flex;
+
+  @import "./_add_board.scss";
+}
+
+@import "./kanban-view";
+@import "./add_card";
+
+.customModal--createBoard {
+  //width: vw(1158px) !important;
+  //height: vw(528px) !important;
+  //padding-top: vw(96px);
+  //padding-bottom: vw(96px);
+  padding-left: vw(231px);
+  padding-right: vw(231px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //new css
+  width: vw(990px) !important;
+  height: vw(418px) !important;
+  padding-top: vw(70px);
+  padding-bottom: vw(63px);
+  /*h3 {
+    font-size: vw(32px);
+    line-height: vw(43px);
+    color: #ffffff;
+    font-family: Nunito-ExtraBold;
+    margin-bottom: vw(58px);
+  }*/
+}
+
+.customModal--createcard {
+  //width: vw(1400px) !important;
+  //height: vw(736px) !important;
+  //padding-top: vw(66px);
+  //padding-bottom: vw(61px);
+  //padding-left: vw(231px);
+  //padding-right: vw(231px);
+
+  padding: vw(70px) vw(72px) vw(41px) vw(95px);
+  width: vw(990px) !important;
+  height: auto !important;
+
+  /*h3 {
+    font-size: vw(32px);
+    line-height: vw(43px);
+    color: #ffffff;
+    font-family: Nunito-ExtraBold;
+    margin-bottom: vw(58px);
+    text-transform: uppercase;
+    letter-spacing: vw(16px);
+  }*/
+}
+
+.customModal--carddetails {
+  //width: vw(1400px) !important;
+  //height: vw(471px) !important;
+  //padding-top: vw(66px);
+  //padding-bottom: vw(61px);
+  //padding-left: vw(151px);
+  //padding-right: vw(151px);
+
+  width: vw(990px) !important;
+  height: vw(355px) !important;
+  padding: vw(57px) vw(54px) vw(30px) vw(75px);
+  h3 {
+    //font-size: vw(32px);
+    //line-height: vw(43px);
+    //color: #ffffff;
+    //font-family: Nunito-ExtraBold;
+    //margin-bottom: vw(58px);
+    //text-transform: uppercase;
+    //letter-spacing: vw(16px);
+
+    //new css
+    font-size: vw(36px);
+    line-height: vw(51px);
+    letter-spacing: 0.01em;
+    margin-bottom: vw(30px);
+  }
+}
+
+.customModal--editcardcontent {
+  //width: vw(1400px) !important;
+  //height: vw(736px) !important;
+  //padding-top: vw(66px);
+  //padding-bottom: vw(61px);
+  //padding-left: vw(151px);
+  //padding-right: vw(151px);
+
+  width: vw(990px) !important;
+  height: auto !important;
+  padding: vw(70px) vw(72px) vw(41px) vw(95px);
+  h3 {
+    font-size: vw(32px);
+    line-height: vw(43px);
+    color: #ffffff;
+    font-family: Nunito-ExtraBold;
+    margin-bottom: vw(58px);
+    text-transform: uppercase;
+    letter-spacing: vw(16px);
+  }
+}
+.kanban-add-card-btn {
+  width: vw(32px);
+  height: vw(32px);
+  color: #57cba1;
+  font-size: vw(30px);
+}
+.container-login-flow-textarea--addCard {
+  .input-border-div {
+    width: vw(823px);
+    height: vw(280px);
+  }
+}
+.view-card-description {
+}
+// kanban new css for freezing add stage column
+.add_kanban_list {
+  margin-right: vw(15px) !important;
+  width: 218px;
+  position: absolute;
+  top: 108px;
+  right: 0;
+}
+
+.kanban_view_main_container {
+  width: vw(1350px);
+}

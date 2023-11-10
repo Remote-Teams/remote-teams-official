@@ -1,0 +1,198 @@
+/* ===============================================================
+                    
+                    login signup
+
+================================================================== */
+//new css
+.login-signup-container-bg {
+  //background-image: url("../../../img/background/login-sginup.png");
+  background-image: url("../../../img/background/login-new-bg.png");
+  background-size: 100%;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-clip: padding-box;
+  .login-signup-container {
+    flex-direction: column;
+  }
+}
+//new css
+.login-signup-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: vw(940px);
+  margin: 0 auto;
+  //padding-top: vw(100px);
+  //padding-bottom: vw(100px);
+
+  .react-tabs {
+    width: 100%;
+    //width: vw(661px);
+    background: #2d3135;
+    @include common-inset-box-shadow-mixin-1;
+    border-top-left-radius: vw(35px);
+    border-top-right-radius: vw(35px);
+    border-bottom-left-radius: vw(35px);
+    border-bottom-right-radius: vw(35px);
+  }
+
+  .react-tabs__tab-list {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .react-tabs__tab[aria-selected="true"] {
+    color: #ffffff;
+    //background-color: rgba(105, 105, 108, 0.16);
+    //box-shadow: 0 vw(-1px) vw(6px) rgba(0, 0, 0, 0.16);
+    //border-bottom: vw(3px) solid rgba(112, 248, 78, 0.8);
+    //border-top-left-radius: vw(20px);
+    //border-top-right-radius: vw(20px);
+
+    //new css
+    //background: #2d3135;
+    //box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    //  vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    //  vw(8px) vw(8px) vw(15px) rgba(35, 37, 39, 0.41),
+    //  vw(-6px) vw(-6px) vw(10px) rgba(74, 78, 83, 0.4);
+    background: $black-gradient;
+    //box-shadow: -2px -2px 4px rgba(74, 78, 83, 0.5),
+    //  2px 2px 6px rgba(35, 37, 39, 0.8), 8px 8px 30px rgba(35, 37, 39, 0.9),
+    //  -6px -6px 20px rgba(74, 78, 83, 0.7);
+    //box-shadow: -2px -2px 4px rgba(74, 78, 83, 0.5),
+    //  2px 2px 6px rgba(35, 37, 39, 0.8), 8px 8px 30px rgba(35, 37, 39, 0.9),
+    //  -6px -6px 20px rgba(74, 78, 83, 0.7);
+    position: relative;
+    //border-bottom: vw(3px) solid #57cba1;
+    //border-top-left-radius: vw(35px);
+    //border-top-right-radius: vw(35px);
+    //background: transparent;
+    position: relative;
+    z-index: 99;
+    @include common-box-shadow-mixin-2;
+
+    //&::after {
+    //  width: 100%;
+    //  height: 100%;
+    //  position: absolute;
+    //  background: linear-gradient(
+    //    315.25deg,
+    //    rgba(54, 59, 65, 1) 15.52%,
+    //    rgba(45, 49, 53, 1) 26.06%,
+    //    rgba(32, 37, 41, 1) 82.3%
+    //  );
+    //  transform: matrix(-1, 0, 0, 1, 0, 0);
+    //  content: "";
+    //  left: 0;
+    //  top: 0;
+    //  z-index: -1;
+    //  border-radius: 0px 35px 0 0px;
+    //}
+    span {
+      color: transparent;
+      width: fit-content;
+      background: rgb(223, 137, 181);
+      background: linear-gradient(
+        90deg,
+        rgba(223, 137, 181, 1) 0%,
+        rgba(191, 217, 254, 1) 100%
+      );
+      background-clip: text;
+      //-webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .react-tabs__tab--1 {
+    border-top-left-radius: vw(35px);
+  }
+  .react-tabs__tab--2 {
+    border-top-right-radius: vw(35px);
+  }
+  .react-tabs__tab {
+    color: #ffffff;
+    background: transparent;
+    border: 0;
+    transition: none;
+    width: 50%;
+    //font-size: vw(32px);
+    //line-height: vw(43px);
+    //@include fontBold700;
+    //letter-spacing: vw(16px);
+    padding: vw(26px) 0 vw(23px) 0;
+    text-transform: capitalize;
+    text-align: center;
+
+    //new css
+    background: #2d3135;
+    //box-shadow: inset vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    //   inset vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    //   inset vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9),
+    //  inset vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7);
+    //border-top-left-radius: vw(15px);
+    //border-top-right-radius: vw(15px);
+    font-size: vw(24px);
+    line-height: vw(33px);
+    //letter-spacing: vw(4px);
+    height: vw(120px);
+    padding-top: vw(30px);
+    color: rgba(168, 168, 168, 0.25);
+    @include fontMontserratSemiBold;
+    //@include fontSemiBold600;
+    //border-top-left-radius: vw(35px);
+    //border-top-right-radius: vw(35px);
+    box-shadow: inset vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+      inset vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8);
+  }
+
+  .react-tabs__tab-panel {
+    color: rgba(255, 255, 255, 0.65);
+    //height: vw(509px);
+    //overflow: auto;
+    //border-bottom-left-radius: vw(35px);
+    //border-bottom-right-radius: vw(35px);
+    //background: rgb(45, 49, 53);
+    //background: linear-gradient(
+    //  321deg,
+    //  rgba(45, 49, 53, 1) 0%,
+    //  rgba(53, 57, 62, 1) 100%
+    //);
+    //background: rgba(105, 105, 108, 0.16);
+    //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+    //background: #2d3135;
+    background: $black-gradient;
+    //box-shadow: vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    //  vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7);
+    //box-shadow: vw(2px) 0 vw(6px) rgba(35, 37, 39, 0.8),
+    //  vw(-6px) 0 vw(20px) rgba(74, 78, 83, 0.7);
+    //height: vw(400px);
+    //border-radius: vw(35px);
+    margin-top: vw(-30px);
+    position: relative;
+    z-index: 99;
+    width: vw(662px);
+    //box-shadow: vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    //  (-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7);
+    box-shadow: vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+      vw(-6px) 0 vw(20px) rgba(74, 78, 83, 0.7);
+    border-radius: vw(10px);
+  }
+  .react-tabs__tab-panel--1 {
+    border-top-left-radius: 0;
+  }
+  .react-tabs__tab-panel--2 {
+    border-top-right-radius: 0;
+  }
+}
+
+.react-tabs__tab:focus {
+  //box-shadow: 0 0 0 !important;
+  border-color: transparent !important;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+// support
+@import "./supprtAddNewTicket";
+
+.finances-table--support {
+  th,
+  td {
+    width: 13%;
+  }
+
+  th:nth-child(8),
+  td:nth-child(8) {
+    width: 7%;
+  }
+}
+
+.finances-table-tbody--support {
+  height: vw(350px);
+}
+
+.common-file-icon {
+  width: vw(20px);
+  margin-right: vw(10px);
+  opacity: 0.65;
+}
+
+//new css
+.add-raise-ticket-btn {
+  width: vw(150px);
+  height: vw(54px);
+}
+.font-18-bold-space-light-uppercase--support {
+  letter-spacing: vw(3px);
+}
+.datepicker-no-border--support {
+  .date-block-arrow-go {
+    margin-bottom: vw(50px);
+  }
+}
+.edit-support-btn {
+  width: vw(190px);
+  height: vw(60px);
+}

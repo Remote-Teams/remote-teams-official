@@ -1,0 +1,85 @@
+// custom-radio-btn-block
+.custom-radio-btn-block {
+  position: relative;
+  margin-bottom: vw(26px);
+
+  label {
+    //padding-left: vw(45px);
+    cursor: pointer;
+
+    //new css
+    padding-left: vw(65px);
+    padding-top: vw(4px);
+    color: rgba(255, 255, 255, 0.79);
+  }
+
+  input,
+  &__circle-custom {
+    //height: vw(22px);
+    //width: vw(22px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    //-new css
+    width: vw(36px);
+    height: vw(36px);
+  }
+
+  input {
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__circle-custom {
+    //border: vw(3px) solid #70f84e;
+    //background-color: transparent;
+    border-radius: 100%;
+    //background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+    background: rgb(45, 49, 53);
+    background: $black-gradient;
+
+    box-shadow: -2px -2px 4px rgba(74, 78, 83, 0.5),
+      2px 2px 6px rgba(35, 37, 39, 0.8), 8px 8px 30px rgba(35, 37, 39, 0.9),
+      -6px -6px 20px rgba(74, 78, 83, 0.7);
+  }
+
+  input:checked ~ &__circle-custom {
+    //border: vw(3px) solid #70f84e;
+    background-color: transparent;
+  }
+
+  &__circle-custom:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    user-select: none;
+  }
+
+  input:checked ~ &__circle-custom:after {
+    opacity: 1;
+    transition: all 0.1s linear;
+  }
+
+  &__circle-custom:after {
+    //top: vw(2px);
+    //left: vw(2px);
+    //width: vw(12px);
+    //height: vw(12px);
+    border-radius: 100%;
+    //background: #70f84e;
+
+    //new css
+    //background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+    background: rgb(132, 250, 176);
+    background: linear-gradient(
+      90deg,
+      rgba(132, 250, 176, 1) 0%,
+      rgba(143, 211, 244, 1) 100%
+    );
+    width: vw(21px);
+    height: vw(21px);
+    top: vw(8px);
+    left: vw(7px);
+  }
+}

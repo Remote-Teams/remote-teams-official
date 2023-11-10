@@ -1,0 +1,88 @@
+.workflow-new-instant-div {
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //padding-top: vw(55px);
+  //padding-left: vw(20px);
+  //padding-right: vw(20px);
+  padding-top: vw(70px);
+  padding-bottom: vw(49px);
+}
+.pt-60 {
+  padding-top: vw(60px);
+}
+.pb-30 {
+  padding-bottom: vw(30px);
+}
+//.container-login-flow-input--workflow-new-instant {
+//  .input-border-div {
+//    box-shadow: 0 vw(2px) vw(6px) rgba(0, 0, 0, 0.16);
+//    border-radius: vw(30px);
+
+//    &::after {
+//      content: "";
+//      position: absolute;
+//      bottom: -2px;
+//      left: 10%;
+//      bottom: 0;
+//      width: 80%;
+//      height: 2px;
+//      border-radius: vw(30px);
+//      background-color: rgba(112, 248, 78, 0.8);
+//    }
+//  }
+//  input {
+//    background: rgba(74, 80, 85, 0.27);
+//    box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+//  }
+//}
+//.workflow-new-instant-green-button {
+//  text-transform: uppercase;
+//  letter-spacing: vw(2.7px);
+//  @include fontBold700;
+//}
+.workflow-new-instant-tittle {
+  font-size: vw(24px);
+  line-height: vw(34px);
+  letter-spacing: 0.01em;
+  @include fontMontserratExtraBold;
+  color: transparent;
+  width: fit-content;
+  //background: linear-gradient(90deg, #5ee7df 0%, #b490ca 100%);
+  background: rgb(94, 231, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  margin: auto;
+}
+.workflow-start-new-instance-rubix-text {
+  font-size: vw(18px);
+  line-height: vw(21px);
+  margin-bottom: vw(59px);
+  @include fontRubikRegular;
+}
+.add-new-workflow-name-input-div {
+  display: flex;
+  justify-content: center;
+  margin-top: vw(50px);
+}
+/*******************************************************************
+
+                            histroy new instant
+                            
+********************************************************************/
+.histroy-new-instant-workflow-name-div {
+  //display: flex;
+  //flex-direction: column;
+  //align-items: flex-start;
+  //justify-content: flex-start;
+  //width: vw(632px);
+  //padding-bottom: vw(35px);
+  padding-left: vw(336px);
+}

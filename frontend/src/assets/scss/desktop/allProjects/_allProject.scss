@@ -1,0 +1,70 @@
+/*===========================================================================================
+
+                                        all project
+
+============================================================================================*/
+
+@import "./allProjectCards";
+@import "./all-project-resources";
+@import "./all-project-scrum";
+@import "./all-project-expenses";
+@import "./all-project-discussion";
+@import "./all-projects-detail";
+@import "./all-project-history";
+@import "./all-project-planning";
+@import "./all-project-overview";
+@import "./all-project-progress";
+@import "./add-project-new";
+@import "./all-project-docs";
+@import "./all-project-workboard";
+@import "./all-project-directories";
+@import "./all-project-new-cards";
+@import "./all-project-edit";
+@import "./all-project-priority-matrix";
+
+.all-project-div {
+  padding-top: vw(100px);
+  padding-left: vw(25px);
+}
+
+.main-page-padding {
+  //padding: vw(55px) vw(79px) vw(50px) vw(121px);
+  padding: vw(50px) vw(80px) vw(50px) vw(142px);
+}
+
+.all-project-tab-panel {
+  // padding-top: vw(56px);
+  padding-top: vw(45px);
+}
+.add-project-btn {
+  // width: vw(166px);
+  width: max-content;
+  padding-left: vw(26px);
+  padding-right: vw(26px);
+  height: vw(48px);
+}
+.clients-cards-overflow-div--all-project {
+  padding-left: vw(20px);
+}
+
+/*================================================
+            not found text
+=================================================*/
+.all-projects-not-found-div {
+  margin: auto;
+  text-align: center;
+}
+.all-project-not-found-img {
+  width: vw(388px);
+  height: auto;
+  margin-bottom: vw(35px);
+}
+.all-project-not-found-text {
+  font-size: vw(18px);
+  line-height: vw(33px);
+  @include fontExtraBold800;
+  margin-bottom: vw(23px);
+  letter-spacing: vw(3px);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,48 @@
+// support summary report
+
+.finances-table--reportSupport {
+  th,
+  td {
+    width: 15%;
+  }
+
+  th {
+    padding-top: vw(5px);
+    padding-bottom: vw(20px);
+  }
+
+  tr td:nth-child(2),
+  tr td:nth-child(3) {
+    span {
+      margin-left: vw(15px);
+      border-bottom: vw(2px) dotted rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+// support-summary-report-card
+.reports-card--support-summary-report-card {
+  //width: vw(707px);
+  //height: vw(165px);
+  //margin-top: vw(17px);
+  //margin-right: vw(30px);
+  padding: vw(10px) vw(20px);
+
+  //new css
+  width: vw(686px);
+  height: vw(210px);
+  margin-top: vw(38px);
+  margin-right: vw(38px);
+}
+
+.reports-card--support-summary-report-card2 {
+  //width: vw(523px);
+  //height: vw(414px);
+  //margin-top: vw(17px);
+  padding: vw(10px) vw(20px);
+
+  //new css
+  width: vw(474px);
+  height: vw(520px);
+  margin-top: vw(38px);
+}

@@ -1,0 +1,282 @@
+/* ===============================================================
+                    
+                    custom modal
+
+================================================================== */
+
+.customOverlay {
+  z-index: 9999 !important;
+  background-color: rgba(26, 32, 35, 0.78) !important;
+}
+
+.closeIconInModal {
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: " ";
+    position: absolute;
+    top: vw(30px);
+    right: vw(40px);
+    //background-color: #ffffff;
+    background-color: #a8a8a8;
+    height: vw(25px);
+    width: vw(4px);
+    z-index: 111 !important;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.customCloseButton {
+  display: none;
+}
+
+.customModal {
+  padding: 0;
+  width: 100% !important;
+  overflow: auto;
+  //background: rgba(77, 82, 88, 1);
+  //background: linear-gradient(
+  //  123deg,
+  //  rgba(77, 82, 88, 1) 0%,
+  //  rgba(26, 32, 35, 1) 100%
+  //);
+  // background: rgb(26, 32, 35);
+  // background: linear-gradient(
+  //   122deg,
+  //   rgba(26, 32, 35, 1) 0%,
+  //   rgba(58, 64, 69, 1) 100%
+  // );
+  //box-shadow: 0 vw(3px) vw(15px) rgba(0, 0, 0, 0.64);
+  border-radius: vw(15px);
+
+  //new css
+  //background: #35393e;
+  // background: $black-gradient;
+  background: #35393e;
+}
+
+.customModal--loginDoItLater {
+  max-width: vw(856px) !important;
+  height: vw(567px) !important;
+}
+
+.customModal--loginDone {
+  max-width: vw(1118px) !important;
+  height: vw(700px) !important;
+}
+
+.customModal--createProjectAddMemberModal {
+  max-width: vw(1118px) !important;
+  //height: vw(671px) !important;
+
+  //new css
+  height: vw(700px) !important;
+}
+
+.customModal--accessRoleInfo {
+  max-width: vw(1642px) !important;
+  height: vw(762px) !important;
+}
+
+.customModal--paymentModal {
+  max-width: vw(661px) !important;
+  height: auto !important;
+}
+
+.customModal--clientEditModal {
+  //max-width: vw(1251px) !important;
+  max-height: vw(1335px) !important;
+  //height: vw(729px) !important;
+  height: vw(740px) !important;
+}
+
+.customModal--addChatToDo {
+  max-width: vw(900px) !important;
+  height: vw(594px) !important;
+}
+
+.customModal--calendarAddMeetingModal {
+  //max-width: vw(1251px) !important;
+  height: auto !important;
+  max-width: vw(1031px) !important;
+  overflow: hidden;
+}
+
+.customModal--sheduleModal {
+  //max-width: vw(1400px) !important;
+  //height: vw(736px) !important;
+  width: vw(1161px) !important;
+  max-width: vw(1161px) !important;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.customModal--discussionDispalyModal {
+  //max-width: vw(1589px) !important;
+  height: auto !important;
+  width: vw(1127px) !important;
+}
+
+.customModal--addTaskDashboard {
+  //max-width: vw(1179px) !important;
+  //height: vw(618px) !important;
+
+  //new css
+  max-width: vw(990px) !important;
+  height: auto !important;
+}
+
+.customModal--addProposalModal {
+  //max-width: vw(800px) !important;
+  height: max-content !important;
+
+  //new css
+  max-width: vw(990px) !important;
+}
+
+.customModal--show_notification {
+  max-width: vw(500px) !important;
+  height: vw(300px) !important;
+  position: absolute;
+  right: 20px;
+  margin-top: vw(150px);
+}
+.customModal--videoCallingScheduleModal {
+  max-width: vw(1118px) !important;
+  height: vw(670px);
+}
+.customModal--videoCallingShareMeetingLink {
+  //max-width: vw(827px);
+  //height: vw(470px);
+  //background: #252a2d;
+
+  //new css
+  max-width: vw(1097px);
+  height: vw(416px);
+  background: #35393e;
+  box-shadow: 0 vw(4px) vw(10px) rgba(0, 0, 0, 0.25);
+}
+.customModal--videoCallingShareMeetingLink--add {
+  height: auto;
+}
+.customModal--workflow {
+  //max-width: vw(1158px);
+  //height: vw(620px);
+  //background: rgb(77, 82, 88);
+  //background: linear-gradient(
+  //  118deg,
+  //  rgba(77, 82, 88, 1) 0%,
+  //  rgba(26, 32, 35, 1) 100%
+  //);
+  max-width: vw(990px);
+  height: auto;
+}
+.customModal--apply-leave {
+  width: vw(972px) !important;
+  height: auto !important;
+}
+.customModal--discussion {
+  max-width: vw(1161px) !important;
+  height: auto !important;
+}
+
+.customModal--productsNoteView {
+  max-width: vw(946px) !important;
+  height: auto !important;
+}
+
+.customModal--addExistingReleaseModal {
+  max-width: vw(1255px) !important;
+  height: vw(700px) !important;
+  padding: vw(63px) vw(54px) vw(49px) vw(54px);
+  overflow: hidden;
+}
+.customModal--add-payment-address {
+  width: vw(952px) !important;
+  max-width: vw(952px) !important;
+  height: auto;
+}
+.customModal--cmd-custom-fields {
+  width: vw(789px) !important;
+  max-width: vw(789px) !important;
+  height: auto;
+}
+.customModal--add-new-schedule {
+  width: vw(765px) !important;
+  max-width: vw(765px) !important;
+  height: auto;
+  overflow: visible;
+}
+.customModal--add-new-schedule-member {
+  width: vw(1043px) !important;
+  max-width: vw(1023px) !important;
+  height: auto;
+  overflow: visible;
+}
+.customModal--viewNewTask {
+  width: vw(559px) !important;
+  max-width: vw(559px) !important;
+  height: auto;
+  padding: vw(28px) vw(23px) vw(79px) vw(24px);
+}
+.customModal--delete-stage-with-task-warning {
+  width: vw(952px) !important;
+  max-width: vw(952px) !important;
+  height: auto;
+  padding: vw(73px) vw(25px) vw(44px) vw(25px);
+}
+.customModal--timesheet-export-as-csv {
+  width: vw(789px) !important;
+  max-width: vw(789px) !important;
+  height: auto;
+  padding: vw(45px) 0 vw(43px) 0;
+  overflow: visible;
+}
+.customModal--scheduler-new-member-details {
+  width: vw(1335px) !important;
+  max-width: vw(1335px) !important;
+  height: auto;
+  //overflow-y: visible;
+}
+.customModal--workboard {
+  width: vw(1161px);
+  height: auto;
+  padding: vw(70px) 0 vw(63px) 0;
+}
+.customModal--directoriesAddFolderName {
+  max-width: vw(990px) !important;
+  height: auto !important;
+}
+.customModal--edit-project {
+  width: vw(1335px) !important;
+  max-width: vw(1335px) !important;
+  height: auto;
+  overflow: visible;
+}
+.customModal--cancel-subscription {
+  width: vw(952px) !important;
+  max-height: vw(952px) !important;
+  height: auto;
+}
+.customModal--settingsAddCompanyDayOffs {
+  width: vw(648px) !important;
+  height: max-content !important;
+}
+.customModal--add-member-warning-popup {
+  width: vw(1063px) !important;
+  height: auto;
+  padding: 0;
+}
+.customModal--change-password {
+  width: vw(905px) !important;
+  height: auto !important;
+  padding: 0;
+}

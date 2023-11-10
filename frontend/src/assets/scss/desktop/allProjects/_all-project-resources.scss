@@ -1,0 +1,18 @@
+.all-project-resources-card-overflow-div {
+  //height: vw(460px);
+  height: vw(550px);
+  overflow: auto;
+  //padding-top: vw(23px);
+  padding-top: vw(30px);
+  padding-bottom: vw(10px);
+  padding-left: vw(5px);
+}
+.reasource-card-tasks--allProjectResourcesCard {
+  text-transform: capitalize;
+}
+.all-project-add-new-member-btn {
+  width: vw(198px);
+}
+.all-project-add-member-save-btn {
+  width: vw(130px);
+}

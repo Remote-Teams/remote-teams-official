@@ -1,0 +1,107 @@
+// textarea field
+.container-login-flow-textarea {
+  margin-bottom: vw(40px);
+
+  label {
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: vw(15px);
+    text-transform: uppercase;
+    font-size: vw(18px);
+    line-height: vw(24px);
+    letter-spacing: vw(2.7px);
+    @include fontBold700;
+    display: none;
+  }
+
+  .input-border-div {
+    //width: vw(708px);
+    //height: vw(119px);
+    //border-radius: vw(22px);
+    position: relative;
+
+    //new css
+    width: vw(721px);
+    height: vw(245px);
+    border-radius: vw(48px);
+    @include common-box-shadow-mixin-2;
+    //background-image: linear-gradient(87.98deg, #2e3192 7.59%, #57cba1 94.35%);
+    border: double 1px transparent;
+    background-image: $black-gradient,
+      linear-gradient(
+        87deg,
+        rgba(46, 49, 146, 1) 7.59%,
+        rgba(87, 203, 161, 1) 94.35%
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    //&::after {
+    //  position: absolute;
+    //  content: "";
+    //  width: 82%;
+    //  left: 9%;
+    //  bottom: 0;
+    //  height: 1px;
+    //  background-color: #5ccc40;
+    //}
+  }
+
+  textarea {
+    width: 100%;
+    height: 100%;
+    //background-color: rgba(74, 80, 85, 0.46);
+    //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+    border: 0;
+    border-radius: vw(22px);
+    //padding: vw(30px);
+    color: #ffffff;
+    //font-size: vw(18px);
+    @include fontSemiBold600;
+    //new css
+    //background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+    background: transparent;
+
+    border-radius: inherit;
+    padding: vw(37px) vw(26px);
+    font-size: vw(14px);
+    resize: none;
+
+    &::placeholder {
+      //color: rgba(255, 255, 255, 0.65);
+      //font-size: vw(18px);
+      @include fontSemiBold600;
+      font-size: vw(14px);
+      color: #a8a8a8;
+    }
+  }
+}
+
+// add expense textarea
+.container-login-flow-textarea--addExpense {
+  .input-border-div {
+    //height: vw(170px);
+
+    //new css
+    width: vw(686px);
+    height: vw(280px);
+    padding-left: 2px;
+  }
+}
+
+// add invoice textarea
+.container-login-flow-textarea--addInvoice {
+  .input-border-div {
+    //width: vw(613px);
+    //height: vw(170px);
+
+    //new css
+    width: vw(717px);
+    height: vw(169px);
+  }
+}
+.container-login-flow-textarea--add-ticket {
+  .input-border-div {
+    width: vw(721px);
+    height: vw(142px);
+  }
+}

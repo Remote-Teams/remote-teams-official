@@ -1,0 +1,51 @@
+/* ===============================================================
+                    
+                    resources
+                    
+================================================================== */
+
+.resource-card-head {
+  font-size: vw(32px);
+  letter-spacing: vw(16px);
+  text-transform: uppercase;
+  line-height: vw(43px);
+  position: relative;
+}
+.resorce-card-div {
+  padding-top: vw(100px);
+  padding-left: vw(100px);
+}
+.add-member-btn {
+  width: vw(166px) !important;
+}
+.plan-schedule-btn {
+  width: vw(166px) !important;
+  background: rgb(246, 211, 101);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 211, 101, 1) 0%,
+    rgba(253, 160, 133, 1) 100%
+  ) !important;
+}
+.add-meeting-title-div--add-task {
+  margin-bottom: vw(91px);
+}
+
+.customModal--clientEditModal--edit-resources {
+  height: auto !important;
+}
+.edit-client-modal-content--resources {
+  padding-top: vw(57px) !important;
+  padding-left: vw(58px) !important;
+}
+.member-not-found-img {
+  width: vw(445px);
+  height: auto;
+  margin-bottom: vw(27px);
+  margin-top: vw(115px);
+}
+.edit-resources-modal-datepicket {
+  .opacity-0 {
+    display: none;
+  }
+}

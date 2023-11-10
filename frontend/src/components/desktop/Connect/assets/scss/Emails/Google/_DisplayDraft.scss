@@ -1,0 +1,75 @@
+.display_draft_main_container{
+    display: block;
+    height: vw( 780px );
+    width: 100%;
+    overflow: auto;
+}
+
+.draft_block_container{
+    display: flex;
+    height: vw( 75px );
+    width: 100%;
+    border-bottom: vw( 2px ) solid rgba(0, 0, 0, 0.212);
+    margin-bottom: vw( 5px );
+    // justify-content: space-between;
+
+    .checkbox_container{
+        display: flex;
+        height: vw( 70px );
+        width: vw( 40px );
+        align-items: center;
+        justify-content: center;
+    }
+    .star_container{
+        display: flex;
+        height: vw( 70px );
+        width: vw( 60px );
+        align-items: center;
+        justify-content: center;
+    }
+    .name_container{
+        display: flex;
+        height: vw( 70px );
+        width: 8%;
+        align-items: center;
+        justify-content: center;
+        font-family: Poppins-Light;
+        font-size: vw( 22px );
+        color:rgba(255, 0, 0, 0.363);
+    }
+    .subject_container{
+        display: flex;
+        height: vw( 70px );
+        width: 30%;
+        align-items: center;
+        font-family: Poppins-Bold;
+        font-size: vw( 18px );
+        color: rgba(0, 0, 0, 0.549);
+    }
+    .snippet_container{
+        display: flex;
+        height: vw( 70px );
+        width: 30%;
+        font-family: Poppins-Light;
+        font-size: vw( 16px );
+        color: rgba(0, 0, 0, 0.349);
+    }
+    .date_container{
+        display: flex;
+        height: vw( 70px );
+        width: 20%;
+        font-family: Poppins-Medium;
+        font-size: vw( 16px );
+        align-items: center;
+        justify-content: center;
+    }
+    .edit_icon_containers{
+        display: flex;
+        height: vw( 70px );
+        width: 8%;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: vw( 5px );
+        padding-right: vw( 5px );
+    }
+}

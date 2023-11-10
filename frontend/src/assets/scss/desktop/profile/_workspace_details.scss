@@ -1,0 +1,72 @@
+.profile_workspace_details_main_container {
+  display: flex;
+  justify-content: space-around;
+
+  form {
+    display: contents;
+  }
+
+  .CircularProgressbar {
+    margin-left: vw(40px);
+    margin-top: vw(44px);
+    margin-bottom: vw(44px);
+    width: vw(107px);
+    height: vw(107px);
+
+    .CircularProgressbar-text {
+      fill: #70f84e;
+      font-size: 20px;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    .CircularProgressbar-path {
+      stroke: #70f84e;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.5s ease 0s;
+    }
+  }
+}
+.container-login-flow-input--forms--workspace-company-name {
+  margin-right: vw(50px);
+  .input-border-div {
+    width: vw(720px);
+    height: vw(60px);
+  }
+}
+.login-next-green-btn--finit-setup {
+  width: vw(186px);
+  height: vw(54px);
+}
+.workspace-setup-circlur-div {
+  .CircularProgressbar {
+    margin-left: vw(40px);
+    margin-top: vw(34px);
+    margin-bottom: vw(35px);
+    width: vw(107px) !important;
+    height: vw(107px);
+
+    .CircularProgressbar-text {
+      fill: rgba(255, 255, 255, 0.81) !important;
+      font-size: 18px !important;
+      letter-spacing: 0.115em !important;
+      font-weight: 800 !important;
+      font-family: Nunito-ExtraBold !important;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    .CircularProgressbar-path {
+      stroke: #36A896 !important;
+      //stroke: rgba(132, 250, 176, 1) !important;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.5s ease 0s;
+      border-radius: 50%;
+      stroke-width: vw(20px);
+    }
+    .CircularProgressbar-trail {
+      stroke: transparent;
+      stroke-width: vw(20px);
+    }
+  }
+}

@@ -1,0 +1,294 @@
+// finances table
+
+.finances-table {
+  width: 100%;
+  color: #ffffff;
+
+  th,
+  td {
+    word-break: break-word;
+  }
+
+  th {
+    font-size: vw(18px);
+    //line-height: vw(24px);
+    //@include fontBold700;
+    //letter-spacing: vw(2.7px);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: vw(20px);
+    //padding-bottom: vw(5px);
+    border-top: 0;
+    //border-bottom: 1px solid #70f84e;
+
+    //new css
+    line-height: vw(33px);
+    letter-spacing: vw(1px);
+    @include fontExtraBold800;
+    //text-align: center;
+    color: rgba(255, 255, 255, 0.81);
+    border-bottom: 1px solid #57cba1;
+  }
+
+  td {
+    vertical-align: middle;
+    font-size: vw(18px);
+    line-height: vw(24px);
+    //@include fontSemiBold600;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    //padding: vw(32px) vw(20px) vw(23px) vw(20px);
+    border-top: 0;
+    //border-bottom: 1px solid #707070;
+
+    //new css
+    line-height: vw(25px);
+    @include fontBold700;
+    padding: vw(39px) vw(30px) vw(37px) vw(20px);
+    color: rgba(255, 255, 255, 0.79);
+    border-bottom: 1px solid rgba(122, 122, 122, 0.9);
+  }
+}
+.finance-amount-data-text {
+  color: rgba(255, 173, 118, 0.79);
+}
+.finance-amount-data-text-white {
+  color: rgba(255, 255, 255, 0.53);
+}
+.finances-table-thead,
+.finances-table-tbody {
+  padding-right: vw(20px);
+}
+
+.finances-table-tbody {
+  height: vw(160px);
+  overflow: auto;
+}
+
+// add expense
+.finances-table-tbody--addExpense {
+  td,
+  th {
+    vertical-align: middle;
+  }
+
+  min-height: vw(110px);
+  height: auto;
+  //max-height: vw(220px);
+  max-height: vw(230px);
+}
+
+// expenses
+.finances-table--expense {
+  th,
+  td {
+    width: 13%;
+  }
+
+  th:nth-child(8),
+  td:nth-child(8) {
+    width: 9%;
+  }
+}
+
+// misc expenses
+.finances-table--miscExpense {
+  th,
+  td {
+    width: 15%;
+  }
+
+  th:nth-child(7),
+  td:nth-child(7) {
+    width: 10%;
+  }
+}
+
+// invoice
+.finances-table--invoice {
+  th,
+  td {
+    width: 13%;
+  }
+
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 18%;
+  }
+
+  th:nth-child(5),
+  td:nth-child(5) {
+    width: 20%;
+  }
+
+  th:nth-child(6),
+  td:nth-child(6) {
+    width: 10%;
+  }
+}
+
+.finances-table-tbody--invoice {
+  height: vw(251px);
+}
+
+.finances-table__export-icon-img {
+  cursor: pointer;
+  width: vw(23px);
+  opacity: 0.65;
+}
+
+// subscription
+.finances-table--subscription {
+  th,
+  td {
+    width: 14%;
+  }
+
+  th:nth-child(5),
+  td:nth-child(5) {
+    width: 20%;
+  }
+
+  th:nth-child(7),
+  td:nth-child(7) {
+    width: 10%;
+  }
+}
+
+.finances-table__fa-icon-edit,
+.finances-table__fa-icon-delete {
+  font-size: vw(25px) !important;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin-right: vw(30px);
+}
+
+// approval
+.finances-table--approval {
+  th,
+  td {
+    width: 13%;
+  }
+
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 4%;
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 14%;
+  }
+}
+
+// add expense
+.finances-table--addExpense {
+  th {
+    opacity: 0.63;
+  }
+
+  th,
+  td {
+    width: 15%;
+    text-align: center;
+  }
+
+  td {
+    padding-bottom: 0;
+
+    .error-message {
+      margin-top: vw(5px);
+      margin-bottom: vw(3px);
+    }
+  }
+
+  td:nth-child(1),
+  td:nth-child(9) {
+    padding: 0;
+  }
+
+  th:nth-child(1),
+  td:nth-child(1),
+  th:nth-child(9),
+  td:nth-child(9) {
+    width: 5%;
+  }
+
+  th:nth-child(5),
+  td:nth-child(5),
+  th:nth-child(6),
+  td:nth-child(6),
+  th:nth-child(8),
+  td:nth-child(8) {
+    width: 10%;
+  }
+}
+
+// add invoice
+
+.finances-table--addInvoice {
+  th {
+    opacity: 0.63;
+  }
+
+  th,
+  td {
+    width: 20%;
+    text-align: center;
+  }
+
+  td {
+    padding-bottom: 0;
+
+    .error-message {
+      margin-top: vw(5px);
+      margin-bottom: vw(3px);
+    }
+  }
+
+  td:nth-child(1),
+  td:nth-child(8) {
+    padding: 0;
+  }
+
+  th:nth-child(1),
+  td:nth-child(1),
+  th:nth-child(8),
+  td:nth-child(8) {
+    width: 5%;
+  }
+
+  th:nth-child(5),
+  td:nth-child(5),
+  th:nth-child(6),
+  td:nth-child(6),
+  th:nth-child(7),
+  td:nth-child(7) {
+    width: 10%;
+  }
+}
+
+// leave history
+.finances-table--leaveHistory {
+  th,
+  td {
+    width: 14%;
+  }
+
+  tr th:first-child,
+  tr td:first-child {
+    width: 18%;
+  }
+
+  tr th:last-child,
+  tr td:last-child {
+    width: 10%;
+  }
+  th {
+    text-align: center;
+  }
+  td {
+    @include fontSemiBold600;
+    text-align: center;
+  }
+}

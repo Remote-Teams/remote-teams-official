@@ -1,0 +1,254 @@
+// finances
+
+@import "./finances-table";
+@import "./add-expense";
+
+.profile_tabs_section--finances {
+  .react-tabs__tab-panel--selected {
+    padding-top: 0;
+  }
+  .react-tabs__tab--selected {
+    color: #ffff !important;
+  }
+  //.react-tabs__tab {
+  //  color: rgba(255, 255, 255, 0.2);
+  //  font-size: vw(14px);
+  //  line-height: vw(19px);
+  //}
+
+  //.react-tabs__tab-list {
+  //border-bottom: vw(1px) solid #2d3135;
+  //box-shadow: inset -2px -2px 4px rgba(74, 78, 83, 0.2),
+  // inset 2px 2px 6px rgba(35, 37, 39, 0.8);
+  //border-radius: 50px;
+  //}
+}
+
+.finances-btn-search-div {
+  padding-bottom: vw(33px);
+}
+
+.finance-approval-btn-div {
+  text-align: right;
+  padding: vw(80px) vw(120px) vw(30px);
+}
+
+.finance-summary-table {
+  width: 100%;
+  color: #ffffff;
+
+  td {
+    text-align: left;
+    word-break: break-all;
+    text-transform: capitalize;
+    padding: vw(12px) vw(15px);
+    //border-bottom: 1px solid rgba(112, 112, 112, 1);
+    //border-right: 1px solid rgba(112, 112, 112, 1);
+    border-bottom: 1px solid rgba(35, 37, 39, 0.9);
+    border-right: 1px solid rgba(35, 37, 39, 0.9);
+    //new css
+    //border-bottom: 1px solid #3d3d3d;
+    //border-right: 1px solid #3d3d3d;
+  }
+
+  tr td:last-child,
+  td:first-child,
+  td:nth-child(3) {
+    border-right: 0;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  //.finance-summary-table--border-right {
+  //  border-right: 1px solid #3d3d3d;
+  //}
+}
+
+.table-data-empty-message {
+  opacity: 0.35;
+  letter-spacing: vw(2px);
+  text-transform: uppercase;
+}
+
+.announcement-empty-message {
+  text-align: center;
+  padding-top: vw(180px);
+}
+.finances-green-btn {
+  width: vw(196px);
+  height: vw(54px);
+}
+/*==========================
+       expenses
+=========================*/
+.datepicker-no-border--expenses {
+  .date-block-arrow-go {
+    margin-bottom: vw(40px);
+  }
+}
+.finances-expenses-add-btn {
+  width: vw(196px);
+  height: vw(54px);
+}
+.expenses-project-name-text {
+  font-size: vw(36px);
+  line-height: vw(49.1px);
+  @include fontBold700;
+  @include common-peach-color-text;
+}
+.expenses-project-name-text--expenses {
+  background: rgb(255, 236, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 210, 1) 0%,
+    rgba(252, 182, 159, 1) 100%
+  );
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*================================================
+
+=================================================*/
+.add-subscription-btn {
+  width: vw(196px);
+  height: vw(54px);
+}
+/*===================================================
+        invoice
+=======================================================*/
+.add-invoice-new-row-btn {
+  width: vw(187px);
+  height: vw(54px);
+  //background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  background: rgb(102, 126, 234);
+  background: linear-gradient(
+    90deg,
+    rgba(102, 126, 234, 1) 0%,
+    rgba(118, 75, 162, 1) 100%
+  );
+}
+.add-expense-price-table--add-invoice {
+  tbody {
+    tr {
+      &:first-child {
+        td {
+          &:first-child {
+            span {
+              @include common-peach-color-text;
+            }
+          }
+        }
+      }
+      //2nd row
+      &:nth-child(2) {
+        td {
+          &:first-child {
+            span {
+              color: transparent;
+              width: fit-content;
+              //background: linear-gradient(
+              //  90deg,
+              //  #eea2a2 0%,
+              //  #bbc1bf 19%,
+              //  #57c6e1 42%
+              //);
+              background: rgb(238, 162, 162);
+              background: linear-gradient(
+                90deg,
+                rgba(238, 162, 162, 1) 0%,
+                rgba(187, 193, 191, 1) 19%,
+                rgba(87, 198, 225, 1) 42%
+              );
+              background-clip: text;
+              //-webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      }
+      //3rd row
+      &:nth-child(3) {
+        td {
+          &:first-child {
+            span {
+              color: transparent;
+              width: fit-content;
+              //background: linear-gradient(90deg, #9795f0 0%, #fbc8d4 100%);
+              background: rgb(151, 149, 240);
+              background: linear-gradient(
+                90deg,
+                rgba(151, 149, 240, 1) 0%,
+                rgba(251, 200, 212, 1) 100%
+              );
+              background-clip: text;
+              //-webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.upload-img__mainBlock--new-client--add-invoice {
+  .login-dashboard-btn {
+    width: vw(229px);
+    height: vw(54px);
+    //background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+    background: rgb(246, 211, 101);
+    background: linear-gradient(
+      90deg,
+      rgba(246, 211, 101, 1) 0%,
+      rgba(253, 160, 133, 1) 100%
+    );
+  }
+  .upload-img__btn-input-block-btn-div {
+    background: transparent;
+    width: vw(229px);
+    height: vw(54px);
+  }
+}
+.add-invoice-id-text {
+  font-size: vw(18px);
+  line-height: vw(33px);
+  color: rgba(255, 255, 255, 0.43);
+  letter-spacing: vw(2px);
+  @include fontExtraBold800;
+  text-transform: uppercase;
+}
+
+.display-invoice-text-1,
+.add-invoice-number-text {
+  font-size: vw(36px);
+  line-height: vw(49px);
+  @include fontBold700;
+  @include common-peach-color-text;
+}
+.edit-subscription-title {
+  //background: linear-gradient(90deg, #5ee7df 0%, #b490ca 100%);
+  background: rgb(94, 231, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  margin: auto;
+  margin-bottom: vw(92px);
+}
+.display-invoice-text-1--email {
+  word-break: break-all;
+}
+.finances-subscription-count-card-div {
+  .count-card-block {
+    z-index: auto;
+  }
+}

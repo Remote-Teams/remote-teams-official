@@ -1,0 +1,95 @@
+.kanban_board {
+  //width: vw(241px);
+  //height: vw(241px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: vw(10px);
+  //border-radius: vw(12px);
+  //border: 3px solid #70f84e;
+  //margin-right: vw(21px);
+  padding-top: vw(41px);
+  padding-bottom: vw(41px);
+  padding-left: vw(31px);
+  padding-right: vw(31px);
+
+  width: vw(199px);
+  height: vw(203px);
+  margin-right: vw(33px);
+  border: double 1px transparent;
+  background-image: $black-gradient,
+    linear-gradient(
+      87deg,
+      rgba(46, 49, 146, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: vw(9px);
+  .board_img {
+    //width: 100%;
+    display: none;
+  }
+}
+.kanban_board:hover {
+  cursor: pointer;
+}
+h4 {
+  font-size: vw(18px);
+  line-height: vw(24px);
+  //font-family: Nunito-Bold;
+  letter-spacing: vw(2.7px);
+  text-align: center;
+  // margin-top: vw(15px);
+  // margin-right: vw(20px);
+  letter-spacing: vw(1.84px);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.81);
+  @include fontExtraBold800;
+}
+.kanban_add_board {
+  //width: vw(241px);
+  //height: vw(241px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: vw(10px);
+  //border-radius: vw(12px);
+  //border: 3px solid #70f84e;
+  //margin-right: vw(21px);
+
+  //new css
+  width: vw(199px);
+  height: vw(203px);
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  border-radius: vw(9px);
+  img {
+    //width: vw(40px);
+    //height: vw(40px);
+    width: vw(50px);
+    height: vw(50px);
+  }
+}
+
+.board_bottom_section {
+  padding-top: vw(15px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //padding-right: vw(20px);
+  //padding-left: vw(10px);
+  width: vw(199px);
+  .react-select-elements__control {
+    background-color: transparent !important;
+  }
+  .fa-ellipsis-v {
+    color: #84fab0 !important;
+  }
+  .react-select-container.react-select-container--icon .fa-ellipsis-v {
+    //color: #ffffff !important;
+    color: #84fab0 !important;
+  }
+}

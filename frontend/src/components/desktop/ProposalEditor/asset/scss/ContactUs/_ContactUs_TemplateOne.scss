@@ -1,0 +1,32 @@
+.contact_us_template_one {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  .contact_us_template_one_headline {
+    width: 100%;
+    height: vw(80px);
+    display: flex;
+    margin-bottom: vw(10px);
+    justify-content: center;
+    letter-spacing: vw(10.8px);
+  }
+  .contact_us_template_one_para {
+    width: 30%;
+    height: vw(175px);
+    display: flex;
+    justify-content: center;
+    margin-top: vw(10px);
+    padding: vw(13px) 0;
+    letter-spacing: vw(0.4px);
+  }
+  .contact_us_template_one_img {
+    width: 60%;
+    height: 57%;
+    margin-top: vw(10px);
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}

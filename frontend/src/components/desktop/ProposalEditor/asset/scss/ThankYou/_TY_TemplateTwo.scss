@@ -1,0 +1,25 @@
+.thank_you_two {
+  display: flex;
+  align-items: center;
+  padding: vw(50px) vw(100px);
+  .thank_you_two__left {
+    width: 55%;
+    //height: 80%;
+    display: flex;
+    //align-items: flex-start;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .thank_you_two__right {
+    width: 40%;
+    height: 30%;
+    padding-left: vw(40px);
+    padding-right: vw(40px);
+    justify-content: center;
+    display: flex;
+    letter-spacing: vw(6.84px);
+  }
+}

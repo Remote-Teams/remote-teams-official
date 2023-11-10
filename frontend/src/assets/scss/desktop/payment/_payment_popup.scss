@@ -1,0 +1,351 @@
+/*========================================================
+                Noraml Subscription ended
+=========================================================*/
+
+.payment_popups_custom {
+  width: vw(1118px);
+  height: vw(700px);
+  background: -webkit-linear-gradient(
+    122deg,
+    rgba(26, 32, 35, 1) 0%,
+    rgba(58, 64, 69, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  box-shadow: vw(0px) vw(3px) vw(20px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .create_new_workspace {
+    width: vw(249px) !important;
+  }
+
+  .warning-popup-container {
+    padding: vw(40px);
+    .payment_warning_popup_img {
+      width: vw(663px) !important;
+      height: vw(322px) !important;
+    }
+    .go_to_logout {
+      position: absolute;
+      top: vw(30px);
+      left: vw(30px);
+    }
+    p {
+      font-size: vw(24px);
+      line-height: vw(32px);
+      @include fontBold700;
+    }
+    .button_section {
+      margin-top: vw(58px);
+    }
+    h3 {
+      margin-top: vw(20px);
+      font-size: vw(43px);
+      font-family: Nunito-SemiBold;
+    }
+  }
+}
+
+/*=========================================================
+                 Payment failed popup
+===========================================================*/
+.payment_failed_popup {
+  width: vw(1118px);
+  height: vw(763px);
+  background: -webkit-linear-gradient(
+    122deg,
+    rgba(26, 32, 35, 1) 0%,
+    rgba(58, 64, 69, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  box-shadow: vw(0px) vw(3px) vw(20px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: vw(451px);
+    height: vw(308px);
+  }
+
+  p {
+    font-size: vw(24px);
+    line-height: vw(32px);
+    @include fontSemiBold600;
+  }
+  h3 {
+    margin-top: vw(20px);
+    font-size: vw(43px);
+    font-family: Nunito-SemiBold;
+  }
+  h4 {
+    margin-top: vw(20px);
+    font-size: vw(32px);
+    line-height: vw(43px);
+    font-family: Nunito-SemiBold;
+    margin-bottom: vw(20px);
+  }
+  hr {
+    width: vw(190px);
+    /* border-style: dotted; */
+    border: vw(1px) dotted;
+    margin-top: 0;
+    color: 303030;
+  }
+  .please_note {
+    font-size: vw(18px);
+    line-height: vw(24px);
+    @include fontSemiBold600;
+  }
+
+  .request_manual_retry {
+    width: vw(249px) !important;
+  }
+
+  .button_section {
+    margin-top: vw(32px);
+  }
+
+  .cancel_subscription {
+    cursor: pointer;
+    margin-top: vw(37px);
+    font-size: vw(18px);
+    line-height: vw(24px);
+    color: white;
+    @include fontSemiBold600;
+    margin-bottom: vw(5px);
+  }
+
+  .payment-popup-alert {
+    border-radius: vw(7px);
+    @include fontRegular400;
+    width: vw(300px);
+    height: vw(46px);
+    background-color: #ff6767;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: vw(25px);
+    top: vw(25px);
+
+    p {
+      margin: 0;
+      font-size: vw(23px);
+      line-height: vw(34px);
+      font-family: Nunito-Regular;
+    }
+    i {
+      margin-right: vw(19px);
+    }
+  }
+}
+
+/*==============================================================
+                    Manuali Retry Sucess
+================================================================*/
+
+.manual_retry_success_popup {
+  width: vw(1118px);
+  height: vw(700px);
+  background: -webkit-linear-gradient(
+    122deg,
+    rgba(26, 32, 35, 1) 0%,
+    rgba(58, 64, 69, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  box-shadow: vw(0px) vw(3px) vw(20px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: vw(546px);
+    height: vw(280px);
+  }
+
+  h3 {
+    font-size: vw(43px);
+    line-height: vw(32px);
+    font-family: Nunito-SemiBold;
+    margin-top: vw(42px);
+  }
+  p {
+    margin-top: vw(20px);
+    font-size: vw(24px);
+    line-height: vw(32px);
+  }
+  .button_section {
+    margin-top: vw(42px);
+  }
+}
+
+/*===========================================================
+              Cancel Immediate Subscription
+============================================================*/
+.cancel_immediate_subscription_warning {
+  width: vw(1118px);
+  height: vw(700px);
+  background: -webkit-linear-gradient(
+    122deg,
+    rgba(26, 32, 35, 1) 0%,
+    rgba(58, 64, 69, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  box-shadow: vw(0px) vw(3px) vw(20px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: vw(450px);
+    height: vw(254px);
+  }
+
+  h3 {
+    font-size: vw(43px);
+    line-height: vw(32px);
+    font-family: Nunito-SemiBold;
+    margin-top: vw(42px);
+  }
+  p {
+    margin-top: vw(20px);
+    font-size: vw(24px);
+    line-height: vw(32px);
+  }
+  .button_section {
+    margin-top: vw(50px);
+  }
+}
+
+/*===================================================
+                Free trail ended css
+====================================================*/
+.free_trail_ended_popup {
+  width: vw(1118px);
+  height: vw(700px);
+  background: -webkit-linear-gradient(
+    122deg,
+    rgba(26, 32, 35, 1) 0%,
+    rgba(58, 64, 69, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  box-shadow: vw(0px) vw(3px) vw(20px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: vw(478px);
+    height: vw(349px);
+  }
+  h3 {
+    font-size: vw(43px);
+    line-height: vw(32px);
+    font-family: Nunito-SemiBold;
+    margin-top: vw(42px);
+  }
+  p {
+    margin-top: vw(20px);
+    font-size: vw(24px);
+    line-height: vw(32px);
+  }
+  .button_section {
+    margin-top: vw(50px);
+  }
+}
+
+/*=========================================================
+            Cancel subscription warning profile tab
+==========================================================*/
+
+.cancel_suscription_warning_profile {
+  width: vw(1118px);
+  height: vw(700px);
+  background: -webkit-linear-gradient(
+    122deg,
+    rgba(26, 32, 35, 1) 0%,
+    rgba(58, 64, 69, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  box-shadow: vw(0px) vw(3px) vw(20px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: vw(478px);
+    height: vw(349px);
+  }
+  h3 {
+    font-size: vw(43px);
+    line-height: vw(32px);
+    font-family: Nunito-SemiBold;
+    margin-top: vw(42px);
+  }
+  p {
+    margin-top: vw(20px);
+    font-size: vw(24px);
+    line-height: vw(32px);
+  }
+  .button_section {
+    margin-top: vw(50px);
+  }
+}
+
+/*====================================================
+      Plan upade success and info 
+=====================================================*/
+.plan_update_sucess {
+  width: vw(1118px);
+  height: vw(700px);
+  background: -webkit-linear-gradient(
+    122deg,
+    rgba(26, 32, 35, 1) 0%,
+    rgba(58, 64, 69, 1) 100%
+  ); /* safari5.1+,chrome10+ */
+  box-shadow: vw(0px) vw(3px) vw(20px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: vw(478px);
+    height: vw(349px);
+  }
+
+  p {
+    margin-top: vw(40px);
+    font-size: vw(24px);
+    line-height: vw(32px);
+  }
+  .button_section {
+    margin-top: vw(50px);
+  }
+}
+
+.resume_subscription {
+  width: vw(249px) !important;
+}
+
+.styles_overlay__CLSq- {
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  padding: 1.2rem;
+}

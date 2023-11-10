@@ -1,0 +1,192 @@
+// all project card
+
+.all-project-card-block {
+  //width: vw(1691px);
+  height: vw(219px);
+  //background: rgba(105, 105, 108, 0.16);
+  //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+  //border-radius: vw(15px);
+  margin-bottom: vw(38px);
+
+  //new css
+  background: $black-gradient;
+  @include common-box-shadow-mixin-1;
+  border-radius: vw(8px);
+  position: relative;
+  width: vw(1588px);
+  margin-left: vw(10px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 80%;
+    width: vw(12px);
+    left: vw(-15px);
+    top: 10%;
+    background: rgb(0, 233, 224);
+    background: $light-blue-gradient-87deg;
+    border-bottom-left-radius: vw(17px);
+    border-top-left-radius: vw(17px);
+  }
+
+  .font-18-bold-space-light-uppercase {
+    @include fontExtraBold800;
+  }
+}
+
+.all-project-card-block__colm1 {
+  //width: vw(160px);
+  //height: vw(160px);
+  //border: vw(3px) solid rgba(112, 248, 78, 1);
+  border-radius: vw(6px);
+  margin: vw(17px) vw(56px) vw(31px) vw(30px);
+
+  //new css
+  width: vw(175px);
+  height: vw(164px);
+  background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+  opacity: 0.6;
+  @include common-box-shadow-mixin-2;
+  border-radius: vw(17px);
+}
+.all-project-card-block-text2 {
+  font-size: vw(18px);
+  line-height: vw(25px);
+  @include fontRegular400;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.89);
+}
+.all-project-card-block__colm2 {
+  width: 21%;
+}
+
+.all-project-card-block__colm3 {
+  width: 25%;
+}
+
+.all-project-card-block__colm4 {
+  width: 18%;
+}
+
+.all-project-card-block__colm5 {
+  width: 17%;
+}
+
+.all-project-card-block__colm2,
+.all-project-card-block__colm3,
+.all-project-card-block__colm4,
+.all-project-card-block__colm5 {
+  margin-top: vw(25px);
+  margin-right: vw(30px);
+
+  h3,
+  h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  h3 {
+    margin-bottom: vw(8px);
+  }
+
+  h4 {
+    margin-bottom: vw(17px);
+  }
+}
+
+.all-project-card-block__colm6-outer {
+  width: vw(92px);
+  height: 100%;
+}
+
+.all-project-card-block__colm6 {
+  //background-color: rgba(112, 248, 78, 1);
+  //border: 1px solid rgba(112, 248, 78, 1);
+  margin-left: auto;
+  //border-radius: 0 vw(6px) vw(6px) 0;
+  width: vw(92px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(360deg, #5ee7df 0%, #b490ca 100%);
+  border-radius: vw(17px);
+  img {
+    width: vw(28px);
+    height: auto;
+    margin-bottom: vw(10px);
+  }
+}
+
+// .all-project-card-block__colm5 {
+//   img {
+//     width: vw(64px);
+//     margin-top: vw(28px);
+//   }
+//   img:nth-child(2),
+//   img:nth-child(3),
+//   img:nth-child(4) {
+//     margin-left: vw(-25px);
+//   }
+// }
+
+.project-team-member-img {
+  //width: vw(59px);
+  height: auto;
+  vertical-align: middle;
+  border-radius: vw(5px);
+  margin-right: vw(15px);
+  //new css
+  //width: vw(53px);
+  width: vw(43px);
+}
+
+.project-team-member-count-text {
+  //font-size: vw(43px);
+  font-size: vw(38px);
+  line-height: vw(58px);
+  @include fontRegular400;
+  margin-left: vw(8px);
+}
+
+.project-pin-button {
+  //width: vw(210px);
+  //height: vw(41px);
+  //font-size: vw(12px);
+  //line-height: vw(26px);
+  //letter-spacing: vw(1.8px);
+  //color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  margin-bottom: 0;
+  white-space: nowrap;
+
+  //new css
+  width: vw(217px);
+  span {
+    color: transparent;
+    width: fit-content;
+    background: rgb(223, 137, 181);
+    background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+    background-clip: text;
+    //-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include fontBold700;
+    font-size: vw(18px);
+    line-height: vw(25px);
+  }
+}
+
+.project-pin-button--unpin {
+  //width: vw(280px);
+  width: vw(300px);
+}
+
+.project-green-pin-img {
+  width: vw(11px);
+  //margin-right: vw(10px);
+  //margin-bottom: vw(4px);
+
+  //new css
+  margin-right: vw(5px);
+}

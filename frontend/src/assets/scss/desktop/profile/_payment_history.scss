@@ -1,0 +1,69 @@
+.profile_payment_history_main_container {
+  .table thead th {
+    vertical-align: bottom;
+    //border-bottom: 2px solid #dee2e6;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    //border-bottom: 1px solid #70f84e;
+    border-top: 0px;
+    //font-size: vw(24px);
+    //@include fontBold700;
+    //color: #ffffff;
+    ///line-height: vw(32px);
+
+    //new css
+    font-size: vw(18px);
+    line-height: vw(33px);
+    @include fontExtraBold800;
+    letter-spacing: vw(2px);
+    color: rgba(255, 255, 255, 0.81);
+    border-bottom: 1px solid #57cba1;
+  }
+
+  tbody td {
+    padding: vw(21px);
+    font-size: vw(18px);
+    //@include fontSemiBold600;
+    //color: #ffffff;
+    color: rgba(255, 255, 255, 0.79);
+    @include fontBold700;
+  }
+  tbody tr {
+    //border-bottom: 1px solid #707070;
+    border-bottom: 1px solid rgba(122, 122, 122, 0.9);
+  }
+}
+
+/*======================================
+          payment histroy tab
+======================================*/
+.finances-table--payment-history {
+  th,
+  td {
+    width: 30%;
+    text-align: center;
+  }
+  td {
+    border-bottom: none !important;
+    position: relative;
+    padding-bottom: vw(23px);
+    min-height: vw(100px);
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: vw(1px);
+      background-color: $black-gradient;
+      box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+        vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+        vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+      //border-radius: vw(8px);
+    }
+  }
+}
+.finances-table-tbody--payment-history {
+  height: vw(300px) !important;
+}

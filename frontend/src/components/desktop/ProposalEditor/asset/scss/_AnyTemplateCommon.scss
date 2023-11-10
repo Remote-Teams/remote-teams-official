@@ -1,0 +1,184 @@
+.template_main_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.template_display_area {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.template_main_container_display_area {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  //border-radius: vw(10px);
+
+  //new css
+  filter: drop-shadow(-2px -2px 4px rgba(74, 78, 83, 0.5)),
+    drop-shadow(2px 2px 6px rgba(35, 37, 39, 0.8)),
+    drop-shadow(8px 8px 30px rgba(35, 37, 39, 0.9)),
+    drop-shadow(-6px -6px 20px rgba(74, 78, 83, 0.7));
+  border-radius: vw(24px);
+  border: vw(1px) solid rgba(87, 203, 161, 1);
+  position: relative;
+  z-index: 111;
+
+  /*  &::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: vw(1px) solid transparent;
+    border-image: linear-gradient(
+      87deg,
+      rgba(46, 49, 146, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+    border-spacing: inherit;
+    background-origin: border-box;
+    background-clip: border-box;
+    border-radius: inherit;
+  }*/
+}
+// RENDER PROPOSAL
+.render_proposal_list_main_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+
+.render_proposal_single_container {
+  display: flex;
+  display: flex;
+  width: vw(394px);
+  // height: vw( 175px );
+  height: vw(450px);
+  background-color: white;
+  margin: vw(10px);
+  margin-bottom: vw(20px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: vw(10px);
+  flex-direction: column;
+}
+
+.render_proposal_single_container__headline {
+  display: flex;
+  height: vw(100px);
+  width: 100%;
+  // background-color: blue;
+  .render_proposal_single_container__headline_pro_image {
+    display: flex;
+    height: vw(100px);
+    width: 20%;
+    // background-color: blue;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .image {
+      display: flex;
+      height: vw(50px);
+      width: vw(50px);
+      align-items: center;
+      justify-content: center;
+      background-color: grey;
+      border-radius: 50%;
+      cursor: pointer;
+      img {
+        width: vw(60px);
+        border-radius: 50px;
+      }
+    }
+  }
+  .render_proposal_single_container__headline_pro_name {
+    display: flex;
+    height: vw(100px);
+    width: 60%;
+    align-items: center;
+    font-size: vw(20px);
+    font-weight: 500;
+    padding-left: vw(10px);
+    padding-right: vw(10px);
+    @include fontSemiBold600;
+  }
+  .render_proposal_single_container__headline_pro_delete {
+    display: flex;
+    height: vw(100px);
+    width: 20%;
+    // background-color: green;
+    align-items: center;
+    justify-content: center;
+    i {
+      color: #d1c7ff;
+      cursor: pointer;
+    }
+  }
+}
+.render_proposal_single_container__image_headline {
+  display: flex;
+  height: vw(200px);
+  width: 100%;
+  border: vw(3px) solid #6266e1;
+  cursor: pointer;
+}
+.render_proposal_single_container__details {
+  display: flex;
+  height: vw(150px);
+  width: 100%;
+}
+.render_proposal_single_container__details__left {
+  display: flex;
+  height: vw(150px);
+  width: 70%;
+  flex-direction: column;
+  .render_proposal_single_container__details__left__top {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    font-size: vw(25px);
+    @include fontSemiBold600;
+    align-items: flex-end;
+    padding-left: vw(20px);
+  }
+  .render_proposal_single_container__details__left__bottom {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    @include fontSemiBold600;
+    font-size: vw(17px);
+    // align-items: center;
+    padding-left: vw(20px);
+  }
+}
+
+.render_proposal_single_container__details__right {
+  display: flex;
+  height: vw(150px);
+  width: 30%;
+  // background-color: green;
+  @include fontSemiBold600;
+  font-size: vw(18px);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  max-width: max-content !important;
+}
+
+.modal-content {
+  padding: vw(10px) !important;
+}
+
+.proposal-mt-20 {
+  margin-top: vw(20px);
+}

@@ -1,0 +1,93 @@
+// plans content
+.profile-plans-row {
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: vw(27px) vw(43px);
+
+  h3 {
+    margin-top: vw(3px);
+    margin-bottom: vw(13px);
+  }
+
+  h4 {
+    margin-bottom: vw(11px);
+    color: #ffffff;
+  }
+
+  h5 {
+    opacity: 0.41;
+  }
+}
+
+.profile-plans-row--astro {
+  .profile-plans-row__img-div {
+    width: vw(133px);
+    height: vw(146px);
+    flex-shrink: 0;
+    margin-right: vw(110px);
+  }
+}
+
+.profile-plans-row--rover {
+  .profile-plans-row__img-div {
+    width: vw(203px);
+    height: vw(139px);
+    margin-right: vw(84px);
+  }
+}
+
+.profile-plans-row--ship {
+  .profile-plans-row__img-div {
+    width: vw(92px);
+    height: vw(148px);
+    margin-right: vw(125px);
+    margin-bottom: vw(20px);
+    margin-left: vw(20px);
+  }
+}
+
+.profile-plans-row--colony {
+  .profile-plans-row__img-div {
+    width: vw(160px);
+    height: vw(145px);
+    margin-left: vw(20px);
+    margin-right: vw(110px);
+  }
+}
+
+.profile-plans-row.profile-plans-row--astroSignup {
+  padding: vw(20px) vw(30px);
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: vw(28px);
+    color: #ffffff;
+    margin-top: 0;
+  }
+
+  h4,
+  h5 {
+    font-size: vw(15px);
+  }
+
+  .profile-plans-row__img-div {
+    width: vw(83px);
+    height: vw(96px);
+    flex-shrink: 0;
+    margin-right: vw(60px);
+  }
+}
+
+.profile-plans-row.profile-plans-row--astroSignup.profile-plans-row--astroSignup--rover {
+  .profile-plans-row__img-div {
+    width: vw(103px);
+    height: vw(116px);
+    margin-right: vw(44px);
+    padding-bottom: vw(10px);
+  }
+}

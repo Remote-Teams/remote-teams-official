@@ -1,0 +1,50 @@
+.email_create_main_container{
+    display: flex;
+    height: vw( 920px );
+    width: 100%;
+    margin-top:vw( 20px );
+
+    .email_create_left_container{
+        display: flex;
+        height: vw( 920px );
+        width: 60%;
+        padding-left: vw( 150px );
+        padding-right: vw(  50px);
+        flex-direction: column;
+    }
+    .email_create_right_container{
+        display: flex;
+        height: vw( 920px );
+        width: 40%;
+        flex-direction: column;
+        padding:vw( 20px );
+    }
+}
+
+
+// ATTACHMENT LABELS
+.attachment_label_container{
+    display: flex;
+    height: vw( 100px );
+    width: 100%;
+    border:vw( 5px ) dashed rgba(0, 0, 0, 0.315);
+    align-items: center;
+
+    .label_field{
+        display: flex;
+        height: vw( 70px );
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        font-family: Poppins-Medium;
+        font-size: vw( 20px );
+        color: rgba(0, 0, 0, 0.315);
+    }
+    .button_field{
+        display: flex;
+        height: vw( 70px );
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+}

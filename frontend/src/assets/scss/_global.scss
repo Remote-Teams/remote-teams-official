@@ -1,0 +1,194 @@
+/* ===============================================================
+                    
+                    Global reset and css
+
+================================================================== */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  // color: #ffff;
+}
+html,
+body {
+  background: linear-gradient(
+    304deg,
+    rgba(26, 32, 35, 1) 0%,
+    rgba(77, 82, 88, 1) 0%
+  );
+}
+
+a,
+a:hover {
+  text-decoration: inherit !important;
+  color: inherit !important;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
+  outline: 0 !important;
+}
+
+.outline-0 {
+  outline: 0;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0;
+}
+
+.rc-dropdown-menu > .rc-dropdown-menu-item-selected:after {
+  display: none;
+}
+
+*::placeholder {
+  color: #848484;
+  font-weight: 400;
+  font-family: Nunito-Regular, sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-border-div input:disabled {
+  opacity: 0.3;
+}
+
+.react-datepicker__input-container input:disabled,
+.datepeacker-date-icon-div--disabled {
+  opacity: 0.3;
+}
+
+// scrollbar chrome
+*::-webkit-scrollbar {
+  height: vw(5px);
+  //width: vw(5px);
+  width: vw(10px);
+}
+
+*::-webkit-scrollbar-track,
+*::-ms-scrollbar-track-color {
+  margin: vw(10px);
+  background: #d9d1f9;
+  box-shadow: 0 0 vw(6px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(35px);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: vw(30px);
+  //background: rgba(112, 248, 78, 0.8);
+  background: linear-gradient(90deg, #37ecba 0%, #72afd3 100%);
+  border-radius: vw(14px);
+  &:hover {
+    background: linear-gradient(90deg, #37ecba 0%, #72afd3 100%);
+    //background: rgba(63, 201, 29, 0.8);
+  }
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  font-size: vw(16px) !important;
+  color: #ffffff !important;
+  font-family: "Nunito-Regular", sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100% !important;
+}
+
+body {
+  min-height: 100vh;
+  //background-color: #1a2023;
+  //background: linear-gradient(299deg, #1a2023 0%, #4d5258 100%);
+  background: #2d3135 !important;
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+}

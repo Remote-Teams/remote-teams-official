@@ -1,0 +1,266 @@
+.finances-table--scrum {
+  th:nth-child(1),
+  td:nth-child(1),
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 18%;
+  }
+}
+.finances-table-tbody.finances-table-tbody--scrum {
+  height: vw(260px);
+}
+
+.scrum-table-div--head {
+  position: relative;
+  font-size: vw(18px);
+  line-height: vw(33px);
+  @include fontExtraBold800;
+  letter-spacing: vw(1.84px);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.81);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: vw(2px);
+    background: linear-gradient(
+      321.7deg,
+      rgba(87, 203, 161, 1) 24.16%,
+      rgba(132, 250, 176, 1) 72.5%
+    );
+    @include common-box-shadow-mixin-1;
+    border-radius: vw(8px);
+    left: 0;
+    bottom: 0;
+  }
+}
+.scrum-table-div-body {
+  //height: vw(200px);
+  height: vw(300px);
+  overflow-y: auto;
+  margin-bottom: vw(50px);
+}
+.scrum-table-div-colm1,
+.scrum-table-div-colm2,
+.scrum-table-div-colm3,
+.scrum-table-div-colm4 {
+  width: 25%;
+  padding-top: vw(33px);
+  padding-bottom: vw(33px);
+  word-break: break-all;
+}
+.scrum-table-div-colm3 {
+  //width: 35%;
+  width: 45%;
+}
+.scrum-table-div-colm4 {
+  width: 10%;
+}
+.scrum-table-div {
+  width: 100%;
+  button {
+    background: transparent;
+    padding: 0;
+    border: none;
+    color: #bdbfc1;
+    margin-right: vw(40px);
+  }
+}
+.scrum-bottom-border-div {
+  position: relative;
+  font-size: vw(18px);
+  line-height: vw(33px);
+  @include fontBold700;
+  color: rgba(255, 255, 255, 0.79);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: radial-gradient(
+      55.2% 177.88% at 44.77% 0%,
+      rgba(87, 203, 161, 1) 1.53%,
+      rgba(53, 57, 62, 1) 82.8%
+    );
+    @include common-box-shadow-mixin-1;
+    left: 0;
+    bottom: 0;
+  }
+  .finances-table__export-icon-img {
+    width: vw(20px);
+    height: auto;
+    margin-top: vw(5px);
+  }
+}
+
+.scrum--btn-div {
+  padding-bottom: vw(50px);
+}
+.datepicker-no-border--scrum {
+  padding-top: vw(100px);
+  padding-bottom: vw(100px);
+}
+/*=========================================================================================================
+
+                                                 Moadal
+                                                
+=========================================================================================================*/
+.scrum-modal-time-div {
+  //padding-top: vw(50px);
+  padding-left: vw(32px);
+  padding-bottom: vw(59px);
+  h3 {
+    display: none;
+  }
+  .datepicker-mr {
+    margin-right: vw(25px);
+  }
+}
+.scrum-text-area-div {
+  align-items: flex-end;
+}
+.scrum-modal-btn {
+  //  margin-left: vw(35px);
+  //  margin-bottom: vw(50px);
+  margin-right: vw(30px);
+}
+.scrum-add-new-entry {
+  width: vw(187px);
+  height: vw(54px);
+  background: rgb(102, 126, 234);
+  background: linear-gradient(
+    90deg,
+    rgba(102, 126, 234, 1) 0%,
+    rgba(118, 75, 162, 1) 100%
+  );
+}
+.container-login-flow-textarea--scrum {
+  .input-border-div {
+    //width: vw(828px);
+    //height: vw(177px);
+    width: vw(992px);
+    height: vw(176px);
+    //textarea {
+    //border-radius: vw(40px);
+    // }
+  }
+}
+.container-login-flow-input--scrum {
+  .input-border-div {
+    width: vw(699px);
+    height: vw(65px);
+  }
+}
+/*============================================================================================================
+
+                                               shedule
+
+=============================================================================================================*/
+.shedule-toggle-1 {
+  //padding-left: vw(100px);
+  padding-left: vw(65px);
+}
+.shedule-toggle-2 {
+  //padding-left: vw(100px);
+  padding-left: vw(65px);
+}
+.shedule-second-div {
+  justify-self: flex-end;
+}
+
+.calendar-add-meeting-modal-list-overflow--shedule {
+  width: vw(700px);
+  //height: vw(180px);
+  height: vw(200px) !important;
+  overflow: auto;
+  margin-bottom: vw(20px) !important;
+  //padding-top: vw(30px);
+}
+
+.all-project-scrum-modal-row1-date {
+  .datepicker-mr {
+    margin-right: vw(64px);
+  }
+}
+.all-project-scrum-modal-row3,
+.all-project-scrum-modal-row2 {
+  .datepicker-mr {
+    margin-right: vw(64px);
+  }
+}
+.all-project-scrum-modal-row2-time {
+  padding-top: vw(30px);
+  h3 {
+    display: none;
+  }
+}
+.scrum-modal-content {
+  padding-left: vw(90px);
+  padding-right: vw(20px);
+  padding-bottom: vw(38px);
+  padding-top: vw(70px);
+}
+.font-18-bold--add-scrum {
+  @include common-peach-color-text;
+}
+.all-project-scrum-modal-row3 {
+  padding-top: vw(71px);
+}
+.all-project-scrum-schedule-btn-div {
+  padding-right: vw(99px);
+}
+.scrum-new-entery-content {
+  padding: vw(70px) vw(65px) vw(80px) vw(81px);
+}
+/*============================================
+                  card
+==============================================*/
+.reasource-card-tasks--scrum {
+  font-size: vw(16px);
+  line-height: vw(22px);
+  color: #57cba1;
+  @include fontRegular400;
+  font-style: italic;
+}
+.web-client-card-div--scrum {
+  margin-right: vw(22px);
+}
+.reasource-card-tasks--scrum-text {
+  font-size: vw(16px);
+  padding-bottom: vw(5px);
+  padding-top: vw(5px);
+  text-transform: none;
+}
+.all-project-scrum-view-btn {
+  font-size: vw(14px);
+  line-height: vw(16px);
+  margin-right: vw(12px);
+  margin-bottom: vw(5px);
+  width: vw(86px);
+  height: vw(36px);
+}
+.all-project-scrum-shedule-scrum-date-div {
+  .datepicker-mr {
+    margin-right: vw(64px);
+  }
+}
+
+.add-discussion-btn.add-discussion-btn--scheduleScrum {
+  width: vw(287px);
+  height: vw(64px);
+  border-radius: vw(11px);
+}
+
+.product-overview-icon-dropdown.product-overview-icon-dropdown--projectScrumCard {
+  .ellipsis-gradient-img {
+    width: vw(7px);
+    cursor: pointer;
+  }
+}
+//.all-project-scrum-add-new-entry-title-input {
+//  .input-border-div {
+//    width: vw(992px);
+//  }
+//}

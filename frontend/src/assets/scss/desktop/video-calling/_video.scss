@@ -1,0 +1,168 @@
+@import "./video-calling-schedule-later";
+@import "./starting-video-call";
+@import "./rejoin";
+@import "./joined";
+@import "./vc-user-card";
+@import "./video-calling-share-meeting-link";
+@import "./share-a-meeting-slider";
+
+.video-calling-home-img-div {
+  width: vw(483px);
+  height: vw(299px);
+
+  //new css
+  //width: vw(317px);
+  //height: vw(230px);
+
+  margin-right: vw(81px);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.pt-89 {
+  padding-top: vw(89px);
+}
+.video-calling-home-button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .login-next-green-btn,
+  .login-dashboard-btn {
+    //height: vw(73px);
+    //width: vw(275px);
+    //font-size: vw(25px);
+    //line-height: vw(34px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    //border-radius: vw(78px);
+
+    //new css
+    border-radius: vw(30px);
+    width: vw(215px);
+    height: vw(54px);
+  }
+  .login-dashboard-btn {
+    width: vw(209px);
+    margin-top: vw(27px);
+  }
+}
+.video-call-card-div {
+  //width: vw(625px);
+  //min-height: vw(313px);
+  //background: rgba(37, 42, 45, 1);
+  //border-radius: vw(15px);
+  //box-shadow: 0 vw(3px) vw(15px) #00000014;
+  padding: vw(30px) vw(10px);
+
+  //new css
+  width: vw(605px);
+  min-height: vw(235px);
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  position: relative;
+  margin-left: vw(300px);
+  &::before {
+    position: absolute;
+    content: "";
+    height: 80%;
+    width: vw(12px);
+    left: vw(-15px);
+    background: rgb(0, 233, 224);
+    background: linear-gradient(
+      87deg,
+      rgba(0, 233, 224, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+    margin: auto;
+    border-bottom-left-radius: vw(17px);
+    border-top-left-radius: vw(17px);
+  }
+}
+.video-calling-table-outer-div {
+  padding-top: vw(79px);
+}
+.finances-table--video-calling {
+  th,
+  td {
+    width: 23%;
+    text-align: center;
+  }
+  tr:last-child {
+    border-bottom: none;
+  }
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 8%;
+  }
+  td {
+    @include fontRegular400;
+  }
+}
+.finances-tbody--video-calling {
+  height: vw(400px);
+}
+.finances-table-thead--video-calling,
+.finances-tbody--video-calling {
+  padding-right: 0;
+}
+
+.video-call-card--heading {
+  text-transform: uppercase;
+  padding-left: vw(47px);
+  padding-bottom: vw(16px);
+  //border-bottom: vw(1px) solid rgba(112, 248, 78, 1);
+  //letter-spacing: vw(2.27px);
+
+  //new css
+  letter-spacing: vw(1.84px);
+  color: rgba(255, 255, 255, 0.23);
+}
+.video-call-card-data {
+  padding-right: vw(16px);
+  padding-top: vw(10px);
+}
+.video-call-card-data--innerdiv {
+  padding-right: vw(100px);
+  padding-left: vw(57px);
+  //padding-top: vw(30px);
+  padding-bottom: vw(20px);
+  //border-bottom: vw(1px) solid rgba(112, 112, 112, 1);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: vw(10px);
+    height: vw(10px);
+    //background: rgba(25, 25, 197, 1);
+    border-radius: 50%;
+    left: vw(24px);
+    //top: vw(35px);
+    background: #ffd9d4;
+    top: vw(5px);
+  }
+  .font-18-bold {
+    color: rgba(255, 255, 255, 0.53);
+  }
+  /*&:nth-child(2) {
+    &::before {
+      background: rgba(59, 197, 25, 1);
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      background: rgba(25, 173, 197, 1);
+    }
+  }
+  &:last-child {
+    border-bottom: none;
+  }*/
+}

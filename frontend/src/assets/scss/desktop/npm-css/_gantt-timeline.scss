@@ -1,0 +1,22 @@
+.timeline-task-label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+
+  p {
+    margin: 0px;
+  }
+}
+.task_box {
+  justify-content: start;
+  border: vw(0.5px) dotted grey;
+  background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+}
+
+.time-line-container {
+  height: 100vh;
+  // height: 36vh;
+  margin-bottom: 200px;
+}

@@ -1,0 +1,97 @@
+.command-centre-tab-div {
+  .react-tabs {
+    &__tab {
+      width: vw(253px);
+      height: vw(64px);
+      background: rgba(34, 37, 39, 0.43);
+      border-radius: vw(8px);
+      cursor: pointer;
+      text-align: center;
+      font-size: vw(14px);
+      line-height: vw(17px);
+      @include fontMontserratExtraBold;
+      letter-spacing: 0.03em;
+      color: rgba(197, 196, 196, 0.79);
+      text-transform: capitalize;
+      margin-right: vw(16px);
+      border: none;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+
+      .command-centre-tab__active-img {
+        display: none;
+      }
+      .command-centre-tab__inactive-img {
+        display: block;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0;
+      }
+
+      &--selected {
+        box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.63);
+        background: $black-gradient;
+
+        span {
+          background: rgb(224, 195, 252);
+          background: linear-gradient(
+            90deg,
+            rgba(224, 195, 252, 1) 0%,
+            rgba(142, 197, 252, 1) 100%
+          );
+          color: transparent;
+          width: fit-content;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .command-centre-tab__active-img {
+          display: block;
+        }
+        .command-centre-tab__inactive-img {
+          display: none;
+        }
+      }
+    }
+
+    &__tab-list {
+      border: none;
+      margin-bottom: 0;
+    }
+    .command-centre-tab-list-div {
+      position: relative;
+      padding-top: vw(26px);
+
+      &::after {
+        position: absolute;
+        width: 100%;
+        height: vw(2px);
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: $black-gradient;
+        box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+          vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.9),
+          vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+        border-radius: vw(8px);
+      }
+    }
+  }
+  .command-centre-tab__active-img,
+  .command-centre-tab__inactive-img {
+    width: vw(21px);
+    height: auto;
+    margin-right: vw(13px);
+  }
+}
+.command-centre-tab-img-title-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,50 @@
+.add-member-warning-popup {
+  width: vw(211px);
+  height: auto;
+  margin-bottom: vw(75px);
+}
+.add-member-warning-popup-div {
+  padding: vw(65px) 0 vw(74px) 0;
+}
+.add-member-warning-popup-text1 {
+  font-size: vw(24px);
+  line-height: vw(34px);
+  letter-spacing: 0.01em;
+  @include fontMontserratExtraBold;
+  background: rgba(213, 82, 121, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(213, 82, 121, 1) 0%,
+    rgba(141, 112, 234, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: auto;
+  margin-bottom: vw(11px);
+}
+.add-member-warning-popup-text2 {
+  font-size: vw(24px);
+  line-height: vw(33px);
+  letter-spacing: 0.03em;
+  color: #d6d6d6;
+  @include fontSemiBold600;
+  margin-bottom: vw(9px);
+}
+.add-member-warning-popup-text3 {
+  font-size: vw(16px);
+  line-height: vw(22px);
+  letter-spacing: 0.03em;
+  color: #d6d6d6;
+  @include fontSemiBold600;
+  margin-bottom: vw(48px);
+}
+.add-member-warning-popup-btn {
+  width: vw(232px);
+  height: vw(64px);
+}
+.add-member-warning-popup-btn--grey {
+  box-shadow: 0 0 0;
+}

@@ -1,0 +1,90 @@
+// all project progress
+
+.overview-progress {
+  overflow: auto;
+  //background-color: rgba(105, 105, 108, 0.16);
+  //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+  //new css
+  background: $black-gradient;
+  @include common-box-shadow-mixin-1;
+  border-radius: vw(3px);
+}
+
+// row 1
+.overview-progress--row1-colm1,
+.overview-progress--row1-colm2 {
+  //height: vw(454px);
+  //margin-top: vw(44px);
+  padding: vw(30px);
+
+  //new css
+  height: vw(398px);
+  margin-top: vw(75px);
+}
+
+.overview-progress--row1-colm1 {
+  //width: vw(854px);
+  margin-right: vw(19px);
+
+  //new css
+  width: vw(800px);
+}
+
+.overview-progress--row1-colm2 {
+  //width: vw(848px);
+  width: vw(822px);
+}
+
+// row 2
+
+.overview-progress--row2-colm1,
+.overview-progress--row2-colm2 {
+  //height: vw(494px);
+  //margin-top: vw(15px);
+  padding: vw(30px);
+
+  //new css
+  height: vw(480px);
+  margin-top: vw(25px);
+}
+
+.overview-progress--row2-colm1 {
+  //width: vw(1178px);
+  //margin-right: vw(19px);
+
+  width: vw(1048px);
+  margin-right: vw(30px);
+}
+
+.overview-progress--row2-colm2 {
+  //width: vw(520px);
+  width: vw(571px);
+}
+
+// row 3
+
+.overview-progress--row3-colm1 {
+  //height: vw(494px);
+  //margin-top: vw(17px);
+
+  //new css
+  height: vw(438px);
+  margin-top: vw(32px);
+}
+
+.overview-progress--row3-colm1 {
+  //width: 100%;
+  width: vw(1049px);
+  padding: vw(30px) vw(50px);
+  padding-bottom: vw(5px);
+}
+.font-16-extraBold-letter-spacing {
+  font-size: vw(16px);
+  line-height: vw(22px);
+  letter-spacing: vw(0.48px);
+  text-transform: uppercase;
+  color: #64676a;
+  @include fontExtraBold800;
+  margin-bottom: 0;
+}

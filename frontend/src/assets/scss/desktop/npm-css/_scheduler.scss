@@ -1,0 +1,749 @@
+.scheduler_view_change {
+  position: relative;
+  //   right: 200px;
+  //   top: 20px;
+}
+
+// scheduler color css and fonts and border and background
+
+.MuiPaper-rounded {
+  border-radius: 0px !important;
+}
+
+.MuiPaper-root {
+  // width: 85%;
+  background-color: transparent !important;
+}
+
+.MuiPaper-elevation1 {
+  width: 100%;
+}
+
+.MuiPopover-paper {
+  background-color: white !important;
+  outline: 0;
+  position: absolute;
+  max-width: calc(100% - 32px);
+  min-width: 16px;
+  max-height: calc(100% - 32px);
+  min-height: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.makeStyles-stickyElement-20 {
+  overflow: visible;
+  position: sticky;
+  background: transparent !important;
+  table-layout: fixed;
+}
+
+.makeStyles-stickyElement-304 {
+  overflow: visible;
+  position: sticky;
+  background: transparent !important;
+  table-layout: fixed;
+}
+
+.makeStyles-background-311 {
+  background: transparent !important;
+}
+
+.makeStyles-background-27 {
+  background: transparent !important;
+}
+
+.add_new_scheduler_button {
+  position: absolute;
+  left: vw(900px);
+  margin-top: vw(20px);
+  z-index: 9999;
+}
+
+.scheduler_display {
+  display: flex;
+  height: 100vh;
+  border-bottom: vw(2px) solid #ffffff08 !important;
+
+  //new css
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+  border-radius: vw(8px);
+  margin-bottom: vw(20px);
+}
+
+.scheduler_resource_name_section {
+  // display: flex;
+  // align-items: center;
+  padding: vw(30px);
+  // border-bottom: 2px solid #ffffff08;
+  text-align: center;
+  width: 15%;
+  //padding-top: vw(40px);
+  //background-color: #69696c17;
+  //padding-top: vw(200px);
+  h3 {
+    //margin-top: vw(30px);
+    text-transform: capitalize;
+    font-family: Nunito-Bold;
+    //font-size: vw(22px);
+
+    //new css
+    margin-top: vw(23px);
+    font-size: vw(24px);
+    line-height: vw(33px);
+    color: #e2e2e2;
+  }
+
+  img {
+    margin-top: vw(100px);
+    width: 35%;
+    height: auto;
+
+    //new css
+    //width: vw(81px);
+    //margin-top: vw(200px);
+  }
+  p {
+    font-size: vw(18px);
+    line-height: vw(25px);
+    font-family: Nunito-Bold;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+// cell day color
+
+.Cell-dayOfWeek-45 {
+  color: #ffffff61 !important;
+  margin: 0;
+  font-size: 0.75rem;
+  font-family: Nunito-Bold !important;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.03333em;
+}
+
+.Cell-dayOfMonth-46 {
+  color: #ffffff61 !important;
+  font-size: vw(24px) !important;
+  font-family: Nunito-Bold !important;
+  line-height: vw(24px) !important;
+  letter-spacing: 0.00735em;
+}
+
+.Cell-highlightedText-47 {
+  color: #3f51b5 !important;
+  font-weight: bold;
+}
+// top calender arrow color
+
+.MuiIconButton-root {
+  flex: 0 0 auto;
+
+  //padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+  background: $black-gradient;
+  border: 1px solid #d2d2d2 !important;
+  width: vw(51px);
+  height: vw(51px);
+  margin-right: vw(10px) !important;
+  padding: vw(10px) !important;
+}
+
+.MuiIconButton-label {
+  color: white;
+
+  //new css
+
+  //color: #84fab0;
+  //width: fit-content !important;
+  //background: rgb(223, 137, 181);
+  //background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+  //background-clip: text;
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
+}
+
+.TodayButtonBase-button-3:first-child {
+  margin-left: 0;
+  color: white;
+  background-color: #5ccc40;
+
+  //new css
+  //background-color: transparent;
+
+  .MuiButton-label {
+    font-size: vw(24px);
+    line-height: vw(32px);
+    @include fontBold700;
+    color: rgba(255, 255, 255, 0.79);
+    letter-spacing: 0;
+    text-transform: capitalize;
+  }
+}
+.MuiButton-outlined {
+  border: none !important;
+}
+.MuiSelect-root {
+  background-color: #5ccc40 !important;
+  color: white !important;
+}
+
+.MuiButton-label {
+  color: white;
+  //new css
+  //font-size: v(18px);
+  //line-height: vw(33px);
+  //letter-spacing: vw(1.84px);
+  //color: rgba(255, 255, 255, 0.23);
+  //@include fontExtraBold800;
+}
+
+.Label-text-56 {
+  color: white !important;
+  font-size: vw(15px) !important;
+  font-family: Nunito-Bold !important;
+  font-weight: 400;
+  line-height: 1.66;
+  white-space: nowrap;
+  letter-spacing: 0.03333em;
+}
+
+// border css
+
+.MuiTableCell-root {
+  display: table-cell;
+  padding: 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  border-bottom: vw(2px) solid #ffffff08 !important;
+  letter-spacing: 0.01071em;
+  vertical-align: inherit;
+
+  //new css
+  ///border-bottom: 1px solid #e8f3f9 !important;
+  //background: $black-gradient !important;
+}
+.Cell-dayOfWeek-37,
+.Cell-dayOfMonth-38 {
+  color: gray !important;
+}
+.Cell-highlightedText-39 {
+  color: #3f51b5 !important;
+}
+.makeStyles-cell-63 {
+  height: 48px;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  border-right: vw(2px) solid #ffffff08 !important;
+}
+
+.makeStyles-ordinaryLeftPanelBorder-28 {
+  border-right: vw(2px) solid #ffffff08 !important;
+}
+
+.Toolbar-toolbar-2 {
+  border-bottom: vw(2px) solid #ffffff08 !important;
+
+  //new css
+  //border-bottom: 0 !important;
+}
+
+.makeStyles-ordinaryHeaderBorder-30 {
+  border-bottom: none !important;
+}
+.makeStyles-brightHeaderBorder-31 {
+  border-bottom: none !important;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
+// popup css
+
+.customModal--createSchedule {
+  max-width: vw(1488px) !important;
+  height: vw(895px) !important;
+  padding: vw(29px) vw(70px) vw(26px) vw(114px);
+
+  .datepicker-mr {
+    margin-right: vw(98px);
+  }
+
+  .color-swatch-block {
+    width: vw(193px);
+    height: vw(50px);
+    border-radius: vw(30px);
+    box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+  }
+
+  .swatch-custom {
+    padding: vw(13px) vw(20px);
+    width: vw(62px);
+    height: 100%;
+    border-radius: 0 vw(30px) vw(30px) 0;
+    background-color: rgba(74, 80, 85, 0.27);
+
+    .fa {
+      color: rgba($color: #ffffff, $alpha: 1);
+      font-size: vw(18px);
+    }
+  }
+
+  .color-custom {
+    width: vw(131px);
+    height: 100%;
+    border-radius: vw(30px) 0 0 vw(30px);
+    position: relative;
+  }
+
+  .popover-custom {
+    position: absolute;
+    z-index: 2;
+    top: vw(100px);
+  }
+
+  .cover-custom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .customCheckbox {
+    margin-right: vw(20px);
+  }
+  span {
+    margin-left: vw(10px);
+    font-family: Nunito-Bold;
+    font-size: vw(20px);
+  }
+  .rc-checkbox-input {
+    position: absolute;
+    left: 6px;
+    z-index: 9999;
+    cursor: pointer;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.Cell-cell-134 {
+  // height: 100px;
+  // padding: 0;
+  // box-sizing: border-box;
+  // user-select: none;
+  border-right: vw(2px) solid #ffffff08 !important;
+  // vertical-align: top;
+}
+
+.Cell-cell-130 {
+  border-right: vw(2px) solid #ffffff08 !important;
+}
+
+/*=====================================================
+            Production css changes
+======================================================*/
+.jss20 {
+  overflow: visible;
+  position: sticky;
+  background: transparent !important;
+  table-layout: fixed;
+}
+
+.jss27 {
+  background: transparent !important;
+}
+
+.jss63 {
+  height: 48px;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  border-right: vw(2px) solid #ffffff08 !important;
+}
+
+.jss30 {
+  border-bottom: vw(2px) solid #ffffff08 !important;
+}
+
+.jss2 {
+  border-bottom: vw(2px) solid #ffffff08 !important;
+}
+
+.jss28 {
+  border-right: vw(2px) solid #ffffff08 !important;
+}
+
+.jss31 {
+  border-bottom: vw(2px) solid #ffffff08 !important;
+}
+
+.jss56 {
+  /* color: rgba(0, 0, 0, 0.54); */
+  color: white !important;
+  font-size: vw(15px) !important;
+  font-family: Nunito-Bold !important;
+  font-weight: 400;
+  line-height: 1.66;
+  white-space: nowrap;
+  letter-spacing: 0.03333em;
+}
+
+.jss46 {
+  // color: rgba(0, 0, 0, 0.54);
+  color: #ffffff61 !important;
+  font-size: vw(24px) !important;
+  font-family: Nunito-Bold !important;
+  line-height: vw(24px) !important;
+  letter-spacing: 0.00735em;
+}
+
+.jss45 {
+  /* color: rgba(0, 0, 0, 0.54); */
+  color: #ffffff61 !important;
+  margin: 0;
+  font-size: 0.75rem;
+  font-family: Nunito-Bold !important;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.03333em;
+}
+
+.jss47 {
+  color: #3f51b5 !important;
+  font-weight: bold;
+}
+
+.jss3 {
+  background-color: #5ccc40 !important;
+}
+//new css
+.makeStyles-background-31 {
+  background: $black-gradient !important;
+}
+.makeStyles-ordinaryHeaderBorder-25 {
+  //border-bottom: 1px solid #57cba1 !important;
+  border-bottom: 1px solid #ffffff08 !important;
+}
+
+.makeStyles-cell-56 {
+  border-right: none !important;
+}
+
+.makeStyles-ordinaryLeftPanelBorder-23 {
+  //border-right: 1px solid #57cba1 !important;
+  border-right: 1px solid #ffffff08 !important;
+}
+.add-task-btn {
+  //width: vw(166px);
+  //background: linear-gradient(90deg, #a6c0fe 0%, #f68084 100%);
+  //margin-bottom: vw(10px);
+
+  width: vw(233px);
+  height: vw(54px);
+  border-radius: vw(11px);
+  background: linear-gradient(
+    92.79deg,
+    rgba(87, 203, 161, 0.9) 5.49%,
+    rgba(23, 134, 139, 0.9) 100.05%
+  );
+  margin-right: 0;
+}
+
+//table th
+//.Cell-dayOfWeek-37,
+//.Cell-dayOfMonth-38 {
+//  color: rgba(255, 255, 255, 0.23) !important;
+//  font-size: vw(18px) !important;
+//  line-height: vw(33px) !important;
+//  letter-spacing: 0.115em !important;
+//  @include fontExtraBold800;
+//}
+.Label-label-48 {
+  text-align: center !important;
+  //border-bottom: vw(1px) solid #e8f3f9 !important;
+  //height: vw(55px) !important;
+}
+.Label-text-49 {
+  font-size: vw(14px) !important;
+  line-height: vw(19px) !important;
+  color: #e2e2e2 !important;
+  font-weight: 700 !important;
+  font-family: "Nunito-Bold", sans-serif, "Helvetica" !important;
+}
+.Label-emptyLabel-50 {
+  display: none;
+}
+.TickCell-cell-52 {
+  display: none !important;
+}
+.makeStyles-timeScaleContainer-42 {
+  width: 79px !important;
+}
+.makeStyles-ticks-43 {
+  width: 0 !important;
+}
+//.makeStyles-relativeContainer-29 {
+//  tbody {
+//.MuiTableCell-root {
+//height: vw(55px) !important;
+//border-bottom: vw(1px) solid #e8f3f9 !important;
+//}
+//  }
+//}
+
+.jss31 {
+  background: transparent !important;
+}
+.jss30 {
+  background: transparent !important;
+}
+.jss25 {
+  background: transparent !important;
+}
+
+.jss56 {
+  border-right: none !important;
+}
+.jss118 {
+  border: none !important;
+}
+
+.jss37,
+.jss38 {
+  color: gray !important;
+}
+
+.jss49 {
+  font-size: vw(14px) !important;
+  line-height: vw(19px) !important;
+  color: #e2e2e2 !important;
+  font-weight: 700 !important;
+  font-family: "Nunito-Bold", sans-serif, "Helvetica" !important;
+}
+
+.jss39 {
+  color: #3f51b5 !important;
+}
+
+.makeStyles-stickyElement-27 {
+  background: transparent !important;
+}
+.makeStyles-background-38 {
+  background: transparent !important;
+}
+.makeStyles-brightHeaderBorder-33 {
+  border-bottom: none !important;
+}
+.makeStyles-ordinaryHeaderBorder-32 {
+  border-bottom: none !important;
+}
+.Toolbar-toolbar-9 {
+  border-bottom: vw(2px) solid #ffffff08 !important;
+}
+.makeStyles-ordinaryLeftPanelBorder-30 {
+  border-right: vw(2px) solid #ffffff08 !important;
+}
+.makeStyles-cell-63 {
+  border-right: none !important;
+}
+.scheduler_card_css {
+  border: none !important;
+  //box-shadow: 0px 0px 5px #ffffff !important;
+  background-color: transparent;
+  // background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%) !important;
+
+  word-break: break-all;
+  box-shadow: 0 0 0 !important;
+  padding-left: vw(18px);
+  padding-right: vw(18px);
+  border-top: vw(6px) solid transparent !important;
+}
+
+// cell height  please carefull about this css dont remove and change
+
+// .Label-label-45 {
+//   height: 89px !important;
+//   line-height: 15px !important;
+//   // padding-top: 20px !important;
+// }
+
+/// new itteration css chnages
+
+.MuiTableCell-root {
+  // border-bottom: none !important;
+}
+
+.MuiTableCell-body {
+  border-right: none !important;
+}
+
+.makeStyles-stickyElement-17 {
+  background: transparent !important;
+}
+.makeStyles-background-28 {
+  background: transparent !important;
+}
+
+.MuiTable-root {
+  height: vw(66px);
+}
+
+.Cell-dayOfMonth-35 {
+  color: white !important;
+  font-size: vw(18px) !important;
+  line-height: vw(24px) !important;
+  font-family: "Nunito-SemiBold", sans-serif, "Helvetica" !important;
+  font-weight: 600 !important;
+}
+
+.Cell-dayOfWeek-34 {
+  color: #646764 !important;
+  font-size: vw(14px) !important;
+  line-height: vw(19px) !important;
+  font-family: "Nunito-ExtraBold", sans-serif, "Helvetica" !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.Cell-highlightedText-36 {
+  color: #3f51b5 !important;
+  font-weight: bold;
+}
+.Cell-highlightedText-36 {
+  color: #3f51b5 !important;
+  font-weight: bold;
+}
+///////////////// supriya changes ///////////////
+
+.Label-text-46 {
+  color: #a8a8a8 !important;
+  font-size: vw(14px) !important;
+  line-height: vw(19px) !important;
+  font-family: "Nunito-SemiBold", sans-serif, "Helvetica" !important;
+  font-weight: 600 !important;
+}
+.makeStyles-stickyElement-149 {
+  background: transparent !important;
+}
+.makeStyles-background-160 {
+  background: transparent !important;
+}
+.Toolbar-toolbar-141 {
+  border-bottom: vw(2px) solid #ffffff08 !important;
+}
+.Label-text-178 {
+  color: #a8a8a8 !important;
+  font-size: vw(14px) !important;
+  line-height: vw(19px) !important;
+  font-family: "Nunito-SemiBold", sans-serif, "Helvetica" !important;
+  font-weight: 600 !important;
+}
+.Cell-dayOfWeek-166 {
+  color: #646764 !important;
+  font-size: vw(14px) !important;
+  line-height: vw(19px) !important;
+  font-family: "Nunito-ExtraBold", sans-serif, "Helvetica" !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.Cell-dayOfMonth-167 {
+  color: white !important;
+  font-size: vw(18px) !important;
+  line-height: vw(24px) !important;
+  font-family: "Nunito-SemiBold", sans-serif, "Helvetica" !important;
+  font-weight: 600 !important;
+}
+.Cell-highlightedText-168 {
+  color: #3f51b5 !important;
+}
+.makeStyles-ordinaryHeaderBorder-22 {
+  border-bottom: vw(2px) solid #ffffff08 !important;
+}
+.Cell-cell-33 {
+  padding-top: vw(20px) !important;
+  padding-bottom: vw(20px) !important;
+}
+.makeStyles-ordinaryLeftPanelBorder-20 {
+  border: none !important;
+}
+.MuiTableCell-root {
+  border-bottom: vw(1px) solid rgba(0, 0, 0, 0.1) !important;
+}
+.makeStyles-ordinaryHeaderBorder-154 {
+  border-bottom: vw(2px) solid #ffffff08 !important;
+}
+.makeStyles-ordinaryLeftPanelBorder-152 {
+  border: none !important;
+}
+.makeStyles-cell-185 {
+  border-bottom: vw(2px) solid rgba(0, 0, 0, 0.17) !important;
+}
+.VerticalAppointment-content-124 {
+  font-size: vw(16px) !important;
+  line-height: vw(24px) !important;
+  font-weight: 700 !important;
+  font-family: Manrope-Bold, sans-serif, "Helvetica" !important;
+  padding: 0 !important;
+  p {
+    margin-bottom: 0;
+    font-size: inherit !important;
+  }
+}
+////// AKSHAY CSS FOR WHITE BACKGROUND /////////
+
+.time_scale div div:nth-child(1) {
+  background-color: transparent;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  //new css
+  //border-top: vw(10px) solid transparent !important;
+}
+
+.MuiTableCell-root div p {
+  color: #646764 !important;
+  font-size: vw(14px) !important;
+  line-height: vw(19px) !important;
+  font-family: "Nunito-ExtraBold", sans-serif, "Helvetica" !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.MuiTableCell-root div div {
+  color: white !important;
+  font-size: vw(18px) !important;
+  line-height: vw(24px) !important;
+  font-family: "Nunito-SemiBold", sans-serif, "Helvetica" !important;
+  font-weight: 600 !important;
+}
+
+.MuiTableCell-root div span {
+  color: #a8a8a8 !important;
+  font-size: vw(14px) !important;
+  line-height: vw(19px) !important;
+  font-family: "Nunito-SemiBold", sans-serif, "Helvetica" !important;
+  font-weight: 600 !important;
+}
+
+.MuiToolbar-regular {
+  border-bottom: none !important;
+}

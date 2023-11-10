@@ -1,0 +1,75 @@
+/*=================================================
+               Painterro Workboard css
+===================================================*/
+
+.ptro-holder-wrapper {
+  z-index: 999999999;
+}
+
+.workboard_card {
+  //width: 300px;
+  //height: 300px;
+  //border: 1px solid gray;
+  margin-top: 30px;
+  width: vw(300px);
+  margin-bottom: vw(20px);
+  margin-right: vw(90px);
+}
+.workboard_card-img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: vw(300px);
+  border-radius: vw(17px);
+  border: double vw(4px) transparent;
+  background-image: $black-gradient,
+    linear-gradient(
+      87deg,
+      rgba(46, 49, 146, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  margin-bottom: vw(22px);
+  padding: vw(20px);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.ptro-holder {
+  width: 90%;
+  margin-left: 30px;
+}
+
+.top-navbar-ul {
+  z-index: 0 !important;
+}
+
+.title-div__text {
+  z-index: 0 !important;
+}
+
+button.ptro-color-control:hover:not(.ptro-color-active-control):not([disabled]) {
+  background-color: rgba(105, 105, 108, 0.16);
+  color: white !important;
+}
+
+.ptro-holder {
+  position: fixed;
+  left: 35px;
+  right: 35px;
+  top: 35px;
+  bottom: 35px;
+  box-shadow: 2px 2px 5px rgba(35, 37, 39, 0.9);
+  // box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+  //   vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+  //   vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+}
+.add-new-workboard-btn {
+  width: vw(250px);
+}
+.workboard_card-btn {
+  width: vw(130px);
+}

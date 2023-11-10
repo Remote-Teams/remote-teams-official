@@ -1,0 +1,115 @@
+// notes
+
+@import "./notesCard";
+
+.ml-100 {
+  margin-left: vw(100px);
+}
+
+.notes-cards-overflow-div {
+  height: vw(820px);
+  overflow: auto;
+  padding-top: vw(61px);
+  padding-left: vw(5px);
+}
+
+.notes-empty-data-message {
+  padding-top: vw(223px);
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: vw(2px);
+}
+
+// add note
+
+.notes-name-div {
+  //padding: vw(90px) 0 0 vw(100px);
+  padding: vw(90px) 0 0 vw(182px);
+
+  label {
+    display: none;
+  }
+
+  //.input-border-div {
+  //  width: vw(700px);
+  //  height: vw(70px);
+  //  position: relative;
+
+  //  &::after {
+  //    content: "";
+  //    background: #ffffff;
+  //    width: 100%;
+  //    height: vw(2px);
+  //    position: absolute;
+  //    bottom: 0;
+  //    left: 0;
+  //  }
+
+  //  input {
+  //    color: #ffffff;
+  //    font-size: vw(20px);
+  //    background: transparent;
+  //    border: none;
+  //    width: 100%;
+  //    height: 100%;
+  //    font-size: vw(33px);
+  //    line-height: vw(50px);
+  //    letter-spacing: vw(16.5px);
+  //    text-transform: uppercase;
+  //    @include fontBold700;
+  //    color: #ffffff;
+
+  //   &::placeholder {
+  //    @include fontBold700;
+  //     color: rgba(255, 255, 255, 0.3);
+  //   }
+  //}
+  //}
+
+  p {
+    margin-left: vw(3px);
+  }
+}
+
+.container-login-flow-textarea--notes {
+  padding-top: vw(10px);
+  //padding-left: vw(100px);
+  padding-left: vw(182px);
+  .input-border-div {
+    //width: vw(1604px);
+    //height: vw(500px);
+
+    //new css
+    width: vw(721px);
+    height: vw(245px);
+    //textarea {
+    //  border-radius: vw(30px);
+    //}
+  }
+}
+
+.notes-btn-div {
+  padding-top: vw(11px);
+  padding-right: vw(250px);
+  padding-bottom: vw(50px);
+}
+//new css
+.add-note-btn {
+  width: vw(211px);
+  height: vw(272px);
+  border-radius: vw(30px);
+  background: #2d3135;
+  @include common-box-shadow-mixin-3;
+  margin-right: vw(71px);
+}
+.new-add-notes-div {
+  padding: vw(128px) vw(113px) 0 vw(182px);
+  .login-flow-dashboard-buttons-block--add-note {
+    padding-top: 0;
+  }
+  .login-dashboard-btn {
+    width: vw(187px);
+    height: vw(48px);
+  }
+}

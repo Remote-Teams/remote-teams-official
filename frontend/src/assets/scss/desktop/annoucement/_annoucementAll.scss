@@ -1,0 +1,38 @@
+.annocement-text-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: vw(48px);
+  overflow: auto;
+  padding: 0 vw(276px) vw(40px) vw(50px);
+  margin-top: vw(30px);
+}
+
+.annocement-all-user {
+  font-size: vw(20px);
+  line-height: vw(27px);
+  letter-spacing: vw(1px);
+  text-transform: capitalize;
+  @include fontSemiBold600;
+  word-break: break-all;
+  word-wrap: break-word;
+  width: vw(700px);
+}
+.annocement-all-check {
+  font-size: vw(18px);
+  line-height: vw(27px);
+  letter-spacing: vw(2.7px);
+  text-transform: uppercase;
+  //@include fontBold700;
+  word-break: break-all;
+  //word-wrap: break-word;
+  width: vw(230px);
+  cursor: pointer;
+  @include fontExtraBold800;
+  color: #57cba1;
+}
+.add-annoucement-btn {
+  width: vw(235px);
+  height: vw(54px);
+}

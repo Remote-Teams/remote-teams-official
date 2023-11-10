@@ -1,0 +1,115 @@
+// create project
+
+.create-project-add-member-outer-div {
+  width: vw(147px);
+  height: vw(147px);
+  border-radius: 100%;
+  padding: 2px;
+  //background: linear-gradient(114.23deg, #2e3192 19.32%, #57cba1 60.73%);
+  background: rgb(46, 49, 146);
+  background: linear-gradient(
+    114deg,
+    rgba(46, 49, 146, 1) 19%,
+    rgba(87, 203, 161, 1) 60%
+  );
+  margin-bottom: vw(109px);
+  margin-left: vw(20px);
+  border: none;
+}
+
+.create-project-add-member-btn {
+  //margin-bottom: vw(109px);
+  //margin-left: vw(20px);
+  //width: vw(130px);
+  //height: vw(130px);
+  //border: 2px solid rgba(112, 248, 78, 1);
+  border-radius: 100%;
+  //background-color: rgba(66, 71, 76, 1);
+  //color: #ffffff;
+  font-size: vw(24px);
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #57cba1;
+  //background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+  background: rgb(45, 49, 53);
+  background: $black-gradient;
+
+  .fa-plus {
+    position: absolute;
+    top: 41%;
+    left: 41%;
+  }
+}
+
+.create-project-add-member-modal-content {
+  padding: vw(50px) vw(130px) vw(66px) vw(128px);
+}
+
+.add-project-member-modal-list-overflow {
+  height: vw(180px);
+  overflow: auto;
+}
+
+.create-project-add-member-img-text-block,
+.create-project-add-member-img-block {
+  //width: vw(110px);
+  width: vw(123px);
+}
+
+.create-project-add-member-img-text-block {
+  word-break: break-all;
+  text-align: center;
+  margin-right: vw(30px);
+  padding-top: vw(10px);
+}
+
+.create-project-add-member-img-block {
+  text-align: center;
+  //height: vw(126px);
+  border-radius: vw(7px);
+  // border: 1px dashed #ffffff;
+
+  height: vw(123px);
+  margin-bottom: vw(12px);
+  position: relative;
+
+  &__imgMember {
+    width: 100%;
+    height: 100%;
+    border-radius: vw(15px);
+  }
+
+  &__remove {
+    cursor: pointer;
+    font-size: vw(21px);
+    position: absolute;
+    //right: vw(-10px);
+    //top: vw(-7px);
+    //background-color: rgba(252, 76, 71, 1);
+    background-color: rgba(255, 121, 109, 1);
+    padding: vw(6px) vw(9px);
+    border-radius: 100%;
+    padding-top: vw(9px);
+    right: 0;
+  }
+}
+.add-project-date-picker {
+  .datepicker-mr {
+    margin-right: vw(240px);
+  }
+}
+.add-project-new-member-btn {
+  width: vw(165px);
+}
+//new css
+.check-access-roles-text {
+  opacity: 0.38;
+}
+.font-18-bold--select-member {
+  //background: rgb(250, 208, 196);
+  //background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  @include common-peach-color-text;
+  @include fontExtraBold800;
+}

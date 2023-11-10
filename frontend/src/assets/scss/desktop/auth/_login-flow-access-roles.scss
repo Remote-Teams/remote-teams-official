@@ -1,0 +1,55 @@
+// access roles
+.login-access-roles-content {
+  padding: vw(54px) vw(200px) vw(291px) vw(200px);
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2 {
+    text-transform: capitalize;
+  }
+
+  h3 {
+    color: rgba(255, 255, 255, 0.38);
+    font-style: italic;
+    margin-bottom: vw(42px);
+  }
+
+  &__img-div {
+    width: vw(160px);
+    height: vw(200px);
+    margin: 0 auto;
+    border-radius: vw(10px);
+    margin-bottom: vw(18px);
+
+    img {
+      border-radius: vw(10px);
+    }
+  }
+
+  &__row {
+    align-items: center;
+
+    .col-6 {
+      margin-bottom: vw(150px);
+      padding-right: vw(100px);
+    }
+
+    .col-2 {
+      text-align: center;
+    }
+  }
+}
+
+// access role info modal
+.access-role-info-modal-contetnt {
+  padding: vw(52px) vw(70px) vw(80px) vw(70px);
+}
+
+.access-role-info-heading {
+  text-align: center;
+  margin-bottom: vw(70px);
+  text-transform: capitalize;
+}

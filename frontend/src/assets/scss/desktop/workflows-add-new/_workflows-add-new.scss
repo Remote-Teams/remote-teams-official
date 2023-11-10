@@ -1,0 +1,363 @@
+.rt-add-new-workflows-step-title-row {
+  position: relative;
+  margin-bottom: vw(16px);
+}
+
+.rt-add-new-workflows-step-title-row__iconBlock {
+  // background: linear-gradient(321.7deg, #57cba170 15.1%, #00e9e070 84.43%);
+  background: linear-gradient(
+    321.7deg,
+    rgba(87, 203, 161, 0.7) 15.1%,
+    rgba(0, 233, 224, 0.7) 84.43%
+  );
+  //border-radius: 0;
+  width: vw(30px);
+  //height: 60%;
+  height: 70%;
+  padding-right: vw(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: vw(7px);
+
+  img {
+    width: vw(9px);
+    height: auto;
+  }
+}
+
+.rt-add-new-workflows-step-title-row__titleBlock {
+  position: relative;
+  margin-left: vw(25px) !important;
+  background: linear-gradient(180deg, #27baa7 0%, #57cba1 100%);
+  box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  border-radius: vw(12px);
+  width: vw(257px);
+  height: vw(76px);
+  padding: vw(25px) vw(29px);
+}
+
+.rt-wf-add-new__colm1 {
+  margin-right: vw(55px);
+}
+
+.rt-add-new-workflows-step-title-row__titleText {
+  font-size: vw(14px);
+  line-height: vw(26px);
+  @include fontExtraBold800;
+  margin-bottom: 0;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rt-workflows-add-new-step-btn-div {
+  padding-bottom: vw(39px);
+  margin-bottom: vw(15px);
+}
+
+.rt-workflows-add-new-step-btn {
+  width: vw(257px);
+  height: vw(61px);
+  background: #23272c;
+  border: vw(2px) dashed rgba(168, 168, 168, 0.47);
+  border-radius: vw(12px);
+  box-shadow: 0 0 0;
+  font-size: vw(13px);
+  @include fontExtraBold800;
+  line-height: vw(61px);
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.43);
+  padding: 0;
+}
+
+.rt-workflows-add-new-step-btn--addNewStep {
+  width: vw(577px);
+  height: vw(61px);
+}
+
+.rt-add-new-workflows__save-btn {
+  padding: 0;
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  margin-left: vw(10px);
+
+  .fa {
+    font-size: vw(18px);
+  }
+}
+
+.rt-add-new-workflows__save-btn:disabled {
+  opacity: 0.5;
+}
+
+.rt-add-new-workflows-step-title-row--gray {
+  .rt-add-new-workflows-step-title-row__titleBlock {
+    background: $black-gradient;
+  }
+
+  .rt-add-new-workflows__save-btn {
+    padding: 0;
+    border: none;
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+
+// add new step details
+.rt-workflows-add-new-step-details-block {
+  //background: $black-gradient;
+  //border: vw(2px) solid #5b5e61;
+  background: linear-gradient(
+    321.7deg,
+    rgba(45, 49, 53, 0.4) 24.16%,
+    rgba(53, 57, 62, 0.4) 72.5%
+  );
+  border: vw(1px) solid #5b5e61;
+  border-radius: vw(12px);
+  padding: vw(42px) vw(70px) vw(69px) vw(59px);
+  box-sizing: border-box;
+}
+
+.rt-workflows-add-new-task-title-1 {
+  font-size: vw(20px);
+  line-height: vw(27px);
+  @include fontBold700;
+  margin-bottom: 0;
+  width: 80%;
+}
+
+.rt-workflows-add-new-task-subtask-block {
+  background: linear-gradient(
+    321.7deg,
+    #303336 24.16%,
+    #35393e 72.5%,
+    #35393e 82.48%
+  );
+  border-radius: vw(9px);
+  padding: vw(35px) vw(42px) vw(25px) vw(53px);
+  margin-bottom: vw(54px);
+  margin-left: vw(25px);
+}
+
+.rt-workflows-add-new-task-btn {
+  background: linear-gradient(90deg, #37ecba 0%, #72afd3 100%);
+  border: vw(2px) solid #57cba1;
+  border-radius: vw(34px);
+  width: vw(510px);
+  height: vw(68px);
+  padding: 0;
+
+  font-size: vw(18px);
+  line-height: vw(68px);
+  @include fontBold700;
+  text-align: center;
+  color: #ffffff;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  img {
+    width: vw(20px);
+    margin-right: vw(12px);
+  }
+}
+
+.rt-workflows-add-new-sub-task-btn {
+  background: #23272c;
+  border: vw(2px) dashed rgba(168, 168, 168, 0.47);
+  border-radius: vw(36px);
+  width: vw(345px);
+  height: vw(52px);
+  font-size: vw(12px);
+  line-height: vw(52px);
+  @include fontExtraBold800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0;
+
+  img {
+    width: vw(17px);
+    margin-right: vw(8px);
+  }
+}
+
+.rt-workflows-add-new-task-edit-task-btn {
+  width: vw(144px);
+  height: vw(52px);
+  background: #23272c;
+  border: vw(2px) dashed rgba(168, 168, 168, 0.47);
+  border-radius: vw(36px);
+  font-size: vw(12px);
+  line-height: vw(52px);
+  @include fontExtraBold800;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-right: vw(13px);
+  padding: 0;
+
+  img {
+    width: vw(15px);
+    margin-right: vw(13px);
+    vertical-align: text-top;
+  }
+}
+
+.rt-workflows-add-new-task-edit-task-btn--subtask {
+  width: max-content;
+  height: vw(25px);
+  line-height: vw(25px);
+  background: transparent;
+  border: none;
+  margin-right: vw(45px);
+}
+
+.rt-workflows-add-new-task-border-line-shadow {
+  display: block;
+  width: 100%;
+  height: vw(5px);
+  background: $black-gradient;
+  @include common-box-shadow-mixin-1;
+  border-radius: vw(8px);
+  margin-bottom: vw(49px);
+}
+
+.container-login-flow-textarea--workflowsAddTask {
+  margin-bottom: 0;
+
+  .input-border-div {
+    width: vw(1218px);
+    height: vw(238px);
+    border-radius: vw(9px);
+  }
+
+  textarea {
+    padding: vw(20px) vw(29px);
+  }
+}
+
+.container-login-flow-input--workflowsAddTask1 {
+  .input-border-div {
+    width: vw(1218px);
+  }
+}
+
+.container-login-flow-input--workflowsAddStepName {
+  margin-right: vw(20px);
+
+  .input-border-div {
+    width: vw(1060px);
+  }
+}
+
+.container-login-flow-input--workflowsAddTask2,
+.container-login-flow-input--workflowsAddTask3 {
+  .error-message {
+    margin-top: vw(10px);
+    margin-bottom: vw(10px);
+  }
+}
+
+.container-login-flow-input--workflowsAddTask2 {
+  margin-right: vw(15px);
+
+  .input-border-div {
+    width: vw(965px);
+  }
+}
+
+.container-login-flow-input--workflowsAddTask3 {
+  margin-right: vw(15px);
+
+  .input-border-div {
+    width: vw(855px);
+  }
+}
+
+.rt-workflows-add-task-save-icon-btn {
+  width: vw(64px);
+  height: vw(64px);
+  background: #2d3135;
+  border: vw(2px) solid #57cba1;
+  color: #6fcf97;
+  @include common-box-shadow-mixin-3;
+  border-radius: vw(32px);
+  margin-right: vw(10px);
+  margin-bottom: vw(40px);
+  padding: 0;
+
+  font-size: vw(20px);
+  line-height: vw(64px);
+  @include fontExtraBold800;
+
+  .fa {
+    font-size: vw(20px);
+  }
+}
+
+.rt-workflows-add-task-save-icon-btn--cancel {
+  color: #eb5757;
+  border: vw(2px) solid #ff796d;
+}
+
+.rt-workflows-add-task-save-icon-btn--taskIcon {
+  background-color: #f4900c;
+  // border: vw(5px) solid #f4900c;
+  border-color: #f4900c;
+  padding: vw(5px);
+  color: #292f33;
+  font-size: vw(16px);
+
+  .fa {
+    line-height: 0;
+    vertical-align: super;
+  }
+
+  .rt-workflows-add-task-save-icon-btn--taskIcon__one,
+  .rt-workflows-add-task-save-icon-btn--taskIcon__two {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    border-radius: inherit;
+    display: block;
+  }
+
+  .rt-workflows-add-task-save-icon-btn--taskIcon__one {
+    padding: vw(5px);
+    background-color: #ffd983;
+  }
+
+  .rt-workflows-add-task-save-icon-btn--taskIcon__two {
+    background-color: #f5f8fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.rt-workflows-add-new-task-ol-type {
+  & > ::marker {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: vw(13px);
+    line-height: vw(18px);
+    @include fontBold700;
+    margin-bottom: vw(30px);
+    // margin-right: vw(20px);
+  }
+
+  li {
+    padding-left: vw(20px);
+  }
+}

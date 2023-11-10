@@ -1,0 +1,23 @@
+@import "./workflowsLibrary";
+@import "./workflowOngoingProcess";
+@import "./workflowHistroy";
+@import "./workflowNewInstant";
+@import "./workflowDetails";
+@import "./workflowCardDetails";
+
+.profile_tabs_section--workflow {
+  margin-top: vw(77px);
+
+  .react-tabs__tab-list {
+    text-align: left;
+  }
+  .react-tabs__tab {
+    &:first-child {
+      width: vw(259px);
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: vw(217px);
+    }
+  }
+}

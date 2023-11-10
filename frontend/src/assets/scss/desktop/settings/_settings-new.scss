@@ -1,0 +1,265 @@
+.rt-settings-new-pageTitle-row {
+  .add-project-btn {
+    background: $orange-gradient-90deg;
+  }
+}
+
+.settings-content-new {
+  padding-top: vw(20px);
+}
+
+.settings-content-new__card {
+  padding: vw(33px) vw(36px) vw(36px) vw(31px);
+  background: $black-gradient;
+  @include common-box-shadow-mixin-1;
+  border-radius: vw(15px);
+  width: vw(502px);
+  margin-bottom: vw(26px);
+
+  .rt-workflows-add-new-task-edit-task-btn--subtask {
+    .fa {
+      opacity: 0.2;
+      font-size: vw(15px);
+      margin-right: vw(10px);
+    }
+  }
+
+  .login-company-day-off__tbody {
+    height: auto;
+    max-height: vw(138px);
+  }
+
+  .login-company-day-off__table .login-company-day-off__thead h2 {
+    margin-bottom: vw(20px);
+  }
+}
+
+.settings-content-new__colm1 {
+  margin-right: vw(39px);
+}
+
+.settings-content-new__colm2 {
+  margin-right: vw(104px);
+}
+
+.settings-content-new__colm3 {
+  width: vw(502px);
+
+  .settings-content-new__colm3__faqBlock {
+    width: inherit;
+  }
+}
+
+.settings-content-new__card--submitQueryBlock {
+  padding: vw(35px) vw(29px) vw(35px) vw(35px);
+}
+
+.container-login-flow-textarea--settingQuery {
+  margin-bottom: 0;
+
+  .input-border-div {
+    width: vw(438px);
+    height: vw(176px);
+    background-image: none;
+    border-radius: 0;
+    box-shadow: 0 0 0;
+    padding-bottom: vw(15px);
+    border-bottom: vw(3px) solid #e2e2e2;
+  }
+
+  textarea {
+    padding: 0;
+  }
+
+  .error-message {
+    margin-top: vw(5px);
+    margin-bottom: vw(5px);
+    margin-left: vw(5px);
+  }
+}
+
+.setting-submit-query-btn {
+  width: vw(150px);
+  height: vw(48px);
+  color: #e2e2e2;
+}
+
+.accordion-div--settingsFaq {
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  height: vw(266px);
+  overflow: auto;
+  padding-right: vw(10px);
+
+  .accordion__button {
+    padding: 0;
+    margin-bottom: vw(24px);
+  }
+
+  .accordion__panel {
+    padding-top: 0;
+    padding-bottom: vw(24px);
+  }
+
+  .settings-faq-que-img {
+    width: vw(46px);
+    margin-right: vw(19px);
+    // @include common-box-shadow-mixin-2;
+    // background: $black-gradient;
+    border-radius: vw(5px);
+  }
+
+  .accordion__button {
+    @include common-peach-color-text-1;
+    @include fontMontserratSemiBold;
+  }
+
+  .faqs-ans-text {
+    padding-top: 0;
+    padding-bottom: vw(15px);
+  }
+}
+
+.settings-content-new__colm3__faqBlock-view-more-btn {
+  padding: 0;
+  border: none;
+  color: #a8a8a8;
+  width: max-content;
+  height: max-content;
+  background: transparent;
+
+  span {
+    text-decoration: underline;
+  }
+}
+
+// member day offs
+.rt-settings-new-member-day-offs-cilm-title-text1 {
+  font-size: vw(14px);
+  line-height: vw(21px);
+  @include fontExtraBold800;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.23);
+  margin-bottom: vw(26px);
+}
+
+.rt-settings-new-member-day-offs {
+  .login-member-day-offs__content-colm {
+    margin-bottom: vw(15px);
+  }
+
+  .login-member-day-offs__content-colm-counterRow .fa {
+    padding: 0;
+    width: vw(40px);
+    height: vw(40px);
+    margin-bottom: 0;
+    font-size: vw(21px);
+    line-height: vw(40px);
+    color: #232527;
+  }
+
+  .fa-disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+
+  .login-member-day-offs__content-colm-counterRow input {
+    font-size: vw(13px);
+    line-height: vw(18px);
+    width: vw(60px);
+    height: vw(40px);
+  }
+
+  .login-member-day-offs__content-colm-counterRow .fa-minus,
+  .login-member-day-offs__content-colm-counterRow .fa-caret-left {
+    border-radius: vw(34px) 0 0 vw(34px);
+  }
+
+  .login-member-day-offs__content-colm-counterRow .fa-plus,
+  .login-member-day-offs__content-colm-counterRow .fa-caret-right {
+    border-radius: 0 vw(34px) vw(34px) 0;
+  }
+
+  .login-member-day-offs__content-colm-dataRow {
+    height: vw(59px);
+    padding-bottom: vw(19px);
+  }
+}
+
+// company working hours
+.rt-settings-new-company-working-hours {
+  .login-member-day-offs__content--set-working-hour {
+    padding-top: 0;
+  }
+
+  .date-picker-common {
+    width: vw(190px);
+  }
+
+  .datepicker-mr {
+    margin-right: vw(45px);
+  }
+}
+
+// company day offs modal
+.settings-new-add-company-day-offs-modal-content {
+  padding: vw(49px) vw(67px) vw(31px) vw(67px);
+
+  .error-message {
+    margin-top: vw(10px);
+    margin-bottom: vw(10px);
+  }
+
+  .date-picker-common {
+    width: vw(252px);
+    margin-bottom: vw(62px);
+  }
+
+  .login-next-green-btn {
+    color: #e2e2e2;
+  }
+
+  .input-border-div {
+    width: vw(521px);
+  }
+
+  .date-picker-common .react-datepicker-wrapper input,
+  .date-picker-common .react-datepicker__input-container input {
+    color: #ffffff !important;
+  }
+
+  .datepicker-nav-arrow-login-dash .react-datepicker__navigation {
+    top: vw(15px) !important;
+  }
+}
+
+// company working hours display
+.rt-settings-new-company-working-hours-text-1 {
+  font-size: vw(14px);
+  line-height: vw(19px);
+  @include fontBold700;
+  margin-bottom: vw(19px);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.79);
+}
+
+.rt-settings-new-company-working-hours-text-2 {
+  font-size: vw(24px);
+  line-height: vw(33px);
+  margin-bottom: 0;
+  @include fontExtraBold800;
+  @include common-peach-color-text-1;
+}
+
+.rt-settings-new-company-working-hours-text-3 {
+  font-size: vw(13px);
+  line-height: vw(33px);
+  margin-bottom: 0;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.23);
+  vertical-align: top;
+}

@@ -1,0 +1,31 @@
+.our_process_template_one {
+  align-items: center;
+  padding: vw(50px);
+  .our_process_template_one_left {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .our_process_template_one_right {
+    width: 50%;
+    flex-direction: column;
+  }
+  .our_process_template_one_headline {
+    width: 100%;
+    height: vw(80px);
+    display: flex;
+    justify-content: center;
+    margin-bottom: vw(20px);
+    letter-spacing: vw(10.8px);
+  }
+  .our_process_template_one_para {
+    width: 100%;
+    height: vw(194px);
+    display: flex;
+    margin-top: vw(20px);
+    letter-spacing: vw(0.4px);
+  }
+}

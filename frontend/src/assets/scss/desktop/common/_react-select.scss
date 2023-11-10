@@ -1,0 +1,669 @@
+/* ===============================================================
+                    
+                        react select
+                    
+================================================================== */
+.react-select-container {
+  //width: vw(188px) !important;
+  //height: vw(53px) !important;
+  //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16) !important;
+  //border-radius: vw(27px) !important;
+  padding: 0;
+  text-align: center !important;
+  color: white !important;
+  margin-bottom: vw(10px);
+  text-transform: capitalize;
+
+  //new css
+  //box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.13),
+  //  vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+  //  vw(8px) vw(8px) vw(30px) #232527,
+  //  vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.37) !important;
+  width: vw(264px) !important;
+  height: vw(54px) !important;
+  //height: vw(48px) !important;
+  //align-items: flex-start !important;
+  background: #2d3135;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.13),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) #232527,
+    vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.37) !important;
+  border-radius: vw(30px);
+}
+
+.react-select-elements__placeholder {
+  //color: white !important;
+  text-align: center !important;
+  //  top: 40% !important;
+  //font-size: vw(20px) !important;
+  margin-left: vw(15px) !important;
+  font-size: vw(18px) !important;
+  color: rgba(255, 255, 255, 0.79) !important;
+}
+
+.react-select-elements {
+  &__control {
+    border: 0 !important;
+    //border-radius: vw(27px) !important;
+    //background-color: rgba(74, 80, 85, 0.27) !important;
+    //color: #ffffff !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    //min-height: vw(50px) !important;
+    //margin-top: vw(-10px);
+    box-shadow: 0 0 0 !important;
+    text-align: center !important;
+    //padding-left: vw(20px) !important;
+    padding-left: vw(10px);
+
+    //new css
+    background: transparent !important;
+    border-radius: vw(30px) !important;
+    min-height: vw(54px) !important;
+    //align-items: flex-start !important;
+    //padding-top: vw(3px);*/
+    color: rgba(255, 255, 255, 0.79) !important;
+    cursor: pointer !important;
+  }
+  &__placeholder {
+    color: #a8a8a8 !important;
+    font-size: vw(14px) !important;
+    @include fontSemiBold600;
+    line-height: vw(19px);
+  }
+  &__indicator-separator {
+    //  display: none !important;
+    background-color: #57cba1 !important;
+  }
+
+  &__indicator {
+    // color: #ffffff !important;
+    padding: 0 !important;
+    text-align: center !important;
+    //new css
+    color: #57cba1 !important;
+    padding-left: vw(18px) !important;
+
+    svg {
+      //width: vw(30px) !important;
+      //height: vw(30px) !important;
+      //margin-right: vw(10px) !important;
+
+      //new css
+      width: vw(20px) !important;
+      height: vw(20px) !important;
+      margin-right: vw(20px) !important;
+      //margin-bottom: vw(15px);
+    }
+  }
+
+  &__control--is-focused {
+    box-shadow: 0 0 0 !important;
+    outline: none !important;
+  }
+
+  &__single-value {
+    //color: #ffffff !important;
+    //font-size: vw(20px) !important;
+    //@include fontSemiBold600;
+    //line-height: vw(31px) !important;
+    text-align: center !important;
+    margin-left: vw(20px) !important;
+    //margin-top: vw(px) !important;
+
+    //new css
+    font-size: vw(18px) !important;
+    line-height: vw(24px) !important;
+    @include fontBold700;
+    color: rgba(255, 255, 255, 0.79) !important;
+  }
+
+  &__menu-notice--no-options,
+  &__option,
+  &__option--is-focused,
+  &__option--is-selected {
+    font-size: vw(18px) !important;
+    @include fontSemiBold600;
+    line-height: vw(24px) !important;
+    text-align: center !important;
+    background-color: rgba(74, 80, 85, 0.46) !important;
+  }
+
+  &__option {
+    padding: vw(10px) vw(15px) !important;
+    background: #4a5055;
+    text-align: left !important;
+    padding-left: vw(35px) !important;
+    cursor: pointer !important;
+  }
+
+  &__option--is-focused {
+    color: #ffffff !important;
+    //background: #70f84e !important;
+    background: rgb(0, 233, 224);
+    background: $light-blue-gradient-87deg !important;
+  }
+  &__menu {
+    margin-top: vw(1px) !important;
+    box-shadow: 0 0 0 !important;
+    text-align: center !important;
+    border-radius: 0 0 vw(27px) vw(27px) !important;
+    background: transparent !important;
+  }
+
+  &__menu-list {
+    background-color: rgba(74, 80, 85, 1) !important;
+    color: #ffffff !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-radius: vw(10px) !important;
+    margin-top: vw(1px);
+    box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+    max-height: vw(132px) !important;
+  }
+}
+
+.react-select-container--addMember {
+  //width: vw(336px) !important;
+  //height: vw(52px) !important;
+
+  //new css
+  width: vw(318px) !important;
+  height: vw(60px) !important;
+  //background: linear-gradient(87.98deg, #2e3192 7.59%, #57cba1 94.35%);
+  //background: rgb(46, 49, 146);
+  //background: linear-gradient(
+  //  87deg,
+  //  rgba(46, 49, 146, 1) 7%,
+  //  rgba(87, 203, 161, 1) 94%
+  //);
+  border: double 1px transparent;
+  background-image: $black-gradient,
+    linear-gradient(87deg, rgba(46, 49, 146, 1) 7%, rgba(87, 203, 161, 1) 94%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  @include common-box-shadow-mixin-2;
+  border-radius: vw(48px);
+
+  .react-select-elements__control {
+    position: relative;
+  }
+  .react-select-elements {
+    &__control {
+      //    background: linear-gradient(
+      //      321.7deg,
+      //      #2d3135 24.16%,
+      //      #35393e 72.5%
+      //    ) !important;
+      background: rgb(45, 49, 53);
+      background: transparent !important;
+    }
+
+    &__indicator-separator {
+      display: none !important;
+      //new css
+      //padding-top: vw(10px);
+
+      //&::after {
+      //  position: absolute;
+      //  content: "";
+      //  width: 80%;
+      //  left: 10%;
+      //  bottom: 0;
+      //  height: 1px;
+      //  background-color: rgba(112, 248, 78, 0.8);
+      //}
+    }
+  }
+}
+
+.react-select-container--addMember--addExpense {
+  width: vw(215px) !important;
+  margin-bottom: 0;
+}
+
+.react-select-container {
+  .react-select-elements__value-container--is-multi {
+    padding: 0;
+    padding-left: vw(6px);
+    flex-wrap: nowrap !important;
+  }
+  .react-select-elements__multi-value {
+    //background-color: #4a5055;
+    //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+    //new css
+    background-color: #525252;
+    border-radius: vw(53px);
+    //height: vw(38px);
+  }
+
+  .react-select-elements__multi-value__label {
+    //padding: vw(5px) vw(5px) vw(5px) vw(10px);
+    //color: #ffffff;
+    //font-size: vw(18px);
+    //line-height: vw(20px);
+    //@include fontSemiBold600;
+
+    //new css
+    font-size: vw(13px);
+    line-height: vw(17px);
+    @include fontBold700;
+    color: rgba(255, 255, 255, 0.79);
+    padding: vw(11px) vw(10px) vw(11px) vw(15px);
+  }
+
+  .react-select-elements__multi-value__remove {
+    padding-left: vw(2px);
+    padding-right: vw(5px);
+
+    &:hover {
+      background-color: rgba(26, 32, 35, 0.5);
+      color: #ffffff;
+    }
+
+    svg {
+      width: vw(20px) !important;
+      height: vw(20px) !important;
+    }
+  }
+
+  .react-select-elements__clear-indicator {
+    svg {
+      margin-right: vw(5px) !important;
+      width: vw(25px) !important;
+      height: vw(25px) !important;
+
+      //new css
+      display: none;
+    }
+  }
+}
+
+.react-select-container--support1 {
+  //width: vw(355px) !important;
+  margin-bottom: 0;
+  margin-right: vw(30px);
+  background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+
+  //new css
+  width: vw(370px) !important;
+  .react-select-elements__placeholder {
+    padding-left: vw(25px);
+  }
+}
+
+.react-select-container--support2 {
+  width: vw(450px) !important;
+  margin-bottom: 0;
+  margin-right: vw(30px);
+  //background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+  background: rgb(45, 49, 53);
+  background: $black-gradient;
+
+  .react-select-elements__placeholder {
+    padding-left: vw(25px);
+  }
+}
+
+.react-select-container--support3 {
+  width: vw(415px) !important;
+  margin-bottom: 0;
+  margin-right: vw(30px);
+  height: auto !important;
+  //background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+  background: rgb(45, 49, 53);
+  background: $black-gradient;
+
+  .react-select-elements__control {
+    padding: vw(7px) vw(2px);
+  }
+  .react-select-elements__placeholder {
+    padding-left: vw(25px);
+  }
+}
+
+.react-select-container--addInvoice {
+  width: vw(178px) !important;
+  margin-bottom: 0;
+
+  .react-select-elements {
+    &__control {
+      box-shadow: 0 0 0 !important;
+      // background-color: rgba(37, 44, 48, 1) !important;
+      background-color: transparent !important;
+    }
+
+    // &__menu-list,
+    // &__option {
+    //   background-color: rgba(37, 44, 48, 1) !important;
+    // }
+
+    // &__option--is-focused {
+    //   color: #ffffff !important;
+    //   background: #70f84e !important;
+    // }
+  }
+}
+.react-select-container--addInvoice--dashboard-completed,
+.react-select-container--addInvoice--dashboard {
+  box-shadow: 0 0 0 !important;
+  // background-color: rgba(37, 44, 48, 1) !important;
+  background-color: transparent !important;
+  width: vw(178px) !important;
+  margin-bottom: 0;
+  .react-select-elements {
+    &__indicator-separator {
+      display: none !important;
+    }
+  }
+}
+.react-select-container--addInvoice--dashboard-completed {
+  .react-select-elements {
+    &__single-value {
+      color: #57cba1 !important;
+      @include fontSemiBold600;
+    }
+  }
+}
+
+.react-select-container--addInvoice--dashboard {
+  .react-select-elements {
+    &__single-value {
+      color: #fad0c4 !important;
+      @include fontSemiBold600;
+    }
+
+    &__menu-list {
+      height: vw(100px);
+      z-index: 111;
+    }
+  }
+}
+.react-select-container.react-select-container--icon {
+  width: max-content !important;
+  height: auto !important;
+  box-shadow: 0 0 0 !important;
+
+  .fa-ellipsis-v {
+    cursor: pointer;
+    font-size: vw(35px) !important;
+    color: rgba(112, 248, 78, 0.8);
+
+    /*new css
+    font-size: vw(30px) !important;
+    margin-left: vw(10px) !important;
+    color: #5ccc40;*/
+  }
+
+  .react-select-elements {
+    &__value-container {
+      justify-content: flex-end;
+      width: vw(30px) !important;
+      height: vw(38px) !important;
+    }
+
+    &__indicators {
+      display: none;
+    }
+
+    &__control {
+      width: max-content !important;
+      padding: 0 !important;
+    }
+
+    &__menu {
+      width: vw(188px) !important;
+      height: vw(50px) !important;
+    }
+  }
+}
+
+// react-select-container--allProjectGraphModule
+.react-select-container.react-select-container--allProjectGraphModule {
+  width: vw(230px) !important;
+}
+
+.react-select-container--workflow-new-instant {
+  width: vw(632px) !important;
+  height: vw(53px) !important;
+  .react-select-elements__control {
+    position: relative;
+
+    //new css
+    //padding-top: vw(10px);
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 80%;
+      left: 10%;
+      bottom: 0;
+      height: 1px;
+      background-color: rgba(112, 248, 78, 0.8);
+    }
+  }
+}
+.react-select-container--workflow-details {
+  width: vw(575px) !important;
+  height: vw(46px) !important;
+  .react-select-elements__placeholder {
+    letter-spacing: vw(1.08px) !important;
+    text-transform: capitalize;
+    @include fontExtraLightItalic200;
+    color: rgba(255, 255, 255, 0.25) !important;
+  }
+  .react-select-elements {
+    &__control {
+      background-color: #3a3f43 !important;
+      min-height: vw(46px) !important;
+      border-radius: vw(28px) !important;
+    }
+
+    &__single-value {
+      letter-spacing: vw(1.08px) !important;
+      text-transform: capitalize;
+      @include fontExtraLightItalic200;
+      color: rgba(255, 255, 255, 0.25) !important;
+    }
+  }
+}
+.react-select-container--for-dependency {
+  width: vw(232px) !important;
+  height: vw(48px) !important;
+
+  .react-select-elements__placeholder {
+    letter-spacing: vw(1.08px) !important;
+    text-transform: capitalize;
+    @include fontExtraLightItalic200;
+    color: rgba(255, 255, 255, 0.25) !important;
+    font-size: vw(18px) !important;
+  }
+
+  /*.react-select-elements__control {
+    position: relative;
+
+    //new css
+    //padding-top: vw(10px);
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 75%;
+      left: 13%;
+      bottom: 0;
+      height: 1px;
+      background-color: rgba(112, 248, 78, 0.8);
+    }
+  }*/
+}
+.react-select-container--status {
+  width: vw(273px) !important;
+}
+.react-select-container--direction {
+  width: vw(257px) !important;
+  .react-select-elements__placeholder {
+    margin-left: 0 !important;
+  }
+}
+.react-select-container--direction-step {
+  width: vw(281px) !important;
+}
+.react-select-container--finances {
+  width: vw(242px) !important;
+  height: vw(54px) !important;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+}
+.react-select-container--noBorder {
+  background: transparent;
+  padding: 0;
+  width: vw(289px) !important;
+  height: vw(54px) !important;
+
+  .react-select-elements {
+    &__indicator-separator {
+      display: block !important;
+    }
+  }
+}
+.react-select-container--project-countdown {
+  // width: vw(173px) !important;
+  width: vw(276px) !important;
+  margin-bottom: vw(29px);
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+  border-radius: vw(67px);
+
+  .react-select-elements__placeholder {
+    text-align: center !important;
+    margin: vw(0px) !important;
+    font-size: vw(14px) !important;
+    color: #e2e2e2 !important;
+    letter-spacing: vw(0.48px);
+    //text-transform: uppercase;
+  }
+  .react-select-elements {
+    &__single-value {
+      font-size: vw(14px) !important;
+      //text-transform: uppercase;
+    }
+  }
+  .react-select-elements__value-container {
+    padding-left: vw(10px) !important;
+  }
+}
+.react-select-container--dashboard-timeline {
+  width: vw(209px) !important;
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+
+  .react-select-elements__placeholder {
+    font-size: vw(12px) !important;
+    color: #e2e2e2 !important;
+    letter-spacing: vw(0.48px);
+    text-transform: uppercase;
+  }
+  .react-select-elements {
+    &__single-value {
+      font-size: vw(12px) !important;
+    }
+  }
+}
+.react-select-container--report-expense-and-income {
+  width: vw(289px) !important;
+  height: vw(54px) !important;
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+
+  .react-select-elements__placeholder {
+    font-size: vw(15px) !important;
+    color: #e2e2e2 !important;
+    letter-spacing: vw(0.48px);
+    text-transform: uppercase;
+  }
+  .react-select-elements {
+    &__single-value {
+      font-size: vw(15px) !important;
+    }
+  }
+}
+.react-select-container--addInvoice-disabled {
+  .react-select-elements {
+    &__indicator-separator {
+      display: none !important;
+    }
+  }
+}
+.react-select-container--support-table {
+  background: transparent !important;
+  box-shadow: 0 0 0 !important;
+  padding: 0;
+  width: vw(170px) !important;
+  height: vw(54px) !important;
+  .react-select-elements {
+    &__indicator-separator {
+      display: none !important;
+    }
+  }
+}
+.react-select-container--view-kanban-task {
+  background: #282828;
+  border: 1px solid #3d3939;
+  box-sizing: border-box;
+  border-radius: vw(9px);
+  width: vw(168px) !important;
+  height: vw(58px) !important;
+  box-shadow: 0 0 0 !important;
+  .react-select-elements__placeholder {
+    margin-left: 0 !important;
+    font-size: vw(14px) !important;
+    line-height: vw(19px);
+    letter-spacing: 0.03em !important;
+    text-transform: capitalize;
+    color: #d6d6d6;
+  }
+}
+.react-select-elements {
+  &__single-value {
+    font-size: vw(14px) !important;
+    line-height: vw(19px);
+    letter-spacing: 0.03em !important;
+    text-transform: capitalize;
+    color: #d6d6d6 !important;
+    margin-left: 0 !important;
+  }
+  &__indicator-separator {
+    display: none !important;
+  }
+}
+/*==================================
+          dashboard
+===================================*/
+.react-select-container--project-to-pin {
+  width: vw(591px) !important;
+  //height: vw(75px) !important;
+  height: vw(65px) !important;
+  @include common-box-shadow-mixin-1-important;
+  margin-top: vw(35px);
+  margin-bottom: vw(18px);
+  margin-right: 0;
+
+  .react-select-elements {
+    &__control {
+      padding-left: vw(20px);
+    }
+    &__indicator-separator {
+      display: inline-block !important;
+    }
+  }
+}

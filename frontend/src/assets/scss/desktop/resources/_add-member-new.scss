@@ -1,0 +1,97 @@
+.add-new-member-title {
+  font-size: vw(18px);
+  line-height: vw(25px);
+  letter-spacing: 0.01em;
+  background: #e0c3fc;
+  background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include fontExtraBold800;
+}
+.add-member-new-row2-div {
+  padding-top: vw(75px);
+}
+.add-member-new-section-title {
+  color: rgba(255, 255, 255, 0.79);
+}
+.add-member-new-attach-document-div {
+  padding-top: vw(91px);
+}
+.add-new-member-cost-div {
+  padding-top: vw(87px);
+}
+.new-add-member-add-more-btn {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  margin-top: vw(47px);
+
+  img {
+    width: vw(61px);
+    height: auto;
+    margin-right: vw(19px);
+  }
+
+  .new-add-member-add-more-btn__arrows-txet,
+  .new-add-member-add-more-btn-span-text {
+    font-size: vw(18px);
+    line-height: vw(24px);
+    //color: rgba(255, 255, 255, 0.56);
+    text-decoration: underline;
+    @include fontBold700;
+    padding-left: 0;
+    background: rgba(219, 202, 251, 1);
+    background: linear-gradient(
+      92.23deg,
+      rgba(219, 202, 251, 1) 11.52%,
+      rgba(143, 211, 244, 1) 114.27%
+    );
+    color: transparent;
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: rgba(219, 202, 251, 1);
+      background: linear-gradient(
+        92.23deg,
+        rgba(219, 202, 251, 1) 11.52%,
+        rgba(143, 211, 244, 1) 114.27%
+      );
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .new-add-member-add-more-btn__arrows-txet {
+    margin-left: vw(20px);
+    &::after {
+      display: none;
+    }
+  }
+}
+.new-add-member-add-more-arrow-active,
+.new-add-member-add-more-arrow {
+  margin-left: vw(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.56);
+  border-right: 1px solid rgba(255, 255, 255, 0.56);
+  width: vw(10px);
+  height: vw(10px);
+}
+
+.new-add-member-add-more-arrow-active {
+  transform: rotate(319deg);
+  margin-top: vw(8px);
+}
+.new-add-member-add-more-arrow {
+  transform: rotate(136deg);
+}

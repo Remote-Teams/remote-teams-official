@@ -1,0 +1,38 @@
+.task-status-hours-logged-table-text-1 {
+  color: #ffffff;
+  font-size: vw(16px);
+  line-height: vw(22px);
+  @include fontBold700;
+  margin-bottom: 0;
+}
+
+.task-status-hours-logged-table-text-2 {
+  font-size: vw(12px);
+  line-height: vw(15px);
+  color: #ffffff;
+  opacity: 0.64;
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.task-status-hours-logged-table-text-3 {
+  font-size: vw(14px);
+  line-height: vw(26px);
+  text-align: center;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  @include fontExtraBold800;
+}
+
+.reports-card--tasksLoggedHoursTable {
+  height: auto;
+
+  .ag-grid-custom-table .ag-header-cell-text {
+    font-size: vw(12px);
+    line-height: vw(22px);
+    text-align: center;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.81);
+  }
+}

@@ -1,0 +1,168 @@
+// proposals
+
+.proposals-page-count-row {
+  margin-bottom: vw(30px);
+}
+
+.proposals-btn-search-div {
+  padding-right: vw(70px);
+}
+
+.proposals-card-overflow {
+  height: vw(520px);
+  overflow: auto;
+  margin-top: vw(30px);
+}
+
+.proposals-card-main-container {
+  //width: vw(493px);
+  //height: vw(477px);
+  margin-right: vw(26px);
+  margin-bottom: vw(26px);
+  //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+  //background-color: rgba(105, 105, 108, 0.16);
+  //border-radius: vw(15px);
+
+  width: vw(460px);
+  height: auto;
+}
+
+.proposals-card-main-container__row1 {
+  width: 100%;
+  //height: vw(280px);
+  position: relative;
+
+  //new css
+  height: vw(242px);
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  border-radius: vw(10px);
+
+  .proposal-card-image-loade-div {
+    position: absolute;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.proposal-card-img-transition {
+  opacity: 0;
+}
+
+.proposal-card-img-transition-active {
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
+}
+
+.proposals-card-main-container__row2__overflow {
+  width: 100%;
+  height: vw(156px);
+  overflow: auto;
+  margin-top: vw(16px);
+  margin-bottom: vw(25px);
+}
+
+.proposals-card-main-container__row2 {
+  padding: 0 vw(25px) 0 vw(25px);
+  text-align: center;
+}
+
+.proposals-card-main-container__row2__text1 {
+  //font-size: vw(34px);
+  //line-height: vw(46px);
+  @include fontBold700;
+  margin-bottom: vw(11px);
+  text-transform: capitalize;
+
+  //new css
+  font-size: vw(24px);
+  line-height: vw(33px);
+  color: transparent;
+  width: fit-content;
+  //background: rgb(223, 137, 181);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 210, 1) 0%,
+    rgba(252, 182, 159, 1) 100%
+  );
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.proposals-card-main-container__row2__text2 {
+  //font-size: vw(14px);
+  //line-height: vw(20px);
+  //@include fontSemiBold600;
+  //font-style: italic;
+  margin-bottom: vw(16px);
+  //new css
+  font-size: vw(18px);
+  line-height: vw(25px);
+  @include fontBold700;
+  color: rgba(255, 255, 255, 0.79);
+  text-align: left;
+}
+.proposals-card-main-container__row2__text2--status {
+  letter-spacing: vw(1.84px);
+  text-transform: uppercase;
+  @include fontExtraBold800;
+  color: rgba(255, 255, 255, 0.81);
+}
+.proposals-card-main-container__icons-row {
+  //justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.65);
+
+  img,
+  i {
+    cursor: pointer;
+  }
+}
+
+.proposals-card-icons-row_export-icon {
+  width: vw(20px);
+  opacity: 0.65;
+}
+
+.proposals-card-icons-row_delete-icon {
+  font-size: vw(23px) !important;
+}
+
+// add new proposal
+
+.add-proposal-modal-content {
+  padding: vw(20px) vw(50px) vw(50px) vw(50px);
+  /*new css
+  .react-select-elements {
+    &__control {
+      padding-top: vw(10px);
+    }
+  }
+  &__indicator {
+    svg {
+      margin-bottom: vw(10px);
+    }
+  }*/
+}
+
+.add-proposal-modal-content__row {
+  padding-left: vw(80px);
+}
+//new css
+.new-proposal-btn {
+  width: vw(215px);
+}
+.container-login-flow-input--forms--proposal {
+  .input-border-div {
+    width: vw(700px);
+  }
+}
+.react-select-container--addMember--proposal {
+  height: vw(65px) !important;
+}

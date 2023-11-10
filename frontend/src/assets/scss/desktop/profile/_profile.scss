@@ -1,0 +1,237 @@
+// profile
+
+// payment history css
+@import "./payment_history";
+//profile details
+@import "./profile_details";
+//workspace details
+@import "./workspace_details";
+//plans
+@import "./profile_plan";
+//saved cards
+@import "./profile-saved-card";
+//add payment address
+@import "./add-payment-address";
+
+@import "./change-password";
+
+.profile_tabs_section {
+  margin-top: vw(83px);
+
+  .react-tabs__tab {
+    //display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    //padding: vw(6px) vw(12px);
+    cursor: pointer;
+    //width: vw(309px);
+    text-align: center;
+    //margin-right: vw(90px);
+    font-size: vw(18px);
+    line-height: vw(18px);
+    @include fontBold700;
+    //letter-spacing: vw(2.7px);
+    //padding-bottom: vw(25px);
+    bottom: 0;
+
+    //new css
+    // padding: vw(16px) 0 vw(16px) 0;
+    padding: vw(30px) 0 vw(30px) 0;
+    width: vw(194px);
+    // margin-right: vw(60px);
+    margin-right: 0;
+    // color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.34);
+    //text-transform: uppercase;
+    text-transform: capitalize;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:focus::after,
+    &::after {
+      content: "";
+      width: vw(3px);
+      height: 60%;
+      border-right: vw(2px) dashed rgba(240, 240, 240, 0.38);
+      position: absolute;
+      top: 20%;
+      // right: -27%;
+      right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:last-child:focus::after,
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  .react-tabs__tab--disabled {
+    cursor: default;
+  }
+
+  .react-tabs__tab--selected {
+    background-color: transparent;
+    //color: white;
+    border-radius: vw(5px) vw(5px) 0 0;
+    //border-bottom: vw(3px) solid #70f84e !important;
+    //padding-bottom: vw(25px);
+
+    //new css
+    border: none;
+    position: relative;
+    z-index: 1;
+    // border-radius: vw(34px);
+    //background: linear-gradient(
+    //  90deg,
+    //  rgba(248, 103, 127, 1) 0%,
+    //  rgba(159, 166, 215, 1) 100%
+    //);
+    // border: double 1px transparent;
+    // background-image: $black-gradient,
+    //   linear-gradient(
+    //     90deg,
+    //     rgba(248, 103, 127, 1) 0%,
+    //     rgba(159, 166, 215, 1) 100%
+    //   );
+    // background-origin: border-box;
+    // background-clip: padding-box, border-box;
+    // @include common-box-shadow-mixin-2;
+    // color: rgba(255, 255, 255, 0.79);
+    color: #57cba1;
+    position: relative;
+
+    &:focus::before,
+    &::before {
+      content: "";
+      width: 80%;
+      height: vw(5px);
+      background: linear-gradient(321.7deg, #57cba1 24.16%, #84fab0 72.5%);
+      box-shadow: -2px -2px 4px rgba(74, 78, 83, 0.5),
+        2px 2px 6px rgba(35, 37, 39, 0.8), 8px 8px 30px rgba(35, 37, 39, 0.9),
+        -6px -6px 20px rgba(74, 78, 83, 0.7);
+      border-radius: vw(48px);
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+    }
+
+    &:focus {
+      // box-shadow: inherit;
+      box-shadow: none;
+    }
+  }
+  .react-tabs__tab-list {
+    text-align: center;
+    //border-bottom: vw(1px) solid #707070;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    padding-right: vw(20px);
+    padding-left: vw(20px);
+
+    //new css
+    display: inline-flex;
+    justify-content: flex-start;
+    // background: #2d3135;
+    // @include common-inset-box-shadow-mixin-1;
+    // border-radius: vw(34px);
+    border: none;
+
+    background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+    box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.27);
+    border-radius: vw(8px);
+  }
+  .react-tabs__tab-panel--selected {
+    display: block;
+    padding-top: vw(50px);
+  }
+}
+.profile_tabs_section--profile {
+  .react-tabs__tab {
+    &:first-child {
+      width: vw(167px);
+    }
+    &:nth-child(2) {
+      width: vw(167px);
+    }
+    &:nth-child(3) {
+      width: vw(212px);
+    }
+    &:nth-child(4) {
+      width: vw(263px);
+    }
+    &:last-child {
+      width: vw(164px);
+    }
+  }
+}
+/*.profile_tabs_section--shadow-simple-tabs {
+  .react-tabs__tab--selected {
+    border: none !important;
+    position: relative;
+    //z-index: 1;
+    z-index: 99;
+    border-radius: vw(34px);
+    //border-bottom: 1px solid transparent;
+    background: rgb(248, 103, 127);
+    background: linear-gradient(
+      90deg,
+      rgba(248, 103, 127, 1) 0%,
+      rgba(159, 166, 215, 1) 100%
+    );
+    padding-top: vw(14px);
+    padding-bottom: vw(15px);
+    &::after {
+      position: absolute;
+      //bottom: vw(2px);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+      content: "";
+      z-index: -1;
+      //width: 100%;
+      //height: 100%;
+      //height: vw(4px);
+      border-radius: inherit;
+      //background-color: #70f84e;
+      //box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+      //  vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+      //  vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9),
+      //  vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7);
+
+      margin: 1px 1px;
+    }
+  }
+  .react-tabs__tab-list {
+    border-bottom: none;
+    position: relative;
+    width: auto;
+
+    display: inline-flex;
+    justify-content: flex-start;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: vw(6px);
+      background-color: #2d3135;
+      box-shadow: inset vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.2),
+        inset vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8);
+      border-radius: vw(50px);
+    }
+  }
+}*/

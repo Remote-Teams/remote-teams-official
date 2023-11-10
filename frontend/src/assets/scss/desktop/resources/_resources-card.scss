@@ -1,0 +1,196 @@
+//  resource card
+
+.reasource-card-tasks {
+  font-size: vw(18px);
+  //@include fontRoboto;
+  //color: rgba(255, 255, 255, 0.26);
+  line-height: vw(24px);
+  text-transform: uppercase;
+  margin-bottom: vw(5px);
+
+  //new css
+  /*padding-top: vw(8px);
+  font-size: vw(12px);
+  line-height: vw(16px);*/
+  color: rgba(255, 255, 255, 0.5);
+  @include fontBold700;
+}
+.reasource-card-satuts {
+  font-size: vw(20px);
+  @include fontRoboto;
+  line-height: vw(24px);
+  position: relative;
+  margin-bottom: vw(6px);
+}
+
+.web-reasource-circle-div {
+  padding-right: vw(20px);
+  padding-left: vw(20px);
+}
+
+.web-reasource-circle1 {
+  border-radius: 50%;
+  //border: solid vw(5px) #fc9747;
+  //width: vw(40px);
+  //height: vw(40px);
+  //margin: 0 auto;
+  //margin-bottom: vw(5px);
+
+  font-size: vw(24px);
+  line-height: vw(29px);
+  @include fontMontserratBold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //new css
+  width: vw(44px);
+  height: vw(44px);
+  border-radius: 50%;
+  background: #2d3135;
+  border: vw(2px) double transparent;
+  margin: 0 auto;
+  margin-bottom: vw(5px);
+  background-image: $black-gradient,
+    linear-gradient(180deg, #ff9a9e 0%, #fbc2eb 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  span {
+    font-size: vw(24px);
+    line-height: vw(29px);
+    @include fontMontserratBold;
+
+    color: transparent;
+    background: rgba(251, 194, 235, 1);
+  }
+}
+
+.web-reasource-circle1--0 {
+  background-image: $black-gradient,
+    linear-gradient(
+      90deg,
+      rgba(255, 154, 158, 1) 0%,
+      rgba(250, 208, 196, 1) 50%,
+      rgba(250, 208, 196, 1) 100%
+    );
+
+  span {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 154, 158, 1) 0%,
+      rgba(250, 208, 196, 1) 50%,
+      rgba(250, 208, 196, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+// .web-reasource-circle1--3 {
+//   background-image: $black-gradient,
+//     linear-gradient(180deg, #fc9747 0%, #ff796d 100%);
+// }
+
+.web-reasource-circle1--3 {
+  background-image: $black-gradient,
+    linear-gradient(
+      90deg,
+      rgba(255, 236, 210, 1) 0%,
+      rgba(252, 182, 159, 1) 100%
+    );
+
+  span {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 236, 210, 1) 0%,
+      rgba(252, 182, 159, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.web-reasource-circle1--1 {
+  background-image: $black-gradient,
+    linear-gradient(
+      90deg,
+      rgba(217, 175, 217, 1) 0%,
+      rgba(151, 217, 225, 1) 100%
+    );
+
+  span {
+    background: linear-gradient(
+      90deg,
+      rgba(217, 175, 217, 1) 0%,
+      rgba(151, 217, 225, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+// .web-reasource-circle1--2 {
+//   background-image: $black-gradient,
+//     linear-gradient(180deg, #cfc7f8 0%, #515cd4 100%);
+// }
+.web-reasource-circle1--2 {
+  background-image: $black-gradient,
+    linear-gradient(
+      90deg,
+      rgba(150, 222, 218, 1) 0%,
+      rgba(80, 201, 195, 1) 100%
+    );
+
+  span {
+    background: linear-gradient(
+      90deg,
+      rgba(150, 222, 218, 1) 0%,
+      rgba(80, 201, 195, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+// .web-reasource-circle1--4 {
+//   background-image: $black-gradient,
+//     linear-gradient(180deg, #17868b 0%, #84fab0 100%);
+// }
+.web-reasource-circle1--4 {
+  background-image: $black-gradient,
+    linear-gradient(
+      90deg,
+      rgba(166, 192, 254, 1) 0%,
+      rgba(246, 128, 132, 1) 100%
+    );
+
+  span {
+    background: linear-gradient(
+      90deg,
+      rgba(166, 192, 254, 1) 0%,
+      rgba(246, 128, 132, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.web-client-icon--resource {
+  position: relative;
+  img {
+    width: 99.5%;
+  }
+  //new css
+  //width: vw(59px) !important;
+  //height: vw(69px) !important;
+  //.fa-green-circle {
+  //  color: #70f84e;
+  //  vertical-align: middle;
+  //  font-size: vw(18px) !important;
+  //  position: absolute;
+  //  top: vw(-5px);
+  //  right: vw(-5px);
+  //}
+}

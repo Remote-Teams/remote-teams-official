@@ -1,0 +1,166 @@
+.side_panel_main_component_container {
+  display: flex;
+  height: calc(100vh - 4.65vw);
+  //width: vw(455px);
+  //box-shadow: 10px 10px 30px #00000029;
+  padding-top: vw(30px);
+  padding-bottom: vw(30px);
+  flex-direction: column;
+
+  //new css
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  width: vw(551px);
+}
+
+.seleected_template_list_main_container {
+  height: 90%;
+  overflow: auto;
+  .selected_template {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: vw(30px);
+    //width: vw(381px);
+    //height: vw(229px);
+    //border-radius: vw(15px);
+    //border: vw(1px) solid #70f84e;
+
+    //new css
+    width: vw(400px);
+    height: vw(202px);
+    border: vw(1px) solid transparent;
+    background-image: $black-gradient,
+      linear-gradient(
+        87deg,
+        rgba(46, 49, 146, 1) 7.59%,
+        rgba(87, 203, 161, 1) 94.35%
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    @include common-box-shadow-mixin-2;
+    border-radius: vw(24px);
+
+    img {
+      //border-radius: vw(15px);
+      border-radius: vw(24px);
+    }
+  }
+  .selected_template_active {
+    //border: vw(4px) solid #70f84e;
+    border: vw(4px) solid transparent;
+  }
+  .delete_icons {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: vw(10px);
+    width: vw(60px);
+    height: vw(50px);
+    color: rgba(255, 255, 255, 0.56);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 vw(10px) vw(10px);
+    background: rgba(74, 80, 85, 0.27);
+    box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+    span {
+      margin-left: vw(10px);
+    }
+  }
+}
+
+.button_list_main_container {
+  display: flex;
+  height: 10%;
+  align-items: center;
+  padding-top: vw(25px);
+  padding-left: vw(10px);
+  padding-right: vw(10px);
+  justify-content: space-between;
+  .button_curve {
+    display: flex;
+    // width: vw(180px);
+    //height: vw(59px);
+    //border-radius: vw(30px);
+    //background: rgba(74, 80, 85, 0.27);
+    //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+    //new css
+    width: vw(190px);
+    height: vw(71px);
+    box-shadow: vw(0-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+      vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+      vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9),
+      vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7);
+    border-radius: vw(62px);
+
+    .buttons {
+      border: none;
+      color: #ffffff;
+      background: rgba(74, 80, 85, 0.27);
+      //height: vw(59px);
+      width: 50%;
+      //border-radius: 0 vw(38px) vw(38px) 0;
+
+      //new css
+      border-radius: 0 vw(62px) vw(62px) 0;
+      height: 100%;
+    }
+    .buttons:first-child {
+      //border-radius: vw(38px) 0 0 vw(38px);
+      //new css
+      border-radius: vw(62px) 0 0 vw(62px);
+    }
+    .buttons_active {
+      //background: #70f84e;
+      //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+      background: linear-gradient(180deg, #00e9e0 0%, #57cba1 100%);
+      box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+        vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+        vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9),
+        vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7);
+    }
+  }
+  .buttons_round {
+    //height: vw(59px);
+    //width: vw(59px);
+    border: none;
+    color: rgba($color: #ffffff, $alpha: 1);
+    //border-radius: vw(30px);
+    //background: rgba(74, 80, 85, 0.27);
+    //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+    //new css
+    width: vw(71px);
+    height: vw(71px);
+    background: $black-gradient;
+    @include common-box-shadow-mixin-2;
+    border-radius: vw(62px);
+    font-size: vw(20px);
+  }
+  .buttons_preview {
+    //@include fontSemiBold600;
+    font-size: vw(18px);
+    //height: vw(59px);
+    //width: vw(140px);
+    border: 0;
+    //color: #ffffff;
+    cursor: pointer;
+    //border-radius: vw(30px);
+    //background: rgba(74, 80, 85, 0.27);
+    //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+    //new css
+    width: vw(190px);
+    height: vw(71px);
+    background: $black-gradient;
+    @include common-box-shadow-mixin-2;
+    border-radius: vw(62px);
+    color: #e2e2e2;
+    @include fontBold700;
+  }
+}

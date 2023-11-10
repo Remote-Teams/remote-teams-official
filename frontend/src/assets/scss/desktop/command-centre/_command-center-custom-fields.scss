@@ -1,0 +1,267 @@
+.command-center-custom-fields-row-div {
+  padding-top: vw(76px);
+}
+.custom-fields-play-icon-img {
+  width: vw(34px);
+  height: auto;
+  margin-right: vw(22px);
+}
+.add-custom-fields-btn {
+  width: vw(196px);
+}
+
+.command-center-custom-fields-cards {
+  margin-bottom: vw(30px);
+  width: vw(423px);
+  min-height: vw(92px);
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(35px) rgba(35, 37, 39, 0.11);
+  border-radius: vw(3px);
+  padding: vw(19px) vw(38px) vw(21px) vw(18px);
+  word-break: break-all;
+  position: relative;
+  margin-left: vw(15px);
+  display: flex;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    left: vw(-16px);
+    top: 15%;
+    width: vw(12px);
+    height: 70%;
+    border-top-left-radius: vw(17px);
+    border-bottom-left-radius: vw(17px);
+    content: "";
+    z-index: -1;
+    background: linear-gradient(
+      87.98deg,
+      rgba(255, 236, 210, 0.7) 7.59%,
+      rgba(250, 208, 196, 0.7) 94.35%
+    );
+  }
+}
+.cumstom-fields-col-1 {
+  //width: vw(440px);
+  width: vw(511px);
+  //margin-right: vw(104px);
+  margin-right: vw(35px);
+}
+.command-center-custom-fields-cards-text1 {
+  font-size: vw(12px);
+  line-height: vw(16px);
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  color: rgba(255, 255, 255, 0.25);
+  @include fontItalicNunito;
+  padding-top: vw(3px);
+  margin-bottom: 0;
+}
+.command-center-custom-fields-cards-edit-btn {
+  background: transparent;
+  border: none;
+  font-size: vw(12px);
+  line-height: vw(16px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  @include fontExtraBold800;
+
+  i {
+    color: rgba(100, 103, 106, 0.57);
+    margin-right: vw(14px);
+    font-size: vw(18px);
+  }
+}
+
+.command-center-custom-fields-cards-edit-btn--delete {
+  i {
+    margin-right: vw(6px);
+  }
+}
+.cumstom-fields-col-1--2 {
+  .coustom-fields-title {
+    span {
+      background: rgba(161, 196, 253, 1);
+      background: linear-gradient(
+        90deg,
+        rgba(161, 196, 253, 1) 0%,
+        rgba(194, 233, 251, 1) 100%
+      );
+      color: transparent;
+      width: fit-content;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .command-center-custom-fields-cards {
+    &::after {
+      background: linear-gradient(
+        87.98deg,
+        rgba(224, 195, 252, 0.7) 7.59%,
+        rgba(142, 197, 252, 0.7) 94.35%
+      );
+    }
+  }
+}
+.coustom-fields-title {
+  span {
+    margin-bottom: 0;
+    font-size: vw(18px);
+    line-height: vw(25px);
+    @include fontExtraBold800;
+    background: rgb(255, 236, 210);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 236, 210, 0.7) 0%,
+      rgba(252, 182, 159, 0.7) 100%
+    );
+    color: transparent;
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.cumstom-fields-col-1--3 {
+  margin-right: 0;
+  .coustom-fields-title {
+    span {
+      background: rgba(253, 203, 241, 1);
+      background: linear-gradient(
+        90deg,
+        rgba(253, 203, 241, 1) 0%,
+        rgba(253, 203, 241, 1) 1%,
+        rgba(230, 222, 233, 1) 100%
+      );
+      color: transparent;
+      width: fit-content;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .command-center-custom-fields-cards {
+    &::after {
+      background: linear-gradient(
+        0deg,
+        rgba(224, 195, 252, 0.7) 7.59%,
+        rgba(142, 197, 252, 0.7) 94.35%
+      );
+    }
+  }
+  .command-center-custom-fields-cards {
+    &::after {
+      background: rgba(251, 194, 235, 0.7);
+      background: linear-gradient(
+        0deg,
+        rgba(251, 194, 235, 0.7) 7.59%,
+        rgba(161, 140, 209, 0.7) 94.35%
+      );
+    }
+  }
+}
+/*====================================================================
+                        add new fields
+=====================================================================*/
+.add-new-custom-fields-div {
+  padding: vw(45px) vw(72px) 0 vw(58px);
+}
+.add-new-custom-fields-title {
+  font-size: vw(24px);
+  line-height: vw(34px);
+  letter-spacing: 0.01em;
+  background: rgba(224, 195, 252, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include fontMontserratExtraBold;
+  margin: auto;
+  margin-bottom: 0;
+}
+.add-new-custom-fields-outer-form-div {
+  padding-top: vw(34px);
+}
+.add-new-custom-fields-filed-name-text {
+  .input-border-div {
+    width: 100%;
+  }
+}
+.add-new-custom-fields-text1 {
+  font-size: vw(18px);
+  line-height: vw(25px);
+  background: rgba(255, 236, 210, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 210, 1) 0%,
+    rgba(252, 182, 159, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include fontExtraBold800;
+  margin-bottom: vw(26px);
+}
+.add-new-custom-fields-text2 {
+  @include common-peach-color-text;
+  margin-bottom: vw(25px);
+}
+.add-new-fields-multipleOption-div {
+  padding-top: vw(30px);
+  justify-content: space-between;
+}
+.add-more-choice-btn {
+  font-size: vw(14px);
+  line-height: vw(19px);
+  color: rgba(255, 255, 255, 0.45);
+  @include fontSemiBold600;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.add-custom-fields-save-btn {
+  width: vw(192px);
+  border-radius: vw(11px);
+  margin-top: vw(31px);
+  margin-bottom: vw(62px);
+}
+.custom-fields-not-found-text {
+  margin-bottom: vw(44px);
+  font-size: vw(17px);
+  line-height: vw(23px);
+  @include fontItalicNunito;
+  color: #9ba9b7;
+}
+.custom-fields-no-flelds-icon-img {
+  width: vw(201px);
+  height: vw(201px);
+  margin-top: vw(190px);
+}
+.command-center-custom-fields-content-div {
+  width: 100%;
+  height: vw(618px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: rgba(35, 35, 35, 0.2);
+  border-radius: vw(8px);
+  margin-top: vw(45px);
+  padding: vw(35px);
+}
+.custom-fields-title-div {
+  width: vw(460px);
+  padding-left: vw(35px);
+}

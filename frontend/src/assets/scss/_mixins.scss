@@ -1,0 +1,246 @@
+/* ===============================================================
+                    
+                            Mixins Nunito
+
+================================================================== */
+
+@mixin fontExtraLight200 {
+  font-weight: 300;
+  font-family: "Nunito-ExtraLight", sans-serif, "Helvetica";
+}
+
+@mixin fontExtraLightItalic200 {
+  font-weight: 300;
+  font-family: "Nunito-ExtraLightItalic", sans-serif, "Helvetica";
+}
+
+@mixin fontLight300 {
+  font-weight: 300;
+  font-family: "Nunito-Light", sans-serif, "Helvetica";
+}
+
+@mixin fontItalicNunito {
+  font-family: "Nunito-Italic", sans-serif, "Helvetica";
+}
+
+@mixin fontRegular400 {
+  font-weight: 400;
+  font-family: "Nunito-Regular", sans-serif, "Helvetica";
+}
+
+@mixin fontSemiBold600 {
+  font-weight: 600;
+  font-family: "Nunito-SemiBold", sans-serif, "Helvetica";
+}
+
+@mixin fontSemiBold600Important {
+  font-weight: 600;
+  font-family: "Nunito-SemiBold", sans-serif, "Helvetica" !important;
+}
+
+@mixin fontBold700 {
+  font-weight: 700;
+  font-family: "Nunito-Bold", sans-serif, "Helvetica";
+}
+
+@mixin fontExtraBold800 {
+  font-weight: 800;
+  font-family: "Nunito-ExtraBold", sans-serif, "Helvetica";
+}
+
+@mixin fontBlack900 {
+  font-weight: 900;
+  font-family: "Nunito-Black", sans-serif, "Helvetica";
+}
+@mixin fontSemiBoldItalic {
+  font-weight: 600;
+  font-family: "Nunito-SemiBoldItalic", sans-serif, "Helvetica";
+}
+
+/* ===============================================================
+                    
+                            Mixins Roboto
+
+================================================================== */
+
+@mixin fontRoboto {
+  font-weight: 400;
+  font-family: "Roboto-Regular", sans-serif, "Helvetica";
+}
+
+@mixin fontRobotoMedium {
+  font-weight: 500;
+  font-family: "Roboto-Medium", sans-serif, "Helvetica";
+}
+
+/* ===============================================================
+                    
+                            Mixins Lato
+
+================================================================== */
+@mixin fontLato {
+  font-family: Lato-Regular, sans-serif, "Helvetica";
+  //font-weight: 500;
+}
+/* ===============================================================
+                    
+                      FreightSans Pro Semibold
+
+================================================================== */
+@mixin fontFreightSansProSemibold {
+  font-family: FreightSansProSemibold-Regular, sans-serif, "Helvetica";
+}
+
+/* ===============================================================
+                    
+                      Kollektif
+
+================================================================== */
+@mixin fontKollektifItalic {
+  font-family: Kollektif-Italic, sans-serif, "Helvetica";
+}
+
+/* ===============================================================
+                    
+                      Montserrat
+
+================================================================== */
+@mixin fontMontserratSemiBold {
+  font-weight: 600;
+  font-family: Montserrat-SemiBold, sans-serif, "Helvetica";
+}
+@mixin fontMontserratBold {
+  font-weight: 700;
+  font-family: Montserrat-Bold, sans-serif, "Helvetica";
+}
+@mixin fontMontserratExtraBold {
+  font-weight: 800;
+  font-family: Montserrat-ExtraBold, sans-serif, "Helvetica";
+}
+@mixin fontMontserratBlack {
+  font-weight: 900;
+  font-family: Montserrat-Black, sans-serif, "Helvetica";
+}
+
+/*================================================================
+
+                    Rubix
+
+===================================================================*/
+@mixin fontRubikRegular {
+  font-weight: 400;
+  font-family: Rubik-Regular, sans-serif, "Helvetica";
+}
+@mixin fontRubikBold {
+  font-weight: 700;
+  font-family: Rubik-Bold, sans-serif, "Helvetica";
+}
+
+/*================================================================
+
+                    Manrope
+
+===================================================================*/
+@mixin fontManropeBold {
+  font-weight: 700;
+  font-family: Manrope-Bold, sans-serif, "Helvetica";
+}
+/*=======================================================================
+                      
+                        OpenSans
+
+========================================================================*/
+@mixin fontOpenSansRegular {
+  font-weight: 400;
+  font-family: OpenSans-Regular, sans-serif, "Helvetica";
+}
+
+/*=======================================================================
+                      
+                        OpenSans
+
+========================================================================*/
+@mixin fontPoppinsRegular {
+  font-weight: 400;
+  font-family: Poppins-Regular, sans-serif, "Helvetica";
+}
+
+/* ===============================================================
+                    
+                      box shadows
+
+================================================================== */
+
+@mixin common-box-shadow-mixin-1 {
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+}
+
+@mixin common-box-shadow-mixin-1-important {
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+}
+
+@mixin common-box-shadow-mixin-2 {
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9),
+    vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7);
+}
+
+@mixin common-box-shadow-mixin-3 {
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.13),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) #232527,
+    vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.37);
+}
+
+@mixin common-box-shadow-mixin-4 {
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8);
+}
+
+@mixin common-inset-box-shadow-mixin-1 {
+  box-shadow: inset vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    inset vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8);
+}
+
+@mixin common-inset-box-shadow-mixin-2 {
+  box-shadow: vw(1px) vw(1px) vw(2px) rgba(56, 59, 62, 0.3),
+    vw(-1px) vw(-1px) vw(2px) rgba(14, 15, 16, 0.5),
+    inset vw(-1px) vw(1px) vw(2px) rgba(14, 15, 16, 0.2),
+    inset vw(1px) vw(-1px) vw(2px) rgba(14, 15, 16, 0.2),
+    inset vw(-1px) vw(-1px) vw(2px) rgba(56, 59, 62, 0.9),
+    inset vw(1px) vw(1px) vw(3px) rgba(14, 15, 16, 0.9);
+}
+
+@mixin common-peach-color-text {
+  width: fit-content;
+  background: rgba(255, 154, 158, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 154, 158, 1) 0%,
+    rgba(250, 208, 196, 1) 99%,
+    rgba(250, 208, 196, 1) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  // -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin common-peach-color-text-1 {
+  width: fit-content;
+  background: rgba(255, 154, 158, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(250, 208, 196, 1) 0%,
+    rgba(255, 209, 255, 1) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  // -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

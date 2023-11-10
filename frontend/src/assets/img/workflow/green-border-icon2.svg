@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <filter id="Rectangle_11467" x="0" y="0" width="71" height="71" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_40047" data-name="Group 40047" transform="translate(13787 -3077)">
+    <g id="Group_39931" data-name="Group 39931" transform="translate(-14986 2561)">
+      <g transform="matrix(1, 0, 0, 1, 1199, 516)" filter="url(#Rectangle_11467)">
+        <g id="Rectangle_11467-2" data-name="Rectangle 11467" transform="translate(9 6)" fill="#4a5055" stroke="#5ccc40" stroke-width="2">
+          <rect width="53" height="53" rx="26.5" stroke="none"/>
+          <rect x="1" y="1" width="51" height="51" rx="25.5" fill="none"/>
+        </g>
+      </g>
+      <g id="Group_39930" data-name="Group 39930" transform="translate(-1.646)">
+        <g id="noun_input_field_50678" data-name="noun_input field_50678" transform="translate(1217.646 536)">
+          <g id="Group_39925" data-name="Group 39925" transform="translate(0 0)">
+            <path id="Path_58958" data-name="Path 58958" d="M91.4,158.593H58.259A2.262,2.262,0,0,1,56,156.334V138.259A2.262,2.262,0,0,1,58.259,136H91.4a2.262,2.262,0,0,1,2.259,2.259v18.074A2.262,2.262,0,0,1,91.4,158.593ZM58.259,137.506a.754.754,0,0,0-.753.753v18.074a.754.754,0,0,0,.753.753H91.4a.754.754,0,0,0,.753-.753V138.259a.754.754,0,0,0-.753-.753Z" transform="translate(-56 -136)" fill="#fff"/>
+          </g>
+          <g id="Group_39926" data-name="Group 39926" transform="translate(17.942 1.097)">
+            <rect id="Rectangle_11467-3" data-name="Rectangle 11467" width="2.194" height="20.845" transform="translate(0 0)" fill="#fff"/>
+          </g>
+          <g id="Group_39927" data-name="Group 39927" transform="translate(19.039 10.971)">
+            <rect id="Rectangle_11468" data-name="Rectangle 11468" width="17.554" height="1.097" transform="translate(0 0)" fill="#fff"/>
+          </g>
+          <g id="Group_39929" data-name="Group 39929" transform="translate(24.32 14.529)">
+            <g id="Group_39928" data-name="Group 39928" transform="translate(0 0)">
+              <path id="Path_58959" data-name="Path 58959" d="M317.888,294.953l-3.545-3.545,1.065-1.065,2.48,2.48,2.48-2.48,1.065,1.065Z" transform="translate(-314.343 -290.343)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+        <path id="Icon_awesome-question" data-name="Icon awesome-question" d="M4.363,0a2.815,2.815,0,0,0-2.5,1.323.349.349,0,0,0,.075.478l.627.475a.349.349,0,0,0,.483-.06A1.41,1.41,0,0,1,4.25,1.5c.447,0,1,.288,1,.721,0,.328-.271.5-.712.743-.515.289-1.2.648-1.2,1.546V4.65A.349.349,0,0,0,3.691,5H4.744a.349.349,0,0,0,.349-.349V4.566c0-.623,1.82-.649,1.82-2.334A2.5,2.5,0,0,0,4.363,0ZM4.218,5.427A1.007,1.007,0,1,0,5.224,6.433,1.008,1.008,0,0,0,4.218,5.427Z" transform="translate(1222.598 544.777)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

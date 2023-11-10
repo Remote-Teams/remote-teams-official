@@ -1,0 +1,37 @@
+.au_template_one {
+  align-items: center;
+  padding: vw(50px);
+  .au_template_one__middle__left {
+    width: 50%;
+    //margin-top: vw(150px);
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .au_template_one__top_headline {
+    display: flex;
+    height: vw(79px);
+    width: 100%;
+    //justify-content: flex-end;
+    letter-spacing: vw(8px);
+    padding-left: vw(30px);
+  }
+  .au_template_one__middle__right_inner {
+    display: flex;
+    width: 100%;
+    padding-top: vw(50px);
+  }
+  .au_template_one__middle__right {
+    width: 50%;
+    flex-direction: column;
+  }
+  .text_Container {
+    display: flex;
+    width: 50%;
+    height: vw(345px);
+    padding: vw(10px);
+    letter-spacing: vw(0.6px);
+  }
+}

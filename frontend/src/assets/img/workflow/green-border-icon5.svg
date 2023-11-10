@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <filter id="Rectangle_2232" x="0" y="0" width="71" height="71" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_40050" data-name="Group 40050" transform="translate(13598 -3078)">
+    <g transform="matrix(1, 0, 0, 1, -13598, 3078)" filter="url(#Rectangle_2232)">
+      <g id="Rectangle_2232-2" data-name="Rectangle 2232" transform="translate(9 6)" fill="#4a5055" stroke="#5ccc40" stroke-width="2">
+        <rect width="53" height="53" rx="26.5" stroke="none"/>
+        <rect x="1" y="1" width="51" height="51" rx="25.5" fill="none"/>
+      </g>
+    </g>
+    <path id="Icon_metro-attachment" data-name="Icon metro-attachment" d="M18.39,9.593,16.868,8.072,9.255,15.683a3.229,3.229,0,1,0,4.567,4.567l9.135-9.134A5.382,5.382,0,0,0,15.346,3.5l-9.591,9.59-.021.02A7.507,7.507,0,0,0,16.351,23.73l.019-.021h0l6.547-6.546-1.523-1.522-6.547,6.545-.02.02a5.353,5.353,0,0,1-7.572-7.57l.021-.02h0l9.592-9.59a3.229,3.229,0,0,1,4.568,4.567L12.3,18.727a1.076,1.076,0,0,1-1.523-1.522L18.39,9.593Z" transform="translate(-13576.535 3096.072)" fill="#fff" opacity="0.82"/>
+  </g>
+</svg>

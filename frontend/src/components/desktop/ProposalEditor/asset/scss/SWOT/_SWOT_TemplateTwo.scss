@@ -1,0 +1,50 @@
+.swot_template_two {
+  flex-direction: column;
+  padding: vw(50px) vw(50px) vw(30px) vw(50px);
+  .swot_template_two_headline {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: vw(80px);
+    letter-spacing: vw(4.32px);
+  }
+  .swot_template_two_bottom {
+    display: flex;
+    padding-top: vw(50px);
+    justify-content: space-between;
+  }
+  .swot_template_two_bottom_block {
+    width: 25%;
+    height: vw(450px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .swot_template_two_block_top {
+    width: 70%;
+    height: 50%;
+    margin: 0 vw(10px) vw(10px) vw(10px);
+    img {
+      width: 100%;
+      height: 100%;
+      display: blocks;
+      border-radius: 50%;
+    }
+  }
+  .swot_template_two_block_headline {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: vw(1.8px);
+    padding: vw(10px) 0;
+  }
+  .swot_template_two_block_para {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: vw(0.4px);
+    padding: vw(10px) 0;
+  }
+}

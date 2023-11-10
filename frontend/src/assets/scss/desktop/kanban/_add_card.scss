@@ -1,0 +1,43 @@
+.card_deatils_container {
+  .description_edit_icons {
+    //margin-bottom: vw(60px);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: vw(16px);
+    p {
+      font-size: vw(18px);
+      line-height: vw(24px);
+      //letter-spacing: vw(2.7px);
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-family: Nunito-Bold;
+      //new css
+      @include common-peach-color-text;
+      @include fontExtraBold800;
+    }
+    img {
+      //width: vw(24px);
+      //height: vw(24px);
+      //margin-right: vw(40px);
+
+      //new css
+      width: vw(15px);
+      height: vw(15px);
+      margin-right: vw(12px);
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  }
+  .card_description {
+    //width: vw(697px);
+    //font-size: vw(18px);
+    //line-height: vw(24px);
+    font-family: Nunito-SemiBold;
+    //new css
+    width: vw(609px);
+    font-size: vw(14px);
+    line-height: vw(19px);
+    color: rgba(255, 255, 255, 0.91);
+  }
+}

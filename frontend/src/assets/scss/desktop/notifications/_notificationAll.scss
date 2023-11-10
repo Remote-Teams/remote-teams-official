@@ -1,0 +1,39 @@
+.notifications-all-div {
+  //padding-left: vw(100px);
+  padding-right: vw(100px);
+  overflow: auto;
+  height: vw(510px);
+
+  //new css
+  padding-left: vw(10px);
+  padding-top: vw(50px);
+}
+
+.notifications-all-text-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: vw(40px);
+}
+
+/* announcemnt popup css */
+
+.notification_and_announcement {
+  padding: 20px;
+  h1 {
+    font-family: Nunito-SemiBold;
+    font-size: vw(25px);
+  }
+  .announcement_desription {
+    height: vw(160px);
+    padding-right: vw(15px);
+
+    p {
+      margin-bottom: 0;
+      font-family: Nunito-Light;
+      font-size: vw(18px);
+    }
+    overflow: auto;
+  }
+}

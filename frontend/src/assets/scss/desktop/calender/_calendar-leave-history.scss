@@ -1,0 +1,48 @@
+// leave history
+
+.calendar-leave-history-content {
+  padding-top: vw(170px);
+}
+
+.calendar-add-meeting-modal-list-overflow {
+  width: vw(600px);
+  height: vw(160px);
+  margin-bottom: vw(10px);
+  overflow: auto;
+
+  .create-project-add-member-img-text-block,
+  .create-project-add-member-img-block {
+    width: vw(90px);
+  }
+
+  .create-project-add-member-img-text-block {
+    padding-top: 0;
+  }
+
+  .create-project-add-member-img-block {
+    width: vw(90px);
+    height: vw(106px);
+    border-radius: vw(7px);
+    // border: 1px dashed #ffffff;
+
+    &__imgMember {
+      width: 100%;
+      height: 100%;
+      border-radius: vw(7px);
+    }
+
+    &__remove {
+      top: 0;
+      //right: vw(-5px);
+      font-size: vw(16px);
+      padding: vw(3px) vw(6px);
+      padding-top: vw(6px);
+
+      //new css
+      right: vw(1px);
+    }
+  }
+}
+.finances-table-tbody--invoice--leaveHistory {
+  height: vw(230px) !important;
+}

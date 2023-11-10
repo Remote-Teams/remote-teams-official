@@ -1,0 +1,35 @@
+// add expense
+
+.add-expense-content-div {
+  padding-top: vw(82px);
+}
+.add-expense-content-div--allProject {
+  padding-top: vw(38px);
+}
+
+.add-expense-row-1 {
+  padding-bottom: vw(97px);
+}
+
+.add-expense-price-table {
+  width: 100%;
+
+  td {
+    vertical-align: text-top;
+    width: 50%;
+    word-break: break-all;
+    padding: vw(20px);
+  }
+
+  // for amount td
+  tr td:nth-child(2) {
+    text-align: right;
+  }
+}
+.display-client-date-border-div--add-expense {
+  width: vw(168px);
+  height: vw(49px);
+  margin: auto;
+  color: white;
+  vertical-align: text-top;
+}

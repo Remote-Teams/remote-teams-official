@@ -1,0 +1,314 @@
+/* ===============================================================
+                    
+                    common
+
+================================================================== */
+
+@import "./input-field-email-text-password";
+@import "./common-fonts";
+@import "./custom-modal";
+@import "./react-select";
+@import "./datepicker";
+@import "./checkbox";
+@import "./timezone";
+@import "./textarea-field";
+@import "./upload-image";
+@import "./upload-file";
+@import "./toggle";
+@import "./count-card";
+@import "./search-input";
+@import "./plans-content";
+@import "./react-phone-input-block";
+@import "./rc-dropdown";
+@import "./custom-radio";
+@import "./timezone-custom";
+@import "./custom-pagination";
+@import "./ag-grid-table";
+@import "./model";
+@import "./multi-level-selector";
+@import "./breadcrumb-menu";
+@import "./editor-quill";
+
+// margin
+.mt-20 {
+  margin-top: vw(20px);
+}
+
+.mt-30 {
+  margin-top: vw(30px);
+}
+.mt-40 {
+  margin-top: vw(40px);
+}
+.mt-50 {
+  margin-top: vw(50px);
+}
+.mr-9 {
+  margin-right: vw(9px);
+}
+.mr-15 {
+  margin-right: vw(15px);
+}
+.mr-20 {
+  margin-right: vw(20px);
+}
+.mr-25 {
+  margin-right: vw(25px);
+}
+.mr-50 {
+  margin-right: vw(50px);
+}
+
+.mr-60 {
+  margin-right: vw(60px);
+}
+
+.mr-105 {
+  margin-right: vw(105px);
+}
+.mb-6 {
+  margin-bottom: vw(6px);
+}
+.mb-10 {
+  margin-bottom: vw(10px);
+}
+.mb-15 {
+  margin-bottom: vw(15px);
+}
+
+.mb-18 {
+  margin-bottom: vw(18px);
+}
+
+.mb-20 {
+  margin-bottom: vw(20px);
+}
+
+.mb-25 {
+  margin-bottom: vw(25px);
+}
+
+.mb-30 {
+  margin-bottom: vw(30px);
+}
+
+.mb-35 {
+  margin-bottom: vw(35px);
+}
+
+.mb-40 {
+  margin-bottom: vw(40px);
+}
+.mb-50 {
+  margin-bottom: vw(50px);
+}
+.ml-12 {
+  margin-left: vw(12px);
+}
+.ml-20 {
+  margin-left: vw(20px);
+}
+.ml-30 {
+  margin-left: vw(30px);
+}
+.ml-32 {
+  margin-left: vw(32px);
+}
+.ml-40 {
+  margin-left: vw(40px);
+}
+// padding
+.pt-10 {
+  padding-top: vw(10px);
+}
+.pt-20 {
+  padding-top: vw(20px);
+}
+.pt-23 {
+  padding-top: vw(23px);
+}
+.pt-25 {
+  padding-top: vw(25px);
+}
+.pt-13 {
+  padding-top: vw(13px);
+}
+.pt-40 {
+  padding-top: vw(40px);
+}
+.pt-50 {
+  padding-top: vw(50px);
+}
+.pt-65 {
+  padding-top: vw(65px);
+}
+.pr-10 {
+  padding-right: vw(10px);
+}
+.pr-30 {
+  padding-right: vw(30px);
+}
+.pr-50 {
+  padding-right: vw(50px);
+}
+.pr-90 {
+  padding-right: vw(90px);
+}
+
+.pb-10 {
+  padding-bottom: vw(10px);
+}
+.pb-20 {
+  padding-bottom: vw(20px);
+}
+
+.pl-10 {
+  padding-left: vw(10px);
+}
+
+.pl-30 {
+  padding-left: vw(30px);
+}
+
+.pl-36 {
+  padding-left: vw(36px);
+}
+
+// other
+.img-wh-100 {
+  width: 100%;
+  height: 100%;
+}
+
+.opacity-0 {
+  opacity: 0;
+  user-select: none;
+  cursor: default !important;
+}
+
+.opacity-26 {
+  opacity: 0.26;
+}
+
+.opacity-35 {
+  opacity: 0.35;
+}
+
+.opacity-41 {
+  opacity: 0.41;
+}
+.opacity-5 {
+  opacity: 0.5;
+}
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.opacity-38-italic {
+  opacity: 0.38;
+  font-style: italic;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.display-inline-block {
+  display: inline;
+}
+
+.word-break-word {
+  word-break: break-word;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+// color
+.color-white {
+  color: #ffffff;
+}
+
+.color-orange {
+  color: #fc9747;
+}
+
+.color-green {
+  color: #70f84e;
+}
+
+.color-red {
+  color: #fc4c47;
+}
+.color-offwhite {
+  color: rgba(255, 255, 255, 0.79);
+}
+.color-offwhite-opacity-8 {
+  color: rgba(255, 255, 255, 0.89);
+}
+.color-white-opacity-77 {
+  color: rgba(255, 255, 255, 0.77);
+}
+.color-E2E2E2 {
+  color: #e2e2e2;
+}
+.color-white-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.z-index-9 {
+  z-index: 9;
+}
+
+.disabled-link-div {
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
+}
+.overflow-visible {
+  overflow: visible;
+}
+
+.common-peach-color-text {
+  @include common-peach-color-text;
+}
+
+.common-peach-color-text-1 {
+  @include common-peach-color-text-1;
+}
+
+.color-white-25 {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.color-white-45 {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.color-white-48 {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.color-white-66 {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.color-white-79 {
+  color: rgba(255, 255, 255, 0.79);
+}

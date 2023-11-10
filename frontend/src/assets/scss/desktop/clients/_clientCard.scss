@@ -1,0 +1,208 @@
+.web-client-card-div {
+  //width: vw(381px);
+  height: auto;
+  //background: #4a5055;
+  //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+  color: #ffffff;
+  //margin-bottom: vw(42px);
+  border-radius: vw(15px);
+  //margin-right: vw(45px);
+  //padding: vw(15px) vw(28px) vw(28px) vw(28px);
+
+  //new css
+  width: vw(396px);
+  //background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+  //background: #2d3135;
+  background: rgb(45, 49, 53);
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  padding: vw(25px) vw(30px) vw(26px) vw(19px);
+  margin-bottom: vw(50px);
+  margin-right: vw(38px);
+
+  .column {
+    word-break: break-all;
+    padding-right: vw(10px);
+  }
+}
+
+.web-client-icon {
+  width: vw(64px);
+  height: vw(73px);
+  border-radius: vw(6px);
+  margin-right: vw(30px);
+  flex-shrink: 0;
+}
+
+.web-client-icon--client {
+  //width: vw(67px);
+  //height: vw(67px);
+  //border: 1px solid #70f84e;
+
+  //new css
+  width: vw(91.3px);
+  height: vw(92px);
+  //border: vw(1px) solid #5ccc40;
+  //box-sizing: border-box;
+  //border-radius: vw(9px);
+  border: double 0.5px transparent;
+  background-image: $black-gradient,
+    linear-gradient(
+      87deg,
+      rgba(46, 49, 146, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: vw(17px);
+
+  //img {
+  //  width: vw(54px);
+  //  height: auto;
+  //}
+}
+
+.web-client-icon--client--display {
+  //width: vw(144px);
+  //height: vw(144px);
+  margin-bottom: vw(20px);
+
+  //new css
+  width: vw(127px);
+  height: auto;
+}
+
+//.web-client-icon--resource {
+//  border: 1px dashed rgba(255, 255, 255, 0.7);
+//}
+
+.web-client-name {
+  font-size: vw(24px);
+  //line-height: vw(43px);
+  //@include fontSemiBold600;
+  margin-bottom: vw(6px);
+
+  //new css
+  line-height: vw(33px);
+  @include fontBold700;
+  color: rgba(255, 255, 255, 0.79);
+}
+
+.client-card-subtittle {
+  text-transform: uppercase;
+  //font-size: vw(20px);
+  //line-height: vw(27px);
+  padding-top: vw(15px);
+  //color: rgba(255, 255, 255, 0.26);
+  @include fontExtraBold800;
+  margin-bottom: vw(6px);
+  //new css
+  font-size: vw(18px);
+  line-height: vw(33px);
+  color: rgba(255, 255, 255, 0.23);
+  letter-spacing: vw(2px);
+}
+
+.client-card-subtittle-text {
+  font-size: vw(16px);
+  line-height: vw(22px);
+  //@include fontSemiBold600;
+  font-style: italic;
+  margin-bottom: vw(6px);
+
+  //new css
+  @include fontRegular400;
+  /*font-size: vw(12px);
+  line-height: vw(16px);
+  color: #e2e2e2;
+  @include fontLato;*/
+}
+.client-card-subtittle-text--italic {
+  font-style: italic;
+  text-decoration: underline;
+}
+.fa-yellow-circle,
+.fa-orange-circle {
+  font-size: vw(24px);
+  margin-right: vw(10px);
+}
+
+.fa-yellow-circle {
+  @include common-peach-color-text;
+}
+.client-card-subtittle-text--project-name {
+  width: 50%;
+  padding-right: vw(10px);
+}
+.fa-orange-circle {
+  //color: rgba(255, 91, 61, 1);
+  background: rgb(224, 195, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-view-edit-buttons-block {
+  img {
+    width: vw(12px);
+    vertical-align: baseline;
+    //new css
+    //display: none;
+  }
+
+  .fa {
+    font-size: vw(12px) !important;
+    //new css
+    //display: none;
+  }
+
+  img,
+  .fa {
+    margin-right: vw(5px);
+  }
+
+  button {
+    //width: vw(91px);
+    //height: vw(29px);
+    //background-color: #373d42;
+    font-size: vw(14px);
+    line-height: vw(16px);
+    margin-right: vw(12px);
+    margin-bottom: vw(5px);
+
+    //new css
+    //font-size: vw(12px);
+    width: vw(86px);
+    height: vw(36px);
+    //background: #2d3135;
+    /* Idle Shadow 
+    @include common-box-shadow-mixin-2;
+    border-radius: vw(30px);*/
+  }
+  .login-dashboard-btn {
+    padding-top: 0;
+  }
+}
+
+//new css
+//.react-select-container.react-select-container--icon
+//  .react-select-elements__control {
+//  background: transparent !important;
+//}
+.react-select-container--icon {
+  background: transparent !important;
+  margin-left: vw(5px);
+}
+.new-select-img {
+  width: vw(7px);
+  height: vw(35px);
+}

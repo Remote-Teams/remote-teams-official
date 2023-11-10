@@ -1,0 +1,183 @@
+.saved_cards_container {
+  display: flex;
+  align-items: flex-start;
+}
+.default_card_box {
+  width: vw(560px);
+  min-height: vw(245px);
+  box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  border-radius: vw(12px);
+  background: $black-gradient;
+  padding: vw(37px) vw(33px) vw(28px) vw(33px);
+  margin-top: vw(28px);
+  margin-bottom: vw(37px);
+}
+.default-card-title {
+  font-size: vw(18px);
+  line-height: vw(21px);
+  margin-bottom: vw(7px);
+  @include fontRubikRegular;
+}
+.defult-card-credit-text {
+  font-size: vw(14px);
+  line-height: vw(17px);
+  @include fontRubikRegular;
+  margin-bottom: 0;
+}
+.defult-card-credit-no-text {
+  font-size: vw(18px);
+  line-height: vw(21px);
+  @include fontRubikBold;
+  margin-top: vw(32px);
+  margin-bottom: vw(65px);
+}
+.defult-card-expire-text {
+  font-size: vw(14px);
+  line-height: vw(17px);
+  margin-bottom: 0;
+  @include fontRubikRegular;
+}
+.master-card-icon {
+  width: vw(72px);
+  height: auto;
+  margin-right: vw(2px);
+}
+.defult-card-expire-text1 {
+  padding-right: vw(62px);
+}
+.available_balence_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: vw(560px);
+  min-height: vw(93px);
+  box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  border-radius: vw(12px);
+  background: $black-gradient;
+  padding: vw(25px) vw(37px);
+  margin-top: vw(23px);
+}
+.available_balence_card-title {
+  font-size: vw(36px);
+  line-height: vw(43px);
+  margin-bottom: 0;
+  @include fontRubikBold;
+}
+.available_balence_card-para {
+  font-size: vw(14px);
+  line-height: vw(17px);
+  margin-bottom: 0;
+  @include fontRubikRegular;
+}
+.saved_cards-default-title {
+  background: rgba(255, 236, 210, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 210, 1) 0%,
+    rgba(252, 182, 159, 1) 100%
+  );
+}
+.saved_cards-balance-title {
+  background: rgba(161, 140, 209, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 140, 209, 1) 0%,
+    rgba(251, 194, 235, 1) 100%
+  );
+}
+.other-saved-cards-title {
+  background: rgba(251, 194, 235, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 194, 235, 1) 0%,
+    rgba(166, 193, 238, 1) 100%
+  );
+}
+.other-saved-cards-title,
+.saved_cards-default-title,
+.saved_cards-balance-title {
+  margin-left: vw(5px);
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.second-row {
+  padding-left: vw(70px);
+}
+.profile-card-table {
+  width: vw(1100px) !important;
+  margin-top: vw(24px);
+  tr {
+    min-height: vw(91px);
+    background-color: $black-gradient !important;
+    box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+    border-radius: vw(12px);
+  }
+  td {
+    font-size: vw(18px);
+    line-height: vw(21px);
+    @include fontRubikRegular;
+    border-top: none !important;
+    color: white;
+    width: 15%;
+    vertical-align: middle !important;
+    padding: vw(22px) !important;
+
+    &:last-child {
+      width: 5%;
+    }
+
+    &:nth-child(3) {
+      width: 10%;
+    }
+
+    &:nth-child(4) {
+      width: 20%;
+    }
+
+    &:nth-child(5) {
+      width: 17%;
+    }
+
+    &:nth-child(2) {
+      width: 16%;
+    }
+
+    &:first-child {
+      position: relative;
+      width: 17%;
+      z-index: 1;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 70%;
+        width: vw(12px);
+        top: 15%;
+        left: vw(-12px);
+        background: rgb(0, 233, 224);
+        background: linear-gradient(
+          87deg,
+          rgba(0, 233, 224, 0.7) 7.59%,
+          rgba(87, 203, 161, 0.7) 94.35%
+        );
+        margin: auto;
+        border-bottom-left-radius: vw(17px);
+        border-top-left-radius: vw(17px);
+        z-index: -1;
+      }
+    }
+  }
+}
+.login-next-green-btn--profile-saved-cards {
+  width: vw(150px);
+  height: vw(46px);
+}
+.font-14-rubix {
+  font-size: vw(14px);
+  line-height: vw(17px);
+}
+.add-payment-card-btn{
+  margin-left: vw(20px);
+}

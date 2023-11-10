@@ -1,0 +1,62 @@
+.what_we_do_template_four{
+    flex-direction: column;
+    .what_we_do_template_four__top{
+        display: flex;
+        height: 20%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        // background-color: skyblue;
+    }   
+    .what_we_do_template_four__middle{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        // background-color: salmon;
+        align-items: center;
+        justify-content: center;
+        .image_container_four_wwd{
+            display: flex;
+            height: 80%;
+            width: 90%;
+
+        }
+    }
+    .what_we_do_template_four__bottom{
+        display: flex;
+        height: 30%;
+        padding-bottom: vw( 20px );
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        .what_we_do_template_four__bottom_blocks{
+            display: flex;
+            height: 100%;
+            width: vw( 410px );
+            .what_we_do_template_four__bottom_blocks_left{
+                display: flex;
+                height: 100%;
+                width: 30%;
+                justify-content: center;
+            }
+            .what_we_do_template_four__bottom_blocks_right{
+                display: flex;
+                height: 100%;
+                width: 70%;
+                flex-direction: column;
+
+                .what_we_do_template_four__bottom_blocks_right__headline_blocks{
+                    display: flex;
+                    width: 100%;
+                    height: 30%;
+                }
+                .what_we_do_template_four__bottom_blocks_right__para_blocks{
+                    display: flex;
+                    width: 100%;
+                    height: 70%;
+                    padding-bottom: vw( 30px );
+                }
+            }
+        }
+    }
+}

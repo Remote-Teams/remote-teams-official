@@ -1,0 +1,262 @@
+
+/* NOTES */
+
+// All common components present in components > desktop > common,
+// ...for more details (like to check props and default values set), 
+// ...please go through the components present in common folder
+// and you can check actual used by checking design and related component in project
+
+// Try to use "BEM — Block Element Modifier" approach,
+// ...you can find http://getbem.com/ it's easy and can learn quickly..
+// ...it's easy and good approach to keep css modular and reusable..
+// Try to use common classes like..  
+// for commoon fonts refer assets > scss > common > _common-fonts.scss
+// for other common margin, padding etc. refer assets > scss > common > _common.scss
+// if the class not present then you can add the css with classname which will be useful in many components as per design
+
+
+/* COMPONENTS */
+
+/* buttons */
+// For green buttons with small font and type is submit
+eg. <GreenButtonSmallFont type="submit" text="Finish Setup" />
+
+// For green buttons with small font and
+// type is button then no need to write type 
+//since default type set as button in component
+eg. <GreenButtonSmallFont text="Save" onClick={this.handleOnClickSave} />
+
+// same as above for green button with big font
+eg.
+<GreenButtonBigFont text="Next" onClick={this.handleScreenNum} />
+<GreenButtonBigFont type="Submit" text="Save" />
+
+// for gray button 
+eg. <GrayButtonSmallFont text="Back" onClick={this.handlePrev} />
+
+
+/* links */
+Note: don't use anchor tag i.e. <a> in <button> tag...
+
+// for link with small font and green background
+eg. <GreenLinkSmallFont path="/dashboard" text="Start Using" />
+
+// for link with big font and green background
+eg. <GreenLinkBigFont path="/" text="Login" />
+
+
+/* input field text, email and password */
+
+// for type text, email and password use following component with defining respective type
+eg. *for text
+<InputFieldEmailTextPassword
+            containerClassName="container-login-flow-input container-login-flow-input--forms"
+            label="First name"
+            name="fname"
+            value={this.state.fname}
+            onChange={this.handleChange}
+            type="text"
+          />
+
+*for email input you will need to write type="email"
+*and for password input write type="password"
+
+
+/* input field for number */
+
+// for number we need to validate it with taking only numbers and not even accepting input `e` 
+// so use following component
+eg. <InputFieldNumber
+            containerClassName="container-login-flow-input container-login-flow-input--forms"
+            label="cost to company per hour( $ )"
+            name="cost"
+            value={this.state.cost}
+            onChange={this.handleChangeNumber}
+          />
+
+/* textarea */
+eg. <TextareaField
+            containerClassName="container-login-flow-textarea"
+            label="description"
+            name="description"
+            value={this.state.description}
+            onChange={this.handleChange}
+          />
+
+/* UploadImage */          
+eg. <UploadImage
+            containerClassName="upload-img__mainBlock upload-img__mainBlock--profile"
+            buttonName="+ Upload Image"
+            imgPath={this.state.fileName}
+            fileNameValue={this.state.fileName}
+            acceptType="image/jpeg, image/png"
+            onChange={this.handleOnChangeUploadImg}
+          />
+
+
+/* page title */
+
+// title and shadow is same 
+eg. <PageTitle title="company day offs" />
+
+// title and shadow is different
+eg. <PageTitle title="Company working hours" shadow="working hours" />
+
+
+/* count card */
+eg. <CountCardCommon title="TOTAL Clients" count="4" />
+
+/* upload file */
+eg. <UploadFile
+            containerClassName="upload-img__mainBlock"
+            buttonName="+ Document"
+            imgPath={this.state.fileName}
+            fileNameValue={this.state.fileName}
+            acceptType="application/pdf, application/msword"
+            onChange={this.handleOnChangeUploadImg}
+          />
+
+/* toggle */
+eg. <Toggle
+            textClassName="client-card-subtittle-text"
+            name="isStatusActive"
+            text1={"Active"}
+            text2={"Inactive"}
+            onChange={this.handleOnChangeToggle}
+            defaultChecked={this.state.isStatusActive}
+          />
+
+/* toggle timesheet */
+eg. <ToggleTimesheet
+            textClassName="timesheet-toggle-text"
+            name="isDayActive"
+            text1={"Day"}
+            text2={"Month"}
+            onChange={this.handleOnChangeToggle}
+            defaultChecked={isDayActive}
+          />
+
+/* search */
+eg.  <SearchInput
+            name="searchInput"
+            placeholder="Search"
+            onChange={this.handleChangeSearchInput}
+            value={this.state.SearchInput}
+          />
+
+/* plans content */
+eg. <PlansContent
+            img={require("../../../assets/img/plans/plans-astronaut.svg")}
+            containerClassName={"profile-plans-row--astro"}
+            price={"$20"}
+            plan="Astronaut"
+            users="N users"
+          />
+
+/* plans content payment modal */
+eg. <PlansContentPaymentModal
+            title="Downgrading to the plan"
+            imgPath={
+              activePlan === "ROVER"
+                ? roverImg
+                : activePlan === "ASTRONAUT"
+                ? astronautImg
+                : activePlan === "SPACESHIP"
+                ? spaceshipImg
+                : activePlan === "SPACESTATION"
+                ? spacecolonyImg
+                : ""
+            }
+            planType={this.state.activePlan}
+            planUserCount={this.state.selectedPlanData.maxUsers}
+            planPrice={this.state.selectedPlanData.monthlyPrice}
+          />
+          
+/* phone number and country code */
+ eg. <InputFieldPhoneCountryNumber
+            containerClassName="container-login-flow-input container-login-flow-input--forms"
+            label="primary contact number"
+            name="contactNumber"
+            value={this.state.contactNumber}
+            countryCode={this.state.contactCountryCode}
+            handleChangeCountryCode={this.handleChangeCountryCode}
+            onChange={this.handleChangeNumber}
+            errorCountryCode={""}
+            errorPhone={""}
+          />
+
+/* DatepickerFromTo without label with arrow */
+eg. <DatepickerFromTo
+        startDateValue={this.state.startDate}
+        endDateValue={this.state.endDate}
+        handleChangeStart={this.handleChangeStart}
+        handleChangeEnd={this.handleChangeEnd}
+        handleOnClickDateArrowIcon={this.handleOnClickDateArrowIcon}
+      />
+
+/* DatepickerFromTo date with label */
+eg. <DatePickerFromToDate
+          labelStart="Contract Start date"
+          startDateValue={this.state.startDate}
+          labelEnd="Contract End date"
+          endDateValue={this.state.endDate}
+          handleChangeStart={this.handleChangeStart}
+          handleChangeEnd={this.handleChangeEnd}
+        />
+
+/* DatepickerFromTo time with label */
+eg1. <DatepickerFromToTime
+          title="Working hours"
+          fromTimeValue={this.state.fromTime}
+          toTimeValue={this.state.toTime}
+          handleChangeFromTime={this.handleChangeFromTime}
+          handleChangeToTime={this.handleChangeFromTime}
+          defaultToTime={setHours(setMinutes(new Date(), 0), 17)}
+        />
+
+eg2. <DatePickerFromToTime
+          fromTimeValue={this.state.fromTime}
+          toTimeValue={this.state.toTime}
+          handleChangeFromTime={this.handleChangeFromTime}
+          handleChangeToTime={this.handleChangeToTime}
+        />
+        
+
+
+/* finance summary card */      
+eg. <FinanceSummaryCard
+            summaryTitle="invoice summary"
+            startSummaryDate={this.state.startSummaryDate}
+            endSummaryDate={this.state.endSummaryDate}
+            handleChangeSummaryStart={this.handleChangeSummaryStart}
+            handleChangeSummaryEnd={this.handleChangeSummaryEnd}
+            handleOnClickSummaryDateArrowIcon={
+              this.handleOnClickSummaryDateArrowIcon
+            }
+            dataRow1Colm1="Total Amount"
+            dataRow1Colm2="6000000.00"
+            dataRow1Colm3="Amount Paid"
+            dataRow1Colm4="6000000.00"
+            dataRow2Colm1="Amount Due"
+            dataRow2Colm2="6000000.00"
+            dataRow2Colm3="Total Invoices Created"
+            dataRow2Colm4="23"
+          />
+
+/* custom radio button */          
+eg.  <CustomRadioButton
+            label="Project"
+            name="radioTypeProject"
+            selectedRadioOption={this.state.selectedRadioOption}
+            handleOnClickRadioOption={this.handleOnClickRadioOption}
+          />
+
+/* AddMemberSelectAndDisplayList */          
+eg. <AddMemberSelectAndDisplayList
+            selectedOptionValue={this.state.selectOption}
+            handleChangeSelectClient={this.handleChangeSelectClient}
+            options={this.state.options}
+            displayListSelected={this.state.displayListSelected}
+            handleRemoveMember={this.handleRemoveMember}
+          />
+            

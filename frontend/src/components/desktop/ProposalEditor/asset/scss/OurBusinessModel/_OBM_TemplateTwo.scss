@@ -1,0 +1,30 @@
+.obm_template_two {
+  align-items: center;
+  padding: vw(50px);
+  .obm_template_two_right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+  .obm_template_two_headline {
+    width: 100%;
+    height: vw(100px);
+    display: flex;
+    letter-spacing: vw(4.32px);
+  }
+  .obm_template_two_para {
+    width: 100%;
+    height: vw(194px);
+    display: flex;
+    margin-top: vw(10px);
+    letter-spacing: vw(0.4px);
+  }
+  .obm_template_two_left {
+    width: 45%;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}

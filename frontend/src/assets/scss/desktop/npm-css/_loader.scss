@@ -1,0 +1,11 @@
+.throttle-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  opacity: 1;
+  position: absolute;
+  z-index: 999999;
+  transition: 0.3s ease-out opacity;
+  width: 100%;
+}

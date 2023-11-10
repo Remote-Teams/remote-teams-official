@@ -1,0 +1,45 @@
+.au_template_two {
+  align-items: center;
+  padding: vw(30px);
+  //justify-content: center;
+
+  .au_template_two__middle {
+    width: 100%;
+    display: flex;
+    //align-items: center;
+  }
+  .au_template_two__middle__left {
+    width: 55%;
+    padding: vw(80px) vw(10px) 0 vw(10px);
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .au_template_two__top_headline {
+    display: flex;
+    align-items: center;
+    height: vw(79px);
+    width: 100%;
+    letter-spacing: vw(5px);
+    padding-left: vw(50px);
+  }
+  .au_template_two__right_inner {
+    display: flex;
+    width: 100%;
+    padding-top: vw(70px);
+  }
+  .au_template_two__middle__right {
+    width: 45%;
+    flex-direction: column;
+    padding-top: vw(40px);
+  }
+  .text_Container {
+    display: flex;
+    width: 50%;
+    height: vw(345px);
+    padding: vw(10px) 0;
+    letter-spacing: vw(0.6px);
+  }
+}

@@ -1,0 +1,81 @@
+// timezone custom
+.timezone-custom {
+  div {
+    //width: vw(386px);
+    //height: vw(52px);
+    //border-radius: vw(30px);
+    position: relative;
+    //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+    //new css
+    box-shadow: -2px -2px 4px rgba(74, 78, 83, 0.5),
+      2px 2px 6px rgba(35, 37, 39, 0.8), 8px 8px 30px rgba(35, 37, 39, 0.9),
+      -6px -6px 20px rgba(74, 78, 83, 0.7);
+    border-radius: vw(48px);
+    width: vw(318px);
+    height: vw(60px);
+    border: double 1px transparent;
+    background-image: linear-gradient(87.98deg, #2e3192 7.59%, #57cba1 94.35%);
+    background-origin: border-box;
+    background-clip: border-box;
+
+    //&::after {
+    //  bottom: -1px;
+    //  height: 1px;
+    //  content: "";
+    //  position: absolute;
+    //  left: 10%;
+    //  bottom: 0;
+    //  width: 80%;
+    //  border-radius: vw(30px);
+    //  background-color: rgba(112, 248, 78, 0.8);
+    //}
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 0 vw(30px);
+      // color: rgba(255, 255, 255, 0.65);
+      color: #ffffff !important;
+      //font-size: vw(18px);
+      @include fontSemiBold600;
+      border: 0;
+      //border-radius: vw(30px);
+      margin-bottom: 0;
+      //background-color: rgba(74, 80, 85, 0.46);
+      //background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+      background: rgb(45, 49, 53);
+      background: $black-gradient;
+
+      //new css
+      border-radius: vw(48px);
+      font-size: vw(14px);
+
+      &::placeholder {
+        //color: rgba(255, 255, 255, 0.65);
+        font-size: vw(14px);
+        @include fontSemiBold600;
+        color: #a8a8a8;
+      }
+    }
+
+    ul {
+      margin-top: vw(5px);
+      border-radius: vw(10px);
+      height: vw(200px) !important;
+      border: 0 !important;
+      background-color: rgba(74, 80, 85, 1);
+      box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16) !important;
+
+      button {
+        color: #ffffff !important;
+        padding: vw(10px) vw(20px);
+        font-size: vw(18px);
+        @include fontSemiBold600;
+      }
+
+      button.focus {
+        background-color: rgba(112, 248, 78, 0.8);
+      }
+    }
+  }
+}

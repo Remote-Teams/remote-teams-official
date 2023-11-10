@@ -1,0 +1,35 @@
+.email_dashboard{
+    display: flex;
+    height: vw( 900px );
+    width: 100%;
+    flex-direction: column;
+
+    .email_dashboard__top{
+        display: flex;
+        height: vw( 80px );
+        width: 100%;
+    }
+    .email_dashboard__bottom{
+        display: flex;
+        height: vw( 820px );
+        width: 100%;
+        background-color: transparent;
+    }
+}
+
+.email_dashboard__top__left{
+    display: flex;
+    height: vw( 80px );
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.email_dashboard__top__right{
+    display: flex;
+    height: vw( 80px );
+    width: 80%;
+    background-color: blue;
+}
+
+
+

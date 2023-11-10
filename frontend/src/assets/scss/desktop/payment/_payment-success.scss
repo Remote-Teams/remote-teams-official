@@ -1,0 +1,65 @@
+// payment success
+
+.payment-success-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: vw(20px);
+}
+
+.payment-success-box {
+  text-align: center;
+  width: vw(1118px);
+  height: vw(700px);
+  background: rgb(77, 82, 88);
+  background: linear-gradient(
+    122deg,
+    rgba(77, 82, 88, 1) 0%,
+    rgba(26, 32, 35, 1) 100%
+  );
+  box-shadow: 0 vw(3px) vw(15px) rgba(0, 0, 0, 0.16);
+  border-radius: vw(15px);
+  padding-top: vw(53px);
+
+  //new css
+  //.login-next-green-btn {
+  // padding-top: vw(8px);
+  //}
+}
+
+.payment-success-img {
+  width: vw(618px);
+  margin-bottom: vw(24px);
+}
+
+.payment-success-box__text1 {
+  font-size: vw(43px);
+  line-height: vw(58px);
+  @include fontSemiBold600;
+  margin-bottom: vw(25px);
+}
+
+.payment-success-box__btnDiv {
+  margin-top: vw(88px);
+}
+
+// payment profile plans
+.payment-success-box--payment-profile {
+  padding-top: 0;
+  width: 77%;
+  height: max-content;
+
+  .font-28-bold-letterspace-border {
+    padding-bottom: vw(30px);
+  }
+
+  .plans_container__row .plan_box:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+.button-section-payment-plans {
+  text-align: center;
+  padding: vw(33px) 0 vw(72px) 0;
+}

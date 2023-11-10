@@ -1,0 +1,23 @@
+.thank_you_one {
+  padding: 0 vw(100px);
+  align-items: center;
+  .thank_you_one__left {
+    display: flex;
+    height: 40%;
+    width: 45%;
+    letter-spacing: vw(17.1px);
+    padding-right: vw(50px);
+    padding-top: vw(50px);
+    justify-content: center;
+  }
+  .thank_you_one__right {
+    display: flex;
+    //height: 100%;
+    width: 55%;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}

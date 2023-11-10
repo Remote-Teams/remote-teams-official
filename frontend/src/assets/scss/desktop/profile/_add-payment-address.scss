@@ -1,0 +1,122 @@
+.add-payment-address-details-title {
+  color: rgba(255, 255, 255, 0.79);
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  margin-bottom: vw(27px);
+}
+.warning_before_plan_expired_container--add-payment-address {
+  padding: vw(64px);
+}
+.add_address_form-div {
+  padding: vw(49px) vw(140px) vw(78px) vw(140px);
+  text-align: center;
+}
+.add_address_form {
+  h3 {
+    font-size: vw(24px);
+    line-height: vw(34px);
+    @include fontMontserratExtraBold;
+    margin: auto;
+    margin-bottom: vw(74px);
+    width: fit-content;
+    text-transform: capitalize;
+    background: rgba(94, 231, 223, 1);
+    background: linear-gradient(
+      90deg,
+      rgba(94, 231, 223, 1) 0%,
+      rgba(180, 144, 202, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.add_address_form_input-company-address {
+  .input-border-div {
+    width: vw(645px);
+    margin: auto;
+  }
+}
+.add_address_form_input-state {
+  .input-border-div {
+    width: vw(295px);
+    margin: auto;
+  }
+}
+.container-workspace-name--add-payment-address {
+  button {
+    margin: 0;
+  }
+  .ReactFlagsSelect-module_flagsSelect__2pfa2 {
+    width: vw(295px);
+    margin: auto;
+  }
+  .ReactFlagsSelect-module_selectOptions__3LNBJ {
+    max-height: vw(150px);
+  }
+}
+.login-next-green-btn-save_address {
+  width: vw(250px);
+}
+.add-payment-address-illustration-images {
+  width: vw(159px);
+  height: auto;
+  margin-bottom: vw(33px);
+}
+/*================================================
+
+                   Payment Form
+
+=================================================*/
+.add-meeting-title--payment-from-title {
+  margin: auto;
+  margin-bottom: vw(78px);
+}
+.payment-form-total-text {
+  font-size: vw(13px);
+  line-height: vw(17px);
+  @include fontBold700;
+  color: rgba(255, 255, 255, 0.79);
+  margin-bottom: vw(11px);
+}
+.payment-form-total-text-data {
+  font-size: vw(18px);
+  line-height: vw(25px);
+  @include common-peach-color-text;
+  margin-bottom: vw(44px);
+  @include fontExtraBold800;
+}
+.container-login-flow-input--payemt-from {
+  .input-border-div {
+    width: vw(654px);
+
+    input {
+      padding-left: vw(50px);
+    }
+  }
+}
+.payment-form-card {
+  width: vw(653px);
+  height: vw(65px);
+  padding: vw(20px) vw(32px);
+  border: double 1px transparent;
+  background-image: $black-gradient,
+    linear-gradient(
+      87deg,
+      rgba(46, 49, 146, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  margin-top: vw(21px);
+  border-radius: vw(48px);
+  @include common-box-shadow-mixin-2;
+}
+.login-next-green-btn--payemnet-form {
+  width: vw(200px);
+  margin: auto;
+  margin-top: vw(27px);
+}
+.payment-form-total-text-right-div {
+  width: 35%;
+}

@@ -1,0 +1,18 @@
+const data = {
+  scheduleId: "ef3fb2e0-e2d6-11eb-85e1-19934486d62a",
+  groupId: "GROUP1626069832",
+  bookingName: "demoBooking",
+  fromTime: "2021-07-12T06:03:21.279Z",
+  toTime: "2021-07-12T07:30:00.279Z",
+  taskName: "task one",
+  projectName: "demo",
+  plannedHours: 1.4441666666666666,
+  taskdeadline: -6.976061469907408,
+  endDate: "2021-07-12T06:03:21.279Z",
+  startDate: "2021-07-12T06:03:21.279Z",
+  assignedhours: 0,
+  worklogstatus: "INPROGRESS",
+  actualhours: 20,
+  worklogId: "466e6ca0-e2d7-11eb-85e1-19934486d62a",
+  recordedhours: 20,
+};

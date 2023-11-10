@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <filter id="Rectangle_11467" x="0" y="0" width="71" height="71" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_40046" data-name="Group 40046" transform="translate(13850 -3078)">
+    <g id="Group_40022" data-name="Group 40022" transform="translate(-15049 2562)">
+      <g transform="matrix(1, 0, 0, 1, 1199, 516)" filter="url(#Rectangle_11467)">
+        <g id="Rectangle_11467-2" data-name="Rectangle 11467" transform="translate(9 6)" fill="#4a5055" stroke="#5ccc40" stroke-width="2">
+          <rect width="53" height="53" rx="26.5" stroke="none"/>
+          <rect x="1" y="1" width="51" height="51" rx="25.5" fill="none"/>
+        </g>
+      </g>
+      <path id="Icon_material-input" data-name="Icon material-input" d="M31.5,4.515H4.5a3.009,3.009,0,0,0-3,3V13.5h3V7.485h27V28.53H4.5V22.5h-3v6.015a2.983,2.983,0,0,0,3,2.97h27a2.983,2.983,0,0,0,3-2.97v-21a3,3,0,0,0-3-3ZM16.5,24l6-6-6-6v4.5H1.5v3h15Z" transform="translate(1216.5 531.485)" fill="#fff" stroke="#4a5055" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

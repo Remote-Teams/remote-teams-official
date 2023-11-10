@@ -1,0 +1,58 @@
+.schedule-later-paddding-div {
+  //margin-left: vw(80px);
+
+  //new css
+  margin-left: vw(91px);
+}
+.video-calling-modal-content {
+  //padding: vw(30px) vw(100px) vw(38px) vw(159px);
+
+  //new css
+  padding: vw(73px) vw(48px) vw(37px) vw(107px);
+}
+
+.schedule-later-member-img {
+  .create-project-add-member-img-block,
+  .create-project-add-member-img-text-block {
+    //width: vw(70px);
+    margin-bottom: vw(15px);
+
+    //new css
+    width: vw(108px);
+  }
+
+  .create-project-add-member-img-block__remove {
+    //right: vw(-13px);
+    //top: vw(10px);
+
+    //new css
+    right: 0;
+  }
+  .create-project-add-member-img-block {
+    //height: vw(84px);
+    height: vw(108px);
+
+    &__imgMember {
+      border-radius: 0;
+    }
+  }
+}
+.schedule-later-15-bold {
+  //font-size: vw(15px);
+  //line-height: vw(20px);
+  text-align: center;
+  text-transform: capitalize;
+  @include fontSemiBold600;
+  padding-top: vw(10px);
+  //new css
+  font-size: vw(16px);
+  line-height: vw(21px);
+  color: #a8a8a8;
+}
+.schedule-later-schedule-btn {
+  width: vw(176px);
+  height: vw(54px);
+}
+.font-18-bold--schedule-later-selected-participant {
+  color: rgba(255, 255, 255, 0.79);
+}

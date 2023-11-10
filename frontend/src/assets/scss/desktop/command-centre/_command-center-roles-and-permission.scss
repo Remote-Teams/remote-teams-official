@@ -1,0 +1,207 @@
+.command-center-roles-and-permission-div {
+  padding-top: vw(40px);
+}
+.font-20-semiBold--roles-and-permission {
+  padding-top: vw(11px);
+  color: rgba(255, 255, 255, 0.38);
+}
+.cmd-roles-and-permission-add-btn {
+  width: vw(196px);
+}
+/*=============================================================
+                         CARD
+=============================================================*/
+.cmd-roles-and-permission-card {
+  //width: vw(544px);
+  width: vw(522px);
+  height: vw(618px);
+  background: $black-gradient;
+  box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  border-radius: vw(8px);
+  padding: vw(31px) vw(30px);
+  margin-right: vw(26px);
+  margin-bottom: vw(28px);
+}
+.cmd-roles-and-permission-img-div {
+  width: 100%;
+  height: vw(158px);
+  background: rgba(74, 78, 83, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: vw(15px);
+  padding-right: vw(23px);
+  position: relative;
+
+  img {
+    width: vw(70px);
+    height: auto;
+    margin: auto;
+  }
+}
+.cmd-roles-and-permission-text1 {
+  font-size: vw(13px);
+  line-height: vw(24px);
+  text-align: center;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+  @include fontBold700;
+  padding-top: vw(8px);
+}
+.cmd-roles-and-permission-delete-btn-div {
+  position: absolute;
+  top: vw(10px);
+  right: vw(10px);
+  background: transparent;
+  //padding: 0;
+  border: none;
+  color: white;
+
+  i {
+    font-size: vw(16px);
+  }
+}
+.cmd-roles-and-permission-edit-btn-div {
+  width: vw(101px);
+  height: vw(41px);
+  background: #292c2f;
+  border-radius: vw(27px);
+  border: none;
+  font-size: vw(12px);
+  line-height: vw(16px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  @include fontExtraBold800;
+  position: absolute;
+  bottom: vw(13px);
+  right: vw(23px);
+
+  img {
+    width: vw(18px);
+    height: auto;
+    margin-right: vw(13px);
+  }
+
+  i {
+    margin-right: vw(13px);
+    font-size: vw(16px);
+  }
+}
+.cmd-role-and-permission-table {
+  padding-top: vw(24px);
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    //width: 15%;
+    padding-bottom: vw(24px);
+    font-size: vw(20px);
+    line-height: vw(27px);
+    color: #ffffff;
+    @include fontItalicNunito;
+    vertical-align: middle;
+
+    &:first-child {
+      width: 40%;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: rgba(255, 255, 255, 0.73);
+    }
+  }
+}
+.cmd-role-and-permission-table--tbody {
+  padding-top: 0;
+  height: vw(330px);
+  overflow: auto;
+}
+.role-and-permission-outer-div {
+  padding-top: vw(104px);
+}
+/*=====================================================================
+                            Add Role
+======================================================================*/
+.add-new-role-div {
+  padding: vw(45px) 0 vw(72px) 0;
+}
+.add-new-role-fields-div {
+  padding-left: vw(57px);
+  padding-right: vw(57px);
+}
+.container-login-flow-input--cmd-role-name {
+  .input-border-div {
+    width: vw(659px);
+    height: vw(63px);
+  }
+}
+.cmd-add-role-icon-outer-div {
+  margin-right: vw(25px);
+  margin-bottom: vw(35px);
+}
+.cmd-add-role-icon-inner-div {
+  width: vw(85px);
+  height: vw(85px);
+  border: double 1px transparent;
+  background-image: $black-gradient,
+    linear-gradient(
+      87deg,
+      rgba(46, 49, 146, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  @include common-box-shadow-mixin-2;
+  border-radius: vw(72px);
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+}
+.cmd-add-role-icon-inner-div--active {
+  cursor: default;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    background: rgba(87, 203, 161, 1);
+    right: 0;
+    top: vw(-5px);
+    border-radius: vw(13px);
+    width: vw(26px);
+    height: vw(26px);
+  }
+
+  &::before {
+    border-top: vw(2px) solid rgba(255, 255, 255, 1);
+    border-right: vw(2px) solid rgba(255, 255, 255, 1);
+    width: vw(12px);
+    height: vw(7px);
+    position: absolute;
+    content: "";
+    right: vw(5px);
+    top: vw(2px);
+    z-index: 99;
+    transform: rotate(130deg);
+  }
+}
+.cmd-role-and-permission-table--add-role {
+  th,
+  td {
+    width: 16%;
+    &:first-child {
+      width: 42%;
+    }
+  }
+}
+.cmd-role-and-permission-table--add-role-tbody {
+  height: vw(380px);
+  overflow: auto;
+}

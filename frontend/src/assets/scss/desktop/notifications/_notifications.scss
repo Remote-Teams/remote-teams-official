@@ -1,0 +1,17 @@
+@import "./notificationAll";
+
+.profile_tabs_section--notification {
+  //  text-transform: uppercase !important;
+
+  .react-tabs__tab-panel--selected {
+    padding-bottom: vw(27px);
+  }
+
+  //.react-tabs__tab-list {
+  //  padding-right: vw(600px) !important;
+  //}
+  //.react-tabs__tab {
+  //  margin: 0;
+  //  width: vw(250px) !important;
+  //}
+}

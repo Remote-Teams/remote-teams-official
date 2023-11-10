@@ -1,0 +1,594 @@
+/*===========================================================================
+                    Frappe Gantt Chart Css
+============================================================================*/
+
+.gantt-container {
+  margin-top: vw(30px);
+
+  .gantt .grid-header {
+    stroke: #5ccc40;
+    stroke-width: 1.4;
+    fill: rgba(74, 80, 96, 0.27);
+  }
+  .gantt .upper-text {
+    fill: white;
+  }
+  .gantt .lower-text {
+    fill: white;
+  }
+  .gantt .grid-row {
+    fill: rgba(74, 80, 85, 0.27);
+  }
+  .gantt .bar {
+    fill: #b8c2cc42;
+    stroke: #41474c;
+    stroke-width: 0;
+    transition: stroke-width 0.3s ease;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .gantt .bar-progress {
+    fill: #5ccc40;
+  }
+  .gantt .bar-label {
+    fill: #fff;
+    dominant-baseline: central;
+    text-anchor: middle;
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  .gantt .today-highlight {
+    fill: #fcf8e347;
+    opacity: 0.5;
+  }
+  .gantt .grid-row:nth-child(even) {
+    fill: rgba(74, 80, 85, 0.27);
+  }
+  .gantt .bar-label.big {
+    fill: white;
+    text-anchor: start;
+  }
+  // your css file
+  // css
+  // .c-red .bar {
+  //   fill: #f00 !important;
+  // }
+  // .c-blue .bar {
+  //   fill: blue !important;
+  // }
+}
+
+.customModal--addNewModule {
+  //width: vw(1158px) !important;
+  //height: vw(609px) !important;
+  //padding-top: vw(50px);
+  //padding-bottom: vw(72px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //new css
+  width: vw(990px) !important;
+  //height: auto !important;
+  padding-top: vw(70px);
+  padding-bottom: vw(59px);
+  height: fit-content !important;
+  overflow: visible;
+  /*h1 {
+    font-size: vw(32px);
+    line-height: vw(43px);
+    text-transform: uppercase;
+    font-family: Nunito-ExtraBold;
+    letter-spacing: vw(16px);
+    margin-bottom: vw(70px);
+  }*/
+  .input-border-div {
+    //width: vw(800px);
+    width: vw(700px);
+  }
+
+  .container-login-flow-input {
+    margin-left: vw(25px);
+  }
+
+  .login-next-green-btn {
+    margin-top: vw(20px);
+  }
+  .datepicker-mr {
+    margin-right: vw(60px);
+  }
+}
+
+.customModal--addNewSprint {
+  //width: vw(1158px) !important;
+  //height: vw(800px) !important;
+  //padding-top: vw(50px);
+  //padding-bottom: vw(72px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //new css
+  width: vw(990px) !important;
+  //height: auto !important;
+  padding-top: vw(70px);
+  padding-bottom: vw(59px);
+  height: fit-content !important;
+  overflow: visible;
+
+  /*h1 {
+    font-size: vw(32px);
+    line-height: vw(43px);
+    text-transform: uppercase;
+    font-family: Nunito-ExtraBold;
+    letter-spacing: vw(16px);
+    margin-bottom: vw(70px);
+  }*/
+  .input-border-div {
+    //width: vw(800px);
+    width: vw(700px);
+  }
+
+  .container-login-flow-input {
+    margin-left: vw(25px);
+  }
+
+  .login-next-green-btn {
+    margin-top: vw(20px);
+  }
+  .datepicker-mr {
+    margin-right: vw(60px);
+  }
+  .react-select-container--add-new-sprint {
+    width: vw(700px) !important;
+  }
+}
+
+// .customModal--addNewTask {
+//   //width: vw(1158px) !important;
+//   //height: vw(800px) !important;
+//   //padding-top: vw(50px);
+//   //padding-bottom: vw(72px);
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   //new css
+//   width: vw(990px) !important;
+//   //height: auto !important;
+//   padding-top: vw(70px);
+//   padding-bottom: vw(59px);
+//   height: fit-content !important;
+//   overflow: visible;
+
+//   /*h1 {
+//     font-size: vw(32px);
+//     line-height: vw(43px);
+//     text-transform: uppercase;
+//     font-family: Nunito-ExtraBold;
+//     letter-spacing: vw(16px);
+//     margin-bottom: vw(70px);
+//   }*/
+//   .input-border-div {
+//     //width: vw(800px);
+//     width: vw(700px);
+//   }
+
+//   .container-login-flow-input {
+//     margin-left: vw(25px);
+//   }
+
+//   .login-next-green-btn {
+//     margin-top: vw(20px);
+//   }
+//   .datepicker-mr {
+//     margin-right: vw(60px);
+//   }
+// }
+
+.task_collaboraters_section {
+  padding-left: vw(40px);
+  h3 {
+    font-size: vw(18px);
+    line-height: vw(24px);
+    @include fontBold700;
+    @include common-peach-color-text;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+
+/*===========================================================================
+                            Gantt Timeline Css
+============================================================================*/
+
+/*=======================================
+          Gantt Chart Css
+========================================*/
+
+.time-line-container {
+  margin-top: vw(30px);
+}
+.timeLine-side-title {
+  background-color: transparent !important;
+}
+
+.timeLine-main-data-container {
+  background-color: transparent !important;
+}
+.timeLine-main-data-viewPort {
+  background-color: transparent !important;
+  // overflow-y: auto !important;
+}
+
+.timeLine {
+  //border: vw(2px) solid #ffffff08 !important;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+  border-radius: vw(8px) !important;
+  border: none !important;
+  background: linear-gradient(
+    321.7deg,
+    rgba(45, 49, 53, 0.5) 24.16%,
+    rgba(53, 57, 62, 0.5) 72.5%
+  );
+  height: 100vh;
+}
+
+.timeLine-side-title {
+  //border-bottom: vw(2px) solid #ffffff08 !important;
+  //background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  font-size: vw(24px);
+  line-height: vw(33px);
+  @include fontBold700;
+  @include common-peach-color-text;
+  margin: auto;
+  border: none !important;
+  position: relative;
+
+  &::after {
+    width: 100%;
+    height: vw(3px);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: $black-gradient;
+    opacity: 0.5;
+    box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+      vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+      vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+    border-radius: vw(8px) !important;
+  }
+}
+
+.timeLine-side-task-row {
+  //border-bottom: vw(2px) solid #ffffff08 !important;
+
+  border: none !important;
+  position: relative;
+
+  &::after {
+    width: 100%;
+    height: vw(3px);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: $black-gradient;
+    opacity: 0.5;
+    box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+      vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+      vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+    border-radius: vw(8px) !important;
+  }
+}
+.verticalResizer {
+  //border-right: vw(2px) solid #ffffff08 !important;
+  //background-color: rgb(77, 82, 88) !important;
+
+  width: vw(2px);
+  height: 100%;
+  background-color: $black-gradient !important;
+  border: none !important;
+  opacity: 0.5;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+}
+
+.timeLine-side {
+  border-right: vw(2px) solid #ffffff08 !important;
+}
+.timeLine-side-task-viewPort {
+  background-color: transparent !important;
+}
+.timeLine-side-task-row {
+  font-size: vw(18px) !important;
+  font-family: Nunito-Bold !important;
+  color: rgba(255, 255, 255, 0.91) !important;
+  //color: white !important;
+  background-color: transparent !important;
+}
+
+.timeLine-main-data-row {
+  //border-bottom: vw(2px) solid #ffffff08 !important;
+  border: none !important;
+  position: relative;
+
+  &::after {
+    width: 100%;
+    height: vw(3px);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: $black-gradient;
+    opacity: 0.5;
+    box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+      vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+      vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+    border-radius: vw(8px) !important;
+  }
+}
+.header-middle {
+  font-family: Nunito-Bold !important;
+  color: #ffffff61 !important;
+  border-bottom: vw(2px) solid #ffffff08 !important;
+  background-color: transparent !important;
+}
+.header-bottom {
+  font-family: Nunito-Bold !important;
+  //color: #ffffff61 !important;
+  //border-bottom: vw(2px) solid #ffffff08 !important;
+  background-color: transparent !important;
+  font-size: vw(14px) !important;
+  border: none !important;
+  position: relative;
+  color: #64676a !important;
+  &::after {
+    width: 100%;
+    height: vw(3px);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: $black-gradient;
+    opacity: 0.5;
+    box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+      vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+      vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9) !important;
+    border-radius: vw(8px) !important;
+  }
+
+  .todays-date {
+    background-color: mediumpurple;
+    color: white;
+  }
+}
+.header-top {
+  font-family: Nunito-Bold !important;
+  color: #ffffff61 !important;
+  border-bottom: vw(2px) solid #ffffff08 !important;
+  background-color: transparent !important;
+}
+.timeLine-main-header-container {
+  background-color: transparent !important;
+}
+.timeLine-main-header-viewPort {
+  background-color: transparent !important;
+}
+.timeLine-main-header-viewPort:hover {
+  cursor: pointer !important;
+}
+
+.timeLine-main-data-task-side-linker {
+  display: none !important;
+}
+.task_box:hover {
+  cursor: pointer;
+  margin-top: 10px !important;
+}
+.task_box {
+  margin-top: 10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //border-radius: 4px !important;
+  border-radius: vw(14px) !important;
+  border: 1px dashed #656566 !important;
+  box-sizing: border-box;
+  // width: vw(560px) !important;
+  height: vw(70px) !important;
+}
+.left-task-box:focus {
+  outline: none;
+}
+.timeLine-side-task-row:hover {
+  cursor: default;
+}
+.add-meeting-title--create-module {
+  margin: auto;
+  margin-bottom: vw(75px);
+}
+.timeline-task-label {
+  text-transform: capitalize;
+  //font-size: 15px;
+
+  //new css
+  justify-content: space-between !important;
+  padding: 0 vw(30px) 0 vw(25px);
+
+  .fa-ellipsis-v {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: vw(18px);
+    width: 5%;
+  }
+}
+.left-task-box {
+  text-transform: capitalize;
+}
+
+// new css which is very important dont remove
+
+// .timeLine-main-header-viewPort {
+//   flex: 0 0 98px !important;
+//   position: relative;
+//   height: 60px;
+//   width: 100%;
+//   background-color: rgb(112, 112, 112);
+//   overflow: hidden;
+// }
+
+// .timeLine-side-title {
+//   flex: 0 0 98px !important;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+/*=======================================================
+                 timeline card css
+========================================================*/
+.timeline-task-label-name {
+  font-size: vw(18px);
+  line-height: vw(22px);
+  //text-align: center;
+  text-align: left;
+  color: #ffffff;
+  @include fontMontserratBold;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 70%;
+}
+
+.task-modal-emoji--gantt-chart {
+  vertical-align: baseline;
+  //margin-bottom: vw(10px);
+}
+.timeline-task-label-member-img {
+  width: vw(51px);
+  height: auto;
+  border-radius: vw(30px);
+  margin-left: vw(-25px);
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.13),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) #232527,
+    vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.37);
+}
+
+.gantt-view-task-div {
+  padding: vw(28px) vw(23px) vw(79px) vw(24px);
+}
+.timeline-task-label-col1 {
+  width: 45%;
+}
+.timeline-task-label-col2 {
+  width: 45%;
+}
+
+.view-gantt-task-portal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.view-gantt-task-portal-div {
+  position: absolute;
+  z-index: 1111;
+  display: block;
+}
+
+.view-gantt-task-popup {
+  width: vw(559px);
+  height: auto;
+  @include common-box-shadow-mixin-2;
+  border-radius: vw(9px);
+  background: #2d3135;
+  z-index: 1111;
+}
+.dummyTask-title-text {
+  font-size: vw(18px);
+  line-height: vw(22px);
+  color: #ffffff;
+  @include fontBold700;
+  margin-bottom: 0;
+  text-align: center;
+  padding-left: vw(40px);
+
+  span {
+    font-size: vw(22px);
+    padding-right: vw(13px);
+  }
+}
+.gantt-view-task-div-dummy-text1 {
+  font-size: vw(12px);
+  line-height: vw(16px);
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #64676a;
+  @include fontExtraBold800;
+  margin-bottom: vw(16px);
+}
+.gantt-view-task-div-dummy-text2 {
+  font-size: vw(24px);
+  line-height: vw(34px);
+  letter-spacing: 0.01em;
+  @include fontMontserratExtraBold;
+  margin-bottom: vw(17px);
+  background: rgba(224, 195, 252, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gantt-view-task-div-dummy-text3 {
+  font-size: vw(14px);
+  line-height: vw(19px);
+  letter-spacing: 0.03em;
+  color: #d6d6d6;
+  @include fontSemiBold600;
+  margin-bottom: vw(22px);
+}
+.gantt-view-task-div-dummy-text4 {
+  font-size: vw(18px);
+  line-height: vw(25px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #64676a;
+  @include fontExtraBold800;
+}
+.gantt-view-task-div-dummy-text-div {
+  border-bottom: 1px solid rgba(135, 135, 135, 0.31);
+  margin-bottom: vw(32px);
+}
+.view-gantt-task-popup--dummydata {
+  background: $black-gradient;
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.13),
+    vw(-6px) vw(-6px) vw(16px) rgba(74, 78, 83, 0.32);
+  border-radius: vw(9px);
+
+  .gantt-view-task-div {
+    padding-bottom: vw(26px);
+  }
+}
+.gantt-view-task-div-dummy-text4--btn {
+  background: transparent;
+  border: none;
+}

@@ -1,0 +1,84 @@
+.members-fold-one-row {
+  .members-fold-one-row__block-main {
+    width: vw(149px);
+    height: auto;
+    text-align: center;
+    margin-bottom: vw(19px);
+
+    padding: 0;
+    border: none;
+    margin-right: vw(19px);
+    background-color: transparent;
+  }
+
+  .members-fold-one-row__block-outer {
+    width: vw(149px);
+    height: vw(149px);
+    padding: vw(23px);
+    border-radius: 100%;
+    margin-bottom: vw(9px);
+
+    &--active {
+      background: rgba(61, 67, 72, 0.7);
+    }
+  }
+
+  .members-fold-one-row__block-inner {
+    width: 100%;
+    height: 100%;
+    box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .members-fold-one-row__block-main:nth-child(3n + 1) {
+    .members-fold-one-row__block-inner {
+      background: linear-gradient(90deg, #ebbba7 0%, #cfc7f8 100%);
+    }
+  }
+
+  .members-fold-one-row__block-main:nth-child(3n + 2) {
+    .members-fold-one-row__block-inner {
+      background: linear-gradient(90deg, #48c6ef 0%, #6f86d6 100%);
+    }
+  }
+
+  .members-fold-one-row__block-main:nth-child(3n + 3) {
+    .members-fold-one-row__block-inner {
+      background: linear-gradient(90deg, #9795f0 0%, #fbc8d4 100%);
+    }
+  }
+
+  .members-fold-one-row__block-main:last-child {
+    .members-fold-one-row__block-inner {
+      background: $black-gradient;
+      border: vw(2px) solid rgba(255, 255, 255, 0.18);
+
+      .members-fold-one-row__block-text-1 {
+        color: #d6d6d6;
+      }
+    }
+  }
+
+  .members-fold-one-row__block-text {
+    font-size: vw(18px);
+    line-height: vw(25px);
+    @include fontExtraBold800;
+    margin-bottom: 0;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #dadada;
+  }
+
+  .members-fold-one-row__block-text-1 {
+    font-size: vw(36px);
+    line-height: vw(66px);
+    @include fontExtraBold800;
+    margin-bottom: 0;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.95);
+  }
+}

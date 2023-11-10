@@ -1,0 +1,221 @@
+// member day offs
+.login-member-day-offs {
+  padding: vw(60px) vw(114px);
+}
+
+.login-member-day-offs__content {
+  //padding: vw(74px) vw(145px);
+
+  //new css
+  padding: vw(19px) 0;
+}
+
+.login-member-day-offs__content-colm {
+  margin-right: vw(127px);
+  margin-top: vw(48px);
+  width: vw(524px);
+
+  .fa {
+    cursor: pointer;
+    font-size: vw(24px);
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: vw(4px);
+  }
+
+  h2 {
+    vertical-align: middle;
+    width: vw(321px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.login-member-day-offs__content-colm-title-row {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: vw(82px);
+  margin-bottom: vw(41px);
+}
+
+.login-member-day-offs__content-colm-title-div {
+  position: relative;
+  height: vw(52px);
+
+  h2,
+  label,
+  input {
+    position: absolute;
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    top: vw(18px);
+  }
+}
+
+.login-member-day-offs__content-colm-dataRow {
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: vw(34px);
+  position: relative;
+  height: vw(90px);
+
+  h3,
+  .container-login-flow-input label,
+  .container-login-flow-input input {
+    position: absolute;
+    top: 0;
+  }
+
+  h3 {
+    width: vw(313px);
+    padding-top: vw(10px);
+    padding-right: vw(10px);
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.login-member-day-offs__content-colm-counterRow {
+  align-items: center;
+  align-items: flex-start;
+  position: absolute;
+  right: 0;
+
+  .fa {
+    text-align: center;
+    padding: vw(21px);
+    width: vw(62px);
+    height: vw(53px);
+    font-size: vw(18px);
+    //background-color: rgba(255, 255, 255, 0.03);
+    //background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+    background: rgb(45, 49, 53);
+    background: $black-gradient;
+    @include common-box-shadow-mixin-2;
+  }
+
+  .fa-minus {
+    border-radius: vw(27px) 0 0 vw(27px);
+  }
+
+  .fa-plus {
+    border-radius: 0 vw(27px) vw(27px) 0;
+  }
+  .fa-minus,
+  .fa-plus {
+    //background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+    background: rgb(132, 250, 176);
+    background: linear-gradient(
+      90deg,
+      rgba(132, 250, 176, 1) 0%,
+      rgba(143, 211, 244, 1) 100%
+    );
+    color: transparent;
+    width: fit-content;
+    background-clip: text;
+    //-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  input {
+    //width: vw(62px);
+    height: vw(53px);
+    //background-color: rgba(74, 80, 85, 0.27);
+    border: 0;
+    text-align: center;
+    padding: vw(2px);
+    color: #ffffff;
+    font-size: vw(24px);
+    @include fontSemiBold600;
+
+    //new css
+    width: vw(70px);
+    background: #32363a;
+    box-shadow: 0 vw(-4px) vw(4px) rgba(74, 78, 83, 0.25),
+      0 vw(4px) vw(4px) rgba(0, 0, 0, 0.25),
+      inset vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+      inset vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8);
+  }
+}
+
+.set-hours-time-row {
+  margin-bottom: vw(81px);
+}
+
+.set-hours-time-row__colm1 {
+  margin-right: vw(50px);
+}
+
+.set-hours-working-days {
+  margin-bottom: vw(66px);
+}
+
+.set-hours-time-zone {
+  margin-bottom: vw(59px);
+}
+.gradient-btn {
+  width: vw(188px);
+  height: vw(49px);
+  //background: linear-gradient(95.94deg, #57cba1 28.18%, #0f597c 79.28%);
+  //background: rgb(87, 203, 161);
+  //background: linear-gradient(
+  //  95deg,
+  //  rgba(87, 203, 161, 1) 28%,
+  //  rgba(15, 89, 124, 1) 79%
+  //);
+  border: double 1px transparent;
+  background-image: linear-gradient(
+      180deg,
+      rgba(45, 49, 53, 1) 0%,
+      rgba(45, 49, 53, 1) 100%
+    ),
+    linear-gradient(95deg, rgba(87, 203, 161, 1) 28%, rgba(15, 89, 124, 1) 79%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: vw(30px);
+  @include common-box-shadow-mixin-3;
+
+  button {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: none;
+    background: transparent;
+    //background: #2d3135;
+    font-size: vw(16px);
+    line-height: vw(22px);
+    color: #e2e2e2;
+    @include fontSemiBold600;
+  }
+}
+.login-member-day-offs__content--set-working-hour {
+  padding-top: vw(79px);
+
+  .set-hours-time-row {
+    .font-18-semiBold {
+      padding-bottom: vw(40px);
+    }
+    h3 {
+      display: none;
+    }
+  }
+  .set-hours-working-days {
+    .font-18-semiBold {
+      padding-bottom: vw(15px);
+    }
+    .font-14-semibold {
+      color: rgba(168, 168, 168, 1);
+    }
+    .customCheckbox {
+      label {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

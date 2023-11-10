@@ -1,0 +1,354 @@
+// resource timesheet report
+
+.reports-card--timesheet-row1-colm1 {
+  //width: vw(766px);
+  //height: vw(242px);
+  //margin-right: vw(7px);
+  //padding: vw(10px) vw(36px) vw(26px) vw(18px);
+
+  //new css
+  //width: vw(683px);
+  width: vw(650px);
+  height: vw(234px);
+  //margin-right: vw(16px);
+  margin-right: vw(20px);
+  padding: vw(5px);
+}
+
+.reports-card--timesheet-row1-colm2 {
+  //width: vw(544px);
+  //height: vw(242px);
+  padding: vw(20px);
+
+  //new css
+  width: vw(568px);
+  height: vw(234px);
+}
+
+.reports-card--timesheet-row2 {
+  //width: vw(430px);
+  //height: vw(437px);
+  //margin-right: vw(13px);
+  //margin-bottom: vw(31px);
+  padding: vw(21px);
+  text-align: center;
+
+  //new css
+  width: vw(394px);
+  height: vw(383px);
+  margin-right: vw(31px);
+  margin-bottom: vw(38px);
+}
+.reports-card-timesheet-row2__img-div {
+  width: vw(103px);
+  height: vw(97px);
+  //background: rgba(0, 0, 0, 0.39);
+  border-radius: vw(4px);
+  margin: auto;
+  margin-bottom: vw(24px);
+
+  img {
+    //height: vw(172px);
+    //margin-bottom: vw(11px);
+
+    //new css
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+}
+.reports-card-timesheet-row2__textBlock1Row,
+.reports-card-timesheet-row2__textBlock2Row {
+  .font-18-bold-space-light-uppercase {
+    color: rgba(255, 255, 255, 0.33);
+    padding-bottom: vw(11px);
+  }
+}
+
+.reports-card-timesheet-row2__textBlock1Row {
+  justify-content: center;
+  margin-top: vw(15px);
+
+  .font-18-bold-space-light-uppercase {
+    color: rgba(168, 168, 168, 0.33);
+    letter-spacing: 0;
+  }
+}
+.reports-card-timesheet-row2__border-right {
+  //border-right: vw(2px) solid rgba(112, 112, 112, 1);
+  margin-left: vw(25px);
+  margin-right: vw(25px);
+
+  //new css
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(
+      50.62deg,
+      rgba(35, 37, 39, 0.8) -96.39%,
+      #35393e -21.57%
+    );
+    box-shadow: -2px -2px 4px rgba(74, 78, 83, 0.5),
+      2px 2px 6px rgba(35, 37, 39, 0.8), 8px 8px 30px rgba(35, 37, 39, 0.9);
+    border-radius: 8px;
+    width: vw(3px);
+    height: 100%;
+  }
+}
+
+.reports-card-timesheet-row2__count {
+  font-size: vw(32px);
+  line-height: vw(43px);
+  //letter-spacing: vw(4.8px);
+  //@include fontBlack900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: vw(160px);
+  margin: 0 auto;
+
+  //new css
+  @include fontExtraBold800;
+  color: #57cba1;
+}
+
+.reports-card-timesheet-row2__textBlock2Row {
+  padding-top: vw(11px);
+  //border-top: vw(2px) solid rgba(112, 112, 112, 1);
+  width: 75%;
+  margin: 0 auto;
+
+  //new css
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(
+      50.62deg,
+      rgba(35, 37, 39, 0.8) -96.39%,
+      #35393e -21.57%
+    );
+    box-shadow: -2px -2px 4px rgba(74, 78, 83, 0.5),
+      2px 2px 6px rgba(35, 37, 39, 0.8), 8px 8px 30px rgba(35, 37, 39, 0.9);
+    border-radius: 8px;
+    width: 100%;
+    height: vw(3px);
+    left: 0;
+    top: 0;
+  }
+  .font-18-bold-space-light-uppercase {
+    color: rgba(168, 168, 168, 0.33);
+    letter-spacing: 0;
+  }
+}
+.reports-timesheet-row3 {
+  position: relative;
+  z-index: 111;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: vw(67px);
+    width: 90%;
+    left: vw(-7px);
+    background: rgb(0, 233, 224);
+    background: $light-blue-gradient-87deg;
+    top: 10%;
+    margin: auto;
+    border-bottom-left-radius: vw(17px);
+    border-top-left-radius: vw(17px);
+    z-index: -1;
+  }
+}
+.reports-card--timesheet-row3 {
+  //width: vw(318px);
+  //height: vw(152px);
+  //margin-right: vw(15px);
+  //margin-bottom: vw(32px);
+  //padding: vw(30px) vw(25px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  //new css
+  width: vw(308px);
+  height: vw(97px);
+  margin-right: vw(8px);
+  margin-bottom: vw(51px);
+  padding: vw(24px) vw(24px) vw(24px) vw(40px);
+  position: relative;
+
+  h3 {
+    margin-right: vw(10px);
+  }
+
+  .overview-percent-gradient-text {
+    //font-size: vw(65px);
+    @include fontExtraBold800;
+    margin-bottom: 0;
+
+    //new css
+    font-size: vw(36px);
+    @include fontBold700;
+    color: transparent;
+    width: fit-content;
+    //background: -webkit-linear-gradient(90deg, #a6c0fe 0%, #f68084 100%);
+    //background: linear-gradient(90deg, #a6c0fe 0%, #f68084 100%);
+    background: rgb(166, 192, 254);
+    background: linear-gradient(
+      90deg,
+      rgba(166, 192, 254, 1) 0%,
+      rgba(246, 128, 132, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .overview-percent-gradient-text-opacity-1 {
+    font-size: vw(65px);
+    @include fontExtraBold800;
+    margin-bottom: 0;
+
+    background: -webkit-linear-gradient(
+      rgba(252, 151, 71, 1),
+      rgba(253, 118, 151, 1)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.reports-timesheet-date-and-table-block {
+  padding-bottom: vw(30px);
+
+  .date-block-arrow-go {
+    margin-bottom: vw(20px);
+  }
+}
+
+.finances-table--reportResource {
+  th,
+  td {
+    width: 9%;
+  }
+
+  tr td:nth-child(3),
+  tr td:nth-child(4),
+  tr td:nth-child(5),
+  tr td:nth-child(6),
+  tr td:nth-child(7) {
+    span {
+      padding-left: vw(20px);
+    }
+  }
+
+  tr th:nth-child(7),
+  tr td:nth-child(7) {
+    width: 11%;
+  }
+}
+
+.finances-table--reportExpense {
+  th,
+  td {
+    width: 11%;
+  }
+
+  tr th:nth-child(4),
+  tr td:nth-child(4) {
+    width: 8%;
+  }
+
+  tr th:nth-child(5),
+  tr td:nth-child(5) {
+    width: 12%;
+  }
+
+  tr td:nth-child(5),
+  tr td:nth-child(6),
+  tr td:nth-child(7) {
+    span {
+      padding-left: vw(10px);
+    }
+  }
+}
+
+.finances-table--reportTasks {
+  th,
+  td {
+    width: 13%;
+  }
+
+  th {
+    vertical-align: text-top;
+    padding-bottom: vw(20px);
+  }
+}
+
+.finances-table--reportInvoices {
+  th,
+  td {
+    width: 12%;
+  }
+
+  th {
+    padding-top: vw(30px);
+    padding-bottom: vw(20px);
+  }
+
+  tr th:nth-child(1),
+  tr td:nth-child(1) {
+    width: 10%;
+  }
+
+  tr th:nth-child(6),
+  tr td:nth-child(6),
+  tr th:nth-child(7),
+  tr td:nth-child(7) {
+    width: 15%;
+  }
+
+  tr td:nth-child(6) {
+    span {
+      padding-left: vw(15px);
+    }
+  }
+}
+
+.finances-table--reportClients {
+  th,
+  td {
+    width: 12%;
+  }
+
+  th {
+    padding-bottom: vw(20px);
+  }
+
+  tr th:nth-child(1),
+  tr td:nth-child(1) {
+    width: 10%;
+  }
+
+  tr th:nth-child(5),
+  tr td:nth-child(5),
+  tr th:nth-child(6),
+  tr td:nth-child(6) {
+    width: 15%;
+  }
+
+  tr td:nth-child(6) {
+    span {
+      padding-left: vw(15px);
+    }
+  }
+}
+//new css
+.resource-timesheet-summary-card-freelancer-contract-div {
+  .reports-card-timesheet-row2__count {
+    color: #fcb69f;
+  }
+}

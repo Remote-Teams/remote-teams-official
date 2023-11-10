@@ -1,0 +1,164 @@
+.team-settings-main-div {
+  padding-top: vw(35px);
+}
+.cmd-team-setting-subtitle {
+  color: rgba(255, 255, 255, 0.38);
+  padding-top: vw(10px);
+}
+.team-settings-add-member-outer-block {
+  padding-top: vw(60px);
+}
+.team-settings-add-member-title {
+  background: rgba(255, 236, 210, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 210, 1) 0%,
+    rgba(252, 182, 159, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team-settings-add-member-block {
+  margin-top: vw(36px);
+  box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  border-radius: vw(12px);
+  padding: vw(46px) vw(62px) vw(45px) vw(43px);
+}
+.container-login-flow-input--teams-setting-name {
+  .input-border-div {
+    width: vw(253px);
+    height: vw(60px);
+  }
+}
+.react-select-container--teams-settings-role {
+  width: vw(253px) !important;
+  height: vw(60px) !important;
+}
+.container-login-flow-input--team-settings-email {
+  .input-border-div {
+    width: vw(428px);
+    height: vw(60px);
+  }
+}
+.team-settings-send-invitation-btn {
+  width: vw(285px);
+  height: vw(54px);
+  padding: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(69, 124, 255, 0.9) 0%,
+    rgba(126, 166, 112, 0.9) 100%
+  );
+  border-radius: vw(30px);
+  border: none;
+  color: #e2e2e2;
+  @include common-box-shadow-mixin-2;
+}
+.cmd-team-setting-workspace-subtitle {
+  background: rgba(161, 140, 209, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 140, 209, 1) 0%,
+    rgba(251, 194, 235, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: vw(72px);
+}
+.font-18-bold-space-light-uppercase--team-setting {
+  color: rgba(255, 255, 255, 0.81);
+}
+.cmd-team-settings-table {
+  table {
+    width: 100%;
+    th,
+    td {
+      &:first-child {
+        width: 21%;
+      }
+      &:nth-child(2) {
+        width: 22%;
+      }
+      &:nth-child(3) {
+        width: 25%;
+      }
+      &:nth-child(4) {
+        width: 32%;
+      }
+    }
+    th {
+      padding: vw(50px) vw(20px) vw(48px) vw(20px);
+      &:nth-child(2) {
+        padding-left: vw(20px);
+      }
+      &:nth-child(3) {
+        padding-left: vw(50px);
+      }
+    }
+  }
+}
+.cmd-team-settings-table--tbody {
+  tr {
+    background: $black-gradient;
+    box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+    border-radius: vw(12px);
+  }
+  td {
+    padding: vw(29px) vw(77px) vw(21px) vw(29px);
+
+    &:first-child {
+      border-top-left-radius: vw(12px);
+      border-bottom-left-radius: vw(12px);
+    }
+    &:last-child {
+      border-top-right-radius: vw(12px);
+      border-bottom-right-radius: vw(12px);
+      // padding-right: 0;
+    }
+  }
+  .empty-cell {
+    box-shadow: 0 0 0;
+    background: transparent;
+    padding: vw(10px);
+  }
+  .team-settings-invite-link-div {
+    border-radius: vw(48px);
+    border: double 1px transparent;
+    background-image: $black-gradient,
+      linear-gradient(
+        87deg,
+        rgba(46, 49, 146, 1) 7.59%,
+        rgba(87, 203, 161, 1) 94.35%
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding: vw(27px) vw(20px) vw(17px) vw(20px);
+    font-size: vw(14px);
+    line-height: vw(21px);
+    color: rgba(240, 240, 240, 0.38);
+    @include fontPoppinsRegular;
+
+    img {
+      width: vw(16px);
+      height: auto;
+      margin-right: vw(6px);
+    }
+  }
+}
+.team-settings-edit-btn {
+  color: #bdbfc1;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: vw(52px);
+
+  .fa {
+    padding-right: vw(17px);
+  }
+}

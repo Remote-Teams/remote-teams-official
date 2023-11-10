@@ -1,0 +1,22 @@
+.expenses-table-div {
+  padding-right: vw(100px);
+}
+
+.finances-table--expenses {
+  th,
+  td {
+    width: 10%;
+  }
+}
+.expenses-btn-div {
+  padding-bottom: vw(50px);
+}
+//new css
+.page-count-row--project-expenses {
+  .count-card-block__count {
+    color: #ffffff;
+  }
+}
+.all-project-add-expense-amount-td {
+  vertical-align: text-top !important;
+}

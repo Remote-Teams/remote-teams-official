@@ -1,0 +1,136 @@
+// upload image
+
+.upload-img__mainBlock {
+  margin-bottom: vw(30px);
+  .upload-img__img-block {
+    width: vw(170px);
+    height: vw(170px);
+    margin: 0 auto;
+    margin-left: vw(9px);
+    background-color: rgba(74, 80, 85, 0.46);
+    border: vw(3px) solid #70f84e;
+    border-radius: vw(6px);
+    margin-bottom: vw(20px);
+
+    img {
+      border-radius: vw(6px);
+    }
+  }
+
+  .upload-img__btn-input-block {
+    position: relative;
+    height: vw(53px);
+
+    .login-dashboard-btn,
+    input {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    input {
+      // cursor: pointer;
+      width: vw(188px);
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+    }
+  }
+}
+
+.upload-img__mainBlock--profile {
+  .upload-img__img-block-border-div {
+    border-radius: 100% !important;
+    padding: vw(2px) !important;
+  }
+  .upload-img__img-block {
+    //width: vw(130px);
+    //height: vw(130px);
+    border-radius: 100% !important;
+    margin-left: vw(20px);
+
+    img {
+      border-radius: 100%;
+    }
+  }
+  .login-dashboard-btn {
+    background: linear-gradient(90deg, #457cff 0%, #7ea670 100%) !important;
+  }
+}
+
+.upload-img__mainBlock--editModal {
+  width: vw(150px);
+  height: vw(150px);
+  margin-right: vw(50px);
+  position: relative;
+
+  .upload-img__img-block {
+    width: vw(150px);
+    height: vw(150px);
+  }
+
+  .upload-img__btn-input-block,
+  .login-dashboard-btn,
+  .upload-img__btn-input-block input {
+    width: vw(35px) !important;
+    height: vw(35px) !important;
+    position: absolute;
+    right: vw(-20px);
+    top: vw(-10px) !important;
+  }
+
+  .login-dashboard-btn {
+    background-color: #40e0d0;
+    border-radius: 100%;
+    padding: vw(12px);
+
+    i {
+      position: absolute;
+      top: vw(7px);
+      right: vw(7px);
+      font-size: vw(20px);
+    }
+  }
+
+  .upload-img__btn-input-block input {
+    top: 0;
+  }
+}
+.upload-img__mainBlock--new-client-img {
+  .upload-img__img-block-border-div {
+    border-radius: vw(8px);
+    width: vw(147px);
+    height: vw(147px);
+    padding: vw(2px);
+    background: rgb(46, 49, 146);
+    background: linear-gradient(
+      114.23deg,
+      rgba(46, 49, 146, 1) 19.32%,
+      rgba(87, 203, 161, 1) 60.73%
+    );
+    margin-bottom: vw(19px);
+    margin-left: vw(8px);
+  }
+
+  .upload-img__img-block {
+    background: rgb(45, 49, 53);
+    background: $black-gradient;
+    border: vw(2px) solid transparent;
+    border-radius: vw(8px);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .login-dashboard-btn {
+    width: vw(156px);
+    height: vw(44px);
+    background: rgb(166, 192, 254);
+    background: linear-gradient(
+      90deg,
+      rgba(166, 192, 254, 1) 0%,
+      rgba(87, 203, 161, 1) 100%
+    );
+    @include common-box-shadow-mixin-2;
+    border-radius: vw(30px);
+  }
+}

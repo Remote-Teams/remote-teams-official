@@ -1,0 +1,46 @@
+.card-detail-popup {
+  .subscribe-button {
+    background: linear-gradient(306deg, #502eff 0%, #d1c7ff 100%) !important;
+    border: none;
+    margin-top: vw(10px);
+    border-radius: vw(30px);
+    color: white;
+    font-family: Poppins-Bold;
+    font-size: vw(24px);
+    float: right;
+  }
+  h3 {
+    font-family: Poppins-Bold;
+    font-size: vw(32px);
+    color: #333333;
+    line-height: vw(30px);
+  }
+  h4 {
+    font-size: vw(24px);
+    line-height: vw(30px);
+    color: #333333;
+    font-family: Poppins-SemiBold;
+  }
+  p {
+    font-size: vw(18px);
+    color: #333333;
+    font-family: Poppins-Regular;
+  }
+  label {
+    font-size: vw(18px);
+    color: #333333;
+
+    font-family: Poppins-SemiBold;
+  }
+  input {
+    border: none;
+    background-color: #f7f7f7;
+  }
+
+  .appearance-none {
+    background-color: #f7f7f7;
+    border: none !important;
+    border-radius: 20px;
+    padding-left: vw(25px) !important;
+  }
+}

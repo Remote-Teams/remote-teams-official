@@ -1,0 +1,182 @@
+// main content
+.saveAndGoToWorkflowsButton {
+  width: auto;
+  padding: 0 vw(25px);
+}
+
+.workflow-content-block-delete-element-btn {
+  width: vw(22px);
+  height: vw(22px);
+  color: #3a3f43;
+  background-color: #ff0000;
+  padding: 0;
+  box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+  font-size: vw(18px);
+  // line-height: vw(28px);
+  text-align: center;
+  margin-left: vw(19px);
+  border: none;
+  border-radius: vw(39px);
+}
+
+.workflow-fa-times-delete-button {
+  color: #bdbfc1;
+  font-size: vw(25px);
+  line-height: vw(20px);
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+
+  &--disabled {
+    opacity: 0.3;
+  }
+}
+
+// add content
+.workflow-add-block-title {
+  text-align: center;
+  margin-bottom: vw(11px);
+}
+
+.workflow-add-block-title--mb {
+  margin-bottom: vw(43px);
+}
+
+// input field
+.workflow-add-input-field-block {
+  padding: vw(41px) vw(16px) vw(16px) vw(16px);
+
+  .container-login-flow-input--forms .input-border-div {
+    width: vw(259px);
+  }
+}
+
+.workflow-add-input-field-note {
+  color: rgba(255, 255, 255, 0.26);
+  font-size: vw(16px);
+  line-height: vw(22px);
+  @include fontSemiBold600;
+  margin-bottom: vw(43px);
+  text-align: center;
+}
+
+.workflow-add-input-field-block__inputFieldOuterBlock {
+  padding-left: vw(16px);
+}
+
+.workflow-add-input-field-block-save-btn {
+  color: #ffffff;
+  background-color: rgba(74, 80, 85, 0.77);
+  width: 100%;
+  height: vw(68px);
+  border: none;
+  box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.38);
+  font-size: vw(18px);
+  line-height: vw(68px);
+  @include fontSemiBold600;
+  text-align: center;
+  padding: 0;
+
+  border-radius: 0 0 vw(15px) vw(15px);
+}
+
+.workflow-add-input-field-save-and-go-back-btn {
+  color: rgba(255, 255, 255, 0.52);
+  background-color: transparent;
+  border-radius: 0 0 0 inherit;
+  height: inherit;
+  border: none;
+  border-right: vw(2px) solid rgba(112, 112, 112, 1);
+  padding: 0 vw(23px) 0 vw(15px);
+  text-align: left;
+}
+
+.workflow-add-input-field-save-and-exit-btn {
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 0 0 inherit 0;
+  height: inherit;
+  border: none;
+  padding: 0 vw(15px) 0 vw(25px);
+  text-align: left;
+}
+
+// add questions
+.workflow-add-questions-content-block {
+  padding-left: vw(16px);
+
+  label {
+    display: none;
+  }
+}
+
+.add-question-choice-btn {
+  width: vw(272px);
+  margin: 0 auto;
+  margin-bottom: vw(23px);
+  border: vw(2px) solid #5ccc40;
+  background-color: #3a3f43;
+  color: #ffffff;
+  font-size: vw(18px);
+  line-height: vw(22px);
+  letter-spacing: vw(1px);
+  @include fontSemiBold600;
+  border-radius: vw(30px);
+
+  text-align: left;
+  padding: vw(17px) vw(28px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .fa-plus {
+    color: rgba(255, 255, 255, 0.25);
+    margin-left: vw(10px);
+    flex-shrink: 0;
+  }
+}
+
+.add-question-choice-btn--qstn {
+  width: vw(296px);
+}
+
+// attachments
+label.workflow-attachment-upload-file-block {
+  display: inline-block;
+}
+
+.workflow-attachment-upload-file-block {
+  margin-bottom: vw(30px);
+  border: vw(3px) dashed #707070;
+  border-radius: vw(8px);
+  width: vw(262px);
+  height: vw(94px);
+  font-size: vw(18px);
+  line-height: vw(94px);
+  @include fontLight300;
+  color: rgba(255, 255, 255, 0.38);
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+
+  input {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+// conditions
+.font-18-bold-if {
+  letter-spacing: vw(2.7px);
+  padding-right: vw(21px);
+  text-transform: uppercase;
+}
+.mb-84 {
+  margin-bottom: vw(84px);
+}
+.mt-40 {
+  margin-top: vw(40px);
+}

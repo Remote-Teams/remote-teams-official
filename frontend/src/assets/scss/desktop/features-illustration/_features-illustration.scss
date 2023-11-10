@@ -1,0 +1,485 @@
+/*===============================================================
+                   common
+===============================================================*/
+.vault-features-illustration-div,
+.supports-features-illustration-div,
+.workflows-features-illustration-div,
+.dashboard-schedule-features-illustration-div,
+.project-scrum-features-illustration-div,
+.project-directories-features-illustration-div,
+.project-progress-features-illustration-div,
+.project-docs-features-illustration-div,
+.project-discussion-features-illustration-div,
+.project-workboards-illustration-div,
+.project-planning-priority-matrix-features-illustration-div,
+.finances-approvals-features-illustration-div,
+.finances-subscription-features-illustration-div,
+.finances-invoice-features-illustration-div,
+.cmd-custom-fields-features-illustration-div,
+.cmd-roles-and-permission-illustration-div {
+  position: relative;
+}
+
+.project-scrum-features-illustration-img-div,
+.project-directories-features-illustration-img-div,
+.project-progress-features-illustration-img-div,
+.project-docs-features-illustration-img-div,
+.project-discussion-features-illustration-img-div,
+.project-workboards-img-illustration-div,
+.project-planning-priority-matrix-illustration-div,
+.finances-approvals-illustration-div,
+.finances-subscription-illustration-div,
+.finances-invoice-illustration-div,
+.cmd-custom-fields-features-illustration-img-div,
+.cmd-roles-and-permission-illustration-img-div {
+  position: absolute;
+  right: vw(-80px);
+}
+/*===============================================================
+                   common end
+===============================================================*/
+
+.cmd-roles-and-permission-illustration-img {
+  width: vw(1007px);
+  height: auto;
+}
+
+.cmd-roles-and-permission-illustration-div {
+  padding-top: vw(88px);
+}
+
+.cmd-roles-and-permission-illustration-img-div {
+  top: vw(68px);
+}
+.features-illustration-lock-icon {
+  width: vw(23px);
+  height: auto;
+  margin-right: vw(12px);
+}
+/*===============================================================
+                   custom fields
+===============================================================*/
+.cmd-custom-fields-features-illustration-div {
+  padding-top: vw(90px);
+}
+.cmd-custom-fields-features-illustration-img-div {
+  top: vw(66px);
+  right: vw(-70px);
+  transition: all 0.2s ease;
+}
+.cmd-custom-fields-illustration-img {
+  width: vw(920px);
+  height: auto;
+}
+/*===============================================================
+                   dashboard timesheet
+===============================================================*/
+.dashboard-timesheet-illustration-img {
+  width: vw(1719px);
+  height: auto;
+}
+.illustration-gradient-text--dashboard-timesheet {
+  margin: auto;
+  margin-top: vw(36px);
+  font-size: vw(36px) !important;
+  line-height: vw(51px) !important;
+}
+/*===============================================================
+                   finances invoice
+===============================================================*/
+.finances-invoice-features-illustration-div {
+  padding-top: vw(110px);
+  padding-bottom: vw(300px);
+}
+.finances-invoice-illustration-div {
+  top: vw(86px);
+  right: vw(-77px);
+  transition: all 0.2s ease;
+}
+.finances-invoice-illustration-img {
+  width: vw(1000px);
+  height: auto;
+}
+
+/*===============================================================
+                   finances Subscriptions
+===============================================================*/
+.finances-subscription-features-illustration-div {
+  padding-top: vw(102px);
+}
+.finances-subscription-illustration-div {
+  right: vw(-76px);
+  top: vw(76px);
+  transition: all 0.2s ease;
+}
+.finances-subscription-illustration-img {
+  width: vw(900px);
+  height: auto;
+}
+/*===============================================================
+                   finances Approvals
+===============================================================*/
+.finances-approvals-features-illustration-div {
+  padding-top: vw(116px);
+}
+.finances-approvals-illustration-div {
+  top: vw(90px);
+}
+.finances-approvals-illustration-img {
+  width: vw(1000px);
+  height: auto;
+}
+/*===============================================================
+                   project
+===============================================================*/
+
+/*===============================================================
+                   planning Priority Matrix
+===============================================================*/
+.project-planning-priority-matrix-features-illustration-div {
+  padding-top: vw(60px);
+}
+.project-planning-priority-matrix-illustration-div {
+  top: vw(60px);
+}
+.project-planning-priority-matrix-illustration-img {
+  width: vw(1200px);
+  height: auto;
+}
+/*===============================================================
+                   planning Workboard
+===============================================================*/
+.project-workboards-illustration-div {
+  padding-top: vw(85px);
+  padding-bottom: vw(300px);
+
+  .illustration-gradient-text {
+    margin-top: vw(25px);
+  }
+}
+.project-workboards-img-illustration-div {
+  top: vw(94px);
+  right: vw(-75px);
+}
+.project-workboards-illustration-img {
+  width: vw(950px);
+  height: auto;
+}
+/*===============================================================
+                   planning Discussion
+===============================================================*/
+.project-discussion-features-illustration-div {
+  padding-top: vw(85px);
+  padding-bottom: vw(200px);
+}
+.project-discussion-features-illustration-img-div {
+  top: vw(67px);
+}
+.project-discussion-features-illustration-img {
+  width: vw(1037px);
+  height: auto;
+}
+/*===============================================================
+                   planning Progress
+===============================================================*/
+.project-progress-features-illustration-div {
+  padding-top: vw(78px);
+}
+.project-progress-features-illustration-img-div {
+  top: vw(136px);
+}
+.project-progress-features-illustration-img {
+  width: vw(1132px);
+  height: auto;
+}
+/*===============================================================
+                   planning Directories
+===============================================================*/
+.project-directories-features-illustration-div {
+  padding-top: vw(133px);
+}
+.project-directories-features-illustration-img-div {
+  top: vw(86px);
+}
+.project-directories-features-illustration-img {
+  width: vw(1000px);
+  height: auto;
+  transition: all 0.2s ease;
+}
+/*===============================================================
+                   planning Docs
+===============================================================*/
+.project-docs-features-illustration-div {
+  padding-top: vw(133px);
+  padding-bottom: vw(200px);
+}
+.project-docs-features-illustration-img-div {
+  top: vw(41px);
+}
+.project-docs-features-illustration-img {
+  width: vw(1104px);
+}
+/*===============================================================
+                   planning Scrum
+===============================================================*/
+.project-scrum-features-illustration-div {
+  padding-top: vw(112px);
+}
+.project-scrum-features-illustration-img-div {
+  top: vw(137px);
+}
+.project-scrum-features-illustration-img {
+  width: vw(900px);
+  height: auto;
+}
+/*===============================================================
+                   task pipeline
+===============================================================*/
+.dashboard-task-pipeline-featutes-illustration-div {
+  .illustration-gradient-text {
+    margin: auto;
+    font-size: vw(18px);
+    line-height: vw(26px);
+  }
+}
+.dashboard-task-pipeline-features-illustration-img {
+  width: vw(382px);
+  height: auto;
+}
+/*===============================================================
+                   dashboard schedule
+===============================================================*/
+.dashboard-schedule-features-illustration-div {
+  padding-bottom: vw(461px);
+
+  .illustration-gradient-text {
+    font-size: vw(36px);
+    line-height: vw(51px);
+    margin: auto;
+  }
+}
+.dashboard-schedule-illustration-img-div {
+  position: relative;
+  padding-top: vw(39px);
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: vw(3px);
+    background: $black-gradient;
+    @include common-box-shadow-mixin-1;
+    border-radius: vw(8px);
+    opacity: 0.5;
+    content: "";
+  }
+}
+.dashboard-schedule-illustration-img {
+  width: vw(825px);
+  height: auto;
+}
+.dashboard-schedule-features-illustration-gradient-img-div {
+  position: absolute;
+  right: vw(-80px);
+  top: vw(-20px);
+  z-index: 99;
+}
+.dashboard-schedule-illustration-gradient-img {
+  width: vw(184px);
+  height: auto;
+}
+/*===============================================================
+                   chat
+===============================================================*/
+.chat-features-illustration-img {
+  width: vw(1410px);
+  height: auto;
+  margin-top: vw(72px);
+}
+.chat-features-illustration-div {
+  padding-top: vw(18px);
+
+  .illustration-gradient-text {
+    margin: auto;
+    margin-top: vw(22px);
+  }
+}
+/*===============================================================
+                     workflows
+===============================================================*/
+.workflows-features-illustration-div {
+  padding-top: vw(70px);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    background: url("/img/desktop/features-illustration/icons/vault-square.svg");
+    background-size: contain;
+    content: "";
+    width: vw(55px);
+    height: vw(66px);
+    left: vw(130px);
+    top: vw(199px);
+    z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    position: absolute;
+    background: url("/img/desktop/features-illustration/icons/vault-line.svg");
+    background-size: contain;
+    content: "";
+    width: vw(170px);
+    height: vw(70px);
+    right: vw(160px);
+    top: vw(190px);
+    z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .illustration-gradient-text {
+    margin: auto;
+    margin-top: vw(30px);
+  }
+}
+.workflows-features-illustration-img {
+  width: vw(1764px);
+  height: auto;
+  margin-top: vw(18px);
+}
+/*===============================================================
+                     vault
+===============================================================*/
+.vault-features-illustration-div {
+  padding-top: vw(18px);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    background: url("/img/desktop/features-illustration/icons/vault-square.svg");
+    background-size: contain;
+    content: "";
+    width: vw(55px);
+    height: vw(66px);
+    left: vw(190px);
+    top: vw(159px);
+    z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    position: absolute;
+    background: url("/img/desktop/features-illustration/icons/vault-line.svg");
+    background-size: contain;
+    content: "";
+    width: vw(170px);
+    height: vw(70px);
+    right: vw(180px);
+    top: vw(140px);
+    z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.illustration-gradient-text--vault {
+  margin: auto;
+  margin-top: vw(21px);
+}
+.vault-features-illustration-img {
+  width: vw(1032px);
+  height: auto;
+  margin-left: vw(230px);
+  margin-top: vw(47px);
+}
+/*===============================================================
+                     Reports
+===============================================================*/
+.reports-features-illustration-div {
+  padding-top: vw(36px);
+  position: relative;
+  &::after {
+    position: absolute;
+    background: url("/img/desktop/features-illustration/icons/reports-circle.svg");
+    background-size: contain;
+    content: "";
+    width: vw(136px);
+    height: vw(136px);
+    left: vw(100px);
+    top: vw(139px);
+    z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    position: absolute;
+    background: url("/img/desktop/features-illustration/icons/reports-cone.svg");
+    background-size: contain;
+    content: "";
+    width: vw(189px);
+    height: vw(189px);
+    right: vw(40px);
+    top: vw(140px);
+    z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.reports-features-illustration-img {
+  width: vw(1551px);
+  height: auto;
+  margin-top: vw(44px);
+  margin-left: vw(40px);
+}
+/*===============================================================
+                     Presentations
+===============================================================*/
+.presentations-features-illustration-div {
+  position: relative;
+  padding-top: vw(55px);
+  padding-bottom: vw(700px);
+
+  &::after {
+    position: absolute;
+    background: url("/img/desktop/features-illustration/icons/presentation-cone.png");
+    background-size: contain;
+    content: "";
+    width: vw(195px);
+    height: vw(195px);
+    left: vw(120px);
+    top: vw(169px);
+    z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.presentations-features-illustration-img-div {
+  position: absolute;
+  bottom: 0;
+  padding-left: vw(142px);
+}
+.presentations-features-illustration-img {
+  width: vw(1573px);
+  height: auto;
+}
+/*===============================================================
+                     supports
+===============================================================*/
+.supports-features-illustration-div {
+  padding-top: vw(18px);
+  padding-bottom: vw(553px);
+}
+.supports-features-illustration-img-div {
+  position: absolute;
+  padding-left: vw(230px);
+  bottom: 0;
+  left: 0;
+}
+.supports-features-illustration-img {
+  width: vw(1394px);
+  height: auto;
+}

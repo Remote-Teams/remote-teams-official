@@ -1,0 +1,41 @@
+.new-ticket-btn {
+  padding: vw(60px) vw(97px) 0 vw(121px);
+  //.ticket-btn {
+  // padding-top: vw(10px);
+  //}
+}
+
+.newTicket-row1,
+.newTicket-row2 {
+  padding-right: vw(220px);
+}
+
+.newTicket-row1 {
+  padding-top: vw(48px);
+}
+
+.newTicket-row2,
+.newTicket-row3 {
+  padding-top: vw(74px);
+}
+
+.react-select-container--new-ticket {
+  width: vw(336px) !important;
+  height: vw(53px) !important;
+
+  //.react-select-elements__control::after {
+  //  position: absolute;
+  //  content: "";
+  //  width: 80%;
+  //  left: 10%;
+  //  bottom: 0;
+  //  height: 1px;
+  //  background-color: rgba(112, 248, 78, 0.8);
+  //}
+}
+
+.add-ticket-btn {
+  padding: vw(20px) vw(10px) vw(100px) 0;
+  display: flex;
+  justify-content: flex-end;
+}

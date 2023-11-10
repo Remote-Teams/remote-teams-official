@@ -1,0 +1,197 @@
+// project status report
+
+.reports-circle-icon {
+  width: vw(17px);
+  margin-right: vw(13px);
+  margin-bottom: vw(2px);
+}
+
+.reports-circle-icon-text {
+  align-items: center;
+}
+
+.project-status-report-card-container {
+  padding-left: vw(23px);
+}
+
+.reports-card--project-status {
+  //width: vw(522px);
+  //height: vw(271px);
+  //margin: vw(12px) vw(34px) vw(24px) 0;
+
+  //new css
+  width: vw(599px);
+  height: vw(295px);
+  margin: vw(24px) vw(32px) vw(45px) 0;
+}
+
+.reports-card--project-status2 {
+  //width: vw(522px);
+  //height: vw(321px);
+  //margin: vw(12px) vw(34px) vw(24px) 0;
+  padding: vw(45px) vw(30px) vw(30px) vw(30px);
+  //new css
+  width: vw(599px);
+  //height: vw(295px);
+  height: vw(335px);
+  margin: vw(12px) vw(32px) vw(24px) 0;
+}
+.reports-card--project-status2--card-4 {
+  width: vw(581px);
+  margin-right: 0;
+}
+.all-project-overview-sprint-circle-text-block--reports {
+  width: vw(171px);
+  height: vw(171px);
+  margin-right: vw(58px);
+  margin-left: vw(40px);
+
+  .all-project-overview-sprint-circle {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .all-project-overview-sprint-circle span {
+    font-size: vw(69px);
+    line-height: vw(94px);
+
+    //new css
+    font-style: italic;
+  }
+
+  .overview-block-sprint-block__circle-bottom-text {
+    font-size: vw(17px);
+
+    //new css
+    @include fontExtraBold800;
+    font-style: normal;
+  }
+
+  .all-project-overview-sprint-circle--pink,
+  .all-project-overview-sprint-circle--darkBlue,
+  .all-project-overview-sprint-circle--lightBlue,
+  .all-project-overview-sprint-circle--orange {
+    color: #ffffff;
+    width: unset;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+  }
+}
+
+.project-status-report-card--status {
+  padding: vw(35px) vw(40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-status-report-card__circular-progressbar {
+  .CircularProgressbar {
+    margin-right: vw(63px);
+    margin-bottom: vw(22px);
+    margin-left: vw(20px);
+    width: vw(120px);
+    height: vw(120px);
+
+    .CircularProgressbar-trail {
+      //stroke-width: vw(3px);
+      //stroke: rgba(255, 255, 255, 0.2);
+
+      //new css
+      stroke-width: vw(10px);
+      stroke: #2d3135;
+      box-shadow: inset vw(2px) vw(2px) vw(4px) rgba(0, 0, 0, 0.25),
+        inset vw(-2px) vw(-2px) vw(4px) rgba(0, 0, 0, 0.25);
+    }
+
+    .CircularProgressbar-text {
+      fill: #ffffff;
+      font-size: vw(34px);
+      @include fontExtraBold800;
+      font-style: italic;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    .CircularProgressbar-path {
+      //stroke: #fd8433;
+      stroke-linecap: round;
+      stroke-width: vw(10px);
+      transition: stroke-dashoffset 0.5s ease 0s;
+
+      //new css
+      stroke: #ff9e94;
+    }
+  }
+}
+
+.project-status-report-card__text-div {
+  text-align: center;
+  //width: vw(225px);
+  width: vw(300px);
+  h4 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.project-status-report-card__hr {
+  //border: vw(2px) solid rgba(255, 255, 255, 0.09);
+  //background-color: rgba(255, 255, 255, 0.09);
+  position: relative;
+  height: 0;
+  //new css
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: vw(10px);
+    //border: vw(5px) solid #2d3135;
+    background-color: #2d3135;
+    @include common-inset-box-shadow-mixin-1;
+    border-radius: vw(18px);
+  }
+}
+.project-status-report-card__title {
+  //font-size: vw(48px);
+  //line-height: vw(66px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+  font-size: vw(34px);
+  line-height: vw(51px);
+  color: #fad0c4;
+  font-style: italic;
+  margin-bottom: vw(6px);
+}
+.project-status-report-card__title2 {
+  color: #57cba1;
+}
+.reports-card--project-status--project-health {
+  width: vw(581px);
+}
+
+//new css
+.project-report-status-health-text-block {
+  .all-project-overview-sprint-circle--orange,
+  .all-project-overview-sprint-circle--lightBlue,
+  .all-project-overview-sprint-circle--darkBlue,
+  .all-project-overview-sprint-circle--pink {
+    color: transparent;
+    width: fit-content;
+    background-clip: text;
+    //-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: vw(15px);
+  }
+
+  .project-report-status-health-text-block {
+    .font-18-extraBold-space-light-uppercase {
+      color: rgba(255, 255, 255, 0.62);
+    }
+  }
+}

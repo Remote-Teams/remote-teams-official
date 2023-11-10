@@ -1,0 +1,81 @@
+@import "../src/assets/scss/variables";
+@import "../src/assets/scss/mixins";
+@import "../src/assets/scss/function";
+@import "../src/assets/scss/typography";
+
+/*=======================
+ desktop components css
+ =======================*/
+@media screen and (min-width: 768px) {
+  @import "../src/assets/scss/global";
+  @import "../src/assets/scss/desktop/common/common";
+  @import "../src/assets/scss/desktop/resources/index";
+  @import "../src/assets/scss/desktop/auth/login-signup";
+  @import "../src/assets/scss/desktop/header/header";
+  @import "../src/assets/scss/desktop/clients/clients";
+  @import "../src/assets/scss/desktop/allProjects/allProject";
+  @import "../src/assets/scss/desktop/profile/profile";
+  @import "../src/assets/scss/desktop/calender/calender";
+  @import "../src/assets/scss/desktop/payment/payment_popup";
+  @import "../src/assets/scss/desktop/finances/finances";
+  @import "../src/assets/scss/desktop/payment/payment";
+  @import "../src/assets/scss/desktop/notes/notes";
+  @import "../src/assets/scss/desktop/settings/index";
+  @import "../src/assets/scss/desktop/notifications/notifications";
+  @import "../src/assets/scss/desktop/annoucement/annoucement";
+  @import "../src/assets/scss/desktop/vault/vault";
+  @import "../src/assets/scss/desktop/support/support";
+  @import "../src/assets/scss/desktop/timesheet/index";
+  @import "../src/assets/scss/desktop/chat/chat";
+  @import "../src/assets/scss/desktop/reports/index";
+  @import "../src/assets/scss/desktop/dashboard/dashboard";
+  @import "../src/assets/scss/desktop/kanban/kanban";
+  @import "../src/assets/scss/desktop/gantt-chart/gantt-chart";
+  @import "../src/assets/scss/desktop/proposals/proposals";
+  @import "../src/assets/scss/desktop/video-calling/video";
+  @import "../src/assets/scss/desktop/walkthrough/index";
+  @import "../src/assets/scss/desktop/workflow-create-new/index";
+  @import "../src/assets/scss/desktop/workflows/index";
+  @import "../src/assets/scss/desktop/workflows-add-new/index";
+  @import "../src/assets/scss/desktop/command-centre/index";
+  @import "../src/assets/scss/desktop/scheduler-two/index";
+  @import "./assets/scss/desktop/features-illustration/index";
+  // proposal editor
+  @import "../src/components/desktop/ProposalEditor/asset/scss/index";
+  //npm css
+  @import "./assets/scss/desktop/npm-css/alert";
+  @import "./assets/scss/desktop/npm-css/loader";
+  @import "./assets/scss/desktop/npm-css/scheduler";
+  @import "./assets/scss/desktop/workboard/index";
+  @import "./assets/scss/desktop/npm-css/gantt-timeline";
+
+  /*=======================
+    super admin
+  =======================*/
+  @import "../src/assets/scss/desktop/super-admin/common/dropdown";
+  @import "../src/assets/scss/desktop/super-admin/common/gradients";
+  @import "../src/assets/scss/desktop/super-admin/common/pagination";
+  @import "../src/assets/scss/desktop/super-admin/desktop/workspaces";
+}
+
+/*===========================
+ desktop components css end
+ ===========================*/
+
+/*===================================================================================
+ mobile components css
+ ====================================================================================*/
+@media screen and (max-width: 767px) {
+  @import "../src/assets/scss/globalMobile";
+
+  /*=======================
+    super admin
+  =======================*/
+  @import "../src/assets/scss/mobile/super-admin-mobile/common/dropdown";
+  @import "../src/assets/scss/mobile/super-admin-mobile/common/gradients";
+  @import "../src/assets/scss/mobile/super-admin-mobile/common/pagination";
+  @import "../src/assets/scss/mobile/super-admin-mobile/desktop/workspaces";
+}
+/*==========================
+ mobile components css end
+ ==========================*/

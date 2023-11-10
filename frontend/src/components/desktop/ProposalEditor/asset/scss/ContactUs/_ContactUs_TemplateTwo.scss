@@ -1,0 +1,35 @@
+.contact_us_template_two {
+  align-items: center;
+  padding: vw(50px) vw(80px);
+  .contact_us_template_two_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: vw(80px);
+  }
+  .contact_us_template_two_headline {
+    width: 100%;
+    height: vw(80px);
+    display: flex;
+    letter-spacing: vw(4.32px);
+    justify-content: center;
+    margin-bottom: vw(20px);
+  }
+  .contact_us_template_two_para {
+    width: 90%;
+    height: vw(175px);
+    display: flex;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: vw(0.4px);
+    padding: vw(10px) 0;
+  }
+  .contact_us_template_two_right {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}

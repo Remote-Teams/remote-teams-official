@@ -1,0 +1,72 @@
+// settings
+.settings-content {
+  padding-top: vw(57px);
+  //padding-left: vw(82px);
+
+  //new css
+  padding-left: vw(20px);
+}
+
+.settings-access-roles-title {
+  text-align: center;
+  font-size: vw(61px);
+  line-height: vw(84px);
+  @include fontSemiBold600;
+  margin-bottom: vw(84px);
+}
+.settings-content-title1 {
+  font-size: vw(18px);
+  line-height: vw(25px);
+  @include fontExtraBold800;
+  text-transform: capitalize;
+  color: transparent;
+  width: fit-content;
+  background: rgb(255, 236, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 210, 1) 0%,
+    rgba(252, 182, 159, 1) 100%
+  );
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: flex-end;
+  &:focus {
+    outline: none;
+  }
+}
+.settings-content-title2 {
+  color: transparent;
+  width: fit-content;
+  background: rgb(161, 196, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 196, 253, 1) 0%,
+    rgba(194, 233, 251, 1) 100%
+  );
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.settings-content-title3 {
+  color: transparent;
+  width: fit-content;
+  background: rgb(253, 203, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 203, 241, 1) 0%,
+    rgba(253, 203, 241, 1) 1%,
+    rgba(230, 222, 233, 1) 100%
+  );
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.settings-organisation-circle-icon {
+  //width: vw(33px);
+  margin-right: vw(14px);
+
+  //new css
+  width: vw(23px);
+}

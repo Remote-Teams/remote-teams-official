@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <filter id="Rectangle_2231" x="0" y="0" width="71" height="71" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1983" data-name="Group 1983" transform="translate(-1118 -545)">
+    <g id="Component_14_144" data-name="Component 14 – 144" transform="translate(1127 551)">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_2231)">
+        <rect id="Rectangle_2231-2" data-name="Rectangle 2231" width="53" height="53" rx="26.5" transform="translate(9 6)" fill="#4a5055" opacity="0.27"/>
+      </g>
+    </g>
+    <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M6.59,3.659l.768-.768a.827.827,0,0,1,1.173,0l6.725,6.722a.827.827,0,0,1,0,1.173L8.531,17.511a.827.827,0,0,1-1.173,0l-.768-.768A.831.831,0,0,1,6.6,15.556l4.169-3.971H.83a.828.828,0,0,1-.83-.83V9.647a.828.828,0,0,1,.83-.83h9.942L6.6,4.846A.825.825,0,0,1,6.59,3.659Z" transform="translate(1146 567.353)" fill="#fff"/>
+  </g>
+</svg>

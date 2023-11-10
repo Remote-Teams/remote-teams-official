@@ -1,0 +1,99 @@
+// toggle switch
+
+.toggle {
+  display: flex;
+  align-items: center;
+
+  .toggle-circle-input {
+    position: relative;
+    //width: vw(62px);
+    //height: vw(29px);
+    //border-radius: vw(60px);
+    position: relative;
+    outline: none;
+    //background-color: rgba(255, 255, 255, 0.38);
+    transition: all 0.3s linear;
+    margin-left: vw(20px);
+    margin-right: vw(20px);
+    //new css
+    width: vw(83px);
+    height: vw(39px);
+    background: #2d3135;
+    @include common-inset-box-shadow-mixin-1;
+    border-radius: vw(34px);
+  }
+
+  //.toggle-circle-input--active {
+  //  background-color: #70f84e;
+  /*new css
+    background-color: #2d3135;
+    box-shadow: vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9),
+      vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7),
+      inset vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+      inset vw(4px) vw(4px) vw(10px) rgba(35, 37, 39, 0.8);
+    border-radius: vw(20px);*/
+  //}
+
+  input {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .toggle-circle-input__circle {
+    width: vw(62px);
+    &:after {
+      content: "";
+      display: block;
+      //width: vw(29px);
+      //height: vw(29px);
+      //background-color: #ffffff;
+      border-radius: vw(60px);
+      position: absolute;
+      //left: calc(100% - 1.66vw);
+      transition: all 0.3s linear;
+
+      //new css
+      //background-color: #70f84e;
+      left: calc(100% - 2vw);
+      width: vw(30px);
+      height: vw(31px);
+      //box-shadow: 0px 0px 6px rgba(35, 37, 39, 0.8);
+      //border-radius: vw(100px);
+      top: vw(3px);
+      background: rgba(255, 255, 255, 0.39);
+      transform: rotate(90deg);
+    }
+  }
+
+  input:checked + .toggle-circle-input__circle {
+    &:after {
+      left: vw(8px);
+      //new css
+      background: rgb(42, 245, 152);
+      background: linear-gradient(
+        90deg,
+        rgba(42, 245, 152, 1) 0%,
+        rgba(0, 158, 253, 1) 100%
+      );
+      transform: rotate(90deg);
+    }
+  }
+}
+.timesheet-toggle-all-project-history {
+  .toggle-circle-input__circle {
+    &:after {
+      //new css
+      background: rgb(42, 245, 152);
+      background: linear-gradient(
+        90deg,
+        rgba(42, 245, 152, 1) 0%,
+        rgba(0, 158, 253, 1) 100%
+      );
+      transform: rotate(90deg);
+    }
+  }
+}

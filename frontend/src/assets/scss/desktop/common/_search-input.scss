@@ -1,0 +1,67 @@
+// search input
+
+.search-input-container {
+  .search-input-container__input-div {
+    //width: vw(527px);
+    //height: vw(53px);
+    position: relative;
+
+    //new css
+    display: flex;
+    align-items: center;
+    background: #2d3135;
+    //box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.13),
+    //  vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    //  vw(8px) vw(8px) vw(30px) #232527,
+    //  vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.37);
+    @include common-inset-box-shadow-mixin-1;
+    border-radius: vw(34px);
+    padding: vw(10px) vw(10px) vw(8px) vw(29px);
+    width: vw(628px);
+    height: vw(53px);
+
+    .fa-search {
+      font-size: vw(21px);
+      position: absolute;
+      top: vw(17px);
+      left: vw(25px);
+      color: rgba(255, 255, 255, 1);
+
+      //new css
+      //color: #57cba1;
+      font-size: vw(17px);
+      //padding-right: vw(28px);
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      height: 100%;
+      //background: rgba(74, 80, 85, 0.27);
+      //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+      border-radius: vw(27px);
+      border: 0;
+      //padding: 0 vw(30px) 0 vw(60px);
+      //font-size: vw(18px);
+      //line-height: vw(24px);
+      //@include fontRegular400;
+      @include fontBold700;
+      color: rgba(255, 255, 255, 1);
+
+      //new css
+      background: #2d3135;
+      //box-shadow: inset -2px -2px 4px rgba(74, 78, 83, 0.5),
+      //  inset 2px 2px 6px rgba(35, 37, 39, 0.8);
+      //border-radius: 24px;
+      padding: 0 vw(11px) 0 vw(28px);
+      font-size: vw(14px);
+      line-height: vw(20px);
+      color: #e2e2e2;
+
+      &::placeholder {
+        @include fontBold700;
+      }
+    }
+  }
+}

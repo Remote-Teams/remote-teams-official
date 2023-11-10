@@ -1,0 +1,555 @@
+// tab structure
+.main-page-padding--reports {
+  padding: vw(55px) 0 0 vw(85px);
+}
+
+.reports-custom-tab {
+  .react-tabs {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .react-tabs__tab-list {
+    border-bottom: none;
+    width: vw(458px);
+    flex-shrink: 0;
+    padding-left: vw(20px);
+  }
+
+  .react-tabs__tab-panel {
+    flex-grow: 1;
+    width: vw(537px);
+    min-height: 100vh;
+    z-index: 1;
+    margin-top: vw(-169px);
+    padding: vw(191px) vw(74px) vw(20px) vw(45px);
+    //background-color: rgba(105, 105, 108, 0.16);
+    //box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+    //new css
+    background: $black-gradient;
+    @include common-box-shadow-mixin-1;
+    border-radius: vw(15px);
+  }
+
+  .react-tabs__tab {
+    //height: vw(58px);
+    padding: 0;
+    padding-left: vw(35px);
+    display: block;
+    font-size: vw(18px);
+    //line-height: vw(24px);
+    @include fontBold700;
+    //color: rgba(255, 255, 255, 1);
+    letter-spacing: vw(2.7px);
+    text-transform: uppercase;
+    margin-bottom: vw(10px);
+
+    //new css
+    width: vw(421px);
+    height: vw(54px);
+    border: none;
+    color: rgba(255, 255, 255, 0.36);
+    line-height: vw(33px);
+
+    img {
+      //width: vw(35px);
+      //margin-right: vw(22px);
+
+      //new css
+      width: vw(22px);
+      margin-right: vw(13px);
+    }
+    .reports-custom-tab__active-img {
+      display: none;
+    }
+    .reports-custom-tab__inactive-img {
+      display: block;
+    }
+  }
+
+  .reports-custom-tab__div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .react-tabs__tab--selected {
+    border: none;
+    //border: 1px solid rgba(112, 112, 112, 1);
+    //border-radius: 0;
+    //background-color: rgba(214, 216, 217, 0.31);
+
+    //new css
+    background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+    @include common-box-shadow-mixin-1;
+    border-radius: vw(12px);
+    color: #57cba1;
+    letter-spacing: vw(2px);
+
+    &:focus {
+      outline: none;
+      box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+        vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+        vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+    }
+    .reports-custom-tab__active-img {
+      display: block;
+    }
+    .reports-custom-tab__inactive-img {
+      display: none;
+    }
+  }
+}
+
+// card
+.reports-card {
+  //  border-radius: vw(3px);
+  //  background-color: rgba(105, 105, 108, 0.16);
+  //  box-shadow: 0 vw(3px) vw(6px) rgba(0, 0, 0, 0.16);
+
+  //new css
+  background: linear-gradient(321.7deg, #2d3135 24.16%, #35393e 72.5%);
+  box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+    vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+    vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9);
+  // border-radius: vw(24px);
+  border-radius: vw(8px);
+}
+
+// reports page title
+.reports-tabpanel-title {
+  //font-size: vw(29px);
+  //line-height: vw(39px);
+  //letter-spacing: vw(4.35px);
+  @include fontBold700;
+  //text-transform: uppercase;
+  //padding-bottom: vw(12px);
+  //border-bottom: vw(3px) solid #70f84e;
+  margin-right: vw(49px);
+  //margin-bottom: vw(42px);
+  padding-left: vw(5px);
+  flex-grow: 1;
+
+  //new css
+  font-size: vw(28px);
+  line-height: vw(38px);
+  @include common-peach-color-text;
+  text-transform: capitalize;
+  padding-bottom: vw(24px);
+}
+
+.react-select-container--noBorder {
+  .react-select-elements__control::after {
+    display: none;
+  }
+}
+
+.react-select-container--noBorder-invoice {
+  width: vw(211px) !important;
+  .react-select-elements__control::after {
+    display: none;
+  }
+}
+
+// task status report
+.task-status-report-row1 {
+  margin-bottom: vw(106px);
+}
+
+.tasks-status-report-table-img {
+  width: vw(47px);
+  margin-right: vw(9px);
+}
+
+.tasks-status-report__underline {
+  margin-left: vw(9px);
+  padding-bottom: vw(1px);
+  border-bottom: vw(2px) dotted rgba(255, 255, 255, 0.33);
+}
+
+// clients detail
+.reports-card--timesheet-row2--clients,
+.reports-card--timesheet-row2--bar-graph-div {
+  margin-right: vw(20px);
+  //width: vw(410px);
+
+  //new css
+  width: vw(403px);
+  height: vw(469px);
+}
+
+.reports-card--timesheet-row2--bar-graph-div {
+  padding-top: vw(35px);
+}
+
+// tasks status
+.reports-card--tasks-status-graph {
+  //width: vw(559px);
+  padding: vw(15px) vw(23px) vw(30px) vw(23px);
+
+  //new css
+  width: vw(520px);
+  height: vw(253px);
+}
+
+.reports-card--tasks-status-bar-graph {
+  //width: vw(665px);
+  //height: vw(242px);
+  overflow: auto;
+  padding: vw(15px) vw(23px) vw(20px) vw(23px);
+
+  //new css
+  width: vw(686px);
+  height: vw(253px);
+}
+
+.react-select-container--reportTasksStatus {
+  width: vw(303px) !important;
+}
+
+// expense and income graph
+.reports-card--expenseAndIncomeGraph {
+  width: 100%;
+  padding: vw(15px) vw(23px) vw(23px) vw(23px);
+}
+//new css
+.reports-download-btn {
+  width: vw(166px);
+  height: vw(54px);
+  background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+}
+.reports-tabpanel-title-div {
+  position: relative;
+  margin-bottom: vw(37px);
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      295.94deg,
+      rgba(35, 37, 39, 0.8) 11.66%,
+      #35393e 63.35%
+    );
+    //background: transparent;
+    @include common-box-shadow-mixin-1;
+    border-radius: vw(8px);
+    width: 100%;
+    height: 1px;
+  }
+}
+.report-project-status-card-title-1 {
+  //background: linear-gradient(90deg, #5ee7df 0%, #b490ca 100%);
+  background: rgb(94, 231, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+}
+.report-project-status-card-title-2 {
+  //background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%);
+  background: rgb(161, 140, 209);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 140, 209, 1) 0%,
+    rgba(251, 194, 235, 1) 100%
+  );
+}
+.report-project-status-card-title-3 {
+  //background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+  background: rgb(161, 196, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 196, 253, 1) 0%,
+    rgba(194, 233, 251, 1) 100%
+  );
+}
+.report-project-status-card-title-4 {
+  //background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+  background: rgb(255, 236, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 210, 1) 0%,
+    rgba(252, 182, 159, 1) 100%
+  );
+}
+/*=========================================================
+                    expenses vs income
+=========================================================*/
+.font-18-bold--reports-total-expense-text1 {
+  //background: linear-gradient(90deg, #a6c0fe 0%, #f68084 100%);
+  background: rgb(252, 203, 144);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 203, 144, 1) 0%,
+    rgba(166, 192, 254, 1) 100%
+  );
+}
+.report-expense-font-36-extrabold {
+  font-size: vw(36px);
+  line-height: vw(66px);
+  letter-spacing: vw(1.84px);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.81);
+  @include fontExtraBold800;
+  margin-bottom: 0;
+}
+.font-18-bold--reports-total-expense-text2 {
+  //background: linear-gradient(90deg, #fccb90 0%, #d57eeb 100%);
+  background: rgb(252, 203, 144);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 203, 144, 1) 0%,
+    rgba(213, 126, 235, 1) 100%
+  );
+}
+/*======================================================
+                  task status
+======================================================*/
+.font-18-bold--reports-task-status-text1 {
+  //background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+  background: rgb(137, 247, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(137, 247, 254, 1) 0%,
+    rgba(102, 166, 255, 1) 100%
+  );
+}
+.font-18-bold--reports-task-status-text2 {
+  //background: linear-gradient(90deg, #9890e3 0%, #b1f4cf 100%);
+  background: rgb(152, 144, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(152, 144, 227, 1) 0%,
+    rgba(177, 244, 207, 1) 100%
+  );
+}
+.font-18-bold--reports-task-status-text1,
+.font-18-bold--reports-task-status-text2 {
+  margin-bottom: vw(32px);
+}
+/*=========================================================
+                Invoice report
+==========================================================*/
+.font-18-bold--reports-invoice-text1 {
+  //background: linear-gradient(90deg, #5ee7df 0%, #b490ca 100%);
+  background: rgb(94, 231, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+}
+.font-18-bold--reports-invoice-text2 {
+  //background: linear-gradient(90deg, #9890e3 0%, #b1f4cf 100%);
+  background: rgb(152, 144, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(152, 144, 227, 1) 0%,
+    rgba(177, 244, 207, 1) 100%
+  );
+}
+.font-18-bold--reports-invoice-text3 {
+  //background: linear-gradient(90deg, #5ee7df 0%, #b490ca 100%);
+  background: rgb(94, 231, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+}
+.font-18-bold--reports-invoice-text4 {
+  //background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+  background: rgb(224, 195, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+}
+.font-18-bold--reports-invoice-text5 {
+  //background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+  background: rgb(224, 195, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+}
+/*===================================================================
+                     client details
+===================================================================*/
+.font-18-bold--client-details-reports-text1 {
+  //background: linear-gradient(90deg, #fccb90 0%, #d57eeb 100%);
+  background: rgb(252, 203, 144);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 203, 144, 1) 0%,
+    rgba(213, 126, 235, 1) 100%
+  );
+}
+.font-18-bold--client-details-reports-text2 {
+  //background: linear-gradient(90deg, #9795f0 0%, #fbc8d4 100%);
+  background: rgb(151, 149, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(151, 149, 240, 1) 0%,
+    rgba(251, 200, 212, 1) 100%
+  );
+}
+.font-18-bold--client-details-reports-text3 {
+  //background: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  background: rgb(116, 235, 213);
+  background: linear-gradient(
+    90deg,
+    rgba(116, 235, 213, 1) 0%,
+    rgba(159, 172, 230, 1) 100%
+  );
+}
+/*===============================================================
+                    leave data reports
+=================================================================*/
+.font-18-bold--leave-data-text1 {
+  //background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+  background: rgb(224, 195, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+}
+.font-18-bold--leave-data-text2 {
+  //background: linear-gradient(90deg, #5ee7df 0%, #b490ca 100%);
+  background: rgb(94, 231, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+}
+.font-18-bold--leave-data-text3 {
+  //background: linear-gradient(90deg, #a6c0fe 0%, #f68084 100%);
+  background: rgb(166, 192, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 192, 254, 1) 0%,
+    rgba(246, 128, 132, 1) 100%
+  );
+}
+.font-18-bold--leave-data-text4 {
+  //background: linear-gradient(90deg, #fccb90 0%, #d57eeb 100%);
+  background: rgb(252, 203, 144);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 203, 144, 1) 0%,
+    rgba(213, 126, 235, 1) 100%
+  );
+}
+.font-18-bold--leave-data-text5 {
+  //background: linear-gradient(90deg, #9890e3 0%, #b1f4cf 100%);
+  background: rgb(152, 144, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(152, 144, 227, 1) 0%,
+    rgba(177, 244, 207, 1) 100%
+  );
+}
+.font-18-bold--reports-resource-text1 {
+  //background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+  background: rgb(224, 195, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+}
+.font-18-bold--reports-resource-text2 {
+  //background: linear-gradient(90deg, #a6c0fe 0%, #f68084 100%);
+  background: rgb(166, 192, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 192, 254, 1) 0%,
+    rgba(246, 128, 132, 1) 100%
+  );
+}
+.font-18-bold--reports-resource-text3 {
+  //background: linear-gradient(90deg, #fccb90 0%, #d57eeb 100%);
+  background: rgb(252, 203, 144);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 203, 144, 1) 0%,
+    rgba(213, 126, 235, 1) 100%
+  );
+  margin-bottom: vw(45px);
+}
+
+.font-18-bold--support-summary-reports-text1 {
+  //background: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  background: rgb(116, 235, 213);
+  background: linear-gradient(
+    90deg,
+    rgba(116, 235, 213, 1) 0%,
+    rgba(159, 172, 230, 1) 100%
+  );
+  text-transform: capitalize;
+}
+
+.font-18-bold--support-summary-reports-text2 {
+  //background: linear-gradient(90deg, #ee9ca7 0%, #ffdde1 100%);
+  background: rgb(238, 156, 167);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 156, 167, 1) 0%,
+    rgba(255, 221, 225, 1) 100%
+  );
+  text-transform: capitalize;
+}
+
+.font-18-bold--support-summary-reports-text3 {
+  //background: linear-gradient(90deg, #00cdac 0%, #8ddad5 100%);
+  background: rgb(0, 205, 172);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 205, 172, 1) 0%,
+    rgba(141, 218, 213, 1) 100%
+  );
+}
+
+.font-18-bold--reports-resource-text1,
+.font-18-bold--reports-resource-text2,
+.font-18-bold--reports-resource-text3,
+.report-project-status-card-title-1,
+.report-project-status-card-title-2,
+.report-project-status-card-title-3,
+.report-project-status-card-title-4,
+.font-18-bold--reports-total-expense-text1,
+.font-18-bold--reports-total-expense-text2,
+.font-18-bold--reports-task-status-text1,
+.font-18-bold--reports-task-status-text2,
+.font-18-bold--reports-invoice-text1,
+.font-18-bold--reports-invoice-text2,
+.font-18-bold--reports-invoice-text3,
+.font-18-bold--reports-invoice-text4,
+.font-18-bold--reports-invoice-text5,
+.font-18-bold--client-details-reports-text1,
+.font-18-bold--client-details-reports-text2,
+.font-18-bold--client-details-reports-text3,
+.font-18-bold--support-summary-reports-text1,
+.font-18-bold--support-summary-reports-text2,
+.font-18-bold--support-summary-reports-text3,
+.font-18-bold--leave-data-text1,
+.font-18-bold--leave-data-text2,
+.font-18-bold--leave-data-text3,
+.font-18-bold--leave-data-text4,
+.font-18-bold--leave-data-text5 {
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include fontExtraBold800;
+}

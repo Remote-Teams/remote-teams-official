@@ -1,0 +1,98 @@
+/* ===============================================================
+                   message                
+================================================================== */
+
+// scss
+@import "./message-colm1";
+@import "./message-colm2";
+
+.dashboard-message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  //new css
+  padding-top: vw(70px);
+}
+
+.dashboard-message__colm1 {
+  width: vw(579px);
+  background: transparent;
+  position: relative;
+  padding-top: vw(10px);
+}
+
+.dashboard-message__colm1,
+.dashboard-message__colm2 {
+  //height: calc(100vh - 8vw);
+  overflow: hidden;
+
+  //new css
+  height: calc(100vh - 6vw);
+}
+
+.dashboard-message__colm2 {
+  overflow: auto;
+}
+
+.dashboard-message__colm1__overflow-cards {
+  height: calc(100vh - 8vw - 7.1875vw);
+  overflow: auto;
+  //border-right: vw(2px) solid rgba(255, 255, 255, 0.16);
+}
+
+.message-colm2-block__container {
+  //height: calc(100vh - 8vw - 11.40625vw);
+  overflow: auto;
+
+  //new css
+  height: calc(100vh - 8vw - 13.40625vw);
+}
+
+.dashboard-message__colm2 {
+  flex-grow: 1;
+  background: transparent;
+}
+
+.no_users_found_for_chat {
+  text-align: center;
+  font-size: vw(28px);
+  @include fontSemiBold600;
+}
+
+.add_chat_to_do_popup_warning {
+  text-align: center;
+  padding-top: vw(85px);
+  img {
+    width: vw(375px);
+    height: vw(255px);
+  }
+  h3 {
+    font-size: vw(32px);
+    line-height: vw(60px);
+    font-family: Nunito-SemiBold;
+    margin-top: vw(29px);
+    margin-bottom: vw(59px);
+  }
+}
+
+.add_chat_to_do {
+  margin-top: vw(46px);
+  padding-left: vw(103px);
+  padding-right: vw(103px);
+  h2 {
+    font-size: vw(45px);
+    line-height: vw(53px);
+    font-family: Nunito-Regular;
+    margin-bottom: vw(55px);
+  }
+  .login-next-green-btn {
+    margin-top: vw(71px);
+    float: right;
+  }
+}
+.chat-search-block {
+  .search-input-container__input-div {
+    width: vw(551px);
+  }
+}

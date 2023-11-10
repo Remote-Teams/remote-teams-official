@@ -1,0 +1,236 @@
+.setting_page__main_container_mailbox{
+    display: flex;
+    width: 100%;
+
+    .setting_page__main_container_mailbox__left{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+
+        .banner_container__img{
+            display: flex;
+            width: 100%;
+            height: vw(718px);
+            padding:vw( 100px );
+            padding-right: vw( 20px );
+            padding-left: vw( 20px );
+            padding-bottom: vw( 20px );
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .button_goBack{
+            display: flex;
+            height: vw( 200px );
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            button{
+                width: vw( 386px );
+                height: vw( 82px );
+                font-family: Poppins-Light;
+                font-size: vw( 30px );
+                border-radius: vw( 50px );
+                border:2px solid #502EFF;
+                color:#502EFF;
+            }
+        }
+    }
+    .setting_page__main_container_mailbox__right{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+}
+
+.mailbox_setting_headline{
+    display: flex;
+    height: vw( 71px );
+    width: 100%;
+    margin-top: vw( 100px );
+    padding-left: vw( 100px );
+
+    .mailbox__icons{
+        display: flex;
+        height: vw(70px);
+        width: vw(70px);
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .textbox_text{
+        display: flex;
+        height: vw(70px);
+        align-items: center;
+        padding-left: vw( 14px );
+        font-family: Poppins-Medium;
+        font-size: vw( 50px );
+    }
+}
+
+.headline_for_mail{
+    display: flex;
+    height: vw( 33px );
+    align-items: center;
+    padding-left: vw( 100px );
+    margin-top: vw( 50px );
+    margin-bottom: vw( 30px );
+    
+    .icons_place{
+        display: flex;
+        height: vw( 30px );
+        width: vw( 30px );
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .headline_text_mail{
+        display: flex;
+        padding-left: vw( 12px );
+        height: vw( 33px );
+        font-family: Poppins-Bold;
+        font-size: vw( 25px );
+    }
+}
+
+
+.active__accounts_main_container{
+    display: flex;
+    height: vw( 187px );
+    align-items: center;
+    margin-left: vw( 100px );
+    // margin-top: vw( 50px );
+    // margin-bottom: vw( 50px );
+
+    .pipe_container{
+        display: flex;
+        height: vw( 187px );
+        align-items: center;
+        width: vw( 20px );
+        padding:0;
+        img{
+            height: vw( 140px );
+            width: 100%;
+        }
+    }
+    .content__container{
+        display: flex;
+        height: vw( 187px );
+        width: vw( 650px );
+        box-shadow: 0px 3px 15px #00000029;
+        border-radius: 15px;
+        padding:vw( 20px );
+        flex-direction: column;
+    }
+    
+}
+
+.active_accounts_account{
+    display: flex;
+    height: vw( 60px );
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: vw( 3px ) solid rgba(0, 0, 0, 0.281);
+
+    .email_name{
+        display: flex;
+        height: vw( 50px );
+        font-family: Poppins-Medium;
+        font-size: vw( 18px );
+        align-items: center;
+    }
+    .stop_sync_button_email{
+        display: flex;
+        height: vw( 50px );
+        width: vw( 177px );
+        align-items: center;
+        
+        button{
+            height: vw( 46px );
+            width: vw( 177px );
+            border-radius: vw( 50px );
+            background-color: #ff4848;
+            color:white;
+            font-family: Poppins-Medium;
+            font-size: vw( 20px );
+        }
+    }
+}
+
+
+.use_as_default_account{
+    display: flex;
+    height: vw( 80px );
+    width: 100%;
+    align-items: center;
+
+    .ac_email_checkbox{
+        display: flex;
+    }
+
+    .ac_email_text{
+        display: flex;
+        font-family: Poppins-Medium;
+        font-size: vw( 18px );
+        color:rgba(0, 0, 0, 0.301);
+    }
+}
+
+// INACTIVE ACCOUNTS
+.inactive__accounts_main_container{
+    display: flex;
+    height: vw( 400px );
+    align-items: center;
+    margin-left: vw( 100px );
+
+    .pipe_container{
+        display: flex;
+        height: vw( 400px );
+        align-items: center;
+        width: vw( 20px );
+        padding:0;
+        img{
+            height: vw( 340px ) !important;
+            width: 100%;
+        }
+    }
+
+    .content__container{
+        display: block;
+        overflow: auto;
+        height: vw( 400px );
+        width: vw( 650px );
+        box-shadow: 0px 3px 15px #00000029;
+        border-radius: 15px;
+        padding:vw( 20px );
+        flex-direction: column;
+    }
+}
+
+.re_sync_email_button{
+    display: flex;
+    height: vw( 50px );
+    width: vw( 177px );
+    align-items: center;
+
+    button{
+        height: vw( 46px );
+        width: vw( 177px );
+        border-radius: vw( 50px );
+        background: transparent linear-gradient(103deg, #4568DC 0%, #B06AB3 100%) 0% 0% no-repeat padding-box;
+        color:white;
+        font-family: Poppins-Medium;
+        font-size: vw( 20px );
+    }
+
+}

@@ -1,0 +1,329 @@
+// fonts
+
+//  light
+.font-13-light {
+  font-size: vw(13px);
+  line-height: vw(18px);
+  @include fontLight300;
+  margin-bottom: 0;
+}
+.font-18-light {
+  font-size: vw(18px);
+  line-height: vw(24px);
+  @include fontLight300;
+  margin-bottom: 0;
+}
+//regular
+.font-18-regular {
+  font-size: vw(18px);
+  line-height: vw(24px);
+  @include fontRegular400;
+  margin-bottom: 0;
+}
+// italic
+.font-13-regular-italic {
+  font-size: vw(13px);
+  line-height: vw(18px);
+  @include fontRegular400;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.font-14-regular-italic {
+  font-size: vw(14px);
+  line-height: vw(19.1px);
+  @include fontRegular400;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.font-16-regular-italic {
+  font-size: vw(16px);
+  line-height: vw(16px);
+  @include fontRegular400;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.font-14-semibold-italic {
+  font-size: vw(14px);
+  line-height: vw(19.1px);
+  @include fontSemiBold600;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.font-14-semibold-italic-montserrat {
+  font-size: vw(14px);
+  line-height: vw(17px);
+  @include fontMontserratSemiBold;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.font-18-italic {
+  font-size: vw(18px);
+  line-height: vw(24px);
+  @include fontItalicNunito;
+  margin-bottom: 0;
+}
+
+// regular
+.font-18-regular {
+  font-size: vw(18px);
+  line-height: vw(24px);
+  @include fontRegular400;
+  margin-bottom: 0;
+}
+
+.font-24-regular {
+  font-size: vw(24px);
+  line-height: vw(32px);
+  @include fontRegular400;
+  margin-bottom: 0;
+}
+
+// semibold
+.font-12-semibold {
+  font-size: vw(12px);
+  line-height: vw(16px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-14-semibold {
+  font-size: vw(14px);
+  line-height: vw(20px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-16-semibold {
+  font-size: vw(16px);
+  line-height: vw(22px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-18-semiBold {
+  font-size: vw(18px);
+  line-height: vw(24px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-20-semiBold {
+  font-size: vw(20px);
+  line-height: vw(27px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-21-semiBold {
+  font-size: vw(21px);
+  line-height: vw(28px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-24-semiBold {
+  font-size: vw(24px);
+  line-height: vw(32px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-25-semiBold {
+  font-size: vw(25px);
+  line-height: vw(34px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-33-semiBold {
+  font-size: vw(33px);
+  line-height: vw(45px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-38-semiBold {
+  font-size: vw(38px);
+  line-height: vw(51px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+.font-46-semiBold {
+  font-size: vw(46px);
+  line-height: vw(63px);
+  @include fontSemiBold600;
+  margin-bottom: 0;
+}
+
+// bold
+.font-13-bold {
+  font-size: vw(13px);
+  line-height: vw(18px);
+  @include fontBold700;
+  margin-bottom: 0;
+}
+.font-14-bold {
+  font-size: vw(14px);
+  line-height: vw(20px);
+  @include fontBold700;
+  margin-bottom: 0;
+}
+.font-18-bold {
+  font-size: vw(18px);
+  line-height: vw(24px);
+  @include fontBold700;
+  margin-bottom: 0;
+}
+.font-24-bold {
+  font-size: vw(24px);
+  line-height: vw(32px);
+  @include fontBold700;
+  margin-bottom: 0;
+}
+
+.font-29-bold {
+  font-size: vw(29px);
+  line-height: vw(39px);
+  @include fontBold700;
+  margin-bottom: 0;
+}
+
+.font-36-bold {
+  font-size: vw(36px);
+  line-height: vw(49px);
+  @include fontBold700;
+  margin-bottom: 0;
+}
+
+.font-68-bold {
+  font-size: vw(68px);
+  line-height: vw(93px);
+  @include fontBold700;
+  margin-bottom: 0;
+}
+//bold-italic
+.font-12-bold-italic {
+  font-size: vw(12px);
+  line-height: vw(16px);
+  margin-bottom: 0;
+  @include fontBold700;
+  font-style: italic;
+}
+// extra bold
+.font-14-extraBold {
+  font-size: vw(14px);
+  line-height: vw(26px);
+  @include fontExtraBold800;
+  margin-bottom: 0;
+}
+
+.font-18-extraBold {
+  font-size: vw(18px);
+  line-height: vw(25px);
+  @include fontExtraBold800;
+  margin-bottom: 0;
+}
+
+.font-24-extraBold {
+  font-size: vw(24px);
+  line-height: vw(32px);
+  @include fontExtraBold800;
+  margin-bottom: 0;
+}
+
+//lato font
+.font-12-lato {
+  font-size: vw(12px);
+  line-height: vw(14px);
+  @include fontLato;
+  color: #e2e2e2;
+  margin-bottom: 0;
+}
+
+// with letter spacing
+.font-12-extrabold-space-light-uppercase {
+  font-size: vw(12px);
+  line-height: vw(22px);
+  @include fontExtraBold800;
+  letter-spacing: vw(1.84px);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.font-16-bold-space-light-uppercase {
+  font-size: vw(16px);
+  line-height: vw(22px);
+  @include fontBold700;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: vw(2.7px);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.font-18-bold-space-light-uppercase {
+  font-size: vw(18px);
+  //line-height: vw(24px);
+  //@include fontBold700;
+  //color: rgba(255, 255, 255, 0.65);
+  //letter-spacing: vw(2.7px);
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+  //new css
+  /*font-size: vw(14px);
+  line-height: vw(19px);
+  @include fontExtraBold800;
+  color: rgba(255, 255, 255, 0.2);*/
+  line-height: vw(33px);
+  color: rgba(255, 255, 255, 0.23);
+  //letter-spacing: vw(1.84px);
+  letter-spacing: vw(1.84px);
+  //0.115em
+  @include fontExtraBold800;
+}
+.font-18-extraBold-space-light-uppercase {
+  font-size: vw(18px);
+  line-height: vw(24.55px);
+  letter-spacing: vw(2px);
+  @include fontExtraBold800;
+  color: rgba(255, 255, 255, 0.22);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.font-32-extraBold-letterspace {
+  font-size: vw(32px);
+  line-height: vw(43px);
+  @include fontExtraBold800;
+  letter-spacing: vw(16px);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.font-32-extraBold-letterspace-6-4 {
+  font-size: vw(32px);
+  line-height: vw(43px);
+  @include fontExtraBold800;
+  letter-spacing: vw(6.4px);
+  text-transform: uppercase;
+  margin-bottom: 0;
+  word-break: break-all;
+}
+
+// error-message
+.error-message {
+  color: $error-text-color;
+  font-size: vw(16px);
+  line-height: vw(25px);
+  @include fontRegular400;
+  margin: vw(12px) 0 vw(20px) vw(30px);
+}
+.invalid-credentials {
+  margin-left: vw(90px);
+}
+.font-24-extraBold-montserrat-letter-spacing {
+  font-size: vw(24px);
+  line-height: vw(34px);
+  @include fontMontserratExtraBold;
+  margin-bottom: 0;
+  letter-spacing: vw(2px);
+}

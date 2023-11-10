@@ -1,0 +1,30 @@
+@import "./features-illustration";
+
+.illustration-gradient-text {
+  font-size: vw(48px);
+  line-height: vw(68px);
+  letter-spacing: 0.01em;
+  @include fontMontserratExtraBold;
+  background: rgb(224, 195, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+}
+.featutes-illustration-btn {
+  width: vw(359px);
+  height: vw(54px);
+  border-radius: vw(7px);
+}
+.features-illustration-span-text {
+  color: #00e7f0;
+  padding-left: vw(5px);
+  padding-right: vw(5px);
+}

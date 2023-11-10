@@ -1,0 +1,121 @@
+.template_view_component_main_container {
+  display: flex;
+  height: 98%;
+  width: 97%;
+  overflow: auto;
+  flex-direction: column;
+
+  //new css
+  padding-left: vw(20px);
+}
+
+.template_view_headline {
+  @include fontBold700;
+  //font-size: vw(30px);
+  margin-top: vw(20px);
+  margin-bottom: vw(20px);
+
+  //new css
+  font-size: vw(24px);
+  line-height: vw(34px);
+  letter-spacing: 0.01em;
+  @include fontMontserratExtraBold;
+  color: transparent;
+  width: fit-content;
+  //background: linear-gradient(90deg, #5ee7df 0%, #b490ca 100%);
+  background: rgb(94, 231, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+
+.single_template_view {
+  padding-top: vw(30px);
+  .single_template_view_headline {
+    //@include fontSemiBold600;
+    //font-size: vw(23px);
+    //line-height: vw(25px);
+    //margin-bottom: vw(30px);
+    //color: rgba(255, 255, 255, 0.7);
+
+    //new css
+    font-size: vw(18px);
+    line-height: vw(25px);
+    @include fontExtraBold800;
+    color: rgba(255, 255, 255, 0.33);
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    margin-bottom: vw(43px);
+  }
+  .signle_template_view_card_display_area {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    .thumbnail_view {
+      width: vw(376px);
+      height: vw(212px);
+      //margin-right: vw(42px);
+      margin-bottom: vw(42px);
+      //box-shadow: 0 (3px) vw(6px) rgba(0, 0, 0, 0.16);
+      //border-radius: vw(10px);
+      cursor: pointer;
+
+      //new css
+      width: vw(400px);
+      height: vw(202px);
+      box-shadow: vw(-2px) vw(-2px) vw(4px) rgba(74, 78, 83, 0.5),
+        vw(2px) vw(2px) vw(6px) rgba(35, 37, 39, 0.8),
+        vw(8px) vw(8px) vw(30px) rgba(35, 37, 39, 0.9),
+        vw(-6px) vw(-6px) vw(20px) rgba(74, 78, 83, 0.7);
+      border-radius: vw(24px);
+      margin-right: vw(25px);
+
+      img {
+        //border-radius: vw(10px);
+        border-radius: vw(24px);
+      }
+    }
+  }
+}
+
+.template_display_area {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  abbr,
+  acronym,
+  address,
+  big,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  b,
+  u,
+  i,
+  ol,
+  ul {
+    padding-left: vw(10px);
+    padding-right: vw(10px);
+  }
+}

@@ -1,0 +1,117 @@
+.workboard-list-of-boards {
+  font-size: vw(18px);
+  line-height: vw(24px);
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+  background: rgb(255, 236, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 210, 1) 0%,
+    rgba(252, 182, 159, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include fontExtraBold800;
+  margin-top: vw(54px);
+}
+
+.all-project-workboard-add-btn {
+  width: vw(310px);
+  height: vw(400px);
+  background: #2d3135;
+  @include common-box-shadow-mixin-3;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: vw(30px);
+  margin-right: vw(36px);
+
+  span {
+    width: vw(51px);
+    height: vw(51px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #57cba1;
+    border: vw(2px) solid #57cba1;
+    border-radius: 50%;
+  }
+  .fa {
+    font-size: vw(12px);
+  }
+}
+.all-project-workboard-card {
+  width: vw(308px);
+  height: auto;
+  margin-right: vw(29px);
+  margin-bottom: vw(30px);
+  word-break: break-all;
+}
+.all-project-workboard-card-img-div {
+  width: 100%;
+  height: vw(397px);
+  //padding: vw(47px) vw(34px) vw(37px) vw(33px);
+  border: double 1px transparent;
+  background-image: $black-gradient,
+    linear-gradient(
+      87deg,
+      rgba(46, 49, 146, 1) 7.59%,
+      rgba(87, 203, 161, 1) 94.35%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: vw(17px);
+  margin-bottom: vw(17px);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: vw(106px);
+    height: auto;
+  }
+}
+.all-project-workboard-card-text-div {
+  width: 70%;
+  padding-left: vw(10px);
+}
+.all-project-workboard-card-title {
+  font-size: vw(18px);
+  line-height: vw(33px);
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  @include fontExtraBold800;
+  color: rgba(255, 255, 255, 0.23);
+  margin-bottom: 0;
+}
+.all-project-workboard-card-time {
+  margin-bottom: 0;
+  font-size: vw(14px);
+  line-height: vw(19px);
+  @include fontSemiBold600;
+  color: #a8a8a8;
+}
+.all-project-workboard-card-delete-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  margin-top: vw(5px);
+  margin-left: vw(10px);
+  margin-right: vw(15px);
+  .fa {
+    color: rgba(255, 255, 255, 0.52);
+    font-size: vw(18px);
+  }
+}
+.container-login-flow-input--workboard {
+  margin-left: vw(240px);
+  .input-border-div {
+    width: vw(680px);
+    height: vw(60px);
+  }
+}

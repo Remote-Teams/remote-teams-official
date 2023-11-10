@@ -1,0 +1,74 @@
+.our_protfolio_template_one {
+  flex-direction: column;
+  padding-top: vw(80px);
+  .our_protfolio_template_one_headline {
+    width: 100%;
+    height: vw(79px);
+    display: flex;
+    justify-content: center;
+    letter-spacing: vw(6px);
+  }
+  .our_protfolio_template_one_container {
+    display: flex;
+    width: 100%;
+    padding: vw(50px);
+    .text_component_main_container .cke_editable {
+      padding-left: 0;
+    }
+  }
+  .our_protfolio_template_one_block {
+    display: flex;
+    flex-direction: column;
+    width: vw(420px);
+    height: vw(170px);
+    margin-left: vw(15px);
+    margin-right: vw(15px);
+    word-break: break-all;
+  }
+  .our_protfolio_template_one_block_top {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    //padding: 0 vw(10px) 0 vw(10px);
+  }
+  .our_protfolio_template_one_block_left {
+    width: 45%;
+    height: 100%;
+    margin: 0 vw(10px);
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      //border-radius: vw(20px);
+    }
+  }
+  .our_protfolio_template_one_block_right {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+  }
+  .our_protfolio_template_one_block_headline {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    letter-spacing: vw(3px);
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .our_protfolio_template_one_block_headline_two {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    letter-spacing: vw(3px);
+    padding: 0 0 vw(10px) 0;
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .our_protfolio_template_one_block_bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    padding-top: vw(20px);
+    letter-spacing: vw(0.4px);
+    color: rgba(255, 255, 255, 0.95);
+  }
+}

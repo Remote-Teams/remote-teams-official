@@ -1,0 +1,90 @@
+.service_activation__main_container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  background-color: #ffffff;
+}
+
+.banner_sec__col{
+    display: flex;
+    margin-top: vw( 87px );
+    height: vw( 606px );
+    width: vw( 1016px );
+    align-self: center;
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.headline_sec_col{
+    display: flex;
+    height: vw( 76px );
+    width: vw( 1016px );
+    align-self: center;
+    font-size: vw( 40px );
+    align-items: center;
+    justify-content: center;
+}
+
+.paragrapgh_sec_col{
+    display: flex;
+    height: vw( 76px );
+    width: vw( 900px );
+    align-self: center;
+    font-size: vw( 25px );
+    font-family: Poppins-Light;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button_sec__col{
+    display: flex;
+    height: vw( 80px );
+    align-items: center;
+    width: vw( 900px );
+    justify-content: space-around;
+    align-self: center;
+}
+
+.button_simple{
+    display: flex;
+    height: vw( 74px );
+    width: vw( 345px );
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: vw(5px);
+    font-size:vw( 20px );
+    align-items: center;
+
+    img{
+        height:vw( 39px );
+        width: vw( 39px );
+    }
+}
+
+.owa_button{
+    background-color: #0279D7;
+    color: white;
+}
+
+.dashboard_section{
+    display: flex;
+    height: vw( 80px );
+    align-items: center;
+    width: vw( 900px );
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        color:#000000;
+        border-bottom: 2px dashed #000000;
+        opacity: 0.24;
+        font-size: vw( 20px );
+        padding-left: vw(  20px );
+        padding-right:vw( 20px );
+        cursor: pointer;
+    }
+}

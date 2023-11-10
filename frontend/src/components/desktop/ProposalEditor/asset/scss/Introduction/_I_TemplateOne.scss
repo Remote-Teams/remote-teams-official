@@ -1,0 +1,43 @@
+.introduction_template_one {
+  flex-direction: column;
+  //align-items: center;
+  padding: vw(50px);
+  .introduction_template_one__top__headline {
+    width: 100%;
+    height: vw(70px);
+    //height: 10%;
+    letter-spacing: vw(10px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .introduction_template_one__bottom {
+    padding: vw(30px) vw(10px) vw(50px) vw(10px);
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+  }
+  .introduction_template_one__bottom_text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-right: vw(30px);
+  }
+  .text_Container {
+    width: 50%;
+    height: vw(300px);
+    display: flex;
+    padding: vw(10px);
+    letter-spacing: vw(0.61px);
+  }
+  .introduction_template_one__rightBlock {
+    width: 50%;
+    padding: vw(100px) vw(10px) vw(60px) 0;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}

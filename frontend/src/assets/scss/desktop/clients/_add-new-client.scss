@@ -1,0 +1,72 @@
+.add-new-client-div {
+  padding-top: vw(97px);
+  padding-left: vw(42px);
+}
+.add-new-client-title {
+  font-size: vw(24px);
+  line-height: vw(34px);
+  letter-spacing: 0.01em;
+  @include fontMontserratExtraBold;
+  background: rgb(224, 195, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 195, 252, 1) 0%,
+    rgba(142, 197, 252, 1) 100%
+  );
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+}
+.container-login-flow-input--add-new-clients {
+  .input-border-div {
+    width: vw(478px);
+    height: vw(60px);
+  }
+}
+.mult-contact-delete-icon--add-new-client {
+  margin-top: vw(20px) !important;
+  margin-left: vw(10px) !important;
+  opacity: 1 !important;
+  color: #a8a8a8;
+}
+.add-more-details-content-div {
+  padding-top: vw(97px);
+}
+.add-new-client-work-details-text {
+  margin-top: vw(50px);
+  @include common-peach-color-text;
+}
+.add-new-client-datepicker {
+  .datepicker-mr {
+    margin-right: vw(60px);
+  }
+}
+.add-new-client-date-and-attachment-div {
+  margin-top: vw(70px);
+}
+.add-new-client-save-btn {
+  margin-top: vw(97px);
+}
+.upload-img__mainBlock--add-new-client {
+  .upload-img__img-block-border-div {
+    width: vw(240px);
+    height: vw(264px);
+  }
+
+  .login-dashboard-btn {
+    margin-left: vw(50px);
+  }
+}
+.container-login-flow-input--add-new-client-pnumber {
+  .react-phone-input-block {
+    width: vw(74px);
+  }
+  .input-border-div,
+  input {
+    width: vw(241px);
+    border-radius: vw(2px) vw(48px) vw(48px) vw(2px);
+  }
+}

@@ -1,0 +1,170 @@
+/*===========================================================================================
+
+                                        clients
+
+============================================================================================*/
+
+@import "./clientCard";
+@import "./clientsNew";
+@import "./add-new-client";
+
+.page-count-row {
+  margin-bottom: vw(49px);
+}
+
+.clients-cards-overflow-div {
+  //height: vw(520px);
+  overflow: auto;
+  padding-top: vw(10px);
+  padding-bottom: vw(10px);
+  padding-left: vw(5px);
+  //new css
+  height: vw(600px);
+}
+
+.clients-btn-search-div {
+  padding-right: vw(100px);
+  margin-bottom: vw(38px);
+}
+
+.mult-contact-delete-icon {
+  cursor: pointer;
+  font-size: vw(27px) !important;
+  opacity: 0.6;
+  text-align: center;
+  margin-top: vw(50px);
+  margin-left: vw(30px);
+}
+
+.edit-client-work-overflow-div {
+  height: vw(300px);
+  margin-bottom: vw(20px);
+  //overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .font-18-bold-space-light-uppercase {
+    color: rgba(255, 255, 255, 0.79);
+  }
+}
+
+.edit-client-modal-content {
+  padding: vw(30px) vw(100px);
+}
+.new-gradient-btn {
+  width: vw(239px);
+  height: vw(54px);
+  @include fontBold700;
+  font-size: vw(18px);
+  line-height: vw(25px);
+  color: #e2e2e2;
+  border: none;
+  border-radius: vw(30px);
+  background: rgb(102, 126, 234);
+  background: linear-gradient(
+    90deg,
+    rgba(102, 126, 234, 1) 0%,
+    rgba(118, 75, 162, 1) 100%
+  );
+}
+.upload-img__mainBlock--new-client {
+  /*.upload-img__btn-input-block-btn-div {
+    width: vw(188px);
+    height: vw(49px);
+    border-radius: vw(30px);
+    padding: 2px;
+    background: linear-gradient(
+      95deg,
+      rgba(87, 203, 161, 1) 28%,
+      rgba(15, 89, 124, 1) 79%
+    );
+  }*/
+  .login-dashboard-btn {
+    width: vw(188px);
+    border: double 1px transparent;
+    background-image: linear-gradient(
+        180deg,
+        rgba(45, 49, 53, 1) 0%,
+        rgba(45, 49, 53, 1) 100%
+      ),
+      linear-gradient(
+        95deg,
+        rgba(87, 203, 161, 1) 28%,
+        rgba(15, 89, 124, 1) 79%
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    @include fontSemiBold600;
+  }
+}
+.client-card-subtittle-text--toggle {
+  @include fontItalicNunito;
+  font-weight: 100;
+}
+
+//new css
+.new-client-name-display {
+  font-size: vw(24px);
+  line-height: vw(34px);
+  @include fontMontserratExtraBold;
+  color: transparent;
+  width: fit-content;
+  //background: linear-gradient(90deg, #5ee7df 0%, #b490ca 100%);
+  background: rgb(94, 231, 223);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 231, 223, 1) 0%,
+    rgba(180, 144, 202, 1) 100%
+  );
+  background-clip: text;
+  //-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: vw(15px);
+}
+.container-login-flow-input--forms--display-clients {
+  .input-country-phone-number-container {
+    .input-border-div,
+    input {
+      width: vw(218px);
+    }
+  }
+  .react-phone-input-block {
+    width: vw(118px);
+  }
+}
+.client-edit-save-btn {
+  width: vw(181px);
+  height: vw(54px);
+}
+.edit-client-modal-content {
+  padding-top: vw(60px);
+}
+.customModal--clientEditModal--new {
+  height: auto !important;
+}
+.display-client-date-border-div {
+  width: vw(318px);
+  height: vw(60px);
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+  border-radius: vw(48px);
+  position: relative;
+  border: double 1px transparent;
+  background-image: $black-gradient,
+    linear-gradient(87.98deg, #2e3192 7.59%, #57cba1 94.35%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 0 vw(30px);
+  font-size: vw(12px);
+  line-height: vw(16px);
+  @include fontSemiBold600;
+  color: #a8a8a8;
+  text-transform: capitalize;
+  position: relative;
+}
+.clients-not-found-img {
+  width: vw(402px);
+  height: auto;
+  margin-bottom: vw(27px);
+  margin-top: vw(100px);
+}

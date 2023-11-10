@@ -1,0 +1,35 @@
+/* ===============================================================
+                    
+                            variables
+
+================================================================== */
+
+// colors
+$font-black: #303030;
+$color-white: #ffffff;
+$color-red: #ff4848;
+$bg-container: #f7f7f7;
+
+$error-text-color: #d37171;
+
+$black-gradient: linear-gradient(
+  321deg,
+  rgba(45, 49, 53, 1) 24%,
+  rgba(53, 57, 62, 1) 72%
+);
+
+$black-gradient-0deg: linear-gradient(
+  0deg,
+  rgba(45, 49, 53, 1) 24%,
+  rgba(53, 57, 62, 1) 72%
+);
+
+$light-blue-gradient-87deg: linear-gradient(
+  87deg,
+  rgba(0, 233, 224, 0.7) 7.59%,
+  rgba(87, 203, 161, 0.7) 94.35%
+);
+
+$light-blue-gradient-270deg: linear-gradient(270deg, #84fab0 0%, #8fd3f4 100%);
+
+$orange-gradient-90deg: linear-gradient(90deg, #f6d365 0%, #fda085 100%);

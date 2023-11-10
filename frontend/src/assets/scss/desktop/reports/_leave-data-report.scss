@@ -1,0 +1,241 @@
+// leave data report
+
+.reports-card--leaveDataRow1Card1,
+.reports-card--leaveDataRow1Card2,
+.reports-card--leaveDataRow1Card3 {
+  //margin-top: vw(14px);
+  //margin-bottom: vw(28px);
+
+  //new css
+  margin-top: vw(31px);
+  margin-bottom: vw(49px);
+}
+
+.reports-card--leaveDataRow1Card1 {
+  //width: vw(410px);
+  //height: vw(242px);
+  //padding: vw(20px);
+  margin-right: vw(12px);
+
+  //new css
+  width: vw(457px);
+  height: vw(253px);
+  padding: vw(25px) vw(22px) 0 vw(35px);
+}
+
+.reports-card--leaveDataRow1Card1__overflow {
+  //width: vw(370px);
+  //height: vw(202px);
+  overflow: auto;
+
+  //new css
+  width: vw(400px);
+  height: vw(220px);
+}
+
+.reports-card--leaveDataRow1Card2 {
+  //width: vw(324px);
+  //height: vw(242px);
+  //padding: vw(20px);
+  margin-right: vw(12px);
+
+  //new css
+  width: vw(269px);
+  height: vw(253px);
+  padding: vw(30px);
+}
+
+.reports-card--leaveDataRow1Card3 {
+  //width: vw(509px);
+  //height: vw(242px);
+  //padding: vw(20px);
+
+  //new css
+  width: vw(473px);
+  height: vw(253px);
+  padding: vw(30px);
+}
+
+.reports-card-leaveDataRow1 {
+  .reports-circle-icon-text {
+    white-space: nowrap;
+  }
+}
+
+.reports-card--leaveDataRow2Card1 {
+  //width: vw(620px);
+  //height: vw(242px);
+  //margin-top: vw(13px);
+  //margin-right: vw(29px);
+  //margin-bottom: vw(58px);
+  //padding: vw(25px);
+
+  //new css
+  width: vw(608px);
+  height: vw(253px);
+  margin-top: vw(24px);
+  margin-bottom: vw(42px);
+  margin-right: vw(31px);
+  padding: vw(37px) vw(14px) vw(30px) vw(35px);
+}
+
+.reports-card--leaveDataRow2Card1__overflow {
+  width: vw(570px);
+  height: vw(192px);
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.finances-table--reportLeaveData {
+  th,
+  td {
+    width: 15%;
+  }
+
+  th {
+    vertical-align: text-top;
+    padding-top: vw(5px);
+    padding-bottom: vw(20px);
+  }
+}
+
+// report-leave-data-purple-circle
+.report-leave-data-purple-circle {
+  margin: 0 auto;
+  margin-top: vw(5px);
+  position: relative;
+  background-image: url("../../../img/reports/data-purple-circle.svg");
+  width: vw(188px);
+  height: vw(188px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    font-size: vw(65px);
+    line-height: vw(89px);
+    @include fontSemiBold600;
+  }
+}
+
+// leaveDataRow1Card1
+.leaveDataRow1Card1-img-text-div {
+  //width: vw(125px);
+  word-break: break-word;
+  //text-align: center;
+  margin-right: vw(11px);
+  margin-bottom: vw(20px);
+
+  //new css
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.leaveDataRow1Card1-img-div {
+  width: vw(68px);
+  height: vw(64px);
+  background: rgba(0, 0, 0, 0.39);
+  border-radius: vw(4px);
+  margin-right: vw(18px);
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.leaveDataRow1Card1-img {
+  //width: vw(72px);
+  //height: auto;
+  //margin: 0 auto;
+  //margin-bottom: vw(13px);
+
+  //new css
+  //width: 100%;
+  width: auto;
+  height: 90%;
+  //height: 100%;
+  border-radius: inherit;
+}
+
+.leaveDataRow1Card1-text {
+  //font-size: vw(16px);
+  //line-height: vw(22px);
+  //@include fontBold700;
+  //color: rgba(255, 255, 255, 0.65);
+  //letter-spacing: vw(2.7px);
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+  //new css
+  font-size: vw(18px);
+  line-height: vw(33px);
+  letter-spacing: vw(1.84px);
+  color: rgba(255, 255, 255, 0.81);
+  @include fontExtraBold800;
+  width: 65%;
+}
+
+// leaveDataRow2Card1
+.leaveDataRow2Card1-img {
+  //width: vw(60px);
+  //margin-right: vw(34px);
+
+  //new css
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.leaveDataRow2Card1__text {
+  //font-size: vw(14px);
+  //line-height: vw(19px);
+  //@include fontBold700;
+  //color: rgba(255, 255, 255, 1);
+  //letter-spacing: vw(2.1px);
+  text-transform: uppercase;
+  margin-bottom: 0;
+  //margin-top: vw(12px);
+
+  //new css
+  font-size: vw(16px);
+  line-height: vw(22px);
+  color: rgba(255, 255, 255, 0.39);
+  @include fontSemiBold600;
+}
+
+.leaveDataRow2Card1__textColm1 {
+  width: vw(197px);
+  word-break: break-word;
+  margin-right: vw(84px);
+
+  //new css
+  .font-18-bold-space-light-uppercase {
+    color: rgba(255, 255, 255, 0.81);
+  }
+}
+
+.leaveDataRow2Card1__row {
+  margin-bottom: vw(41px);
+}
+
+//new css
+.leaveDataRow2Card1__textColm2-text1 {
+  font-size: vw(11px);
+  line-height: vw(15px);
+  letter-spacing: vw(0.48px);
+  text-transform: uppercase;
+  @include fontExtraBold800;
+  color: rgba(226, 226, 226, 0.7);
+  margin-bottom: 0;
+}
+.leaveDataRow2Card1__textColm2-text2 {
+  background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  color: transparent;
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
