@@ -1,0 +1,48 @@
+{
+    "env": "production",
+    "server_port": 9010,
+    "server_url": "",
+    "server_domain": "remote-teams.io",
+    "app_name": "Remote-teams.io",
+    "protocol": "https://",
+    "defaultUserFileUrlPath": "/public/download?filename=file-2021-08-09T07:23:21.267Z.png",
+    "defaultOrganizationFileUrlPath": "/public/download?filename=file-2019-12-18T17:31:55.019Z.png",
+    "multimedia_path": "",
+    "max_file_upload_limit": 20,
+    "monogodb_url": "",
+    "server_secert": "production",
+    "token_expiry": 86400,
+    "refresh_token_expiry": 86400,
+    "aud": "",
+    "iss": "remote-teams.io",
+    "master_schema": "remoteTeams_master",
+    "smtp": {
+        "clientId": "",
+        "clientSecret": "",
+        "refreshToken": "",
+        "senderEmail": ""
+    },
+    "minio": {
+        "endPoint": "minio",
+        "port": 9000,
+        "secure": false,
+        "accessKey": "",
+        "secretKey": ""
+    },
+    "fileServerRootBucket": "test-remote-teams",
+    "organizationFreeTrialPeriod": 15,
+    "SENDGRID_API_KEY": "",
+    "exotel": {
+        "apiKey": "",
+        "apiToken": "",
+        "sid": "goodluck1",
+        "callerId": "",
+        "statusCallbackUrl": "/public/statusCallback/"
+    },
+    "appAdminEmail":"",
+    "redisHost": "redis",
+    "redisPort":6379,
+    "systemToken": "",
+    "appAdminName": "remoteTeamsadmin",
+    "aws_mailer_sender_id": ""
+}

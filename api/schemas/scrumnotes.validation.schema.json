@@ -1,0 +1,39 @@
+{
+    "getSchema":{
+       "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "existSchema":{
+      "type": "string",
+       "required": [
+         "name"     
+       ],
+       "properties": {
+         "name" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+          "scrumId",
+          "message"  
+        ],
+        "properties": {
+          "scrumId" : {
+            "type": "string"
+          },
+          "message" : {
+            "type": "string"
+          }
+        }
+     }
+}

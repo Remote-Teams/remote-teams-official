@@ -1,0 +1,17 @@
+FROM node:15.5
+LABEL maintainer="GauravSharma"
+LABEL imagetype="RemoteTeamsBackend"
+RUN mkdir /app/
+WORKDIR /app/
+# RUN apk --no-cache add g++ gcc libgcc libstdc++ linux-headers make python curl
+RUN npm install --quiet node-gyp -g
+COPY package*.json /app/
+RUN npm install
+# If you are building your code for production
+# RUN npm install --only=production
+# Bundle app source
+COPY . .
+EXPOSE 9010
+HEALTHCHECK --interval=5s --timeout=3s --start-period=30s --retries=3 \ 
+  CMD curl -fs http://localhost:9010/ || exit 1
+CMD [ "npm", "start" ]

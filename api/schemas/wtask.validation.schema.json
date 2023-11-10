@@ -1,0 +1,37 @@
+{
+    "getSchema":{
+       "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+          "name",
+          "wstep",
+          "position"     
+        ],
+        "properties": {
+          "name" : {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+          },
+          "additionalInfo" : {
+            "type": "object"
+          },
+          "position" : {
+            "type": "number"
+          },
+          "wstep" : {
+            "type": "string"
+          }
+        }
+     }
+}

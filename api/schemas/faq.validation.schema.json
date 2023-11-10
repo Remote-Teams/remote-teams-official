@@ -1,0 +1,33 @@
+{
+    "getSchema":{
+       "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "existSchema":{
+      "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+          "question",
+          "answers"
+        ],
+        "properties": {
+        }
+     }
+}

@@ -1,0 +1,57 @@
+{
+    "getSchema":{
+       "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "existSchema":{
+      "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+          "name",
+          "price",
+          "purpose",
+          "billingType",
+          "status",
+          "startingDate"
+        ],
+        "properties": {
+          "name" : {
+            "type": "string"
+          },
+          "price" : {
+            "type": "number"
+          },
+          "purpose" : {
+            "type": "string"
+          },
+          "billingType" : {
+            "type": "string",
+            "enum":["MONTHLY","YEARLY"]
+          },
+          "status" : {
+            "type": "string",
+            "enum":["ACTIVE","PAUSED", "DEACTIVATED"]
+          },
+          "startingDate":{
+            "type": "string"
+          }
+        }
+     }
+}

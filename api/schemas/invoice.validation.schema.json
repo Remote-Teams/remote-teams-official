@@ -1,0 +1,59 @@
+{
+    "getSchema":{
+       "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "existSchema":{
+      "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+           "invoice_number","client","due_date",
+           "items","subTotal","totalTax","total",
+           "status"
+        ],
+        "properties": {
+          "invoice_number" : {
+            "type": "string"
+          },
+          "client" : {
+            "type": "string"
+          },
+          "due_date" : {
+            "type": "string"
+          },
+          "items" : {
+            "type": "array"
+          },
+          "subTotal" : {
+            "type": "number"
+          },
+          "totalTax" : {
+            "type": "number"
+          },
+          "total" : {
+            "type": "number"
+          },
+          "status" : {
+            "type": "string",
+            "enum":["DRAFT","SENT"]
+          }
+        }
+     }
+}

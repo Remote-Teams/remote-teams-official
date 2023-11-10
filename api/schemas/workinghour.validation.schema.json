@@ -1,0 +1,55 @@
+{
+    "getSchema":{
+       "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "existSchema":{
+      "type": "string",
+       "required": [
+         "profile"    
+       ],
+       "properties": {
+         "profile" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+          "profile",
+         "fromTime",
+         "toTime",
+         "workingDays"     
+        ],
+        "properties": {
+          "profile" : {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+          },
+          "status" : {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 10
+          },
+          "fromTime" : {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+          },
+          "toTime" : {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+          }
+        }
+     }
+}

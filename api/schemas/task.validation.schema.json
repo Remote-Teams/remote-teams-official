@@ -1,0 +1,48 @@
+{
+    "getSchema":{
+       "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "existSchema":{
+      "type": "string",
+       "required": [
+         "name"     
+       ],
+       "properties": {
+         "name" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+          "name",
+          "startDate",
+          "endDate",
+          "stage",
+          "members_left"    
+        ],
+        "properties": {
+          "name" : {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+          },
+          "priority" : {
+            "type": "string",
+            "enum":["LOW", "IMPORTANT", "NORMAL","CRITICAL"]
+          },
+          "members_left" : {
+            "type": "array"
+          }
+        }
+     }
+}

@@ -1,0 +1,52 @@
+{
+  "getSchema": {
+    "type": "string",
+    "required": [
+      "id"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      }
+    }
+  },
+  "postSchema": {
+    "type": "object",
+    "required": [
+      "leaveType",
+      "fromDate",
+      "toDate",
+      "leaveStatus"
+    ],
+    "approveSchema":{
+      "type": "object",
+      "properties": {
+        "leaveStatus" : {
+          "type": "string",
+          "enum":["REJECTED", "APPROVED"]
+        },
+        "leavesItem":{
+          "type":"array"
+        }
+      }
+   }, 
+    "properties": {
+      "leavetype": {
+        "type": "string",
+        "enum":["FULL", "HALF"]
+      },
+      "leaveStatus": {
+        "type": "string",
+        "enum":["APPROVED", "REJECTED", "PENDING"]
+      },
+      "fromDate": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "toDate": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  }
+}

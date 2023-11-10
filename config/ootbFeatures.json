@@ -1,0 +1,31 @@
+{
+    "features": [
+        {
+            "featureId": "call",
+            "name": "Call",
+            "permissions": [
+                "call:create",
+                "call:delete",
+                "call:view"
+            ]
+        },
+        {
+            "featureId": "storage",
+            "name": "Storage",
+            "permissions": [
+                "storage:create",
+                "storage:delete",
+                "storage:view"
+            ]
+        },
+        {
+            "featureId": "priority_matrix",
+            "name": "priority_matrix",
+            "permissions": [
+                "matrix:create",
+                "matrix:delete",
+                "matrix:view"
+            ]
+        }
+    ]
+}

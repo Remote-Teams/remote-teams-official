@@ -1,0 +1,46 @@
+{
+    "getSchema":{
+       "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "existSchema":{
+      "type": "string",
+       "required": [
+         "name"     
+       ],
+       "properties": {
+         "name" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+          "name",
+          "type",
+          "days"     
+        ],
+        "properties": {
+          "name" : {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50
+          },
+          "type" : {
+            "type": "string",
+            "enum":["FREELANCER", "FULLTIME"]
+          },
+          "days":{
+            "type": "string"
+          }
+        }
+     }
+}

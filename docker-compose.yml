@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  redis:
+    image: redis
+    container_name: redis
+    expose:
+      - 6379
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    expose:
+      - 27017
+
+  remoteteams:
+    links:
+      - redis
+      - mongo
+    build:
+      context: .
+      dockerfile: DockerFile
+    ports:
+      - "9010:9010"
+    command: ["npm", "run", "dev"]

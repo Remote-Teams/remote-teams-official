@@ -1,0 +1,89 @@
+{
+    "getSchema":{
+       "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "existSchema":{
+      "type": "string",
+       "required": [
+         "id"     
+       ],
+       "properties": {
+         "id" : {
+           "type": "string"
+         }
+       }
+    },
+    "postSchema":{
+        "type": "object",
+        "required": [
+          "expenseTitle", "expenseType","BillingType","status"
+        ],
+        "properties": {
+          "expenseTitle" : {
+            "type": "string"
+          },
+          "expenseType" : {
+            "type": "string",
+            "enum":["MISCELLANEOUS", "PROJECT"]
+          },
+          "BillingType" : {
+            "type": "string",
+            "enum":["BILLABLE", "UNBILLABLE"]
+          },
+          "status" : {
+            "type": "string",
+            "enum":["SENT", "DRAFT","APPROVED"]
+          }
+        }
+     },
+     "approveSchema":{
+      "type": "object",
+      "required": [
+        "expenseTitle",
+        "expenseType",
+        "BillingType",
+        "status",
+        "expenseItems",
+        "subTotal",
+        "totalTax",
+        "total"
+      ],
+      "properties": {
+        "expenseTitle" : {
+          "type": "string"
+        },
+        "expenseType" : {
+          "type": "string",
+          "enum":["MISCELLANEOUS", "PROJECT"]
+        },
+        "BillingType" : {
+          "type": "string",
+          "enum":["BILLABLE", "UNBILLABLE"]
+        },
+        "status" : {
+          "type": "string",
+          "enum":["REJECTED", "APPROVED"]
+        },
+        "expenseItems":{
+          "type":"array"
+        },
+        "subTotal":{
+          "type":"number"
+        },
+        "totalTax":{
+          "type":"number"
+        },
+        "total":{
+          "type":"number"
+        }
+      }
+   }
+}
