@@ -1,4 +1,4 @@
-<h1> Remote Teams - Project Management For Tech teams that work remotely - </h1>
+<h1> Remote Teams - The Ultimate Project Management Tool For Tech teams that work remotely - </h1>
 
 ![](website_screenshot.png)
 
