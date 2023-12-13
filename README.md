@@ -26,7 +26,7 @@
 
 <h2> Demo Video </h2>
 
-[![Remote Teams]]([https://vimeo.com/893994506](https://github.com/Iamvibs/remote-teams-official/assets/108602513/60ebd6d2-19a2-41c1-8871-6e9bf7b170ff))
+https://github.com/Iamvibs/remote-teams-official/assets/108602513/60ebd6d2-19a2-41c1-8871-6e9bf7b170ff
 
 <h2> Dashboard </h2>
 
