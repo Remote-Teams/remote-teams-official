@@ -26,7 +26,7 @@
 
 <h2> Demo Video </h2>
 
-![](assets/remote-teams-demo.png)
+![](assets/remote-teams-demo.mp4)
 
 <h2> Dashboard </h2>
 
