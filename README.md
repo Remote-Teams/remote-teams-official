@@ -26,7 +26,7 @@
 
 <h2> Demo Video </h2>
 
-![](assets/remote-teams-demo.mp4)
+[![Remote Teams](assets/remote.png)](https://vimeo.com/893994506)
 
 <h2> Dashboard </h2>
 
