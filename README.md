@@ -1,18 +1,18 @@
 <h1> Remote Teams - The Ultimate Project Management Tool For Tech teams that work remotely - </h1>
 
-![](website_screenshot.png)
+![](screenshots/website_screenshot.png)
 
 <h2> Dashboard </h2>
 
-![](Dashboard.png)
+![](screenshots/Dashboard.png)
 
 <h2> Project Management </h2>
 
-![](Project_Management.png)
+![](screenshots/Project_Management.png)
 
 <h2> Task Scheduling </h2>
 
-![](Task_Scheduling.png)
+![](screenshots/Task_Scheduling.png)
 
 <h2> [Visit Website](https://www.remote-teams.io) </h2>
 
