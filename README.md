@@ -1,19 +1,4 @@
 <h1> Remote Teams - The Ultimate Project Management Tool For Tech teams that work remotely - </h1>
-
-![](screenshots/website_screenshot.png)
-
-<h2> Dashboard </h2>
-
-![](screenshots/Dashboard.png)
-
-<h2> Project Management </h2>
-
-![](screenshots/Project_Management.png)
-
-<h2> Task Scheduling </h2>
-
-![](screenshots/Task_Scheduling.png)
-
 <h2> [Visit Website](https://www.remote-teams.io) </h2>
 
 <h3> Technologies Used </h3>
@@ -36,6 +21,20 @@
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
+
+![](screenshots/website_screenshot.png)
+
+<h2> Dashboard </h2>
+
+![](screenshots/Dashboard.png)
+
+<h2> Project Management </h2>
+
+![](screenshots/Project_Management.png)
+
+<h2> Task Scheduling </h2>
+
+![](screenshots/Task_Scheduling.png)
 
 
 Remote Teams: Backend
