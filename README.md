@@ -26,7 +26,7 @@
 
 <h2> Demo Video </h2>
 
-[![Remote Teams](assets/remote.png)](https://vimeo.com/893994506)
+[![Remote Teams](assets/remote.png)]([https://vimeo.com/893994506](https://github.com/Iamvibs/remote-teams-official/assets/108602513/60ebd6d2-19a2-41c1-8871-6e9bf7b170ff))
 
 <h2> Dashboard </h2>
 
@@ -56,4 +56,5 @@ Make sure Redis and MongoDB are installed and the servers for them have been sta
 1. `git clone https://github.com/RemoteTeams/remote-teams-official.git`
 2. `npm install`
 3. `npm run local`
+
 
