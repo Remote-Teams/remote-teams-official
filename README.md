@@ -22,19 +22,23 @@
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
 
-![](screenshots/website_screenshot.png)
+![](assets/website_screenshot.png)
+
+<h2> Demo Video </h2>
+
+![](assets/remote-teams-demo.png)
 
 <h2> Dashboard </h2>
 
-![](screenshots/Dashboard.png)
+![](assets/Dashboard.png)
 
 <h2> Project Management </h2>
 
-![](screenshots/Project_Management.png)
+![](assets/Project_Management.png)
 
 <h2> Task Scheduling </h2>
 
-![](screenshots/Task_Scheduling.png)
+![](assets/Task_Scheduling.png)
 
 
 Remote Teams: Backend
