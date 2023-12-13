@@ -26,8 +26,7 @@
 
 <h2> Demo Video </h2>
 
-[![Remote Teams](assets/remote.png)](<iframe src="https://player.vimeo.com/video/893994506?h=b7b5df1ffd" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/893994506">remote-teams-demo</a> from <a href="https://vimeo.com/user212641288">Vibhor Mahajan</a> on <a href="https://vimeo.com">Vimeo</a>.</p>)
+[![Remote Teams](assets/remote.png)](https://vimeo.com/893994506)
 
 <h2> Dashboard </h2>
 
