@@ -1,5 +1,5 @@
 <h1> Remote Teams - The Ultimate Project Management Tool For Tech teams that work remotely - </h1>
-<h2> [Visit Website](https://www.remote-teams.io) </h2>
+<h2> [Visit Website](https://remote-teams.github.io/remote-teams-landing-page/) </h2>
 
 <h3> Technologies Used </h3>
 
